@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACT Math Review</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>ACT Math Review</h1>
+    <nav>
+      <button id="btn-random">Random Problem</button>
+      <select id="topic-filter">
+        <option value="all">All Topics</option>
+      </select>
+      <input id="difficulty-filter" type="range" min="1" max="5" value="3" />
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="problem-card" class="card">
+      <div class="card-header">
+        <span id="problem-topic" class="badge">Topic</span>
+        <span id="problem-difficulty" class="pill">★ ★ ★</span>
+      </div>
+      <div id="problem-stem" class="stem">Click “Random Problem” to start.</div>
+      <ol id="problem-choices" type="A" class="choices"></ol>
+      <div class="actions">
+        <button id="show-answer">Show Answer</button>
+        <button id="show-solution">Show Solution</button>
+        <button id="next-problem">Next</button>
+      </div>
+      <div id="answer" class="answer hidden"></div>
+      <div id="solution" class="solution hidden"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> ACT Math Review • Built with GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

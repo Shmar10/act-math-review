@@ -1,0 +1,47 @@
+[
+  {
+    "id": "A1",
+    "topic": "Algebra \u2014 Linear Equations",
+    "difficulty": 2,
+    "stem": "Solve for x: 3x - 7 = 2x + 11",
+    "choices": [
+      "x = -18",
+      "x = 18",
+      "x = 7",
+      "x = -7",
+      "x = 4"
+    ],
+    "answer": "x = 18",
+    "solution": "Subtract 2x from both sides: x - 7 = 11. Then add 7: x = 18."
+  },
+  {
+    "id": "G1",
+    "topic": "Geometry \u2014 Triangles",
+    "difficulty": 3,
+    "stem": "A right triangle has legs of length 6 and 8. What is the hypotenuse?",
+    "choices": [
+      "10",
+      "12",
+      "7",
+      "14",
+      "\u221a100"
+    ],
+    "answer": "10",
+    "solution": "By Pythagorean theorem: c = \u221a(6\u00b2+8\u00b2) = \u221a(36+64) = \u221a100 = 10."
+  },
+  {
+    "id": "F1",
+    "topic": "Functions \u2014 Evaluating",
+    "difficulty": 2,
+    "stem": "If f(x)=2x\u00b2-5x+1, find f(-2).",
+    "choices": [
+      "11",
+      "19",
+      "3",
+      "-1",
+      "9"
+    ],
+    "answer": "19",
+    "solution": "f(-2)=2(4)-5(-2)+1=8+10+1=19."
+  }
+]
