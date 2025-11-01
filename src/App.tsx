@@ -1,23 +1,36 @@
-import { useState } from "react";
-import { InlineMath } from "react-katex";
+import { useEffect, useState } from "react";
+import QuestionCard from "./components/QuestionCard";
+import type { ActQuestion } from "./types";
 
 export default function App() {
-  const [count, setCount] = useState(0);
+  const [qs, setQs] = useState<ActQuestion[]>([]);
+  const [idx, setIdx] = useState(0);
+
+  useEffect(() => {
+    // Load one or more JSON files; you can merge more later.
+    fetch("/act-math-review/content/questions/algebra.json")
+      .then((r) => r.json())
+      .then((data: ActQuestion[]) => setQs(data));
+  }, []);
+
+  if (!qs.length) {
+    return (
+      <div className="min-h-screen grid place-items-center p-6">
+        <div className="text-slate-300">Loading questions…</div>
+      </div>
+    );
+  }
+
+  const q = qs[idx % qs.length];
+
   return (
     <div className="min-h-screen grid place-items-center p-6">
-      <div className="max-w-xl w-full rounded-2xl border border-slate-700 bg-slate-800 p-8 shadow">
-        <h1 className="text-3xl font-bold mb-4">ACT Math Review — Vite + React + Tailwind</h1>
-
-        <p className="mb-4 text-slate-300">
-          Example formula: <InlineMath math="a^2 + b^2 = c^2" />
-        </p>
-
-        <button
-          className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500"
-          onClick={() => setCount(c => c + 1)}
-        >
-          Clicks: {count}
-        </button>
+      <div className="max-w-3xl w-full">
+        <h1 className="text-3xl font-bold mb-6">ACT Math Review</h1>
+        <QuestionCard
+          question={q}
+          onNext={() => setIdx((i) => (i + 1) % qs.length)}
+        />
       </div>
     </div>
   );
