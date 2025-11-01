@@ -133,17 +133,26 @@ function Stem({ text }: { text: string }) {
   );
 }
 function InlinePieces({ text }: { text: string }) {
-  const segs = text.split(/(\$[^$]+\$)/g);
-  return (
-    <>
-      {segs.map((seg, i) =>
-        seg.startsWith("$") && seg.endsWith("$")
-          ? <InlineMath key={i} math={strip(seg)} />
-          : <span key={i}>{seg}</span>
-      )}
-    </>
-  );
+  // If already delimited, render those segments
+  if (/\$[^$]+\$/.test(text)) {
+    const segs = text.split(/(\$[^$]+\$)/g);
+    return (
+      <>
+        {segs.map((seg, i) =>
+          seg.startsWith("$") && seg.endsWith("$")
+            ? <InlineMath key={i} math={seg.slice(1, -1)} renderError={() => <span>{seg}</span>} />
+            : <span key={i}>{seg}</span>
+        )}
+      </>
+    );
+  }
+  // Heuristic: looks like LaTeX/math => try KaTeX inline, else plain text
+  const looksMath = /\\|[\^_=+\-*/()]/.test(text);
+  return looksMath
+    ? <InlineMath math={text} renderError={() => <span>{text}</span>} />
+    : <span>{text}</span>;
 }
+
 function splitBlocks(s: string) {
   const out: { block: boolean; content: string }[] = [];
   const re = /(\$\$[\s\S]+?\$\$)/g; let last = 0; let m: RegExpExecArray | null;
