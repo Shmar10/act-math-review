@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { InlineMath, BlockMath } from "react-katex";
 import type { ActQuestion, Choice } from "../types";
 
-type Props = { question: ActQuestion; onNext?: () => void };
+type Props = { question: ActQuestion; onNext?: () => void; onResult?: (correct: boolean, id: string) => void };
 
 type Shuffled = { choices: Choice[]; correctIndex: number; map: number[] };
 
@@ -85,12 +85,21 @@ export default function QuestionCard({ question, onNext }: Props) {
 
       <div className="flex gap-2">
         <button
-          onClick={() => selected !== null && setChecked(true)}
+          onClick={() => {
+            if (selected !== null) {
+              setChecked(true);
+              if (typeof onResult === "function") {
+                const ok = selected === shuf.correctIndex;
+                onResult(ok, question.id);
+              }
+            }
+          }}
           disabled={selected === null || checked}
           className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 disabled:opacity-50"
         >
           {checked ? "Checked" : "Check Answer"}
         </button>
+
 
         <button
           onClick={() => setShowSteps((s) => !s)}
