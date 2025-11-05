@@ -62,14 +62,14 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
       </div>
 
       <ul className="space-y-2 mb-4">
-        {LETTERS.map((letter, i) => {
-          const choice = shuf.choices[i];
+        {shuf.choices.map((choice, i) => {
+          const letter = String.fromCharCode(65 + i); // A, B, C, ...
           const chosen = selected === i;
           const correct = checked && i === shuf.correctIndex;
           const wrong = checked && chosen && i !== shuf.correctIndex;
 
           return (
-            <li key={letter}>
+            <li key={i}>
               <button
                 onClick={() => setSelected(i)}
                 disabled={checked}
@@ -80,16 +80,14 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
                   wrong && "border-rose-400 bg-rose-900/30",
                   !chosen && !checked &&
                     "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
-                ]
-                  .filter(Boolean)
-                  .join(" ")}
+                ].filter(Boolean).join(" ")}
               >
+                {/* FIX: show fixed UI letters by position */}
                 <span className="font-semibold mr-2">{letter}.</span>
-                {/* Render the shuffled choice text (labels on the left stay A–E) */}
                 <InlinePieces text={choice.text} />
               </button>
 
-              {/* Show rationale for the chosen option + the correct option */}
+              {/* rationale for chosen and correct */}
               {checked && (selected === i || i === shuf.correctIndex) && (
                 <div className="mt-1 ml-4 text-sm text-slate-300 italic">
                   {choice.rationale}
