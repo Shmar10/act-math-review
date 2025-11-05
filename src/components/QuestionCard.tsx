@@ -2,11 +2,17 @@ import { useEffect, useMemo, useState } from "react";
 import { InlineMath, BlockMath } from "react-katex";
 import type { ActQuestion, Choice } from "../types";
 
-type Props = { question: ActQuestion; onNext?: () => void; onResult?: (correct: boolean, id: string) => void };
+type Props = {
+  question: ActQuestion;
+  onNext?: () => void;
+  onResult?: (correct: boolean, id: string) => void;
+};
 
+// --- shuffle utilities ---
 type Shuffled = { choices: Choice[]; correctIndex: number; map: number[] };
 
 function shuffleChoices(q: ActQuestion): Shuffled {
+  // Create a shuffled index map so we can re-order choices
   const idxs = q.choices.map((_, i) => i);
   for (let i = idxs.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -17,12 +23,13 @@ function shuffleChoices(q: ActQuestion): Shuffled {
   return { choices, correctIndex, map: idxs };
 }
 
-export default function QuestionCard({ question, onNext }: Props) {
+export default function QuestionCard({ question, onNext, onResult }: Props) {
   const [shuf, setShuf] = useState<Shuffled>(() => shuffleChoices(question));
   const [selected, setSelected] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [showSteps, setShowSteps] = useState(false);
 
+  // Re-shuffle when the question changes
   useEffect(() => {
     setShuf(shuffleChoices(question));
     setSelected(null);
@@ -35,15 +42,19 @@ export default function QuestionCard({ question, onNext }: Props) {
     [checked, selected, shuf.correctIndex]
   );
 
+  // fixed letters A–E (or as many as needed)
+  const LETTERS = useMemo(() => {
+    const all = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    return all.slice(0, shuf.choices.length);
+  }, [shuf.choices.length]);
+
   return (
     <div className="bg-slate-800/70 rounded-2xl p-6 border border-slate-700 shadow-xl">
       <div className="mb-3 flex items-center gap-3 text-xs text-slate-300">
         <span className="px-2 py-1 rounded bg-slate-900/60">
           {question.topic} — {question.subtopic}
         </span>
-        <span aria-label={`difficulty ${question.diff}`}>
-          {"★".repeat(question.diff)}
-        </span>
+        <span aria-label={`difficulty ${question.diff}`}>{"★".repeat(question.diff)}</span>
       </div>
 
       <div className="prose prose-invert max-w-none mb-6">
@@ -51,13 +62,14 @@ export default function QuestionCard({ question, onNext }: Props) {
       </div>
 
       <ul className="space-y-2 mb-4">
-        {shuf.choices.map((c, i) => {
+        {LETTERS.map((letter, i) => {
+          const choice = shuf.choices[i];
           const chosen = selected === i;
           const correct = checked && i === shuf.correctIndex;
           const wrong = checked && chosen && i !== shuf.correctIndex;
 
           return (
-            <li key={i}>
+            <li key={letter}>
               <button
                 onClick={() => setSelected(i)}
                 disabled={checked}
@@ -66,16 +78,21 @@ export default function QuestionCard({ question, onNext }: Props) {
                   chosen && !checked && "border-sky-400 bg-sky-900/30",
                   correct && "border-emerald-400 bg-emerald-900/30",
                   wrong && "border-rose-400 bg-rose-900/30",
-                  !chosen && !checked && "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
-                ].filter(Boolean).join(" ")}
+                  !chosen && !checked &&
+                    "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
               >
-                <span className="font-semibold mr-2">{c.label}.</span>
-                <InlinePieces text={c.text} />
+                <span className="font-semibold mr-2">{letter}.</span>
+                {/* Render the shuffled choice text (labels on the left stay A–E) */}
+                <InlinePieces text={choice.text} />
               </button>
 
+              {/* Show rationale for the chosen option + the correct option */}
               {checked && (selected === i || i === shuf.correctIndex) && (
                 <div className="mt-1 ml-4 text-sm text-slate-300 italic">
-                  {c.rationale}
+                  {choice.rationale}
                 </div>
               )}
             </li>
@@ -88,10 +105,7 @@ export default function QuestionCard({ question, onNext }: Props) {
           onClick={() => {
             if (selected !== null) {
               setChecked(true);
-              if (typeof onResult === "function") {
-                const ok = selected === shuf.correctIndex;
-                onResult(ok, question.id);
-              }
+              onResult?.(selected === shuf.correctIndex, question.id);
             }
           }}
           disabled={selected === null || checked}
@@ -99,7 +113,6 @@ export default function QuestionCard({ question, onNext }: Props) {
         >
           {checked ? "Checked" : "Check Answer"}
         </button>
-
 
         <button
           onClick={() => setShowSteps((s) => !s)}
@@ -130,44 +143,63 @@ export default function QuestionCard({ question, onNext }: Props) {
   );
 }
 
-/* --------- tiny KaTeX helpers ---------- */
+/* -------- KaTeX helpers (inline/block + tolerant inline parser) -------- */
+
 function Stem({ text }: { text: string }) {
   const parts = splitBlocks(text);
   return (
     <>
       {parts.map((p, i) =>
-        p.block ? <BlockMath key={i} math={strip(p.content)} /> : <p key={i}><InlinePieces text={p.content} /></p>
+        p.block ? (
+          <BlockMath key={i} math={strip(p.content)} />
+        ) : (
+          <p key={i}>
+            <InlinePieces text={p.content} />
+          </p>
+        )
       )}
     </>
   );
 }
+
 function InlinePieces({ text }: { text: string }) {
-  // If already delimited, render those segments
+  // If already delimited with $...$, render those segments inline
   if (/\$[^$]+\$/.test(text)) {
     const segs = text.split(/(\$[^$]+\$)/g);
     return (
       <>
         {segs.map((seg, i) =>
-          seg.startsWith("$") && seg.endsWith("$")
-            ? <InlineMath key={i} math={seg.slice(1, -1)} renderError={() => <span>{seg}</span>} />
-            : <span key={i}>{seg}</span>
+          seg.startsWith("$") && seg.endsWith("$") ? (
+            <InlineMath
+              key={i}
+              math={seg.slice(1, -1)}
+              renderError={() => <span>{seg}</span>}
+            />
+          ) : (
+            <span key={i}>{seg}</span>
+          )
         )}
       </>
     );
   }
-  // Heuristic: looks like LaTeX/math => try KaTeX inline, else plain text
+  // Heuristic: attempt inline math if it "looks like" math/LaTeX
   const looksMath = /\\|[\^_=+\-*/()]/.test(text);
-  return looksMath
-    ? <InlineMath math={text} renderError={() => <span>{text}</span>} />
-    : <span>{text}</span>;
+  return looksMath ? (
+    <InlineMath math={text} renderError={() => <span>{text}</span>} />
+  ) : (
+    <span>{text}</span>
+  );
 }
 
 function splitBlocks(s: string) {
   const out: { block: boolean; content: string }[] = [];
-  const re = /(\$\$[\s\S]+?\$\$)/g; let last = 0; let m: RegExpExecArray | null;
+  const re = /(\$\$[\s\S]+?\$\$)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
   while ((m = re.exec(s)) !== null) {
     if (m.index > last) out.push({ block: false, content: s.slice(last, m.index) });
-    out.push({ block: true, content: m[0] }); last = re.lastIndex;
+    out.push({ block: true, content: m[0] });
+    last = re.lastIndex;
   }
   if (last < s.length) out.push({ block: false, content: s.slice(last) });
   return out;
