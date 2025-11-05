@@ -8,11 +8,10 @@ type Props = {
   onResult?: (correct: boolean, id: string) => void;
 };
 
-// --- shuffle utilities ---
+// ---------- shuffle utilities ----------
 type Shuffled = { choices: Choice[]; correctIndex: number; map: number[] };
 
 function shuffleChoices(q: ActQuestion): Shuffled {
-  // Create a shuffled index map so we can re-order choices
   const idxs = q.choices.map((_, i) => i);
   for (let i = idxs.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -29,7 +28,7 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
   const [checked, setChecked] = useState(false);
   const [showSteps, setShowSteps] = useState(false);
 
-  // Re-shuffle when the question changes
+  // Re-shuffle on question change
   useEffect(() => {
     setShuf(shuffleChoices(question));
     setSelected(null);
@@ -41,12 +40,6 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
     () => checked && selected !== null && selected === shuf.correctIndex,
     [checked, selected, shuf.correctIndex]
   );
-
-  // fixed letters A–E (or as many as needed)
-  const LETTERS = useMemo(() => {
-    const all = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-    return all.slice(0, shuf.choices.length);
-  }, [shuf.choices.length]);
 
   return (
     <div className="bg-slate-800/70 rounded-2xl p-6 border border-slate-700 shadow-xl">
@@ -82,12 +75,10 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
                     "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
                 ].filter(Boolean).join(" ")}
               >
-                {/* FIX: show fixed UI letters by position */}
                 <span className="font-semibold mr-2">{letter}.</span>
                 <InlinePieces text={choice.text} />
               </button>
 
-              {/* rationale for chosen and correct */}
               {checked && (selected === i || i === shuf.correctIndex) && (
                 <div className="mt-1 ml-4 text-sm text-slate-300 italic">
                   {choice.rationale}
@@ -141,7 +132,7 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
   );
 }
 
-/* -------- KaTeX helpers (inline/block + tolerant inline parser) -------- */
+/* ---------- KaTeX helpers (inline + block) ---------- */
 
 function Stem({ text }: { text: string }) {
   const parts = splitBlocks(text);
@@ -161,7 +152,7 @@ function Stem({ text }: { text: string }) {
 }
 
 function InlinePieces({ text }: { text: string }) {
-  // If already delimited with $...$, render those segments inline
+  // If $...$ exists, render those inline segments
   if (/\$[^$]+\$/.test(text)) {
     const segs = text.split(/(\$[^$]+\$)/g);
     return (
@@ -180,7 +171,7 @@ function InlinePieces({ text }: { text: string }) {
       </>
     );
   }
-  // Heuristic: attempt inline math if it "looks like" math/LaTeX
+  // Heuristic: attempt inline math if it looks LaTeX-y
   const looksMath = /\\|[\^_=+\-*/()]/.test(text);
   return looksMath ? (
     <InlineMath math={text} renderError={() => <span>{text}</span>} />
@@ -202,4 +193,5 @@ function splitBlocks(s: string) {
   if (last < s.length) out.push({ block: false, content: s.slice(last) });
   return out;
 }
+
 const strip = (s: string) => s.replace(/^\${1,2}|\${1,2}$/g, "");
