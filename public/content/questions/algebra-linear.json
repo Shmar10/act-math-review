@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ALG-LIN-0002",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 2,
+    "stem": "Solve for $x$: $$4x + 9 = 2(3x - 5)$$",
+    "choices": [
+      { "text": "\\dfrac{19}{2}", "rationale": "Correct: $4x+9=6x-10\\Rightarrow 19=2x\\Rightarrow x=\\tfrac{19}{2}$." },
+      { "text": "\\dfrac{9}{2}", "rationale": "Subtracted 9 incorrectly." },
+      { "text": "5", "rationale": "Forgot to distribute $2$ to $-5$." },
+      { "text": "2", "rationale": "Set $4x=6x$ and dropped constants." },
+      { "text": "\\dfrac{2}{19}", "rationale": "Inverted $\\tfrac{19}{2}$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $4x+9=6x-10$.",
+      "Move $x$ terms: $9=2x-10\\Rightarrow 19=2x$.",
+      "Divide: $x=\\tfrac{19}{2}$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0003",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 3,
+    "stem": "Solve: $$\\frac{x-3}{5} - \\frac{x+1}{3} = 2$$",
+    "choices": [
+      { "text": "-22", "rationale": "Correct: Multiply by $15$: $3(x-3)-5(x+1)=30\\Rightarrow -2x-14=30\\Rightarrow x=-22$." },
+      { "text": "22", "rationale": "Missed the negative when isolating $x$." },
+      { "text": "-8", "rationale": "Cleared denominators incorrectly." },
+      { "text": "8", "rationale": "Sign error on $-5(x+1)$." },
+      { "text": "0", "rationale": "Set numerators equal without clearing denominators." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by $15$: $3(x-3)-5(x+1)=30$.",
+      "$3x-9-5x-5=30\\Rightarrow -2x-14=30$.",
+      "$-2x=44\\Rightarrow x=-22$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0004",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 3,
+    "stem": "Solve the system: $$\\begin{cases}2x+3y=13\\\\ x-y=1\\end{cases}$$",
+    "choices": [
+      { "text": "\\left(\\dfrac{16}{5},\\,\\dfrac{11}{5}\\right)", "rationale": "Correct: From $x=y+1$, substitute into $2x+3y=13$ to get $5y=11$." },
+      { "text": "(3,\\,4)", "rationale": "Satisfies $x-y= -1$, not $1$." },
+      { "text": "(4,\\,3)", "rationale": "Gives $2x+3y=17$, not $13$." },
+      { "text": "(2,\\,1)", "rationale": "Does not satisfy $2x+3y=13$." },
+      { "text": "\\left(\\dfrac{11}{5},\\,\\dfrac{16}{5}\\right)", "rationale": "Swapped $x$ and $y$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "From $x-y=1\\Rightarrow x=y+1$.",
+      "Substitute: $2(y+1)+3y=13\\Rightarrow 5y=11\\Rightarrow y=\\tfrac{11}{5}$.",
+      "Then $x=y+1=\\tfrac{16}{5}$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0005",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 2,
+    "stem": "Solve: $$5-2(3-x) > 4x + 1$$",
+    "choices": [
+      { "text": "x < -1", "rationale": "Correct: $5-6+2x>4x+1\\Rightarrow -1+2x>4x+1\\Rightarrow -2>2x\\Rightarrow x<-1$." },
+      { "text": "x > -1", "rationale": "Forgot to reverse direction after dividing by a negative." },
+      { "text": "x < 1", "rationale": "Arithmetic slip combining constants." },
+      { "text": "x > 1", "rationale": "Signs mishandled when distributing $-2$." },
+      { "text": "x = -1", "rationale": "Inequality is strict; $x=-1$ does not satisfy it." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $5-6+2x>4x+1\\Rightarrow -1+2x>4x+1$.",
+      "Move terms: $-2>2x$.",
+      "Divide by $2$: $x<-1$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0006",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 2,
+    "stem": "Solve: $$|2x-5|=9$$",
+    "choices": [
+      { "text": "x=-2\\text{ or }x=7", "rationale": "Correct: $2x-5=\\pm 9\\Rightarrow x=7$ or $x=-2$." },
+      { "text": "x=2\\text{ or }x=7", "rationale": "Solved only one of the two cases correctly." },
+      { "text": "x=-7\\text{ or }x=2", "rationale": "Mixed signs inside $|\\cdot|$." },
+      { "text": "x=\\pm 7", "rationale": "Forgot to solve both linear equations." },
+      { "text": "x=-2\\text{ only}", "rationale": "Absolute value yields two solutions." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Solve $2x-5=9\\Rightarrow x=7$.",
+      "Solve $2x-5=-9\\Rightarrow x=-2$.",
+      "Both satisfy $|2x-5|=9$."
+    ]
+  }
+]
