@@ -1,0 +1,98 @@
+[
+  {
+    "id": "NUM-RAT-0001",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 1,
+    "stem": "A recipe uses 3 cups of flour for 2 cups of sugar. How many cups of flour are needed for 5 cups of sugar?",
+    "choices": [
+      { "text": "7.5", "rationale": "Correct: Flour:sugar = $\\tfrac{3}{2}$. For 5 sugar: $\\tfrac{3}{2}\\cdot 5=7.5$." },
+      { "text": "6", "rationale": "Multiplied $3\\times 2$ then added." },
+      { "text": "8", "rationale": "Assumed $+5$ instead of scaling by a ratio." },
+      { "text": "3.5", "rationale": "Used $\\tfrac{2}{3}$ instead of $\\tfrac{3}{2}$." },
+      { "text": "10", "rationale": "Swapped flour and sugar." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use proportion: $\\dfrac{3}{2}=\\dfrac{x}{5}$.",
+      "Cross-multiply: $2x=15\\Rightarrow x=7.5$ cups."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0002",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 2,
+    "stem": "A car travels 180 miles in 3 hours. At the same rate, how long will it take to travel 320 miles?",
+    "choices": [
+      { "text": "$\\dfrac{32}{6}\\text{ hr }=5\\tfrac{1}{3}$", "rationale": "Correct: Speed $=60$ mph; time $=\\tfrac{320}{60}=\\tfrac{32}{6}=5\\tfrac{1}{3}$ hr." },
+      { "text": "6 hr", "rationale": "Rounded $\\tfrac{320}{60}$ prematurely." },
+      { "text": "4 hr", "rationale": "Used 80 mph instead of 60 mph." },
+      { "text": "3 hr", "rationale": "Used original time, not scaled distance." },
+      { "text": "5 hr", "rationale": "Truncated the fraction $\\tfrac{1}{3}$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rate: $\\tfrac{180}{3}=60$ mph.",
+      "Time for 320 miles: $t=\\tfrac{320}{60}=\\tfrac{32}{6}=5\\tfrac{1}{3}$ hr."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0003",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 2,
+    "stem": "If $y$ varies inversely with $x$ and $y=12$ when $x=5$, find $y$ when $x=8$.",
+    "choices": [
+      { "text": "$7.5$", "rationale": "Correct: Inverse variation $xy=k$. $k=12\\cdot 5=60$. For $x=8$, $y=\\tfrac{60}{8}=7.5$." },
+      { "text": "$19.2$", "rationale": "Multiplied instead of dividing: $12\\cdot \\tfrac{8}{5}$." },
+      { "text": "$6$", "rationale": "Used direct variation." },
+      { "text": "$10$", "rationale": "Averaged values rather than using inverse rule." },
+      { "text": "$9.6$", "rationale": "Used $\\tfrac{12\\cdot 8}{10}$ accidentally." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inverse: $xy=k$. Compute $k=12\\cdot 5=60$.",
+      "For $x=8$: $y=\\tfrac{60}{8}=7.5$."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0004",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "A solution is 12\\% salt by volume. How much pure water must be added to 30 mL of this solution to make it 8\\% salt?",
+    "choices": [
+      { "text": "15 mL", "rationale": "Correct: Salt stays 3.6 mL; need total $T$ with $0.08T=3.6\\Rightarrow T=45$ mL; add $45-30=15$ mL." },
+      { "text": "7.5 mL", "rationale": "Halved the percent instead of diluting properly." },
+      { "text": "10 mL", "rationale": "Set up $0.12(30- x)=0.08\\cdot 30$ incorrectly." },
+      { "text": "12 mL", "rationale": "Used $0.12\\cdot 30=0.08(30+x)$ but solved arithmetic wrong." },
+      { "text": "18 mL", "rationale": "Used $0.12(30+x)=0.08x$ (switching totals)." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Salt in 30 mL: $0.12\\cdot 30=3.6$ mL (constant).",
+      "Let total volume be $T$. Want $0.08T=3.6\\Rightarrow T=45$ mL.",
+      "Added water: $45-30=15$ mL."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0005",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 2,
+    "stem": "A map scale is 1 inch : 40 miles. Two cities are 3.5 inches apart on the map. How many miles apart are the cities?",
+    "choices": [
+      { "text": "140 miles", "rationale": "Correct: $3.5\\times 40=140$." },
+      { "text": "80 miles", "rationale": "Multiplied by 20 instead of 40." },
+      { "text": "120 miles", "rationale": "Rounded 3.5 to 3 and used $3\\times 40$." },
+      { "text": "35 miles", "rationale": "Confused with 10:1 scale." },
+      { "text": "160 miles", "rationale": "Used 4 inches instead of 3.5." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Scale factor: 1 in $\\to$ 40 miles.",
+      "So $3.5$ in $\\to 3.5\\cdot 40=140$ miles."
+    ]
+  }
+]
