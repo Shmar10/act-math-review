@@ -1,0 +1,99 @@
+[
+  {
+    "id": "GEO-TRI-0001",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 1,
+    "stem": "In a right triangle, one leg is 6 and the hypotenuse is 10. Find the length of the other leg.",
+    "choices": [
+      { "text": "8", "rationale": "Correct: $6^2 + b^2 = 10^2 \\Rightarrow b=8$." },
+      { "text": "7", "rationale": "Rounded incorrectly from $\\sqrt{51}$." },
+      { "text": "4", "rationale": "Subtracted 6 from 10 instead of applying Pythagorean Theorem." },
+      { "text": "5", "rationale": "Assumed a 3–4–5 triangle scaled incorrectly." },
+      { "text": "9", "rationale": "Used $10^2 + 6^2$ instead of subtracting squares." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use $a^2+b^2=c^2$.",
+      "$6^2+b^2=10^2\\Rightarrow b^2=64\\Rightarrow b=8$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0002",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 2,
+    "stem": "The sides of a triangle are 5, 12, and 13. Determine if the triangle is right, acute, or obtuse.",
+    "choices": [
+      { "text": "Right", "rationale": "Correct: $5^2+12^2=25+144=169=13^2$." },
+      { "text": "Acute", "rationale": "Would require $5^2+12^2>13^2$ (false)." },
+      { "text": "Obtuse", "rationale": "Would require $5^2+12^2<13^2$ (false)." },
+      { "text": "Impossible", "rationale": "Triangle inequality satisfied, so not impossible." },
+      { "text": "Equilateral", "rationale": "Not all sides equal." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check if $a^2+b^2=c^2$: $5^2+12^2=13^2$.",
+      "Since equality holds, it is a right triangle."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0003",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 2,
+    "stem": "Find the area of a triangle with base 10 and height 7.",
+    "choices": [
+      { "text": "35", "rationale": "Correct: $A=\\tfrac{1}{2}bh=\\tfrac{1}{2}\\times10\\times7=35$." },
+      { "text": "70", "rationale": "Forgot to multiply by $\\tfrac{1}{2}$." },
+      { "text": "17", "rationale": "Added base and height instead of multiplying." },
+      { "text": "40", "rationale": "Used $\\tfrac{1}{2}(b+h)$ instead of $\\tfrac{1}{2}bh$." },
+      { "text": "25", "rationale": "Mixed up formula for parallelogram vs. triangle." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $A=\\tfrac{1}{2}bh$.",
+      "Substitute: $A=\\tfrac{1}{2}\\times10\\times7=35$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0004",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "A triangle has sides 9, 11, and 16. Find the measure of the largest angle (nearest degree).",
+    "choices": [
+      { "text": "117°", "rationale": "Correct: Law of Cosines: $\\cos C=\\tfrac{9^2+11^2-16^2}{2(9)(11)}=-0.453\\Rightarrow C\\approx117°$." },
+      { "text": "63°", "rationale": "Used $\\cos^{-1}(+0.453)$ instead of $-0.453$." },
+      { "text": "90°", "rationale": "Assumed right triangle." },
+      { "text": "107°", "rationale": "Rounded intermediate result incorrectly." },
+      { "text": "120°", "rationale": "Used $\\cos C=-0.5$ approximation." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Law of Cosines: $c^2=a^2+b^2-2ab\\cos C$.",
+      "$\\cos C=\\tfrac{9^2+11^2-16^2}{2(9)(11)}=-0.453$.",
+      "$C\\approx117°$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0005",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "The lengths of two sides of a triangle are 7 and 10. What is the range of possible integer values for the third side?",
+    "choices": [
+      { "text": "4 to 16", "rationale": "Correct: $|7-10|<x<7+10\\Rightarrow3<x<17$, so integers 4–16." },
+      { "text": "3 to 17", "rationale": "Used inclusive bounds; triangle inequality is strict." },
+      { "text": "4 to 17", "rationale": "Upper bound should be 16, not 17." },
+      { "text": "3 to 16", "rationale": "Lower bound is 4, not 3." },
+      { "text": "5 to 15", "rationale": "Narrowed range incorrectly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Triangle inequality: $|a-b|<c<a+b$.",
+      "$|7-10|<x<17\\Rightarrow3<x<17$.",
+      "Integer solutions: $4$ through $16$."
+    ]
+  }
+]
