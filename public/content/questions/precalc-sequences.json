@@ -1,0 +1,97 @@
+[
+  {
+    "id": "PRE-SEQ-0001",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 2,
+    "stem": "Find the 10th term of the arithmetic sequence: $$a_1 = 5,\\; d = 3.$$",
+    "choices": [
+      { "text": "32", "rationale": "Correct: $a_n = a_1 + (n-1)d = 5 + 9(3) = 32$." },
+      { "text": "30", "rationale": "Used $n=9$ instead of $10$." },
+      { "text": "27", "rationale": "Stopped at 8th term instead of 10th." },
+      { "text": "35", "rationale": "Added one extra difference." },
+      { "text": "33", "rationale": "Arithmetic slip when adding $27+5$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $a_n = a_1 + (n-1)d$.",
+      "Substitute: $a_{10} = 5 + (10-1)(3) = 5 + 27 = 32$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0002",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Find the sum of the first 20 terms of an arithmetic series with $$a_1 = 2,\\; d = 4.$$",
+    "choices": [
+      { "text": "840", "rationale": "Correct: $S_n=\\tfrac{n}{2}[2a_1+(n-1)d]=10[4+76]=840$." },
+      { "text": "400", "rationale": "Forgot to multiply by $\\tfrac{n}{2}$." },
+      { "text": "160", "rationale": "Added terms incorrectly." },
+      { "text": "880", "rationale": "Arithmetic slip in final addition." },
+      { "text": "760", "rationale": "Used $n=19$ instead of 20." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use $S_n=\\tfrac{n}{2}[2a_1+(n-1)d]$.",
+      "Substitute: $S_{20}=10[4+(19)(4)]=10[4+76]=10(80)=840$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0003",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Find the 6th term of the geometric sequence $$a_1 = 3,\\; r = 2.$$",
+    "choices": [
+      { "text": "96", "rationale": "Correct: $a_n = a_1r^{n-1}=3(2)^5=96$." },
+      { "text": "48", "rationale": "Used $2^4$ instead of $2^5$." },
+      { "text": "192", "rationale": "Multiplied by $2^6$ instead of $2^5$." },
+      { "text": "64", "rationale": "Forgot to multiply by 3." },
+      { "text": "12", "rationale": "Multiplied 3 by 4 instead of using exponent." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $a_n = a_1r^{n-1}$.",
+      "Substitute: $a_6=3(2)^{5}=3(32)=96$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0004",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Find the sum to infinity of the geometric series $$12 + 6 + 3 + \\dots$$",
+    "choices": [
+      { "text": "24", "rationale": "Correct: $S_\\infty=\\tfrac{a}{1-r}=\\tfrac{12}{1-\\tfrac{1}{2}}=24$." },
+      { "text": "12", "rationale": "Only counted the first term." },
+      { "text": "18", "rationale": "Stopped after 3 terms." },
+      { "text": "20", "rationale": "Used $r=0.4$ instead of $0.5$." },
+      { "text": "36", "rationale": "Used $1+r$ instead of $1-r$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Ratio: $r=\\tfrac{6}{12}=\\tfrac{1}{2}$.",
+      "Sum to infinity (since $|r|<1$): $S_\\infty=\\tfrac{a}{1-r}=\\tfrac{12}{1-\\tfrac{1}{2}}=24$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0005",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 4,
+    "stem": "A geometric sequence has $a_3=18$ and $a_6=486$. Find $r$.",
+    "choices": [
+      { "text": "3", "rationale": "Correct: $a_6/a_3 = r^{6-3}=r^3=486/18=27 \\Rightarrow r=3$." },
+      { "text": "2", "rationale": "Used square root instead of cube root." },
+      { "text": "6", "rationale": "Incorrectly used $486/18=27$ as $r$ instead of $r^3$." },
+      { "text": "$\\sqrt{3}$", "rationale": "Used $r^2=27$ instead of $r^3=27$." },
+      { "text": "9", "rationale": "Multiplied $3$ instead of taking the root." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use $\\dfrac{a_6}{a_3}=r^{6-3}=r^3$.",
+      "$r^3=\\tfrac{486}{18}=27 \\Rightarrow r=3$."
+    ]
+  }
+]
