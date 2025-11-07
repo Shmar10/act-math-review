@@ -1,0 +1,99 @@
+[
+  {
+    "id": "GEO-CIR-0001",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 1,
+    "stem": "A circle has a radius of 7 cm. Find its circumference (use $\\pi$).",
+    "choices": [
+      { "text": "$14\\pi$", "rationale": "Correct: $C=2\\pi r=2\\pi(7)=14\\pi$." },
+      { "text": "$49\\pi$", "rationale": "That’s the area, not circumference." },
+      { "text": "$7\\pi$", "rationale": "Forgot to multiply by 2." },
+      { "text": "$28\\pi$", "rationale": "Used diameter squared." },
+      { "text": "$21\\pi$", "rationale": "Added instead of doubled the radius." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $C=2\\pi r$.",
+      "Substitute $r=7$: $C=14\\pi$."
+    ]
+  },
+  {
+    "id": "GEO-CIR-0002",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "Find the area of a circle with diameter 10 m. Express your answer in terms of $\\pi$.",
+    "choices": [
+      { "text": "$25\\pi$", "rationale": "Correct: $r=5$, area $A=\\pi r^2=25\\pi$." },
+      { "text": "$50\\pi$", "rationale": "Used diameter instead of radius." },
+      { "text": "$10\\pi$", "rationale": "Used radius instead of radius squared." },
+      { "text": "$100\\pi$", "rationale": "Forgot to divide diameter by 2." },
+      { "text": "$5\\pi$", "rationale": "Missed squaring the radius." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Radius $r=\\tfrac{10}{2}=5$.",
+      "Area $A=\\pi r^2=\\pi(5)^2=25\\pi$."
+    ]
+  },
+  {
+    "id": "GEO-CIR-0003",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "A circle has equation $x^2 + y^2 - 6x + 8y = 0$. Find the center and radius.",
+    "choices": [
+      { "text": "Center $(3,-4)$, radius $5$", "rationale": "Correct: Complete the square on $x$ and $y$ to get $(x-3)^2+(y+4)^2=25$." },
+      { "text": "Center $(3,4)$, radius $5$", "rationale": "Incorrect sign on $y$." },
+      { "text": "Center $(-3,4)$, radius $5$", "rationale": "Wrong signs on both coordinates." },
+      { "text": "Center $(6,-8)$, radius $10$", "rationale": "Forgot to complete the square and doubled everything." },
+      { "text": "Center $(0,0)$, radius $5$", "rationale": "Ignored the linear terms." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Group: $(x^2-6x)+(y^2+8y)=0$.",
+      "Complete squares: $(x-3)^2-9+(y+4)^2-16=0$.",
+      "$(x-3)^2+(y+4)^2=25$ → center $(3,-4)$, radius $5$."
+    ]
+  },
+  {
+    "id": "GEO-CIR-0004",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "Find the length of an arc that subtends a central angle of $60^\\circ$ in a circle of radius 9 cm.",
+    "choices": [
+      { "text": "$3\\pi$ cm", "rationale": "Correct: Arc length $=\\tfrac{\\theta}{360^\\circ}\\cdot2\\pi r=\\tfrac{60}{360}\\cdot2\\pi(9)=3\\pi$ cm." },
+      { "text": "$6\\pi$ cm", "rationale": "Used $\\tfrac{60}{180}$ instead of $\\tfrac{60}{360}$." },
+      { "text": "$9\\pi$ cm", "rationale": "Forgot the $\\tfrac{\\theta}{360}$ ratio." },
+      { "text": "$\\tfrac{\\pi}{3}$ cm", "rationale": "Used $r=1$ instead of 9." },
+      { "text": "$18\\pi$ cm", "rationale": "Omitted $\\tfrac{\\theta}{360}$ factor and doubled the radius." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $s=\\tfrac{\\theta}{360^\\circ}\\cdot2\\pi r$.",
+      "Substitute $\\theta=60^\\circ, r=9$.",
+      "$s=\\tfrac{60}{360}\\cdot2\\pi(9)=3\\pi$ cm."
+    ]
+  },
+  {
+    "id": "GEO-CIR-0005",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "A sector of a circle has a central angle of $90^\\circ$ and radius of 4 cm. Find the area of the sector.",
+    "choices": [
+      { "text": "$4\\pi$ cm$^2$", "rationale": "Correct: $A=\\tfrac{\\theta}{360}\\cdot\\pi r^2=\\tfrac{90}{360}\\cdot\\pi(4)^2=4\\pi$ cm$^2$." },
+      { "text": "$8\\pi$ cm$^2$", "rationale": "Forgot to divide $90/360$." },
+      { "text": "$16\\pi$ cm$^2$", "rationale": "That’s the whole circle’s area." },
+      { "text": "$2\\pi$ cm$^2$", "rationale": "Used $r=2$ instead of 4." },
+      { "text": "$\\pi$ cm$^2$", "rationale": "Divided by 4 twice." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $A=\\tfrac{\\theta}{360}\\cdot\\pi r^2$.",
+      "$A=\\tfrac{90}{360}\\cdot\\pi(4)^2=4\\pi$ cm$^2$."
+    ]
+  }
+]
