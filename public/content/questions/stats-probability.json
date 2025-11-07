@@ -1,0 +1,100 @@
+[
+  {
+    "id": "STA-PRO-0001",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 1,
+    "stem": "A fair six-sided die is rolled once. What is the probability of rolling an even number?",
+    "choices": [
+      { "text": "$\\tfrac{1}{2}$", "rationale": "Correct: Even numbers 2, 4, 6 → 3 out of 6 outcomes = $\\tfrac{1}{2}$." },
+      { "text": "$\\tfrac{1}{3}$", "rationale": "Counted only two outcomes." },
+      { "text": "$\\tfrac{2}{3}$", "rationale": "Assumed 4 even outcomes (wrong)." },
+      { "text": "$\\tfrac{1}{6}$", "rationale": "Probability of rolling a specific number, not even." },
+      { "text": "$\\tfrac{3}{5}$", "rationale": "Denominator should be 6, not 5." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Even outcomes: 2, 4, 6 → 3 outcomes.",
+      "Total outcomes: 6.",
+      "$P(\\text{even})=\\tfrac{3}{6}=\\tfrac{1}{2}$."
+    ]
+  },
+  {
+    "id": "STA-PRO-0002",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 2,
+    "stem": "A bag contains 5 red, 3 blue, and 2 green marbles. One marble is drawn at random. What is the probability that it is not red?",
+    "choices": [
+      { "text": "$\\tfrac{1}{2}$", "rationale": "Correct: 5 red out of 10 → $P(\\text{not red})=1-\\tfrac{5}{10}=\\tfrac{1}{2}$." },
+      { "text": "$\\tfrac{3}{10}$", "rationale": "Counted only blue marbles." },
+      { "text": "$\\tfrac{1}{5}$", "rationale": "Incorrect ratio of red to total." },
+      { "text": "$\\tfrac{4}{5}$", "rationale": "Subtracted incorrectly from 1." },
+      { "text": "$\\tfrac{2}{5}$", "rationale": "Confused green fraction with total non-red fraction." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total marbles: 10.",
+      "Red: 5 → $P(\\text{red})=\\tfrac{5}{10}=\\tfrac{1}{2}$.",
+      "So $P(\\text{not red})=1-\\tfrac{1}{2}=\\tfrac{1}{2}$."
+    ]
+  },
+  {
+    "id": "STA-PRO-0003",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 3,
+    "stem": "The mean of 5 test scores is 84. Four of the scores are 90, 86, 79, and 81. What is the missing score?",
+    "choices": [
+      { "text": "84", "rationale": "Correct: $5(84)=420$ total; sum of 4 known = 336 → missing $=420-336=84$." },
+      { "text": "83", "rationale": "Rounded incorrectly after dividing." },
+      { "text": "85", "rationale": "Used 4 instead of 5 in the mean formula." },
+      { "text": "80", "rationale": "Subtracted incorrectly." },
+      { "text": "82", "rationale": "Arithmetic slip when summing 4 scores." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Mean $=84 \\Rightarrow$ total $=5(84)=420$.",
+      "Sum of given = $90+86+79+81=336$.",
+      "Missing score $=420-336=84$."
+    ]
+  },
+  {
+    "id": "STA-PRO-0004",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 3,
+    "stem": "A coin is flipped three times. What is the probability of getting exactly two heads?",
+    "choices": [
+      { "text": "$\\tfrac{3}{8}$", "rationale": "Correct: Total outcomes $=8$; favorable $=3$ (HHT, HTH, THH)." },
+      { "text": "$\\tfrac{1}{2}$", "rationale": "That’s probability of at least two heads, not exactly two." },
+      { "text": "$\\tfrac{1}{8}$", "rationale": "Probability of all heads." },
+      { "text": "$\\tfrac{5}{8}$", "rationale": "Too many favorable outcomes counted." },
+      { "text": "$\\tfrac{3}{4}$", "rationale": "Overcounted cases." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total outcomes: $2^3=8$.",
+      "Exactly two heads: 3 outcomes → $\\tfrac{3}{8}$."
+    ]
+  },
+  {
+    "id": "STA-PRO-0005",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 2,
+    "stem": "The five-number summary for a data set is: min = 20, Q1 = 25, median = 30, Q3 = 40, max = 55. Find the interquartile range (IQR).",
+    "choices": [
+      { "text": "15", "rationale": "Correct: $IQR = Q3 - Q1 = 40 - 25 = 15$." },
+      { "text": "35", "rationale": "Used max - min." },
+      { "text": "25", "rationale": "Subtracted Q1 from median incorrectly." },
+      { "text": "10", "rationale": "Confused with half the range." },
+      { "text": "30", "rationale": "Subtracted median from max." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $IQR = Q3 - Q1$.",
+      "Substitute: $IQR = 40 - 25 = 15$."
+    ]
+  }
+]
