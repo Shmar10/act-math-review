@@ -1,0 +1,95 @@
+[
+  {
+    "id": "TRI-RGT-0001",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 2,
+    "stem": "In right triangle $ABC$ with right angle at $C$, $\\angle A=30^\\circ$ and the hypotenuse $AB=12$. Find $AC$ (the side adjacent to $\\angle A$).",
+    "choices": [
+      { "text": "$6\\sqrt{3}$", "rationale": "Correct: $\\cos 30^\\circ=\\dfrac{AC}{AB}\\Rightarrow AC=12\\cdot\\cos30^\\circ=12\\cdot\\tfrac{\\sqrt{3}}{2}=6\\sqrt{3}$." },
+      { "text": "$6$", "rationale": "Used $\\sin$ instead of $\\cos$." },
+      { "text": "$12$", "rationale": "Adjacent cannot equal the hypotenuse unless angle is $0^\\circ$." },
+      { "text": "$4\\sqrt{3}$", "rationale": "Miscalculated $12\\cdot\\tfrac{\\sqrt{3}}{2}$." },
+      { "text": "$3\\sqrt{3}$", "rationale": "Forgot to multiply by the hypotenuse." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use $\\cos\\theta=\\dfrac{\\text{adjacent}}{\\text{hypotenuse}}$.",
+      "$\\cos30^\\circ=AC/12\\Rightarrow AC=12\\cdot\\tfrac{\\sqrt{3}}{2}=6\\sqrt{3}$."
+    ]
+  },
+  {
+    "id": "TRI-RGT-0002",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 2,
+    "stem": "A ladder leans against a wall making a $75^\\circ$ angle with the ground. If the foot of the ladder is 4 ft from the wall, how long is the ladder?",
+    "choices": [
+      { "text": "$\\dfrac{4}{\\cos 75^\\circ}$", "rationale": "Correct: Adjacent $=4$, hypotenuse $=\\dfrac{4}{\\cos75^\\circ}$." },
+      { "text": "$\\dfrac{4}{\\sin 75^\\circ}$", "rationale": "Used opposite instead of adjacent." },
+      { "text": "$4\\cos 75^\\circ$", "rationale": "Gives adjacent length, not hypotenuse." },
+      { "text": "$4\\sin 75^\\circ$", "rationale": "Opposite side, not the ladder length." },
+      { "text": "$\\dfrac{4}{\\tan 75^\\circ}$", "rationale": "Inverts the wrong ratio." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $L$ be the ladder (hypotenuse). $\\cos75^\\circ=\\dfrac{4}{L}\\Rightarrow L=\\dfrac{4}{\\cos75^\\circ}$."
+    ]
+  },
+  {
+    "id": "TRI-RGT-0003",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 3,
+    "stem": "In a right triangle, the side opposite $\\theta$ is 9 and the hypotenuse is 15. Find $\\theta$ to the nearest degree.",
+    "choices": [
+      { "text": "$37^\\circ$", "rationale": "Correct: $\\sin\\theta=\\tfrac{9}{15}=0.6\\Rightarrow \\theta\\approx\\sin^{-1}(0.6)\\approx37^\\circ$." },
+      { "text": "$53^\\circ$", "rationale": "Used $\\cos^{-1}(0.6)$ instead of $\\sin^{-1}(0.6)$." },
+      { "text": "$30^\\circ$", "rationale": "Common special angle guess; not supported by the ratio." },
+      { "text": "$45^\\circ$", "rationale": "Would require legs equal." },
+      { "text": "$60^\\circ$", "rationale": "Would require opposite twice adjacent (not true here)." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$\\sin\\theta=\\dfrac{9}{15}=0.6$.",
+      "$\\theta=\\sin^{-1}(0.6)\\approx37^\\circ$."
+    ]
+  },
+  {
+    "id": "TRI-RGT-0004",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 2,
+    "stem": "Given a right triangle with legs $7$ and $24$, find $\\tan\\theta$ where $\\theta$ is the angle opposite the side of length $24$.",
+    "choices": [
+      { "text": "$\\dfrac{24}{7}$", "rationale": "Correct: $\\tan\\theta=\\dfrac{\\text{opp}}{\\text{adj}}=\\tfrac{24}{7}$." },
+      { "text": "$\\dfrac{7}{24}$", "rationale": "Inverted opposite and adjacent." },
+      { "text": "$\\dfrac{24}{25}$", "rationale": "Used opposite/hypotenuse (that’s $\\sin\\theta$)." },
+      { "text": "$\\dfrac{7}{25}$", "rationale": "Used adjacent/hypotenuse (that’s $\\cos\\theta$)." },
+      { "text": "$\\dfrac{25}{7}$", "rationale": "Mixed hypotenuse with adjacent." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For angle opposite 24: $\\tan\\theta=\\tfrac{24}{7}$."
+    ]
+  },
+  {
+    "id": "TRI-RGT-0005",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 3,
+    "stem": "A surveyor measures the angle of elevation to the top of a building as $35^\\circ$ from a point 120 ft from the base. The instrument is 5 ft above ground. Estimate the building’s height.",
+    "choices": [
+      { "text": "$\\,120\\tan35^\\circ+5\\,$ ft", "rationale": "Correct: Height above instrument $=120\\tan35^\\circ$; add 5 ft instrument height." },
+      { "text": "$\\,120\\sin35^\\circ+5\\,$ ft", "rationale": "Used opposite/hypotenuse instead of opposite/adjacent." },
+      { "text": "$\\,\\dfrac{120}{\\tan35^\\circ}+5\\,$ ft", "rationale": "Inverted tangent ratio." },
+      { "text": "$\\,120\\tan55^\\circ+5\\,$ ft", "rationale": "Used the complement $55^\\circ$ incorrectly." },
+      { "text": "$\\,120\\cos35^\\circ+5\\,$ ft", "rationale": "Computed adjacent, not opposite." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Opposite $=120\\tan35^\\circ$ (angle of elevation with adjacent 120).",
+      "Add the 5 ft instrument height: total $=120\\tan35^\\circ+5$ ft."
+    ]
+  }
+]
