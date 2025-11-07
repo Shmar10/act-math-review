@@ -1,0 +1,95 @@
+[
+  {
+    "id": "COO-LIN-0001",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 2,
+    "stem": "Find the slope of the line passing through $(2,-3)$ and $(8,9)$.",
+    "choices": [
+      { "text": "$2$", "rationale": "Correct: $m=\\dfrac{9-(-3)}{8-2}=\\dfrac{12}{6}=2$." },
+      { "text": "$\\dfrac{6}{12}$", "rationale": "Did not simplify $\\tfrac{12}{6}$ and inverted numerator/denominator." },
+      { "text": "$-2$", "rationale": "Sign mistake in rise or run." },
+      { "text": "$\\dfrac{1}{2}$", "rationale": "Inverted the slope ratio." },
+      { "text": "$-\\dfrac{1}{2}$", "rationale": "Both sign and inversion errors." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Slope: $m=\\dfrac{y_2-y_1}{x_2-x_1}=\\dfrac{9-(-3)}{8-2}=\\dfrac{12}{6}=2$."
+    ]
+  },
+  {
+    "id": "COO-LIN-0002",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 2,
+    "stem": "Find the equation of the line through $(4,1)$ that is perpendicular to $y=\\tfrac{1}{2}x+5$.",
+    "choices": [
+      { "text": "$y=-2x+9$", "rationale": "Correct: Perpendicular slope is $-2$; use point-slope through $(4,1)$." },
+      { "text": "$y=2x-7$", "rationale": "Used reciprocal but not the negative reciprocal." },
+      { "text": "$y=-\\tfrac{1}{2}x+3$", "rationale": "Used the original slope, not perpendicular." },
+      { "text": "$y=-2x-7$", "rationale": "Incorrect $b$ after substitution." },
+      { "text": "$y=2x+1$", "rationale": "Parallel, not perpendicular." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Given slope $m_1=\\tfrac{1}{2}$ → perpendicular slope $m=-2$.",
+      "Point-slope: $y-1=-2(x-4)\\Rightarrow y=-2x+9$."
+    ]
+  },
+  {
+    "id": "COO-LIN-0003",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 1,
+    "stem": "Find the midpoint of the segment with endpoints $(-6,4)$ and $(2,-8)$.",
+    "choices": [
+      { "text": "$(-2,-2)$", "rationale": "Correct: $\\left(\\tfrac{-6+2}{2},\\tfrac{4+(-8)}{2}\\right)=(-2,-2)$." },
+      { "text": "$(-4,-4)$", "rationale": "Averaged each coordinate incorrectly." },
+      { "text": "$(4,12)$", "rationale": "Added coordinates instead of averaging." },
+      { "text": "$(-2,-6)$", "rationale": "Averaged $y$ incorrectly." },
+      { "text": "$(2,-2)$", "rationale": "Averaged $x$ incorrectly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Midpoint formula: $\\left(\\tfrac{x_1+x_2}{2},\\tfrac{y_1+y_2}{2}\\right)=\\left(\\tfrac{-6+2}{2},\\tfrac{4-8}{2}\\right)=(-2,-2)$."
+    ]
+  },
+  {
+    "id": "COO-PAR-0004",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 3,
+    "stem": "Rewrite $$y=x^2-4x+1$$ in vertex form and state the vertex.",
+    "choices": [
+      { "text": "$y=(x-2)^2-3;\\ \\text{vertex }(2,-3)$", "rationale": "Correct: Complete the square: $x^2-4x=(x-2)^2-4$." },
+      { "text": "$y=(x+2)^2-3;\\ \\text{vertex }(-2,-3)$", "rationale": "Sign error inside the square." },
+      { "text": "$y=(x-2)^2+3;\\ \\text{vertex }(2,3)$", "rationale": "Missed subtracting the completed-square constant." },
+      { "text": "$y=(x-4)^2-15;\\ \\text{vertex }(4,-15)$", "rationale": "Completed square with wrong $b$." },
+      { "text": "$y=(x+4)^2+1;\\ \\text{vertex }(4,1)$", "rationale": "Used coefficients as coordinates." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Complete the square: $x^2-4x=(x-2)^2-4$.",
+      "Then $y=(x-2)^2-4+1=(x-2)^2-3$ → vertex $(2,-3)$."
+    ]
+  },
+  {
+    "id": "COO-PAR-0005",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 3,
+    "stem": "The parabola $$y=-(x-1)^2+16$$ intersects the $x$-axis at what points?",
+    "choices": [
+      { "text": "$(1-4,\\ 0)$ and $(1+4,\\ 0)$ i.e. $(-3,0)$ and $(5,0)$", "rationale": "Correct: Solve $0=-(x-1)^2+16\\Rightarrow (x-1)^2=16\\Rightarrow x=1\\pm4$." },
+      { "text": "$(1,16)$ only", "rationale": "That is the vertex, not an $x$-intercept." },
+      { "text": "$(0,\\pm4)$", "rationale": "Solved for $y=\\pm4$, not $y=0$." },
+      { "text": "$(\\pm4,\\ 0)$", "rationale": "Ignored the horizontal shift of $x-1$." },
+      { "text": "$(1,\\pm4)$", "rationale": "These are not intercepts with $y=0$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set $y=0$: $0=-(x-1)^2+16\\Rightarrow (x-1)^2=16$.",
+      "So $x=1\\pm4\\Rightarrow x=-3,5$ → intercepts $(-3,0)$ and $(5,0)$."
+    ]
+  }
+]
