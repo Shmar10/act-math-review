@@ -1,0 +1,100 @@
+[
+  {
+    "id": "FUN-QUAD-0001",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 2,
+    "stem": "Find the vertex of $$y = x^2 - 6x + 5$$.",
+    "choices": [
+      { "text": "$(3,-4)$", "rationale": "Correct: Complete the square or use $x=\\frac{-b}{2a}=3$; $y(3)=-4$." },
+      { "text": "$(3,4)$", "rationale": "Incorrect sign for the vertex’s $y$-coordinate." },
+      { "text": "$(2,-5)$", "rationale": "Used wrong $x$ value when completing the square." },
+      { "text": "$(6,5)$", "rationale": "Confused coefficients with coordinates." },
+      { "text": "$(0,5)$", "rationale": "Used $x=0$ instead of the vertex formula." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use $x=\\frac{-b}{2a}=\\frac{6}{2}=3$.",
+      "Substitute: $y=3^2-6(3)+5=9-18+5=-4$.",
+      "Vertex: $(3,-4)$."
+    ]
+  },
+  {
+    "id": "FUN-QUAD-0002",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 2,
+    "stem": "Find the zeros of $$y = x^2 - 9$$.",
+    "choices": [
+      { "text": "$x=\\pm 3$", "rationale": "Correct: Factor as $(x-3)(x+3)=0$." },
+      { "text": "$x=3$", "rationale": "Only found one zero." },
+      { "text": "$x=9$", "rationale": "Substituted $y=9$ instead of $y=0$." },
+      { "text": "$x=-9$", "rationale": "Sign error when taking square roots." },
+      { "text": "$x=0$", "rationale": "Forgot to set $y=0$ and solve." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set $y=0$: $x^2-9=0$.",
+      "Factor: $(x-3)(x+3)=0$.",
+      "So $x=\\pm 3$."
+    ]
+  },
+  {
+    "id": "FUN-QUAD-0003",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "For $$y = -2(x+1)^2 + 8$$, what is the maximum value of $y$?",
+    "choices": [
+      { "text": "$8$", "rationale": "Correct: Vertex form gives maximum $y=8$ when $a<0$." },
+      { "text": "$-8$", "rationale": "Ignored that $a<0$ flips the parabola but doesn’t affect the vertex’s $y$." },
+      { "text": "$2$", "rationale": "Confused coefficient $a$ with $y$ value." },
+      { "text": "$1$", "rationale": "Evaluated at $x=1$ instead of vertex $x=-1$." },
+      { "text": "$0$", "rationale": "Substituted wrong value for $x$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Equation is in vertex form $y=a(x-h)^2+k$.",
+      "Here, $a=-2$, $h=-1$, $k=8$.",
+      "Maximum $y$-value is $k=8$ since $a<0$."
+    ]
+  },
+  {
+    "id": "FUN-QUAD-0004",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "What is the equation of the axis of symmetry for $$y = 2x^2 + 8x + 7$$?",
+    "choices": [
+      { "text": "$x = -2$", "rationale": "Correct: $x=\\frac{-b}{2a}=\\frac{-8}{4}=-2$." },
+      { "text": "$x = 2$", "rationale": "Forgot the negative sign in $-b/(2a)$." },
+      { "text": "$y = -2$", "rationale": "Used $y$ instead of $x$ for the axis." },
+      { "text": "$x = -4$", "rationale": "Used denominator $2$ instead of $2a$." },
+      { "text": "$x = 4$", "rationale": "Dropped the negative on $b$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula for axis of symmetry: $x = \\frac{-b}{2a}$.",
+      "$x = \\frac{-8}{2(2)} = -2$."
+    ]
+  },
+  {
+    "id": "FUN-QUAD-0005",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 2,
+    "stem": "Rewrite in vertex form: $$y = x^2 + 4x + 1$$",
+    "choices": [
+      { "text": "$y = (x + 2)^2 - 3$", "rationale": "Correct: Complete the square to get $(x+2)^2-3$." },
+      { "text": "$y = (x - 2)^2 + 3$", "rationale": "Incorrect sign when completing the square." },
+      { "text": "$y = (x + 2)^2 + 3$", "rationale": "Added instead of subtracted the constant adjustment." },
+      { "text": "$y = (x + 4)^2 - 15$", "rationale": "Incorrect $b$ coefficient used." },
+      { "text": "$y = (x + 1)^2 - 4$", "rationale": "Stopped halfway through completing the square." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Take half of $4$, square it: $(\\tfrac{4}{2})^2=4$.",
+      "Add and subtract 4: $y=(x^2+4x+4)-3=(x+2)^2-3$."
+    ]
+  }
+]
