@@ -1,1 +1,98 @@
+[
+  {
+    "id": "PRE-LOG-0001",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 2,
+    "stem": "Simplify: $$\\log_2(8)$$",
+    "choices": [
+      { "text": "3", "rationale": "Correct: $2^3=8$, so $\\log_2(8)=3$." },
+      { "text": "4", "rationale": "Used $2^4=16$ instead of 8." },
+      { "text": "2", "rationale": "Used $2^2=4$ instead of 8." },
+      { "text": "$\\tfrac{1}{3}$", "rationale": "Inverted relationship." },
+      { "text": "8", "rationale": "Misinterpreted log as identity." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Definition: $\\log_b(a)=c$ means $b^c=a$.",
+      "Since $2^3=8$, $\\log_2(8)=3$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0002",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 3,
+    "stem": "Evaluate: $$\\log_3\\left(\\dfrac{1}{27}\\right)$$",
+    "choices": [
+      { "text": "-3", "rationale": "Correct: $3^{-3}=\\tfrac{1}{27}$." },
+      { "text": "3", "rationale": "Forgot reciprocal flips sign of exponent." },
+      { "text": "$\\tfrac{1}{3}$", "rationale": "Misused reciprocal rule." },
+      { "text": "9", "rationale": "Used $3^2=9$ mistakenly." },
+      { "text": "-2", "rationale": "Used $3^{-2}=\\tfrac{1}{9}$ not $\\tfrac{1}{27}$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "We need $3^x=\\tfrac{1}{27}$.",
+      "$27=3^3$, so $3^x=3^{-3}$ → $x=-3$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0003",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 3,
+    "stem": "Solve for $x$: $$5^{x+1}=125$$",
+    "choices": [
+      { "text": "2", "rationale": "Correct: $125=5^3$, so $x+1=3\\Rightarrow x=2$." },
+      { "text": "3", "rationale": "Forgot to subtract 1 after matching exponents." },
+      { "text": "4", "rationale": "Used $5^4=625$." },
+      { "text": "1", "rationale": "Subtracted incorrectly." },
+      { "text": "5", "rationale": "Misapplied exponent rule." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Write $125$ as $5^3$.",
+      "$5^{x+1}=5^3 \\Rightarrow x+1=3\\Rightarrow x=2$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0004",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 3,
+    "stem": "Simplify: $$\\log(1000)$$ (base 10 implied).",
+    "choices": [
+      { "text": "3", "rationale": "Correct: $10^3=1000$ → $\\log(1000)=3$." },
+      { "text": "1000", "rationale": "Forgot log represents exponent, not value." },
+      { "text": "30", "rationale": "Multiplied instead of applying exponent rule." },
+      { "text": "0.3", "rationale": "Used wrong base scaling." },
+      { "text": "10", "rationale": "Confused with $\\sqrt{100}$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Base 10 logarithm: $\\log(1000)=x$ means $10^x=1000$.",
+      "Since $10^3=1000$, $x=3$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0005",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 4,
+    "stem": "Solve for $x$: $$e^{2x}=20$$ (Round to 3 decimal places.)",
+    "choices": [
+      { "text": "1.498", "rationale": "Correct: $2x=\\ln20 \\Rightarrow x=\\tfrac{1}{2}\\ln20\\approx1.498$." },
+      { "text": "2.996", "rationale": "Forgot to divide by 2." },
+      { "text": "0.749", "rationale": "Divided $\\ln20$ by 4." },
+      { "text": "2.303", "rationale": "Used $\\ln10$ instead of $\\ln20$." },
+      { "text": "10", "rationale": "Confused with $e^{x}=x$ type." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Take natural log: $2x=\\ln20$.",
+      "$x=\\tfrac{1}{2}\\ln20\\approx1.498$."
+    ]
+  }
+]
 
