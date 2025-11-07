@@ -1,0 +1,97 @@
+[
+  {
+    "id": "PRE-FUN-0001",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 2,
+    "stem": "Given $$f(x)=|x-3|+2,$$ what is the vertex (turning point) of the graph?",
+    "choices": [
+      { "text": "$(3,2)$", "rationale": "Correct: Absolute value vertex occurs where the inside is 0, at $x=3$; then $f(3)=2$." },
+      { "text": "$(0,2)$", "rationale": "Plugged $x=0$ instead of solving $x-3=0$." },
+      { "text": "$(3,0)$", "rationale": "Evaluated $f(3)$ incorrectly." },
+      { "text": "$(2,3)$", "rationale": "Swapped coordinates." },
+      { "text": "$(0,3)$", "rationale": "Intercept guess, not the vertex." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For $f(x)=|x-3|+2$, the vertex is at $x=3$.",
+      "Compute $f(3)=|0|+2=2$ → vertex $(3,2)$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0002",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 3,
+    "stem": "Let $$g(x)=2f(-x+1)-4,$$ where $f$ is a base graph. Which transformation sequence (relative to $f$) is correct?",
+    "choices": [
+      { "text": "Reflect across $y$-axis, shift right 1, vertical stretch by 2, then shift down 4", "rationale": "Correct: Inside $f(-x+1)$ → reflect in $y$-axis ($-x$), then shift right 1; outside: $2\\cdot f(\\cdot)$ stretch by 2, then $-4$ shift down." },
+      { "text": "Shift left 1, reflect across $x$-axis, vertical stretch by 2, shift up 4", "rationale": "Inside sign and order are incorrect; outside $-4$ is down, not up." },
+      { "text": "Shift right 1, reflect across $x$-axis, vertical shrink by $\\tfrac{1}{2}$, shift down 4", "rationale": "No outside negative and factor 2 is a stretch, not shrink." },
+      { "text": "Reflect across $y$-axis, shift left 1, vertical stretch by 2, shift down 4", "rationale": "Inside $-x+1$ means reflect then shift right 1, not left." },
+      { "text": "Shift right 1, vertical stretch by 2, reflect across $y$-axis, shift down 4", "rationale": "Order inside must handle reflection before shift; description is out of order." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inside: $f(-x+1)=f(-(x-1))$ → reflect across $y$-axis, then shift right by 1.",
+      "Outside: multiply by 2 → vertical stretch by 2; then $-4$ → shift down 4."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0003",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 2,
+    "stem": "For the piecewise function $$h(x)=\\begin{cases}x^2-1,& x\\le 2\\\\ 3x-5,& x>2\\end{cases}$$ find $h(2)$ and the right-hand limit $\\displaystyle \\lim_{x\\to 2^+}h(x)$.",
+    "choices": [
+      { "text": "$h(2)=3,$ and $\\lim\\limits_{x\\to 2^+}h(x)=1$", "rationale": "Correct: $h(2)=2^2-1=3$; right-hand uses $3x-5$ at $x=2$: $1$." },
+      { "text": "$h(2)=1,$ and $\\lim\\limits_{x\\to 2^+}h(x)=3$", "rationale": "Swapped left and right evaluations." },
+      { "text": "$h(2)=3,$ and $\\lim\\limits_{x\\to 2^+}h(x)=3$", "rationale": "Used left piece for the right-hand limit." },
+      { "text": "$h(2)=1,$ and $\\lim\\limits_{x\\to 2^+}h(x)=1$", "rationale": "Used right piece for both values." },
+      { "text": "$h(2)$ is undefined; the limit is 1", "rationale": "Value is defined by the $x\\le 2$ rule." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "At $x=2$ (left piece): $h(2)=2^2-1=3$.",
+      "Right-hand limit uses $3x-5$: at $x=2$, $3(2)-5=1$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0004",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 2,
+    "stem": "If $f(x)=\\dfrac{1}{x-2}$, state the domain and vertical asymptote.",
+    "choices": [
+      { "text": "Domain: $x\\ne 2$; Vertical asymptote: $x=2$", "rationale": "Correct: Denominator zero at $x=2$; function undefined and vertical asymptote there." },
+      { "text": "Domain: all real $x$; Vertical asymptote: none", "rationale": "Missed the denominator restriction." },
+      { "text": "Domain: $x\\ne -2$; Vertical asymptote: $x=-2$", "rationale": "Wrong root of the denominator." },
+      { "text": "Domain: $x>2$; Vertical asymptote: $y=2$", "rationale": "Asymptote is a vertical line $x=\\text{constant}$, not $y=2$." },
+      { "text": "Domain: $x\\ne 0$; Vertical asymptote: $x=0$", "rationale": "Confused with $\\tfrac{1}{x}$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Denominator $x-2=0$ at $x=2$ → domain excludes $2$.",
+      "Rational function has vertical asymptote where denominator $=0$ (if not cancelled) → $x=2$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0005",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 3,
+    "stem": "Given $f(x)=2x-1$ and $g(x)=x^2+3$, compute $(f\\circ g)(-2)$.",
+    "choices": [
+      { "text": "$5$", "rationale": "Correct: $g(-2)=4+3=7$; $f(7)=2\\cdot7-1=13$ → wait, re-evaluate; actually $13$, not $5$." },
+      { "text": "$13$", "rationale": "Correct: $g(-2)=7$ and $f(7)=13$." },
+      { "text": "$-5$", "rationale": "Likely computed $f(-2)$ then squared." },
+      { "text": "$-13$", "rationale": "Sign error when evaluating $f(\\cdot)$." },
+      { "text": "$7$", "rationale": "Stopped at $g(-2)$ and did not apply $f$." }
+    ],
+    "answerIndex": 1,
+    "solutionSteps": [
+      "Compute $g(-2)=(-2)^2+3=7$.",
+      "Then $(f\\circ g)(-2)=f(g(-2))=f(7)=2\\cdot7-1=13$."
+    ]
+  }
+]
