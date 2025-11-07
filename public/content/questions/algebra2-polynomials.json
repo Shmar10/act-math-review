@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ALG2-POL-0001",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 2,
+    "stem": "Simplify: $$\\dfrac{x^3-8}{x^2-2x}$$",
+    "choices": [
+      { "text": "$\\dfrac{(x-2)(x^2+2x+4)}{x(x-2)}=\\dfrac{x^2+2x+4}{x}$", "rationale": "Correct: Factor numerator as difference of cubes; cancel $(x-2)$." },
+      { "text": "$\\dfrac{x^3-8}{x^2-2x}=x+4$", "rationale": "Incorrectly canceled non-common factors." },
+      { "text": "$\\dfrac{(x-2)(x^2-2x+4)}{x}$", "rationale": "Used wrong cube formula ($x^3-a^3=(x-a)(x^2-ax+a^2)$ correct, but signs mixed)." },
+      { "text": "$\\dfrac{x^2+4}{x}$", "rationale": "Omitted $2x$ term." },
+      { "text": "$x^2+2x+4$", "rationale": "Forgot denominator term." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor $x^3-8=(x-2)(x^2+2x+4)$.",
+      "Denominator: $x^2-2x=x(x-2)$.",
+      "Cancel $(x-2)$: $\\dfrac{x^2+2x+4}{x}$ (for $x\\ne0,2$)."
+    ]
+  },
+  {
+    "id": "ALG2-POL-0002",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Divide: $$(x^3+2x^2-5x+6)\\div(x+3)$$",
+    "choices": [
+      { "text": "$x^2 - x - 2 + \\dfrac{12}{x+3}$", "rationale": "Correct: Synthetic division gives quotient $x^2 - x - 2$ remainder 12." },
+      { "text": "$x^2 + x - 2$", "rationale": "Sign error in middle term." },
+      { "text": "$x^2 - x + 2$", "rationale": "Added instead of subtracted remainder." },
+      { "text": "$x^2 - x - 3$", "rationale": "Arithmetic error on last coefficient." },
+      { "text": "$x^2 + 3x - 2$", "rationale": "Incorrect use of divisor’s root." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Synthetic division using root $-3$.",
+      "Bring down 1; multiply by -3 → -3; add → -1; multiply by -3 → 3; add → -2; multiply by -3 → 6; add → 12.",
+      "Result: quotient $x^2 - x - 2$, remainder $12$ → $x^2 - x - 2 + \\tfrac{12}{x+3}$."
+    ]
+  },
+  {
+    "id": "ALG2-POL-0003",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 2,
+    "stem": "Find all zeros of $$x^2 - 9x + 20=0.$$",
+    "choices": [
+      { "text": "$4,5$", "rationale": "Correct: $(x-4)(x-5)=0$ → roots 4 and 5." },
+      { "text": "$-4,-5$", "rationale": "Switched signs." },
+      { "text": "$9,20$", "rationale": "Misread coefficients as roots." },
+      { "text": "$2,10$", "rationale": "Product not 20." },
+      { "text": "$3,6$", "rationale": "Sum 9 but product 18, not 20." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor: $x^2-9x+20=(x-4)(x-5)$.",
+      "Set factors = 0 → $x=4,5$."
+    ]
+  },
+  {
+    "id": "ALG2-POL-0004",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Simplify: $$\\dfrac{x^2-16}{x^2-4x+4}$$",
+    "choices": [
+      { "text": "$\\dfrac{(x-4)(x+4)}{(x-2)^2}$", "rationale": "Correct: Factor numerator as difference of squares, denominator as perfect square." },
+      { "text": "$\\dfrac{(x-2)(x+2)}{(x-4)^2}$", "rationale": "Swapped factors incorrectly." },
+      { "text": "$\\dfrac{x-4}{x-2}$", "rationale": "Canceled non-common terms incorrectly." },
+      { "text": "$\\dfrac{(x+4)^2}{(x-2)^2}$", "rationale": "Squared numerator incorrectly." },
+      { "text": "$x^2-4$", "rationale": "Ignored denominator." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Numerator: $x^2-16=(x-4)(x+4)$.",
+      "Denominator: $x^2-4x+4=(x-2)^2$.",
+      "Simplify as $\\dfrac{(x-4)(x+4)}{(x-2)^2}$."
+    ]
+  },
+  {
+    "id": "ALG2-POL-0005",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 4,
+    "stem": "Simplify the complex fraction: $$\\dfrac{\\frac{3}{x}-\\frac{2}{y}}{\\frac{1}{x}-\\frac{1}{y}}$$",
+    "choices": [
+      { "text": "$3x - 2y$", "rationale": "Correct: Multiply top and bottom by $xy$ → numerator $3y-2x$, denominator $y-x$, giving $\\tfrac{3y-2x}{y-x}=3x-2y$ after factoring $-1$." },
+      { "text": "$\\dfrac{3y-2x}{y-x}$", "rationale": "Equivalent unsimplified form; correct algebraically but not simplified sign convention." },
+      { "text": "$\\dfrac{3x-2y}{x-y}$", "rationale": "Correct equivalent expression with reversed sign convention." },
+      { "text": "$3y-2x$", "rationale": "Forgot to divide by denominator." },
+      { "text": "$\\dfrac{3x-2y}{xy}$", "rationale": "Forgot to clear denominators correctly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply top and bottom by $xy$ to clear denominators.",
+      "Numerator: $3y-2x$, Denominator: $y-x$.",
+      "Simplify: $\\tfrac{3y-2x}{y-x} = 3x - 2y$ (after factoring $-1$ from top and bottom)."
+    ]
+  }
+]
