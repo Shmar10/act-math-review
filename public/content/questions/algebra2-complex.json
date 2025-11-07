@@ -1,0 +1,96 @@
+[
+  {
+    "id": "ALG2-COM-0001",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 2,
+    "stem": "Simplify: $$(3 + 2i) + (4 - 5i)$$",
+    "choices": [
+      { "text": "$7 - 3i$", "rationale": "Correct: Combine real and imaginary parts separately." },
+      { "text": "$7 + 7i$", "rationale": "Added both imaginary parts instead of subtracting $5i$." },
+      { "text": "$1 - 7i$", "rationale": "Subtracted real parts incorrectly." },
+      { "text": "$7i - 3$", "rationale": "Reversed order of real and imaginary parts." },
+      { "text": "$-1 + 3i$", "rationale": "Switched signs for both components." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add real parts: $3 + 4 = 7$.",
+      "Add imaginary parts: $2i - 5i = -3i$.",
+      "Result: $7 - 3i$."
+    ]
+  },
+  {
+    "id": "ALG2-COM-0002",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 2,
+    "stem": "Simplify: $$(2 - 3i)(4 + i)$$",
+    "choices": [
+      { "text": "$11 - 10i$", "rationale": "Correct: Multiply and simplify using $i^2=-1$." },
+      { "text": "$10 - 11i$", "rationale": "Switched coefficients after distribution." },
+      { "text": "$8 - 3i$", "rationale": "Forgot to multiply cross terms." },
+      { "text": "$2 - 12i$", "rationale": "Omitted real combination from $i^2$ term." },
+      { "text": "$11 + 10i$", "rationale": "Sign error on the imaginary term." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$(2 - 3i)(4 + i)=8 + 2i - 12i - 3i^2=8 - 10i + 3=11 - 10i$."
+    ]
+  },
+  {
+    "id": "ALG2-COM-0003",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "Simplify: $$\\dfrac{4}{2 - i}$$ (write in $a + bi$ form).",
+    "choices": [
+      { "text": "$\\dfrac{8}{5} + \\dfrac{4}{5}i$", "rationale": "Correct: Multiply top and bottom by $2 + i$." },
+      { "text": "$2 - i$", "rationale": "Failed to rationalize the denominator." },
+      { "text": "$\\dfrac{4}{2 + i}$", "rationale": "Did not complete conjugate multiplication." },
+      { "text": "$\\dfrac{8}{5} - \\dfrac{4}{5}i$", "rationale": "Sign error on the imaginary term." },
+      { "text": "$\\dfrac{2}{5} + \\dfrac{1}{5}i$", "rationale": "Arithmetic error dividing by 5 incorrectly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by conjugate: $\\dfrac{4}{2 - i}\\cdot\\dfrac{2 + i}{2 + i}=\\dfrac{4(2 + i)}{(2)^2 - i^2}=\\dfrac{8 + 4i}{5}=\\dfrac{8}{5}+\\dfrac{4}{5}i$."
+    ]
+  },
+  {
+    "id": "ALG2-COM-0004",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "Solve: $$x^2 + 4x + 8 = 0$$",
+    "choices": [
+      { "text": "$x = -2 \\pm 2i$", "rationale": "Correct: Discriminant $16 - 32 = -16$ → imaginary roots." },
+      { "text": "$x = -2 \\pm 4i$", "rationale": "Used $\\sqrt{-16}=4i$ but forgot to divide by 2a." },
+      { "text": "$x = -4 \\pm 2i$", "rationale": "Mixed up $a$ and $b$ coefficients." },
+      { "text": "$x = 2 \\pm 2i$", "rationale": "Sign error on $b$." },
+      { "text": "$x = -4 \\pm 4i$", "rationale": "Miscalculated discriminant." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use quadratic formula: $x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$.",
+      "$b^2-4ac=16-32=-16\\Rightarrow\\sqrt{-16}=4i$.",
+      "$x=\\dfrac{-4\\pm4i}{2}=-2\\pm2i$."
+    ]
+  },
+  {
+    "id": "ALG2-COM-0005",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 4,
+    "stem": "Solve: $$x^2 = -9$$",
+    "choices": [
+      { "text": "$x = \\pm 3i$", "rationale": "Correct: $x^2=-9 \\Rightarrow x=\\pm\\sqrt{-9}=\\pm3i$." },
+      { "text": "$x = 3$", "rationale": "Ignored the negative under the square root." },
+      { "text": "$x = \\pm 9i$", "rationale": "Did not take the square root of 9 correctly." },
+      { "text": "$x = \\pm i$", "rationale": "Forgot the 3 factor." },
+      { "text": "$x = -3$", "rationale": "Missed the $\\pm$ and imaginary unit." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Take square root: $x=\\pm\\sqrt{-9}=\\pm3i$."
+    ]
+  }
+]
