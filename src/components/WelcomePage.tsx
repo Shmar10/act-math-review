@@ -23,9 +23,9 @@ const PRACTICE_MODES = {
     description: "Best for simulating the real ACT Math section and tracking score progress."
   },
   study: { 
-    questions: 10, 
+    questions: null, // Unlimited
     timeMinutes: null, 
-    displayName: "Guided Learning Mode",
+    displayName: "Untimed Practice",
     description: "Best for slowing down, seeing step‑by‑step solutions, and filling in skill gaps."
   },
 } as const;
@@ -183,7 +183,7 @@ export default function WelcomePage({
                 <div>
                   <div className="font-semibold">{selectedMode.displayName}</div>
                   <div className="text-xs text-slate-400">
-                    {selectedMode.questions} questions
+                    {selectedMode.questions ? `${selectedMode.questions} questions` : 'Unlimited questions'}
                     {selectedMode.timeMinutes ? `, ${selectedMode.timeMinutes} min` : ', untimed'}
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function WelcomePage({
                           {modeConfig.displayName}
                         </div>
                         <div className="text-xs text-slate-400 mb-1">
-                          {modeConfig.questions} questions
+                          {modeConfig.questions ? `${modeConfig.questions} questions` : 'Unlimited questions'}
                           {modeConfig.timeMinutes ? `, ${modeConfig.timeMinutes} min` : ', untimed'}
                         </div>
                         <div className="text-xs text-slate-500 italic">

@@ -21,7 +21,7 @@ const PRACTICE_MODES = {
   quick: { questions: 5, timeMinutes: 6 },
   standard: { questions: 10, timeMinutes: 12 },
   full: { questions: 60, timeMinutes: 60 },
-  study: { questions: 10, timeMinutes: null }, // untimed
+  study: { questions: null, timeMinutes: null }, // untimed, unlimited questions
 } as const;
 
 export default function App() {
@@ -134,7 +134,7 @@ export default function App() {
 
   function startPractice() {
     const config = PRACTICE_MODES[practiceMode];
-    setSessionLen(config.questions);
+    setSessionLen(config.questions || Infinity); // Infinity for unlimited (study mode)
     setTimeLeft(config.timeMinutes ? config.timeMinutes * 60 : Infinity);
     setSessionIdx(0);
     setSessionResults({});
@@ -150,7 +150,10 @@ export default function App() {
     setInPractice(true);
   }
 
-  const done = inPractice && (sessionIdx >= sessionLen || (practiceMode !== 'study' && timeLeft <= 0));
+  const done = inPractice && (
+    (practiceMode === 'study' ? false : sessionIdx >= sessionLen) || 
+    (practiceMode !== 'study' && timeLeft <= 0)
+  );
 
   // Track practice completion
   useEffect(() => {
@@ -274,12 +277,13 @@ function PracticeNavBar({
   onExit,
 }: {
   sessionIdx: number;
-  sessionLen: number;
+  sessionLen: number | typeof Infinity;
   practiceMode: PracticeMode;
   timeLeft: number;
   onExit: () => void;
 }) {
-  const progressPercent = (sessionIdx / sessionLen) * 100;
+  const isUnlimited = sessionLen === Infinity;
+  const progressPercent = isUnlimited ? 0 : (sessionIdx / sessionLen) * 100;
 
   return (
     <div className="mb-6 bg-slate-800/70 rounded-xl p-4 border border-slate-700">
@@ -288,16 +292,23 @@ function PracticeNavBar({
         <div className="flex-1 min-w-[200px]">
           <div className="flex items-center justify-between mb-1">
             <span className="text-sm text-slate-300 font-semibold">
-              Question {sessionIdx + 1} of {sessionLen}
+              {isUnlimited 
+                ? `Question ${sessionIdx + 1}`
+                : `Question ${sessionIdx + 1} of ${sessionLen}`
+              }
             </span>
-            <span className="text-xs text-slate-400">{Math.round(progressPercent)}%</span>
+            {!isUnlimited && (
+              <span className="text-xs text-slate-400">{Math.round(progressPercent)}%</span>
+            )}
           </div>
-          <div className="w-full bg-slate-700 rounded-full h-2">
-            <div
-              className="bg-gradient-to-r from-sky-500 to-emerald-500 h-2 rounded-full transition-all duration-300"
-              style={{ width: `${progressPercent}%` }}
-            />
-          </div>
+          {!isUnlimited && (
+            <div className="w-full bg-slate-700 rounded-full h-2">
+              <div
+                className="bg-gradient-to-r from-sky-500 to-emerald-500 h-2 rounded-full transition-all duration-300"
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
+          )}
         </div>
 
         {/* Timer / Mode Badge */}
@@ -306,7 +317,7 @@ function PracticeNavBar({
             <TimerBadge seconds={timeLeft} />
           ) : (
             <span className="px-3 py-1 rounded-xl border bg-slate-700 border-slate-600 text-xs text-slate-300">
-              📖 Guided Learning Mode
+              📖 Untimed Practice
             </span>
           )}
         </div>
