@@ -3,6 +3,8 @@ import QuestionCard from "./components/QuestionCard";
 import WelcomePage from "./components/WelcomePage";
 import AdminReview from "./components/AdminReview";
 import AdminPasswordPrompt from "./components/AdminPasswordPrompt";
+import TeacherPrintPage from "./components/TeacherPrintPage";
+import TeacherPasswordPrompt from "./components/TeacherPasswordPrompt";
 import type { ActQuestion } from "./types";
 import type { ProgressMap } from "./types.progress";
 import useLocalStorage from "./hooks/useLocalStorage";
@@ -25,13 +27,17 @@ const PRACTICE_MODES = {
 } as const;
 
 export default function App() {
-  // Check for admin mode via URL parameter
+  // Check for admin/teacher mode via URL parameter
   const urlParams = new URLSearchParams(window.location.search);
   const isAdminMode = urlParams.get('admin') === 'true';
+  const isTeacherMode = urlParams.get('teacher') === 'true';
   
   // Check if user is authenticated (stored in localStorage)
-  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {
     return localStorage.getItem("amr.admin.auth") === "true";
+  });
+  const [isTeacherAuthenticated, setIsTeacherAuthenticated] = useState(() => {
+    return localStorage.getItem("amr.teacher.auth") === "true";
   });
 
   const [all, setAll] = useState<ActQuestion[]>([]);
@@ -166,24 +172,43 @@ export default function App() {
 
   // Track admin access
   useEffect(() => {
-    if (isAdminMode && isAuthenticated) {
+    if (isAdminMode && isAdminAuthenticated) {
       trackAdminAccess();
     }
-  }, [isAdminMode, isAuthenticated]);
+  }, [isAdminMode, isAdminAuthenticated]);
+
+  // Show teacher print page if teacher mode is enabled and authenticated
+  if (isTeacherMode) {
+    if (!isTeacherAuthenticated) {
+      return (
+        <TeacherPasswordPrompt
+          onSuccess={() => {
+            setIsTeacherAuthenticated(true);
+          }}
+          onCancel={() => {
+            // Remove teacher parameter and go back to main page
+            window.history.replaceState({}, "", window.location.pathname);
+            setIsTeacherAuthenticated(false);
+          }}
+        />
+      );
+    }
+    return <TeacherPrintPage />;
+  }
 
   // Show admin review if admin mode is enabled and authenticated
   if (isAdminMode) {
-    if (!isAuthenticated) {
+    if (!isAdminAuthenticated) {
       return (
         <AdminPasswordPrompt
           onSuccess={() => {
-            setIsAuthenticated(true);
+            setIsAdminAuthenticated(true);
             trackAdminAccess();
           }}
           onCancel={() => {
             // Remove admin parameter and go back to main page
             window.history.replaceState({}, "", window.location.pathname);
-            setIsAuthenticated(false);
+            setIsAdminAuthenticated(false);
           }}
         />
       );
@@ -199,8 +224,15 @@ export default function App() {
     return (
       <div className="min-h-screen px-6 py-8">
         <div className="mx-auto max-w-4xl">
-          {/* Admin link in header */}
-          <div className="flex justify-end mb-4">
+          {/* Admin and Teacher links in header */}
+          <div className="flex justify-end gap-2 mb-4">
+            <a
+              href="?teacher=true"
+              className="text-sm px-3 py-1 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white"
+              title="Teacher: Generate printable worksheets"
+            >
+              📄 Teacher Print
+            </a>
             <a
               href="?admin=true"
               className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"

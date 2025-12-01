@@ -82,12 +82,14 @@ export default function AdminReview() {
             >
               🔒 Logout
             </button>
-            <a
-              href="/"
+            <button
+              onClick={() => {
+                window.location.href = window.location.pathname;
+              }}
               className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600"
             >
               ← Back to App
-            </a>
+            </button>
           </div>
         </div>
 
