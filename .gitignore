@@ -9,6 +9,10 @@ Thumbs.db
 # Builds
 dist/
 *.log
+*.tsbuildinfo
+
+# Reports (generated files)
+formatting-issues-report.json
 
 # Node (if you add tooling later)
 node_modules/

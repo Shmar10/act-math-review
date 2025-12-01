@@ -14,19 +14,28 @@ Designed to be hosted on **GitHub Pages**.
 
 ```
 .
-├── index.html
-├── style.css
-├── script.js
-├── data/
-│   └── problems.json
-└── assets/
-    ├── images/
-    └── icons/
+├── public/content/questions/   # Question JSON files
+├── src/                        # React app source
+├── scripts/                    # Utility scripts
+│   ├── question-template.json  # Template for new questions
+│   └── validate-question.js   # Validation script
+└── docs/                       # Documentation
+    ├── QUESTION_CREATION_GUIDE.md
+    └── VALIDATION_SCRIPT.md
 ```
 
-- Add/modify problems in `data/problems.json`.
-- Extend UI and logic in `script.js`.
-- Customize styling in `style.css`.
+## Adding Questions
+
+**Before creating new questions, see the guides:**
+- 📖 **Quick Reference**: `README_QUESTION_CREATION.md`
+- 📚 **Full Guide**: `docs/QUESTION_CREATION_GUIDE.md`
+- ✅ **Validation**: `docs/VALIDATION_SCRIPT.md`
+
+Quick checklist:
+1. Use `scripts/question-template.json` as a starting point
+2. Validate with `npm run validate-question` (optional)
+3. Test in Admin Review page (`?admin=true`)
+4. Add to appropriate JSON file in `public/content/questions/`
 
 ## Notes
 

@@ -1,0 +1,400 @@
+[
+  {
+    "id": "GEO-3D-0001",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 1,
+    "stem": "A rectangular prism has dimensions 4 cm × 5 cm × 6 cm. What is its volume?",
+    "choices": [
+      { "text": "$120\\text{ cm}^3$", "rationale": "Correct: Volume $= l \\times w \\times h = 4 \\times 5 \\times 6 = 120$ cm³." },
+      { "text": "$60\\text{ cm}^3$", "rationale": "Only multiplied two dimensions." },
+      { "text": "$15\\text{ cm}^3$", "rationale": "Added dimensions instead of multiplying." },
+      { "text": "$148\\text{ cm}^3$", "rationale": "Calculated surface area incorrectly." },
+      { "text": "$240\\text{ cm}^3$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of rectangular prism: $V = l \\times w \\times h$.",
+      "Substitute: $V = 4 \\times 5 \\times 6 = 120$ cm³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0002",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 2,
+    "stem": "A cube has a side length of 5 inches. What is its volume?",
+    "choices": [
+      { "text": "$125\\text{ in}^3$", "rationale": "Correct: Volume $= s^3 = 5^3 = 125$ in³." },
+      { "text": "$25\\text{ in}^3$", "rationale": "Squared instead of cubed." },
+      { "text": "$15\\text{ in}^3$", "rationale": "Multiplied by 3 instead of cubing." },
+      { "text": "$75\\text{ in}^3$", "rationale": "Multiplied side by face area incorrectly." },
+      { "text": "$150\\text{ in}^3$", "rationale": "Calculated surface area divided by 2." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of cube: $V = s^3$ where $s$ is side length.",
+      "Calculate: $V = 5^3 = 5 \\times 5 \\times 5 = 125$ in³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0003",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 2,
+    "stem": "A cylinder has a radius of 3 cm and a height of 10 cm. What is its volume? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$282.6\\text{ cm}^3$", "rationale": "Correct: $V = \\pi r^2 h = (3.14)(3^2)(10) = (3.14)(9)(10) = 282.6$ cm³." },
+      { "text": "$94.2\\text{ cm}^3$", "rationale": "Forgot to square the radius." },
+      { "text": "$188.4\\text{ cm}^3$", "rationale": "Used diameter instead of radius." },
+      { "text": "$565.2\\text{ cm}^3$", "rationale": "Doubled the correct answer." },
+      { "text": "$141.3\\text{ cm}^3$", "rationale": "Divided the correct answer by 2." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of cylinder: $V = \\pi r^2 h$.",
+      "Substitute: $V = (3.14)(3)^2(10) = (3.14)(9)(10)$.",
+      "Calculate: $V = 282.6$ cm³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0004",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A sphere has a radius of 6 inches. What is its volume? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$904.32\\text{ in}^3$", "rationale": "Correct: $V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}(3.14)(6^3) = \\frac{4}{3}(3.14)(216) \\approx 904.32$ in³." },
+      { "text": "$452.16\\text{ in}^3$", "rationale": "Forgot to multiply by $\\frac{4}{3}$, used hemisphere formula." },
+      { "text": "$678.24\\text{ in}^3$", "rationale": "Used $\\pi r^3$ instead of $\\frac{4}{3}\\pi r^3$." },
+      { "text": "$113.04\\text{ in}^3$", "rationale": "Used radius squared instead of cubed." },
+      { "text": "$1808.64\\text{ in}^3$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of sphere: $V = \\frac{4}{3}\\pi r^3$.",
+      "Calculate $r^3$: $6^3 = 216$.",
+      "Substitute: $V = \\frac{4}{3}(3.14)(216) = \\frac{4 \\times 678.24}{3} \\approx 904.32$ in³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0005",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A cone has a radius of 4 m and a height of 9 m. What is its volume? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$150.72\\text{ m}^3$", "rationale": "Correct: $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}(3.14)(4^2)(9) = \\frac{1}{3}(3.14)(16)(9) = 150.72$ m³." },
+      { "text": "$452.16\\text{ m}^3$", "rationale": "Forgot to multiply by $\\frac{1}{3}$, used cylinder formula." },
+      { "text": "$113.04\\text{ m}^3$", "rationale": "Used incorrect radius or height." },
+      { "text": "$75.36\\text{ m}^3$", "rationale": "Divided by 6 instead of 3." },
+      { "text": "$301.44\\text{ m}^3$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of cone: $V = \\frac{1}{3}\\pi r^2 h$.",
+      "Substitute: $V = \\frac{1}{3}(3.14)(4)^2(9) = \\frac{1}{3}(3.14)(16)(9)$.",
+      "Calculate: $V = \\frac{452.16}{3} = 150.72$ m³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0006",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 2,
+    "stem": "The surface area of a cube is 150 square feet. What is the length of one edge?",
+    "choices": [
+      { "text": "$5\\text{ ft}$", "rationale": "Correct: Surface area $= 6s^2 = 150$, so $s^2 = 25$, thus $s = 5$ ft." },
+      { "text": "$25\\text{ ft}$", "rationale": "Found $s^2$ but forgot to take square root." },
+      { "text": "$6\\text{ ft}$", "rationale": "Divided by number of faces without considering area formula." },
+      { "text": "$12.5\\text{ ft}$", "rationale": "Divided surface area by 12 instead of solving correctly." },
+      { "text": "$7.5\\text{ ft}$", "rationale": "Arithmetic error in square root." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Surface area of cube: $SA = 6s^2$ where $s$ is edge length.",
+      "Set up equation: $6s^2 = 150$.",
+      "Solve: $s^2 = 25$, so $s = 5$ ft."
+    ]
+  },
+  {
+    "id": "GEO-3D-0007",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A rectangular swimming pool is 25 feet long, 10 feet wide, and 6 feet deep. How many cubic feet of water does it hold when full?",
+    "choices": [
+      { "text": "$1500\\text{ ft}^3$", "rationale": "Correct: Volume $= 25 \\times 10 \\times 6 = 1500$ ft³." },
+      { "text": "$250\\text{ ft}^3$", "rationale": "Only multiplied length and width." },
+      { "text": "$41\\text{ ft}^3$", "rationale": "Added dimensions instead of multiplying." },
+      { "text": "$750\\text{ ft}^3$", "rationale": "Divided the correct answer by 2." },
+      { "text": "$3000\\text{ ft}^3$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The pool is a rectangular prism.",
+      "Volume $= \\text{length} \\times \\text{width} \\times \\text{depth}$.",
+      "Calculate: $V = 25 \\times 10 \\times 6 = 1500$ ft³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0008",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 4,
+    "stem": "A cylinder and a cone have the same radius (5 cm) and height (12 cm). What is the ratio of the volume of the cylinder to the volume of the cone?",
+    "choices": [
+      { "text": "$3:1$", "rationale": "Correct: $V_{cylinder} = \\pi r^2 h$ and $V_{cone} = \\frac{1}{3}\\pi r^2 h$, so the ratio is $3:1$." },
+      { "text": "$1:3$", "rationale": "Inverted the ratio." },
+      { "text": "$2:1$", "rationale": "Incorrect understanding of cone volume formula." },
+      { "text": "$1:1$", "rationale": "Assumed volumes are equal." },
+      { "text": "$4:1$", "rationale": "Used incorrect formula comparison." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Cylinder volume: $V_c = \\pi r^2 h$.",
+      "Cone volume: $V_{cone} = \\frac{1}{3}\\pi r^2 h$.",
+      "Ratio: $\\frac{V_c}{V_{cone}} = \\frac{\\pi r^2 h}{\\frac{1}{3}\\pi r^2 h} = 3:1$."
+    ]
+  },
+  {
+    "id": "GEO-3D-0009",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 4,
+    "stem": "A rectangular box has a volume of 360 cubic inches, a length of 10 inches, and a width of 6 inches. What is the surface area of the box?",
+    "choices": [
+      { "text": "$312\\text{ in}^2$", "rationale": "Correct: Height $= 360/(10 \\times 6) = 6$ in. $SA = 2(lw + lh + wh) = 2(60 + 60 + 36) = 312$ in²." },
+      { "text": "$360\\text{ in}^2$", "rationale": "Used volume value as surface area." },
+      { "text": "$156\\text{ in}^2$", "rationale": "Only calculated three faces, forgot to double." },
+      { "text": "$192\\text{ in}^2$", "rationale": "Made error in calculating face areas." },
+      { "text": "$624\\text{ in}^2$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find height: $h = \\frac{V}{l \\times w} = \\frac{360}{10 \\times 6} = 6$ in.",
+      "Surface area: $SA = 2(lw + lh + wh)$.",
+      "Calculate: $SA = 2(10 \\cdot 6 + 10 \\cdot 6 + 6 \\cdot 6) = 2(60 + 60 + 36) = 2(156) = 312$ in²."
+    ]
+  },
+  {
+    "id": "GEO-3D-0010",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 4,
+    "stem": "A cylindrical water tank has a diameter of 8 feet and a height of 15 feet. If water fills the tank to 75% capacity, how many cubic feet of water are in the tank? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$565.2\\text{ ft}^3$", "rationale": "Correct: Radius $= 4$ ft. Full volume $= \\pi(4^2)(15) = 753.6$ ft³. At 75%: $753.6 \\times 0.75 = 565.2$ ft³." },
+      { "text": "$753.6\\text{ ft}^3$", "rationale": "Calculated full volume, forgot to take 75%." },
+      { "text": "$188.4\\text{ ft}^3$", "rationale": "Used diameter as radius." },
+      { "text": "$282.6\\text{ ft}^3$", "rationale": "Made error in calculating 75% of volume." },
+      { "text": "$1130.4\\text{ ft}^3$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Radius: $r = \\frac{d}{2} = \\frac{8}{2} = 4$ ft.",
+      "Full volume: $V = \\pi r^2 h = (3.14)(4)^2(15) = (3.14)(16)(15) = 753.6$ ft³.",
+      "Water at 75%: $753.6 \\times 0.75 = 565.2$ ft³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0011",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 2,
+    "stem": "A cube has a volume of 64 cubic inches. What is the length of one edge?",
+    "choices": [
+      { "text": "$4\\text{ in}$", "rationale": "Correct: If $s^3 = 64$, then $s = \\sqrt[3]{64} = 4$ inches." },
+      { "text": "$8\\text{ in}$", "rationale": "Took square root instead of cube root." },
+      { "text": "$16\\text{ in}$", "rationale": "Divided volume by 4 instead of taking cube root." },
+      { "text": "$21.3\\text{ in}$", "rationale": "Divided 64 by 3." },
+      { "text": "$6\\text{ in}$", "rationale": "Calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of cube: $V = s^3 = 64$.",
+      "Take cube root: $s = \\sqrt[3]{64} = 4$ inches."
+    ]
+  },
+  {
+    "id": "GEO-3D-0012",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A pyramid has a square base with side 6 meters and height 8 meters. What is its volume?",
+    "choices": [
+      { "text": "$96\\text{ m}^3$", "rationale": "Correct: $V = \\frac{1}{3}Bh = \\frac{1}{3}(6^2)(8) = \\frac{1}{3}(36)(8) = 96$ m³." },
+      { "text": "$288\\text{ m}^3$", "rationale": "Forgot to multiply by $\\frac{1}{3}$." },
+      { "text": "$48\\text{ m}^3$", "rationale": "Used wrong formula or divided incorrectly." },
+      { "text": "$192\\text{ m}^3$", "rationale": "Doubled the correct answer." },
+      { "text": "$144\\text{ m}^3$", "rationale": "Calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Base area: $B = 6^2 = 36$ m².",
+      "Volume of pyramid: $V = \\frac{1}{3}Bh = \\frac{1}{3}(36)(8)$.",
+      "Calculate: $V = 96$ m³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0013",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A hemisphere has a radius of 9 cm. What is its volume? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$1526.04\\text{ cm}^3$", "rationale": "Correct: Hemisphere is half a sphere: $V = \\frac{1}{2} \\cdot \\frac{4}{3}\\pi r^3 = \\frac{2}{3}(3.14)(9^3) \\approx 1526.04$ cm³." },
+      { "text": "$3052.08\\text{ cm}^3$", "rationale": "Calculated full sphere volume." },
+      { "text": "$763.02\\text{ cm}^3$", "rationale": "Divided by 4 instead of 2." },
+      { "text": "$254.34\\text{ cm}^3$", "rationale": "Used radius squared instead of cubed." },
+      { "text": "$1017.36\\text{ cm}^3$", "rationale": "Calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Volume of sphere: $V = \\frac{4}{3}\\pi r^3$.",
+      "Hemisphere is half: $V_h = \\frac{1}{2} \\cdot \\frac{4}{3}\\pi r^3 = \\frac{2}{3}\\pi r^3$.",
+      "Calculate: $V = \\frac{2}{3}(3.14)(729) \\approx 1526.04$ cm³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0014",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 4,
+    "stem": "A rectangular prism has dimensions 5 × 8 × 10 cm. What is its surface area?",
+    "choices": [
+      { "text": "$340\\text{ cm}^2$", "rationale": "Correct: $SA = 2(lw + lh + wh) = 2(40 + 50 + 80) = 2(170) = 340$ cm²." },
+      { "text": "$170\\text{ cm}^2$", "rationale": "Forgot to double the sum." },
+      { "text": "$400\\text{ cm}^2$", "rationale": "Calculated volume instead." },
+      { "text": "$680\\text{ cm}^2$", "rationale": "Doubled the answer twice." },
+      { "text": "$230\\text{ cm}^2$", "rationale": "Only calculated three faces." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Surface area formula: $SA = 2(lw + lh + wh)$.",
+      "Calculate each area: $5(8)=40$, $5(10)=50$, $8(10)=80$.",
+      "Sum and double: $SA = 2(40+50+80) = 2(170) = 340$ cm²."
+    ]
+  },
+  {
+    "id": "GEO-3D-0015",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 4,
+    "stem": "A cylindrical can has the same height as its diameter. If the radius is 3 inches, what is the volume? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$169.56\\text{ in}^3$", "rationale": "Correct: Height $= 2r = 6$ in. $V = \\pi r^2 h = (3.14)(9)(6) = 169.56$ in³." },
+      { "text": "$84.78\\text{ in}^3$", "rationale": "Used radius as height." },
+      { "text": "$56.52\\text{ in}^3$", "rationale": "Calculation error." },
+      { "text": "$339.12\\text{ in}^3$", "rationale": "Doubled the correct answer." },
+      { "text": "$113.04\\text{ in}^3$", "rationale": "Used height of 4 instead of 6." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Diameter $= 2r = 6$ inches, so height $= 6$ inches.",
+      "Volume: $V = \\pi r^2 h = (3.14)(3^2)(6)$.",
+      "Calculate: $V = (3.14)(9)(6) = 169.56$ in³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0016",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A cone and a cylinder have the same radius and height. If the cylinder's volume is 300 cubic cm, what is the cone's volume?",
+    "choices": [
+      { "text": "$100\\text{ cm}^3$", "rationale": "Correct: Cone volume is $\\frac{1}{3}$ of cylinder: $300 \\div 3 = 100$ cm³." },
+      { "text": "$900\\text{ cm}^3$", "rationale": "Multiplied by 3 instead of dividing." },
+      { "text": "$150\\text{ cm}^3$", "rationale": "Divided by 2 instead of 3." },
+      { "text": "$300\\text{ cm}^3$", "rationale": "Assumed volumes are equal." },
+      { "text": "$75\\text{ cm}^3$", "rationale": "Divided by 4 instead of 3." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Cone volume formula: $V_c = \\frac{1}{3}\\pi r^2 h$.",
+      "Cylinder volume: $V_{cyl} = \\pi r^2 h$.",
+      "Therefore: $V_c = \\frac{1}{3}V_{cyl} = \\frac{300}{3} = 100$ cm³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0017",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 4,
+    "stem": "A sphere is inscribed in a cube with edge length 12 cm. What is the volume of the sphere? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$904.32\\text{ cm}^3$", "rationale": "Correct: Sphere diameter $= 12$ cm, so radius $= 6$ cm. $V = \\frac{4}{3}\\pi(6^3) \\approx 904.32$ cm³." },
+      { "text": "$1728\\text{ cm}^3$", "rationale": "Calculated cube volume." },
+      { "text": "$452.16\\text{ cm}^3$", "rationale": "Used radius of 3 instead of 6." },
+      { "text": "$113.04\\text{ cm}^3$", "rationale": "Multiple calculation errors." },
+      { "text": "$1808.64\\text{ cm}^3$", "rationale": "Doubled the correct answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inscribed sphere has diameter equal to cube edge: $d = 12$ cm.",
+      "Radius: $r = 6$ cm.",
+      "Volume: $V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}(3.14)(216) \\approx 904.32$ cm³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0018",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 5,
+    "stem": "A cylindrical container with radius 5 cm is filled with water to a depth of 10 cm. A solid sphere with radius 3 cm is completely submerged. By how much does the water level rise? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$1.44\\text{ cm}$", "rationale": "Correct: Sphere volume $= \\frac{4}{3}\\pi(3^3) \\approx 113.04$ cm³. Rise $= \\frac{V}{\\pi r^2} = \\frac{113.04}{3.14(25)} \\approx 1.44$ cm." },
+      { "text": "$3\\text{ cm}$", "rationale": "Used sphere radius as rise." },
+      { "text": "$0.72\\text{ cm}$", "rationale": "Divided by wrong value." },
+      { "text": "$4.52\\text{ cm}$", "rationale": "Calculation error." },
+      { "text": "$2.26\\text{ cm}$", "rationale": "Used hemisphere volume." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sphere volume: $V_s = \\frac{4}{3}\\pi(3)^3 = \\frac{4}{3}(3.14)(27) \\approx 113.04$ cm³.",
+      "Cylinder base area: $A = \\pi(5)^2 = 78.5$ cm².",
+      "Rise in water level: $h = \\frac{V_s}{A} = \\frac{113.04}{78.5} \\approx 1.44$ cm."
+    ]
+  },
+  {
+    "id": "GEO-3D-0019",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 3,
+    "stem": "A rectangular box has length twice its width and height equal to its width. If the width is 4 inches, what is the volume?",
+    "choices": [
+      { "text": "$128\\text{ in}^3$", "rationale": "Correct: Width $= 4$, length $= 8$, height $= 4$. $V = 8 \\times 4 \\times 4 = 128$ in³." },
+      { "text": "$64\\text{ in}^3$", "rationale": "Used all dimensions as 4." },
+      { "text": "$16\\text{ in}^3$", "rationale": "Only calculated base area." },
+      { "text": "$256\\text{ in}^3$", "rationale": "Doubled the correct answer." },
+      { "text": "$96\\text{ in}^3$", "rationale": "Calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Width $= 4$ in, length $= 2w = 8$ in, height $= w = 4$ in.",
+      "Volume: $V = l \\times w \\times h = 8 \\times 4 \\times 4$.",
+      "Calculate: $V = 128$ in³."
+    ]
+  },
+  {
+    "id": "GEO-3D-0020",
+    "topic": "Geometry",
+    "subtopic": "3D Shapes & Volume",
+    "diff": 5,
+    "stem": "A right circular cone has height 12 cm and slant height 13 cm. What is its volume? (Use $\\pi \\approx 3.14$)",
+    "choices": [
+      { "text": "$314\\text{ cm}^3$", "rationale": "Correct: Use Pythagorean theorem: $r^2 = 13^2 - 12^2 = 25$, so $r = 5$. $V = \\frac{1}{3}\\pi(25)(12) \\approx 314$ cm³." },
+      { "text": "$942\\text{ cm}^3$", "rationale": "Forgot to multiply by $\\frac{1}{3}$." },
+      { "text": "$204.1\\text{ cm}^3$", "rationale": "Used slant height instead of radius." },
+      { "text": "$157\\text{ cm}^3$", "rationale": "Divided by 6 instead of 3." },
+      { "text": "$530.66\\text{ cm}^3$", "rationale": "Used slant height as height." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find radius using Pythagorean theorem: $r^2 + h^2 = l^2$.",
+      "Calculate: $r^2 = 13^2 - 12^2 = 169 - 144 = 25$, so $r = 5$ cm.",
+      "Volume: $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}(3.14)(25)(12) \\approx 314$ cm³."
+    ]
+  }
+]
+

@@ -4,3 +4,12 @@
 
 html, body, #root { height: 100%; }
 body { @apply bg-slate-900 text-slate-100; }
+
+/* Prevent whitespace collapse in question text - force override Tailwind prose */
+.prose p[data-preserve-spaces="true"],
+.prose div[data-preserve-spaces="true"],
+.prose span[data-preserve-spaces="true"],
+[data-preserve-spaces="true"] {
+  white-space: pre-wrap !important;
+  word-wrap: break-word;
+}

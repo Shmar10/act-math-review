@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import type { ReactNode } from "react";
 import { InlineMath, BlockMath } from "react-katex";
 import type { ActQuestion, Choice } from "../types";
 
@@ -6,6 +7,7 @@ type Props = {
   question: ActQuestion;
   onNext?: () => void;
   onResult?: (correct: boolean, id: string) => void;
+  studyMode?: boolean;
 };
 
 // ---------- shuffle utilities ----------
@@ -22,7 +24,12 @@ function shuffleChoices(q: ActQuestion): Shuffled {
   return { choices, correctIndex, map: idxs };
 }
 
-export default function QuestionCard({ question, onNext, onResult }: Props) {
+export default function QuestionCard({
+  question,
+  onNext,
+  onResult,
+  studyMode = false,
+}: Props) {
   const [shuf, setShuf] = useState<Shuffled>(() => shuffleChoices(question));
   const [selected, setSelected] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
@@ -47,7 +54,9 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
         <span className="px-2 py-1 rounded bg-slate-900/60">
           {question.topic} — {question.subtopic}
         </span>
-        <span aria-label={`difficulty ${question.diff}`}>{"★".repeat(question.diff)}</span>
+        <span aria-label={`difficulty ${question.diff}`}>
+          {"★".repeat(question.diff)}
+        </span>
       </div>
 
       <div className="prose prose-invert max-w-none mb-6">
@@ -62,7 +71,7 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
           const wrong = checked && chosen && i !== shuf.correctIndex;
 
           return (
-            <li key={i}>
+            <li key={shuf.map[i]}>
               <button
                 onClick={() => setSelected(i)}
                 disabled={checked}
@@ -71,9 +80,12 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
                   chosen && !checked && "border-sky-400 bg-sky-900/30",
                   correct && "border-emerald-400 bg-emerald-900/30",
                   wrong && "border-rose-400 bg-rose-900/30",
-                  !chosen && !checked &&
+                  !chosen &&
+                    !checked &&
                     "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
-                ].filter(Boolean).join(" ")}
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
               >
                 <span className="font-semibold mr-2">{letter}.</span>
                 <InlinePieces text={choice.text} />
@@ -81,7 +93,7 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
 
               {checked && (selected === i || i === shuf.correctIndex) && (
                 <div className="mt-1 ml-4 text-sm text-slate-300 italic">
-                  {choice.rationale}
+                  <InlinePieces text={choice.rationale} />
                 </div>
               )}
             </li>
@@ -104,18 +116,18 @@ export default function QuestionCard({ question, onNext, onResult }: Props) {
         </button>
 
         <button
-          onClick={() => setShowSteps((s) => !s)}
-          className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600"
+          onClick={onNext}
+          disabled={!checked}
+          className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50"
         >
-          {showSteps ? "Hide Solution" : "Show Solution"}
+          Next
         </button>
 
         <button
-          onClick={onNext}
-          disabled={!checked}
-          className="ml-auto px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50"
+          onClick={() => setShowSteps((s) => !s)}
+          className="ml-auto px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600"
         >
-          Next
+          {showSteps ? "Hide Solution" : "Show Solution"}
         </button>
       </div>
 
@@ -142,7 +154,7 @@ function Stem({ text }: { text: string }) {
         p.block ? (
           <BlockMath key={i} math={strip(p.content)} />
         ) : (
-          <p key={i}>
+          <p key={i} className="whitespace-pre-wrap">
             <InlinePieces text={p.content} />
           </p>
         )
@@ -152,31 +164,48 @@ function Stem({ text }: { text: string }) {
 }
 
 function InlinePieces({ text }: { text: string }) {
-  // If $...$ exists, render those inline segments
-  if (/\$[^$]+\$/.test(text)) {
-    const segs = text.split(/(\$[^$]+\$)/g);
-    return (
-      <>
-        {segs.map((seg, i) =>
-          seg.startsWith("$") && seg.endsWith("$") ? (
-            <InlineMath
-              key={i}
-              math={seg.slice(1, -1)}
-              renderError={() => <span>{seg}</span>}
-            />
-          ) : (
-            <span key={i}>{seg}</span>
-          )
-        )}
-      </>
-    );
+  // Replace escaped dollar signs with a placeholder before processing
+  const placeholder = "__DOLLAR__";
+  const processedText = text.replace(/\\\$/g, placeholder);
+
+  // If $...$ exists, render those inline segments as math
+  if (/\$[^$]+\$/.test(processedText)) {
+    const parts = processedText.split(/(\$[^$]+\$)/g);
+    const elements: ReactNode[] = [];
+
+    parts.forEach((part, i) => {
+      if (!part) return;
+
+      if (part.startsWith("$") && part.endsWith("$")) {
+        // Math expression
+        const math = part.slice(1, -1).replace(new RegExp(placeholder, "g"), "$");
+        elements.push(
+          <InlineMath
+            key={`math-${i}`}
+            math={math}
+            renderError={() => <span className="whitespace-pre-wrap">{part}</span>}
+          />
+        );
+      } else {
+        // Plain text segment
+        const restored = part.replace(new RegExp(placeholder, "g"), "$");
+        elements.push(
+          <span key={`text-${i}`} className="whitespace-pre-wrap">
+            {restored}
+          </span>
+        );
+      }
+    });
+
+    return <>{elements}</>;
   }
-  // Heuristic: attempt inline math if it looks LaTeX-y
-  const looksMath = /\\|[\^_=+\-*/()]/.test(text);
-  return looksMath ? (
-    <InlineMath math={text} renderError={() => <span>{text}</span>} />
-  ) : (
-    <span>{text}</span>
+
+  // No inline math delimiters: treat everything as plain text
+  const textWithDollarsRestored = text.replace(/\\\$/g, "$");
+  return (
+    <span className="whitespace-pre-wrap">
+      {textWithDollarsRestored}
+    </span>
   );
 }
 

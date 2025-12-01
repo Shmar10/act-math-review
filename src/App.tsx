@@ -1,37 +1,70 @@
 import { useEffect, useMemo, useState } from "react";
 import QuestionCard from "./components/QuestionCard";
-import FilterBar from "./components/FilterBar";
+import WelcomePage from "./components/WelcomePage";
+import AdminReview from "./components/AdminReview";
+import AdminPasswordPrompt from "./components/AdminPasswordPrompt";
 import type { ActQuestion } from "./types";
 import type { ProgressMap } from "./types.progress";
 import useLocalStorage from "./hooks/useLocalStorage";
+import { BANKS } from "./data/banks";
 
-const SESSION_LEN = 10;        // number of questions in a practice set
-const TIMER_SECONDS = 12 * 60; // 12 minutes (ACT pace ~72s per Q)
+type PracticeMode = 'quick' | 'standard' | 'full' | 'study';
+type QuestionSelectionMode = 'random' | 'shuffled' | 'sequential';
+
+const PRACTICE_MODES = {
+  quick: { questions: 5, timeMinutes: 6 },
+  standard: { questions: 10, timeMinutes: 12 },
+  full: { questions: 60, timeMinutes: 60 },
+  study: { questions: 10, timeMinutes: null }, // untimed
+} as const;
 
 export default function App() {
+  // Check for admin mode via URL parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const isAdminMode = urlParams.get('admin') === 'true';
+  
+  // Check if user is authenticated (stored in localStorage)
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return localStorage.getItem("amr.admin.auth") === "true";
+  });
+
   const [all, setAll] = useState<ActQuestion[]>([]);
   const [topic, setTopic] = useLocalStorage<string>("amr.topic", "All");
   const [diff, setDiff] = useLocalStorage<number>("amr.diff", 0);
   const [progress, setProgress] = useLocalStorage<ProgressMap>("amr.progress", {});
+  const [questionSelectionMode, setQuestionSelectionMode] = useLocalStorage<QuestionSelectionMode>("amr.questionMode", "sequential");
+  const [practiceMode, setPracticeMode] = useLocalStorage<PracticeMode>("amr.practiceMode", "standard");
   const [sessionIdx, setSessionIdx] = useState(0);
   const [inPractice, setInPractice] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
+  const [sessionLen, setSessionLen] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(12 * 60);
+  const [sessionResults, setSessionResults] = useState<Record<string, boolean>>({});
+  const [shuffledQuestions, setShuffledQuestions] = useState<ActQuestion[]>([]);
 
-  // Load questions (you can merge more files here)
+  // Load all question files from banks
   useEffect(() => {
     const base = import.meta.env.BASE_URL;
-    fetch(`${base}content/questions/algebra.json`)
-      .then(r => r.json())
-      .then((data: ActQuestion[]) => setAll(data));
+    const promises = BANKS.map(bank =>
+      fetch(`${base}content/questions/${bank.file}`)
+        .then(r => r.json())
+        .catch(err => {
+          console.error(`Failed to load ${bank.file}:`, err);
+          return [];
+        })
+    );
+    Promise.all(promises).then(results => {
+      const merged = results.flat();
+      setAll(merged);
+    });
   }, []);
 
   // timer
   useEffect(() => {
-    if (!inPractice) return;
+    if (!inPractice || practiceMode === 'study') return;
     if (timeLeft <= 0) return;
     const t = setInterval(() => setTimeLeft(s => s - 1), 1000);
     return () => clearInterval(t);
-  }, [inPractice, timeLeft]);
+  }, [inPractice, timeLeft, practiceMode]);
 
   const filtered = useMemo(() => {
     return all.filter(q =>
@@ -40,9 +73,42 @@ export default function App() {
     );
   }, [all, topic, diff]);
 
-  const current = filtered.length ? filtered[sessionIdx % filtered.length] : null;
+  // Helper function to shuffle array
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  // Get current question based on selection mode
+  const current = useMemo(() => {
+    if (!filtered.length) return null;
+    
+    if (questionSelectionMode === 'random') {
+      // Completely random each time - can repeat
+      const randomIdx = Math.floor(Math.random() * filtered.length);
+      return filtered[randomIdx];
+    } else if (questionSelectionMode === 'shuffled') {
+      // Use shuffled array if in practice, otherwise sequential
+      if (inPractice && shuffledQuestions.length > 0) {
+        return shuffledQuestions[sessionIdx % shuffledQuestions.length] || null;
+      }
+      // Fallback to sequential when not in practice
+      return filtered[sessionIdx % filtered.length];
+    } else {
+      // Sequential - original behavior
+      return filtered[sessionIdx % filtered.length];
+    }
+  }, [filtered, sessionIdx, questionSelectionMode, inPractice, shuffledQuestions]);
 
   function handleResult(correct: boolean, id: string) {
+    // Track session-specific results
+    setSessionResults(prev => ({ ...prev, [id]: correct }));
+    
+    // Update persistent progress
     setProgress(p => {
       const prev = p[id] ?? { correct: 0, wrong: 0, lastAt: 0 };
       const next = {
@@ -55,31 +121,92 @@ export default function App() {
   }
 
   function startPractice() {
-    setInPractice(true);
-    setTimeLeft(TIMER_SECONDS);
+    const config = PRACTICE_MODES[practiceMode];
+    setSessionLen(config.questions);
+    setTimeLeft(config.timeMinutes ? config.timeMinutes * 60 : Infinity);
     setSessionIdx(0);
+    setSessionResults({});
+    
+    // If shuffled mode, create a new shuffled array for this session
+    if (questionSelectionMode === 'shuffled') {
+      setShuffledQuestions(shuffleArray(filtered));
+    }
+    
+    setInPractice(true);
   }
 
-  const done = inPractice && (sessionIdx >= SESSION_LEN || timeLeft <= 0);
+  const done = inPractice && (sessionIdx >= sessionLen || (practiceMode !== 'study' && timeLeft <= 0));
 
+  // Show admin review if admin mode is enabled and authenticated
+  if (isAdminMode) {
+    if (!isAuthenticated) {
+      return (
+        <AdminPasswordPrompt
+          onSuccess={() => setIsAuthenticated(true)}
+          onCancel={() => {
+            // Remove admin parameter and go back to main page
+            window.history.replaceState({}, "", window.location.pathname);
+            setIsAuthenticated(false);
+          }}
+        />
+      );
+    }
+    return <AdminReview />;
+  }
+
+  const topics = useMemo(() => [...new Set(all.map(q => q.topic))].sort(), [all]);
+  const filteredCount = filtered.length;
+
+  // Show welcome page when not in practice
+  if (!inPractice) {
+    return (
+      <div className="min-h-screen px-6 py-8">
+        <div className="mx-auto max-w-4xl">
+          {/* Admin link in header */}
+          <div className="flex justify-end mb-4">
+            <a
+              href="?admin=true"
+              className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
+              title="Admin: View all questions and answers"
+            >
+              🔍 Admin Review
+            </a>
+          </div>
+
+          <WelcomePage
+            topics={topics}
+            topic={topic}
+            setTopic={setTopic}
+            diff={diff}
+            setDiff={setDiff}
+            questionSelectionMode={questionSelectionMode}
+            setQuestionSelectionMode={setQuestionSelectionMode}
+            practiceMode={practiceMode}
+            setPracticeMode={setPracticeMode}
+            availableCount={filteredCount}
+            onStartPractice={startPractice}
+          />
+        </div>
+      </div>
+    );
+  }
+
+  // Practice mode - show clean interface with navigation
   return (
     <div className="min-h-screen px-6 py-8">
       <div className="mx-auto max-w-4xl">
-        <h1 className="text-3xl font-bold mb-4">ACT Math Review</h1>
-
-        <FilterBar
-          topics={[...new Set(all.map(q => q.topic))].sort()}
-          topic={topic} setTopic={setTopic}
-          diff={diff} setDiff={setDiff}
-          onStartPractice={startPractice}
+        {/* Navigation Bar */}
+        <PracticeNavBar
+          sessionIdx={sessionIdx}
+          sessionLen={sessionLen}
+          practiceMode={practiceMode}
+          timeLeft={timeLeft}
+          onExit={() => {
+            if (confirm("Are you sure you want to exit? Your progress will be saved.")) {
+              setInPractice(false);
+            }
+          }}
         />
-
-        {inPractice && !done && (
-          <div className="mb-3 flex items-center gap-4 text-slate-300">
-            <span>Question {sessionIdx + 1}/{SESSION_LEN}</span>
-            <TimerBadge seconds={timeLeft} />
-          </div>
-        )}
 
         {!current && <div className="text-slate-300">Loading questions…</div>}
 
@@ -88,13 +215,13 @@ export default function App() {
             question={current}
             onNext={() => setSessionIdx(i => i + 1)}
             onResult={handleResult}
+            studyMode={practiceMode === 'study'}
           />
         )}
 
         {done && (
           <Summary
-            progress={progress}
-            used={filtered.slice(0, Math.min(SESSION_LEN, filtered.length)).map(q => q.id)}
+            sessionResults={sessionResults}
             onRestart={startPractice}
             onExit={() => setInPractice(false)}
           />
@@ -105,34 +232,117 @@ export default function App() {
 }
 
 /* ---------- UI helpers ---------- */
+function PracticeNavBar({
+  sessionIdx,
+  sessionLen,
+  practiceMode,
+  timeLeft,
+  onExit,
+}: {
+  sessionIdx: number;
+  sessionLen: number;
+  practiceMode: PracticeMode;
+  timeLeft: number;
+  onExit: () => void;
+}) {
+  const progressPercent = (sessionIdx / sessionLen) * 100;
+
+  return (
+    <div className="mb-6 bg-slate-800/70 rounded-xl p-4 border border-slate-700">
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        {/* Progress */}
+        <div className="flex-1 min-w-[200px]">
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-sm text-slate-300 font-semibold">
+              Question {sessionIdx + 1} of {sessionLen}
+            </span>
+            <span className="text-xs text-slate-400">{Math.round(progressPercent)}%</span>
+          </div>
+          <div className="w-full bg-slate-700 rounded-full h-2">
+            <div
+              className="bg-gradient-to-r from-sky-500 to-emerald-500 h-2 rounded-full transition-all duration-300"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+        </div>
+
+        {/* Timer / Mode Badge */}
+        <div className="flex items-center gap-3">
+          {practiceMode !== 'study' ? (
+            <TimerBadge seconds={timeLeft} />
+          ) : (
+            <span className="px-3 py-1 rounded-xl border bg-slate-700 border-slate-600 text-xs text-slate-300">
+              📖 Study Mode
+            </span>
+          )}
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex items-center gap-2">
+          <a
+            href="?admin=true"
+            className="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-300 text-xs transition"
+            title="Admin: View all questions and answers"
+          >
+            🔍 Admin
+          </a>
+          <button
+            onClick={onExit}
+            className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-300 text-sm transition"
+          >
+            Exit Practice
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function TimerBadge({ seconds }: { seconds: number }) {
   const m = Math.max(0, Math.floor(seconds / 60));
   const s = Math.max(0, seconds % 60).toString().padStart(2, "0");
   const danger = seconds <= 60;
   return (
-    <span className={`px-3 py-1 rounded-xl border ${danger ? "bg-rose-900/40 border-rose-500" : "bg-slate-800 border-slate-600"}`}>
+    <span className={`px-3 py-1 rounded-xl border text-sm font-mono ${danger ? "bg-rose-900/40 border-rose-500 text-rose-300" : "bg-slate-700 border-slate-600 text-slate-300"}`}>
       ⏱ {m}:{s}
     </span>
   );
 }
 
-function Summary({ progress, used, onRestart, onExit }:{
-  progress: Record<string, {correct:number; wrong:number}>;
-  used: string[];
+function Summary({ sessionResults, onRestart, onExit }:{
+  sessionResults: Record<string, boolean>;
   onRestart: () => void;
   onExit: () => void;
 }) {
-  const stats = used.map(id => progress[id] ?? {correct:0, wrong:0});
-  const correct = stats.reduce((a,b)=>a+(b.correct>0?1:0),0);
+  const questionIds = Object.keys(sessionResults);
+  const correct = Object.values(sessionResults).filter(result => result).length;
+  const total = questionIds.length;
+  const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+  
   return (
-    <div className="bg-slate-800/70 rounded-2xl p-6 border border-slate-700">
-      <h2 className="text-2xl font-bold mb-2">Session Complete</h2>
-      <p className="mb-4 text-slate-300">
-        You answered <b>{correct}</b> out of <b>{used.length}</b> correctly.
-      </p>
-      <div className="flex gap-2">
-        <button onClick={onRestart} className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500">Restart</button>
-        <button onClick={onExit} className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600">Back to Review</button>
+    <div className="bg-slate-800/70 rounded-2xl p-8 border border-slate-700 text-center">
+      <h2 className="text-3xl font-bold mb-4">Session Complete! 🎉</h2>
+      <div className="mb-6">
+        <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
+          {percentage}%
+        </div>
+        <p className="text-lg text-slate-300">
+          You answered <b className="text-emerald-400">{correct}</b> out of <b>{total}</b> correctly.
+        </p>
+      </div>
+      <div className="flex gap-3 justify-center">
+        <button
+          onClick={onRestart}
+          className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-600 to-emerald-600 hover:from-sky-500 hover:to-emerald-500 text-white font-semibold transition"
+        >
+          Practice Again
+        </button>
+        <button
+          onClick={onExit}
+          className="px-6 py-3 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-300 font-semibold transition"
+        >
+          Back to Home
+        </button>
       </div>
     </div>
   );

@@ -1,0 +1,398 @@
+[
+  {
+    "id": "NUM-OPS-0001",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 1,
+    "stem": "Evaluate: $$3 + 5 \\times 2$$",
+    "choices": [
+      { "text": "$13$", "rationale": "Correct: Order of operations (PEMDAS): multiply first $5 \\times 2 = 10$, then add $3 + 10 = 13$." },
+      { "text": "$16$", "rationale": "Added first, then multiplied: $(3+5) \\times 2 = 16$." },
+      { "text": "$11$", "rationale": "Only added 3 + 5, forgot to multiply by 2." },
+      { "text": "$30$", "rationale": "Multiplied all three numbers." },
+      { "text": "$10$", "rationale": "Only calculated $5 \\times 2$, forgot to add 3." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use PEMDAS: Multiplication before addition.",
+      "Calculate: $5 \\times 2 = 10$.",
+      "Then: $3 + 10 = 13$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0002",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "Simplify: $$18 \\div 3 + 4 \\times 2 - 5$$",
+    "choices": [
+      { "text": "$9$", "rationale": "Correct: $18 \\div 3 = 6$, $4 \\times 2 = 8$, so $6 + 8 - 5 = 9$." },
+      { "text": "$11$", "rationale": "Made error in subtraction or addition order." },
+      { "text": "$7$", "rationale": "Performed operations left to right without PEMDAS." },
+      { "text": "$19$", "rationale": "Forgot to subtract 5." },
+      { "text": "$3$", "rationale": "Multiple order of operations errors." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Division and multiplication first: $18 \\div 3 = 6$ and $4 \\times 2 = 8$.",
+      "Now left to right: $6 + 8 = 14$.",
+      "Finally: $14 - 5 = 9$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0003",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 1,
+    "stem": "What is 35% of 80?",
+    "choices": [
+      { "text": "$28$", "rationale": "Correct: $0.35 \\times 80 = 28$." },
+      { "text": "$35$", "rationale": "Used the percentage value, not the calculation." },
+      { "text": "$2.8$", "rationale": "Moved decimal point incorrectly." },
+      { "text": "$280$", "rationale": "Multiplied by 35 instead of 0.35." },
+      { "text": "$45$", "rationale": "Added 35 and 80 incorrectly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convert percent to decimal: $35\\% = 0.35$.",
+      "Multiply: $0.35 \\times 80 = 28$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0004",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "A shirt originally costs \\$40. It is on sale for 25% off. What is the sale price?",
+    "choices": [
+      { "text": "\\$30", "rationale": "Correct: Discount $= 0.25 \\times 40 = 10$, so sale price $= 40 - 10 = 30$." },
+      { "text": "\\$25", "rationale": "Calculated 25% but forgot to subtract from original." },
+      { "text": "\\$10", "rationale": "Only calculated the discount amount." },
+      { "text": "\\$50", "rationale": "Added the discount instead of subtracting." },
+      { "text": "\\$15", "rationale": "Calculated 25% of wrong value or made arithmetic error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Discount amount: $0.25 \\times 40 = 10$, so discount is $10$.",
+      "Sale price: $40 - 10 = 30$.",
+      "Or directly: $40 \\times 0.75 = 30$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0005",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "What is $\\dfrac{2}{5} + \\dfrac{1}{3}$?",
+    "choices": [
+      { "text": "$\\dfrac{11}{15}$", "rationale": "Correct: Common denominator is 15. $\\frac{2}{5} = \\frac{6}{15}$, $\\frac{1}{3} = \\frac{5}{15}$, sum $= \\frac{11}{15}$." },
+      { "text": "$\\dfrac{3}{8}$", "rationale": "Added numerators and denominators separately (incorrect)." },
+      { "text": "$\\dfrac{1}{2}$", "rationale": "Approximated but didn't calculate exactly." },
+      { "text": "$\\dfrac{13}{15}$", "rationale": "Made arithmetic error in conversion." },
+      { "text": "$\\dfrac{2}{15}$", "rationale": "Multiplied instead of adding." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find common denominator: $\\text{LCD}(5,3) = 15$.",
+      "Convert: $\\frac{2}{5} = \\frac{6}{15}$ and $\\frac{1}{3} = \\frac{5}{15}$.",
+      "Add: $\\frac{6}{15} + \\frac{5}{15} = \\frac{11}{15}$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0006",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 3,
+    "stem": "A number increased by 40% equals 84. What is the original number?",
+    "choices": [
+      { "text": "$60$", "rationale": "Correct: If $x$ is original, then $x + 0.4x = 84$, so $1.4x = 84$, thus $x = 60$." },
+      { "text": "$50.4$", "rationale": "Calculated 60% of 84 instead." },
+      { "text": "$117.6$", "rationale": "Added 40% to 84 instead of finding original." },
+      { "text": "$44$", "rationale": "Subtracted 40 from 84." },
+      { "text": "$70$", "rationale": "Made calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up equation: $x + 0.4x = 84$.",
+      "Combine: $1.4x = 84$.",
+      "Solve: $x = \\frac{84}{1.4} = 60$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0007",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "Evaluate: $$(-3)^2 - 2 \\times (-4)$$",
+    "choices": [
+      { "text": "$17$", "rationale": "Correct: $(-3)^2 = 9$, $2 \\times (-4) = -8$, so $9 - (-8) = 9 + 8 = 17$." },
+      { "text": "$1$", "rationale": "Made sign error: $9 - 8 = 1$." },
+      { "text": "$-17$", "rationale": "Made multiple sign errors." },
+      { "text": "$25$", "rationale": "Calculated $(-3)^2$ incorrectly as $-9$." },
+      { "text": "$7$", "rationale": "Forgot to square -3 properly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate $(-3)^2 = 9$ (negative times negative is positive).",
+      "Calculate $2 \\times (-4) = -8$.",
+      "Subtract: $9 - (-8) = 9 + 8 = 17$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0008",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 3,
+    "stem": "What is the value of $\\dfrac{3}{4} \\div \\dfrac{2}{5}$?",
+    "choices": [
+      { "text": "$\\dfrac{15}{8}$", "rationale": "Correct: Multiply by reciprocal: $\\frac{3}{4} \\times \\frac{5}{2} = \\frac{15}{8}$." },
+      { "text": "$\\dfrac{6}{20}$", "rationale": "Multiplied numerators and denominators directly." },
+      { "text": "$\\dfrac{8}{15}$", "rationale": "Inverted the final answer." },
+      { "text": "$\\dfrac{3}{10}$", "rationale": "Made error in multiplication." },
+      { "text": "$\\dfrac{5}{6}$", "rationale": "Subtracted or used incorrect operation." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Division of fractions: multiply by reciprocal.",
+      "$\\frac{3}{4} \\div \\frac{2}{5} = \\frac{3}{4} \\times \\frac{5}{2}$.",
+      "Multiply: $\\frac{3 \\times 5}{4 \\times 2} = \\frac{15}{8}$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0009",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "Evaluate: $$(6 - 2)^2 + 3 \\times 4$$",
+    "choices": [
+      { "text": "$28$", "rationale": "Correct: $(6-2)^2 = 4^2 = 16$, then $16 + 3 \\times 4 = 16 + 12 = 28$." },
+      { "text": "$64$", "rationale": "Added before squaring: $(6-2+3) \\times 4$." },
+      { "text": "$24$", "rationale": "Calculated $(4)^2 + 12$ as $(4+12)$." },
+      { "text": "$52$", "rationale": "Multiplied $4 \\times 3 \\times 4$ incorrectly." },
+      { "text": "$19$", "rationale": "Didn't square 4, just used 4." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Parentheses first: $6 - 2 = 4$.",
+      "Exponent: $4^2 = 16$.",
+      "Multiply: $3 \\times 4 = 12$.",
+      "Add: $16 + 12 = 28$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0010",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 1,
+    "stem": "What is 20% of 150?",
+    "choices": [
+      { "text": "$30$", "rationale": "Correct: $0.20 \\times 150 = 30$." },
+      { "text": "$20$", "rationale": "Used percentage value instead of calculating." },
+      { "text": "$3$", "rationale": "Decimal point error." },
+      { "text": "$75$", "rationale": "Calculated 50% instead of 20%." },
+      { "text": "$130$", "rationale": "Subtracted 20 from 150." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convert to decimal: $20\\% = 0.20$.",
+      "Multiply: $0.20 \\times 150 = 30$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0011",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "If 60 is increased by 30%, what is the result?",
+    "choices": [
+      { "text": "$78$", "rationale": "Correct: Increase $= 0.30 \\times 60 = 18$, so $60 + 18 = 78$." },
+      { "text": "$90$", "rationale": "Added 30 instead of 30%." },
+      { "text": "$18$", "rationale": "Only calculated the increase, not the new value." },
+      { "text": "$42$", "rationale": "Subtracted 30% instead of adding." },
+      { "text": "$30$", "rationale": "Major calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Increase: $0.30 \\times 60 = 18$.",
+      "New value: $60 + 18 = 78$.",
+      "Or directly: $60 \\times 1.30 = 78$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0012",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 3,
+    "stem": "What is $\\dfrac{5}{6} - \\dfrac{2}{9}$?",
+    "choices": [
+      { "text": "$\\dfrac{11}{18}$", "rationale": "Correct: LCD is 18. $\\frac{5}{6} = \\frac{15}{18}$, $\\frac{2}{9} = \\frac{4}{18}$, so $\\frac{15-4}{18} = \\frac{11}{18}$." },
+      { "text": "$\\dfrac{3}{-3}$", "rationale": "Subtracted numerators and denominators separately (incorrect)." },
+      { "text": "$\\dfrac{7}{18}$", "rationale": "Arithmetic error in subtraction." },
+      { "text": "$\\dfrac{1}{2}$", "rationale": "Approximated incorrectly." },
+      { "text": "$\\dfrac{10}{54}$", "rationale": "Used wrong common denominator." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find LCD: $\\text{LCD}(6,9) = 18$.",
+      "Convert: $\\frac{5}{6} = \\frac{15}{18}$ and $\\frac{2}{9} = \\frac{4}{18}$.",
+      "Subtract: $\\frac{15}{18} - \\frac{4}{18} = \\frac{11}{18}$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0013",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "Simplify: $$\\dfrac{3}{5} \\times \\dfrac{10}{9}$$",
+    "choices": [
+      { "text": "$\\dfrac{2}{3}$", "rationale": "Correct: $\\frac{3 \\times 10}{5 \\times 9} = \\frac{30}{45} = \\frac{2}{3}$ (simplified)." },
+      { "text": "$\\dfrac{30}{45}$", "rationale": "Correct multiplication but not simplified." },
+      { "text": "$\\dfrac{13}{14}$", "rationale": "Added fractions instead of multiplying." },
+      { "text": "$\\dfrac{1}{3}$", "rationale": "Simplified incorrectly." },
+      { "text": "$\\dfrac{3}{2}$", "rationale": "Inverted the final answer." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply numerators and denominators: $\\frac{3 \\times 10}{5 \\times 9} = \\frac{30}{45}$.",
+      "Simplify by dividing by GCF(30,45)=15: $\\frac{30\\div15}{45\\div15} = \\frac{2}{3}$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0014",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 3,
+    "stem": "A store marks up an item by 50% from its cost of \\$40. During a sale, it offers 20% off the marked price. What is the sale price?",
+    "choices": [
+      { "text": "\\$48", "rationale": "Correct: Marked price $= 40 \\times 1.50 = 60$. Sale price $= 60 \\times 0.80 = 48$." },
+      { "text": "\\$60", "rationale": "Forgot to apply the 20% discount." },
+      { "text": "\\$40", "rationale": "Assumed discounts cancel out (they don't)." },
+      { "text": "\\$52", "rationale": "Applied 20% discount to cost, not marked price." },
+      { "text": "\\$12", "rationale": "Calculated only the discount amount." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Marked price: $40 + 0.50(40) = 40(1.50) = 60$.",
+      "Discount: $60 \\times 0.20 = 12$.",
+      "Sale price: $60 - 12 = 48$ (or $60 \\times 0.80 = 48$)."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0015",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "Evaluate: $$-5 + 8 \\times 2 - 6$$",
+    "choices": [
+      { "text": "$5$", "rationale": "Correct: $8 \\times 2 = 16$, then $-5 + 16 - 6 = 5$." },
+      { "text": "$0$", "rationale": "Performed operations left to right incorrectly." },
+      { "text": "$11$", "rationale": "Forgot to subtract 6." },
+      { "text": "$-11$", "rationale": "Sign errors." },
+      { "text": "$42$", "rationale": "Added before multiplying: $(-5+8) \\times 2 - 6$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiplication first: $8 \\times 2 = 16$.",
+      "Left to right: $-5 + 16 = 11$.",
+      "Finally: $11 - 6 = 5$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0016",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 3,
+    "stem": "What number is 15% of 80?",
+    "choices": [
+      { "text": "$12$", "rationale": "Correct: $0.15 \\times 80 = 12$." },
+      { "text": "$15$", "rationale": "Used percentage value." },
+      { "text": "$1.2$", "rationale": "Decimal point error." },
+      { "text": "$65$", "rationale": "Subtracted 15 from 80." },
+      { "text": "$533.33$", "rationale": "Divided 80 by 0.15 instead of multiplying." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convert: $15\\% = 0.15$.",
+      "Calculate: $0.15 \\times 80 = 12$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0017",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 4,
+    "stem": "If $\\dfrac{2}{3}$ of a number is 24, what is $\\dfrac{5}{6}$ of that number?",
+    "choices": [
+      { "text": "$30$", "rationale": "Correct: Number $= 24 \\div \\frac{2}{3} = 36$. Then $\\frac{5}{6}(36) = 30$." },
+      { "text": "$36$", "rationale": "Found the number but didn't calculate $\\frac{5}{6}$ of it." },
+      { "text": "$20$", "rationale": "Calculated $\\frac{5}{6}$ of 24 instead of the full number." },
+      { "text": "$28.8$", "rationale": "Used decimal approximation of $\\frac{5}{6}$ incorrectly." },
+      { "text": "$40$", "rationale": "Calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the number: if $\\frac{2}{3}x = 24$, then $x = 24 \\times \\frac{3}{2} = 36$.",
+      "Calculate $\\frac{5}{6}$ of 36: $\\frac{5}{6} \\times 36 = \\frac{180}{6} = 30$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0018",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 2,
+    "stem": "Evaluate: $$10 - 3 \\times 2 + 8 \\div 4$$",
+    "choices": [
+      { "text": "$6$", "rationale": "Correct: $3 \\times 2 = 6$, $8 \\div 4 = 2$, so $10 - 6 + 2 = 6$." },
+      { "text": "$4$", "rationale": "Subtracted $10-6$ but forgot to add 2." },
+      { "text": "$1$", "rationale": "Performed operations left to right without PEMDAS." },
+      { "text": "$14$", "rationale": "Added instead of subtracting." },
+      { "text": "$12$", "rationale": "Multiple errors in order of operations." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply and divide first: $3 \\times 2 = 6$ and $8 \\div 4 = 2$.",
+      "Left to right: $10 - 6 = 4$.",
+      "Finally: $4 + 2 = 6$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0019",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 3,
+    "stem": "A number decreased by 25% is 60. What is the original number?",
+    "choices": [
+      { "text": "$80$", "rationale": "Correct: If $x - 0.25x = 60$, then $0.75x = 60$, so $x = 80$." },
+      { "text": "$45$", "rationale": "Calculated 75% of 60 instead." },
+      { "text": "$85$", "rationale": "Added 25 to 60." },
+      { "text": "$48$", "rationale": "Subtracted 25% from 60 instead of solving backwards." },
+      { "text": "$75$", "rationale": "Used wrong percentage in calculation." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up equation: $x - 0.25x = 60$.",
+      "Simplify: $0.75x = 60$.",
+      "Solve: $x = \\frac{60}{0.75} = 80$."
+    ]
+  },
+  {
+    "id": "NUM-OPS-0020",
+    "topic": "Pre-Algebra",
+    "subtopic": "Basic Operations",
+    "diff": 4,
+    "stem": "Simplify: $$\\left(\\dfrac{2}{3} + \\dfrac{1}{4}\\right) \\times \\dfrac{12}{11}$$",
+    "choices": [
+      { "text": "$1$", "rationale": "Correct: $\\frac{2}{3} + \\frac{1}{4} = \\frac{11}{12}$, then $\\frac{11}{12} \\times \\frac{12}{11} = 1$." },
+      { "text": "$\\dfrac{11}{12}$", "rationale": "Only added the fractions, forgot to multiply." },
+      { "text": "$\\dfrac{12}{11}$", "rationale": "Only used the multiplier." },
+      { "text": "$\\dfrac{2}{3}$", "rationale": "Multiple errors in calculation." },
+      { "text": "$\\dfrac{5}{6}$", "rationale": "Calculation error in addition or multiplication." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add fractions: $\\frac{2}{3} + \\frac{1}{4} = \\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12}$.",
+      "Multiply: $\\frac{11}{12} \\times \\frac{12}{11} = \\frac{11 \\times 12}{12 \\times 11} = 1$."
+    ]
+  }
+]
+

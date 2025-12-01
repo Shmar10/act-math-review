@@ -1,0 +1,196 @@
+[
+  {
+    "id": "GEO-ANG-0001",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 1,
+    "stem": "Two angles are supplementary. If one angle measures 65°, what is the measure of the other angle?",
+    "choices": [
+      { "text": "$115°$", "rationale": "Correct: Supplementary angles add to 180°. $180° - 65° = 115°$." },
+      { "text": "$25°$", "rationale": "This would be for complementary angles (90° - 65°)." },
+      { "text": "$65°$", "rationale": "The angles don't have to be equal." },
+      { "text": "$130°$", "rationale": "Doubled 65° instead of subtracting from 180°." },
+      { "text": "$295°$", "rationale": "Added to 360° instead of 180°." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Supplementary angles sum to 180°.",
+      "Calculate: $180° - 65° = 115°$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0002",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 1,
+    "stem": "Two angles are complementary. If one angle measures 38°, what is the measure of the other angle?",
+    "choices": [
+      { "text": "$52°$", "rationale": "Correct: Complementary angles add to 90°. $90° - 38° = 52°$." },
+      { "text": "$142°$", "rationale": "This would be for supplementary angles (180° - 38°)." },
+      { "text": "$38°$", "rationale": "The angles don't have to be equal." },
+      { "text": "$62°$", "rationale": "Calculation error." },
+      { "text": "$76°$", "rationale": "Doubled 38° instead of subtracting from 90°." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Complementary angles sum to 90°.",
+      "Calculate: $90° - 38° = 52°$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0003",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 2,
+    "stem": "Two lines intersect. If one angle formed measures 42°, what is the measure of its vertical angle?",
+    "choices": [
+      { "text": "$42°$", "rationale": "Correct: Vertical angles are congruent." },
+      { "text": "$138°$", "rationale": "This is the adjacent supplementary angle, not the vertical angle." },
+      { "text": "$48°$", "rationale": "Incorrectly calculated complementary angle." },
+      { "text": "$84°$", "rationale": "Doubled the angle." },
+      { "text": "$90°$", "rationale": "Vertical angles aren't always 90°." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Vertical angles are congruent (have equal measures).",
+      "Therefore, the vertical angle = 42°."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0004",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 3,
+    "stem": "Two parallel lines are cut by a transversal. If one alternate interior angle measures 75°, what is the measure of the other alternate interior angle?",
+    "choices": [
+      { "text": "$75°$", "rationale": "Correct: Alternate interior angles are congruent when lines are parallel." },
+      { "text": "$105°$", "rationale": "This would be the supplementary angle." },
+      { "text": "$15°$", "rationale": "Incorrect calculation." },
+      { "text": "$150°$", "rationale": "Doubled the angle." },
+      { "text": "$90°$", "rationale": "Not necessarily perpendicular." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "When parallel lines are cut by a transversal, alternate interior angles are congruent.",
+      "Therefore, the angle = 75°."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0005",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 3,
+    "stem": "Two parallel lines are cut by a transversal. If one corresponding angle measures 118°, what is the measure of the other corresponding angle?",
+    "choices": [
+      { "text": "$118°$", "rationale": "Correct: Corresponding angles are congruent when lines are parallel." },
+      { "text": "$62°$", "rationale": "This is the supplementary angle." },
+      { "text": "$28°$", "rationale": "Incorrectly calculated complementary angle." },
+      { "text": "$236°$", "rationale": "Doubled the angle." },
+      { "text": "$90°$", "rationale": "Corresponding angles aren't always 90°." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "When parallel lines are cut by a transversal, corresponding angles are congruent.",
+      "Therefore, the angle = 118°."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0006",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 4,
+    "stem": "Two parallel lines are cut by a transversal. If one interior angle on the same side of the transversal measures 72°, what is the measure of the other interior angle on the same side?",
+    "choices": [
+      { "text": "$108°$", "rationale": "Correct: Same-side interior angles are supplementary. $180° - 72° = 108°$." },
+      { "text": "$72°$", "rationale": "These are supplementary, not congruent." },
+      { "text": "$18°$", "rationale": "Incorrectly calculated complementary angle." },
+      { "text": "$144°$", "rationale": "Doubled 72° instead of subtracting from 180°." },
+      { "text": "$90°$", "rationale": "Not necessarily perpendicular." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Same-side interior angles (co-interior angles) are supplementary when lines are parallel.",
+      "Calculate: $180° - 72° = 108°$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0007",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 2,
+    "stem": "An angle measures 3 times its complement. What is the measure of the angle?",
+    "choices": [
+      { "text": "$67.5°$", "rationale": "Correct: Let angle = $x$. Then $x = 3(90-x)$, so $x = 270 - 3x$, thus $4x = 270$, giving $x = 67.5°$." },
+      { "text": "$22.5°$", "rationale": "This is the complement, not the angle." },
+      { "text": "$30°$", "rationale": "Calculation error." },
+      { "text": "$60°$", "rationale": "Used wrong equation." },
+      { "text": "$45°$", "rationale": "Would make it equal to complement, not 3 times." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let the angle = $x$. Its complement = $90° - x$.",
+      "Set up equation: $x = 3(90° - x)$.",
+      "Solve: $x = 270° - 3x$, so $4x = 270°$, thus $x = 67.5°$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0008",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 3,
+    "stem": "Three angles form a straight line. Two of the angles measure 48° and 72°. What is the measure of the third angle?",
+    "choices": [
+      { "text": "$60°$", "rationale": "Correct: Angles on a straight line sum to 180°. $180° - 48° - 72° = 60°$." },
+      { "text": "$120°$", "rationale": "Only subtracted one angle." },
+      { "text": "$24°$", "rationale": "Subtracted 72° from 48° incorrectly." },
+      { "text": "$180°$", "rationale": "This is the total, not the third angle." },
+      { "text": "$240°$", "rationale": "Added angles instead of subtracting from 180°." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Angles on a straight line sum to 180°.",
+      "Calculate: $180° - 48° - 72° = 180° - 120° = 60°$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0009",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 4,
+    "stem": "In the figure, lines $l$ and $m$ are parallel, cut by transversal $t$. If angle 1 measures $(3x + 15)°$ and its corresponding angle measures $(5x - 25)°$, what is $x$?",
+    "choices": [
+      { "text": "$20$", "rationale": "Correct: Corresponding angles are equal: $3x + 15 = 5x - 25$, so $40 = 2x$, thus $x = 20$." },
+      { "text": "$10$", "rationale": "Calculation error in solving equation." },
+      { "text": "$5$", "rationale": "Set expressions equal to 180° instead of each other." },
+      { "text": "$40$", "rationale": "Found $2x$ instead of $x$." },
+      { "text": "$-20$", "rationale": "Sign error in solving." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Corresponding angles are congruent: $3x + 15 = 5x - 25$.",
+      "Solve: $15 + 25 = 5x - 3x$, so $40 = 2x$.",
+      "Therefore: $x = 20$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0010",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 5,
+    "stem": "The measure of an angle is 30° more than twice its supplement. What is the measure of the angle?",
+    "choices": [
+      { "text": "$130°$", "rationale": "Correct: Let angle = $x$. Then $x = 2(180-x) + 30$, so $x = 360 - 2x + 30$, thus $3x = 390$, giving $x = 130°$." },
+      { "text": "$50°$", "rationale": "This is the supplement, not the angle." },
+      { "text": "$100°$", "rationale": "Calculation error." },
+      { "text": "$210°$", "rationale": "Result exceeds 180°, impossible for this scenario." },
+      { "text": "$80°$", "rationale": "Used wrong equation." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let the angle = $x$. Its supplement = $180° - x$.",
+      "Set up equation: $x = 2(180° - x) + 30°$.",
+      "Solve: $x = 360° - 2x + 30°$, so $3x = 390°$, thus $x = 130°$."
+    ]
+  }
+]
+

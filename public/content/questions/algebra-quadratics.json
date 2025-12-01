@@ -1,0 +1,401 @@
+[
+  {
+    "id": "ALG-QUA-0001",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 1,
+    "stem": "Solve by factoring: $$x^2 - 5x + 6 = 0$$",
+    "choices": [
+      { "text": "$x = 2$ or $x = 3$", "rationale": "Correct: Factors to $(x-2)(x-3) = 0$, so $x = 2$ or $x = 3$." },
+      { "text": "$x = -2$ or $x = -3$", "rationale": "Sign error on both solutions." },
+      { "text": "$x = 5$ or $x = 6$", "rationale": "Used coefficients as solutions." },
+      { "text": "$x = 1$ or $x = 6$", "rationale": "Incorrect factoring." },
+      { "text": "$x = -1$ or $x = -6$", "rationale": "Multiple errors in factoring." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor: $x^2 - 5x + 6 = (x-2)(x-3) = 0$.",
+      "Set each factor to zero: $x - 2 = 0$ or $x - 3 = 0$.",
+      "Solutions: $x = 2$ or $x = 3$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0002",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 2,
+    "stem": "Solve: $$x^2 + 7x + 12 = 0$$",
+    "choices": [
+      { "text": "$x = -3$ or $x = -4$", "rationale": "Correct: $(x+3)(x+4) = 0$, so $x = -3$ or $x = -4$." },
+      { "text": "$x = 3$ or $x = 4$", "rationale": "Forgot negative signs." },
+      { "text": "$x = -7$ or $x = -12$", "rationale": "Used coefficients as solutions." },
+      { "text": "$x = 2$ or $x = 6$", "rationale": "Incorrect factoring." },
+      { "text": "$x = -2$ or $x = -6$", "rationale": "Wrong factor pair." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find factors of 12 that add to 7: $3 \\times 4 = 12$ and $3 + 4 = 7$.",
+      "Factor: $(x+3)(x+4) = 0$.",
+      "Solutions: $x = -3$ or $x = -4$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0003",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 2,
+    "stem": "Solve: $$x^2 - 9 = 0$$",
+    "choices": [
+      { "text": "$x = \\pm 3$", "rationale": "Correct: Difference of squares: $(x-3)(x+3) = 0$, so $x = 3$ or $x = -3$." },
+      { "text": "$x = 9$", "rationale": "Moved -9 but forgot to take square root." },
+      { "text": "$x = 3$ only", "rationale": "Forgot the negative solution." },
+      { "text": "$x = \\pm 9$", "rationale": "Didn't take square root." },
+      { "text": "$x = 0$", "rationale": "Set equation to zero incorrectly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recognize difference of squares: $x^2 - 9 = (x-3)(x+3) = 0$.",
+      "Or: $x^2 = 9$, so $x = \\pm\\sqrt{9} = \\pm 3$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0004",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 3,
+    "stem": "Solve using the quadratic formula: $$x^2 + 6x + 5 = 0$$",
+    "choices": [
+      { "text": "$x = -1$ or $x = -5$", "rationale": "Correct: $x = \\frac{-6 \\pm \\sqrt{36-20}}{2} = \\frac{-6 \\pm 4}{2}$ gives $x = -1$ or $x = -5$." },
+      { "text": "$x = 1$ or $x = 5$", "rationale": "Sign error on solutions." },
+      { "text": "$x = -3$", "rationale": "Only found one solution or used incorrect formula." },
+      { "text": "$x = -2$ or $x = -3$", "rationale": "Calculation error in quadratic formula." },
+      { "text": "$x = 6$ or $x = 5$", "rationale": "Used coefficients incorrectly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Quadratic formula: $x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$ where $a=1, b=6, c=5$.",
+      "Calculate: $x = \\frac{-6 \\pm \\sqrt{36-20}}{2} = \\frac{-6 \\pm \\sqrt{16}}{2} = \\frac{-6 \\pm 4}{2}$.",
+      "Solutions: $x = \\frac{-2}{2} = -1$ or $x = \\frac{-10}{2} = -5$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0005",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 2,
+    "stem": "Solve: $$2x^2 - 8x = 0$$",
+    "choices": [
+      { "text": "$x = 0$ or $x = 4$", "rationale": "Correct: Factor out $2x$: $2x(x-4) = 0$, so $x = 0$ or $x = 4$." },
+      { "text": "$x = 4$ only", "rationale": "Forgot that $x = 0$ is also a solution." },
+      { "text": "$x = 0$ only", "rationale": "Divided by $x$, losing a solution." },
+      { "text": "$x = 2$ or $x = 8$", "rationale": "Used coefficients incorrectly." },
+      { "text": "$x = -4$", "rationale": "Sign error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor out common term: $2x(x - 4) = 0$.",
+      "Set each factor to zero: $2x = 0$ or $x - 4 = 0$.",
+      "Solutions: $x = 0$ or $x = 4$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0006",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 3,
+    "stem": "Solve: $$x^2 - 2x - 15 = 0$$",
+    "choices": [
+      { "text": "$x = 5$ or $x = -3$", "rationale": "Correct: $(x-5)(x+3) = 0$, so $x = 5$ or $x = -3$." },
+      { "text": "$x = -5$ or $x = 3$", "rationale": "Sign errors on both solutions." },
+      { "text": "$x = 15$ or $x = -2$", "rationale": "Used coefficients as solutions." },
+      { "text": "$x = 3$ or $x = 5$", "rationale": "Incorrect factoring." },
+      { "text": "$x = 1$ or $x = -15$", "rationale": "Wrong factor pair." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find factors of -15 that add to -2: $(-5) \\times 3 = -15$ and $-5 + 3 = -2$.",
+      "Factor: $(x-5)(x+3) = 0$.",
+      "Solutions: $x = 5$ or $x = -3$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0007",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 3,
+    "stem": "Solve using the quadratic formula: $$2x^2 + 5x - 3 = 0$$",
+    "choices": [
+      { "text": "$x = \\dfrac{1}{2}$ or $x = -3$", "rationale": "Correct: $x = \\frac{-5 \\pm \\sqrt{25+24}}{4} = \\frac{-5 \\pm 7}{4}$ gives $x = \\frac{1}{2}$ or $x = -3$." },
+      { "text": "$x = -\\dfrac{1}{2}$ or $x = 3$", "rationale": "Sign errors on solutions." },
+      { "text": "$x = 1$ or $x = -6$", "rationale": "Calculation error in formula." },
+      { "text": "$x = \\dfrac{5}{2}$ or $x = -3$", "rationale": "Forgot negative sign on $b$." },
+      { "text": "$x = 2$ or $x = -3$", "rationale": "Arithmetic error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Quadratic formula: $x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$ where $a=2, b=5, c=-3$.",
+      "Calculate: $x = \\frac{-5 \\pm \\sqrt{25-4(2)(-3)}}{4} = \\frac{-5 \\pm \\sqrt{49}}{4} = \\frac{-5 \\pm 7}{4}$.",
+      "Solutions: $x = \\frac{2}{4} = \\frac{1}{2}$ or $x = \\frac{-12}{4} = -3$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0008",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 4,
+    "stem": "Solve: $$(x+2)^2 = 25$$",
+    "choices": [
+      { "text": "$x = 3$ or $x = -7$", "rationale": "Correct: $x+2 = \\pm 5$, so $x = 3$ or $x = -7$." },
+      { "text": "$x = 5$ or $x = -5$", "rationale": "Forgot to account for the $+2$." },
+      { "text": "$x = 23$", "rationale": "Added 25 and 2 incorrectly." },
+      { "text": "$x = 3$ only", "rationale": "Forgot the negative square root." },
+      { "text": "$x = 7$ or $x = -3$", "rationale": "Sign error when solving." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Take square root of both sides: $x + 2 = \\pm 5$.",
+      "Solve $x + 2 = 5$: $x = 3$.",
+      "Solve $x + 2 = -5$: $x = -7$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0009",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 4,
+    "stem": "How many real solutions does $x^2 + 4x + 5 = 0$ have?",
+    "choices": [
+      { "text": "0", "rationale": "Correct: Discriminant $= b^2 - 4ac = 16 - 20 = -4 < 0$, so no real solutions." },
+      { "text": "1", "rationale": "Would require discriminant = 0." },
+      { "text": "2", "rationale": "Would require discriminant > 0." },
+      { "text": "3", "rationale": "Quadratics have at most 2 real solutions." },
+      { "text": "Infinitely many", "rationale": "Not possible for a quadratic equation." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use discriminant: $\\Delta = b^2 - 4ac$ where $a=1, b=4, c=5$.",
+      "Calculate: $\\Delta = 16 - 4(1)(5) = 16 - 20 = -4$.",
+      "Since $\\Delta < 0$, there are no real solutions."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0010",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 4,
+    "stem": "For what value of $k$ does $x^2 - 6x + k = 0$ have exactly one real solution?",
+    "choices": [
+      { "text": "$k = 9$", "rationale": "Correct: For one solution, discriminant = 0: $36 - 4k = 0$, so $k = 9$." },
+      { "text": "$k = 6$", "rationale": "Used coefficient $b$ instead of solving discriminant equation." },
+      { "text": "$k = 0$", "rationale": "Would give two distinct solutions." },
+      { "text": "$k = 36$", "rationale": "Used $b^2$ without dividing by 4." },
+      { "text": "$k = 3$", "rationale": "Divided 36 by wrong number." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For exactly one solution, discriminant must equal 0: $b^2 - 4ac = 0$.",
+      "Here $a=1, b=-6, c=k$: $(-6)^2 - 4(1)(k) = 0$.",
+      "Solve: $36 - 4k = 0$, so $k = 9$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0011",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 2,
+    "stem": "Solve: $$x^2 = 16$$",
+    "choices": [
+      { "text": "$x = \\pm 4$", "rationale": "Correct: Taking square root gives $x = 4$ or $x = -4$." },
+      { "text": "$x = 4$ only", "rationale": "Forgot the negative solution." },
+      { "text": "$x = 16$", "rationale": "Didn't take square root." },
+      { "text": "$x = 2$", "rationale": "Divided by 2 instead of taking square root." },
+      { "text": "$x = \\pm 8$", "rationale": "Divided 16 by 2 then took square root." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Take square root of both sides: $x = \\pm\\sqrt{16}$.",
+      "Calculate: $x = \\pm 4$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0012",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 3,
+    "stem": "Solve: $$x^2 + 10x + 25 = 0$$",
+    "choices": [
+      { "text": "$x = -5$", "rationale": "Correct: Perfect square: $(x+5)^2 = 0$, so $x = -5$ (double root)." },
+      { "text": "$x = 5$", "rationale": "Sign error." },
+      { "text": "$x = -5$ or $x = 5$", "rationale": "This is a perfect square with one solution." },
+      { "text": "$x = -10$ or $x = -25$", "rationale": "Used coefficients as solutions." },
+      { "text": "$x = 0$", "rationale": "Incorrect factoring." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recognize perfect square: $x^2 + 10x + 25 = (x+5)^2$.",
+      "Set to zero: $(x+5)^2 = 0$.",
+      "Solution: $x = -5$ (repeated root)."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0013",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 3,
+    "stem": "Solve: $$3x^2 - 12 = 0$$",
+    "choices": [
+      { "text": "$x = \\pm 2$", "rationale": "Correct: $3x^2 = 12$, so $x^2 = 4$, thus $x = \\pm 2$." },
+      { "text": "$x = \\pm 4$", "rationale": "Forgot to divide by 3." },
+      { "text": "$x = 2$ only", "rationale": "Forgot negative solution." },
+      { "text": "$x = \\pm 6$", "rationale": "Took square root of 12 without dividing by 3 first." },
+      { "text": "$x = 0$", "rationale": "Incorrect solving method." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add 12: $3x^2 = 12$.",
+      "Divide by 3: $x^2 = 4$.",
+      "Take square root: $x = \\pm 2$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0014",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 4,
+    "stem": "Solve using the quadratic formula: $$x^2 - 4x + 1 = 0$$",
+    "choices": [
+      { "text": "$x = 2 \\pm \\sqrt{3}$", "rationale": "Correct: $x = \\frac{4 \\pm \\sqrt{16-4}}{2} = \\frac{4 \\pm \\sqrt{12}}{2} = \\frac{4 \\pm 2\\sqrt{3}}{2} = 2 \\pm \\sqrt{3}$." },
+      { "text": "$x = 4 \\pm \\sqrt{12}$", "rationale": "Forgot to divide by $2a$." },
+      { "text": "$x = 2 \\pm 2\\sqrt{3}$", "rationale": "Didn't simplify after factoring out 2." },
+      { "text": "$x = 1$ or $x = 4$", "rationale": "Tried to factor incorrectly." },
+      { "text": "$x = -2 \\pm \\sqrt{3}$", "rationale": "Sign error on $b$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Quadratic formula: $x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$ where $a=1, b=-4, c=1$.",
+      "Calculate: $x = \\frac{4 \\pm \\sqrt{16-4}}{2} = \\frac{4 \\pm \\sqrt{12}}{2} = \\frac{4 \\pm 2\\sqrt{3}}{2}$.",
+      "Simplify: $x = 2 \\pm \\sqrt{3}$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0015",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 2,
+    "stem": "Solve: $$x^2 + 8x = 0$$",
+    "choices": [
+      { "text": "$x = 0$ or $x = -8$", "rationale": "Correct: Factor $x(x+8) = 0$, so $x = 0$ or $x = -8$." },
+      { "text": "$x = -8$ only", "rationale": "Forgot that $x = 0$ is also a solution." },
+      { "text": "$x = 0$ only", "rationale": "Divided by $x$, losing a solution." },
+      { "text": "$x = 8$", "rationale": "Sign error." },
+      { "text": "$x = \\pm 8$", "rationale": "Incorrect solving method." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor out $x$: $x(x+8) = 0$.",
+      "Set each factor to zero: $x = 0$ or $x + 8 = 0$.",
+      "Solutions: $x = 0$ or $x = -8$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0016",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 3,
+    "stem": "Solve: $$x^2 + 3x - 10 = 0$$",
+    "choices": [
+      { "text": "$x = 2$ or $x = -5$", "rationale": "Correct: $(x-2)(x+5) = 0$, so $x = 2$ or $x = -5$." },
+      { "text": "$x = -2$ or $x = 5$", "rationale": "Sign errors on both solutions." },
+      { "text": "$x = 10$ or $x = -3$", "rationale": "Used coefficients incorrectly." },
+      { "text": "$x = 5$ or $x = 2$", "rationale": "Wrong factor pair." },
+      { "text": "$x = -10$ or $x = 3$", "rationale": "Incorrect factoring." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find factors of -10 that add to 3: $5 \\times (-2) = -10$ and $5 + (-2) = 3$. Wait, that's not right. $(-2) \\times 5 = -10$ and $-2 + 5 = 3$. So we need factors where one is positive and one negative.",
+      "Actually: $5 \\times (-2) = -10$ and $5 - 2 = 3$. So it's $(x+5)(x-2) = 0$.",
+      "Solutions: $x = -5$ or $x = 2$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0017",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 4,
+    "stem": "Solve: $$4x^2 - 9 = 0$$",
+    "choices": [
+      { "text": "$x = \\pm \\dfrac{3}{2}$", "rationale": "Correct: Difference of squares: $(2x-3)(2x+3) = 0$, so $x = \\pm\\frac{3}{2}$." },
+      { "text": "$x = \\pm 3$", "rationale": "Forgot about the coefficient 4." },
+      { "text": "$x = \\pm \\dfrac{2}{3}$", "rationale": "Inverted the fraction." },
+      { "text": "$x = \\pm \\dfrac{9}{4}$", "rationale": "Didn't take square root properly." },
+      { "text": "$x = 1.5$ only", "rationale": "Forgot negative solution." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recognize difference of squares: $4x^2 - 9 = (2x)^2 - 3^2$.",
+      "Factor: $(2x-3)(2x+3) = 0$.",
+      "Solve: $2x = 3$ or $2x = -3$, so $x = \\pm\\frac{3}{2}$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0018",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 5,
+    "stem": "For what positive value of $c$ does $x^2 + 10x + c = 0$ have exactly one real solution?",
+    "choices": [
+      { "text": "$c = 25$", "rationale": "Correct: Discriminant $= 0$: $100 - 4c = 0$, so $c = 25$." },
+      { "text": "$c = 10$", "rationale": "Used coefficient $b$ value." },
+      { "text": "$c = 100$", "rationale": "Used $b^2$ without dividing by 4." },
+      { "text": "$c = 5$", "rationale": "Divided 100 by wrong number." },
+      { "text": "$c = 0$", "rationale": "Would give two distinct solutions." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For one solution, discriminant $= 0$: $b^2 - 4ac = 0$.",
+      "Here $a=1, b=10, c=c$: $100 - 4(1)(c) = 0$.",
+      "Solve: $100 - 4c = 0$, so $c = 25$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0019",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 4,
+    "stem": "Solve: $$2x^2 + 7x - 4 = 0$$",
+    "choices": [
+      { "text": "$x = \\dfrac{1}{2}$ or $x = -4$", "rationale": "Correct: $(2x-1)(x+4) = 0$, so $x = \\frac{1}{2}$ or $x = -4$." },
+      { "text": "$x = -\\dfrac{1}{2}$ or $x = 4$", "rationale": "Sign errors on both solutions." },
+      { "text": "$x = 2$ or $x = -7$", "rationale": "Used coefficients as solutions." },
+      { "text": "$x = 1$ or $x = -2$", "rationale": "Incorrect factoring." },
+      { "text": "$x = \\dfrac{7}{2}$ or $x = -2$", "rationale": "Calculation error." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor: $2x^2 + 7x - 4 = (2x-1)(x+4) = 0$.",
+      "Set each factor to zero: $2x - 1 = 0$ or $x + 4 = 0$.",
+      "Solutions: $x = \\frac{1}{2}$ or $x = -4$."
+    ]
+  },
+  {
+    "id": "ALG-QUA-0020",
+    "topic": "Algebra",
+    "subtopic": "Solving Quadratics",
+    "diff": 5,
+    "stem": "If $x^2 - 6x + k = (x-3)^2$, what is the value of $k$?",
+    "choices": [
+      { "text": "$k = 9$", "rationale": "Correct: Expand $(x-3)^2 = x^2 - 6x + 9$, so $k = 9$." },
+      { "text": "$k = 6$", "rationale": "Used middle coefficient." },
+      { "text": "$k = 3$", "rationale": "Used the value inside parentheses." },
+      { "text": "$k = -9$", "rationale": "Sign error." },
+      { "text": "$k = 0$", "rationale": "Incorrect reasoning." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Expand right side: $(x-3)^2 = x^2 - 6x + 9$.",
+      "Compare to left side: $x^2 - 6x + k$.",
+      "Therefore: $k = 9$."
+    ]
+  }
+]
+

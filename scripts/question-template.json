@@ -1,0 +1,36 @@
+{
+  "id": "TOPIC-SUB-0001",
+  "topic": "Topic Name",
+  "subtopic": "Subtopic Name",
+  "diff": 1,
+  "stem": "Question text here. For math, use $$x^2 + 5x + 6 = 0$$ for block math or $x = 3$ for inline math. For money, use \\$40.",
+  "choices": [
+    {
+      "text": "Answer choice text (use $x = 5$ for math, \\$30 for money)",
+      "rationale": "Correct: Explanation with proper spacing. Include math like $x = 5$ or equations."
+    },
+    {
+      "text": "Wrong answer",
+      "rationale": "Error explanation. Always include spaces between words like 'forgot to multiply' not 'forgottomultiply'. Include spaces around math: $x = 3$, not $x=3$."
+    },
+    {
+      "text": "Another wrong answer",
+      "rationale": "Another error explanation with proper spacing and formatting."
+    },
+    {
+      "text": "Yet another wrong answer",
+      "rationale": "Error explanation here."
+    },
+    {
+      "text": "Final wrong answer",
+      "rationale": "Final error explanation here."
+    }
+  ],
+  "answerIndex": 0,
+  "solutionSteps": [
+    "Step 1: Explain what to do first. Use math like $x^2 = 9$.",
+    "Step 2: Next step with equations $x = 3$ or $x = -3$.",
+    "Step 3: Final step with conclusion."
+  ]
+}
+

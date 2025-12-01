@@ -1,0 +1,203 @@
+[
+  {
+    "id": "NUM-FAC-0001",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 1,
+    "stem": "What is the greatest common factor (GCF) of 12 and 18?",
+    "choices": [
+      { "text": "$6$", "rationale": "Correct: Factors of 12: {1,2,3,4,6,12}. Factors of 18: {1,2,3,6,9,18}. GCF = 6." },
+      { "text": "$36$", "rationale": "This is the LCM, not the GCF." },
+      { "text": "$3$", "rationale": "This is a common factor, but not the greatest." },
+      { "text": "$2$", "rationale": "This is a common factor, but not the greatest." },
+      { "text": "$18$", "rationale": "18 doesn't divide 12 evenly." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "List factors of 12: 1, 2, 3, 4, 6, 12.",
+      "List factors of 18: 1, 2, 3, 6, 9, 18.",
+      "Greatest common factor: 6."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0002",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 1,
+    "stem": "What is the least common multiple (LCM) of 4 and 6?",
+    "choices": [
+      { "text": "$12$", "rationale": "Correct: Multiples of 4: {4,8,12,...}. Multiples of 6: {6,12,18,...}. LCM = 12." },
+      { "text": "$2$", "rationale": "This is the GCF, not the LCM." },
+      { "text": "$24$", "rationale": "This is a common multiple, but not the least." },
+      { "text": "$10$", "rationale": "This is not a multiple of both 4 and 6." },
+      { "text": "$6$", "rationale": "6 is not divisible by 4." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiples of 4: 4, 8, 12, 16, 20, 24...",
+      "Multiples of 6: 6, 12, 18, 24...",
+      "Least common multiple: 12."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0003",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 2,
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      { "text": "$29$", "rationale": "Correct: 29 has only two factors: 1 and 29." },
+      { "text": "$27$", "rationale": "27 = 3 × 9, so it's composite." },
+      { "text": "$21$", "rationale": "21 = 3 × 7, so it's composite." },
+      { "text": "$1$", "rationale": "1 is neither prime nor composite." },
+      { "text": "$35$", "rationale": "35 = 5 × 7, so it's composite." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check each number for factors other than 1 and itself.",
+      "29 is only divisible by 1 and 29.",
+      "Therefore, 29 is prime."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0004",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 2,
+    "stem": "What is the GCF of 24, 36, and 48?",
+    "choices": [
+      { "text": "$12$", "rationale": "Correct: Prime factorization gives $24=2^3\\cdot3$, $36=2^2\\cdot3^2$, $48=2^4\\cdot3$. GCF = $2^2\\cdot3 = 12$." },
+      { "text": "$6$", "rationale": "This is a common factor, but not the greatest." },
+      { "text": "$24$", "rationale": "24 doesn't divide 36 or 48 evenly... wait, 48/24=2, but 36/24=1.5. So 24 doesn't work." },
+      { "text": "$144$", "rationale": "This is the LCM, not GCF." },
+      { "text": "$4$", "rationale": "This is a common factor, but not the greatest." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Prime factorizations: $24 = 2^3 \\cdot 3$, $36 = 2^2 \\cdot 3^2$, $48 = 2^4 \\cdot 3$.",
+      "Take lowest power of each common prime: $2^2 \\cdot 3^1$.",
+      "GCF = $4 \\times 3 = 12$."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0005",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 3,
+    "stem": "What is the LCM of 15 and 20?",
+    "choices": [
+      { "text": "$60$", "rationale": "Correct: $15 = 3 \\cdot 5$, $20 = 2^2 \\cdot 5$. LCM = $2^2 \\cdot 3 \\cdot 5 = 60$." },
+      { "text": "$5$", "rationale": "This is the GCF, not LCM." },
+      { "text": "$300$", "rationale": "This is the product, not LCM." },
+      { "text": "$30$", "rationale": "30 is not divisible by 20." },
+      { "text": "$100$", "rationale": "100 is not divisible by 15." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Prime factorizations: $15 = 3 \\cdot 5$, $20 = 2^2 \\cdot 5$.",
+      "Take highest power of each prime: $2^2 \\cdot 3 \\cdot 5$.",
+      "LCM = $4 \\times 3 \\times 5 = 60$."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0006",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 2,
+    "stem": "How many prime numbers are there between 10 and 20?",
+    "choices": [
+      { "text": "$4$", "rationale": "Correct: The primes are 11, 13, 17, and 19." },
+      { "text": "$5$", "rationale": "Counted 15 as prime, but $15 = 3 \\times 5$." },
+      { "text": "$3$", "rationale": "Missed one of the four primes." },
+      { "text": "$6$", "rationale": "Counted some composite numbers as prime." },
+      { "text": "$2$", "rationale": "Missed several primes." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check each number: 11 (prime), 12 (composite), 13 (prime), 14 (composite).",
+      "Continue: 15 (composite), 16 (composite), 17 (prime), 18 (composite), 19 (prime).",
+      "Count: 11, 13, 17, 19 = 4 primes."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0007",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 3,
+    "stem": "What is the prime factorization of 72?",
+    "choices": [
+      { "text": "$2^3 \\cdot 3^2$", "rationale": "Correct: $72 = 8 \\times 9 = 2^3 \\times 3^2$." },
+      { "text": "$2^2 \\cdot 3^3$", "rationale": "This equals 108, not 72." },
+      { "text": "$2 \\cdot 36$", "rationale": "36 is not prime; need to factor further." },
+      { "text": "$8 \\cdot 9$", "rationale": "These are not prime factors." },
+      { "text": "$2^4 \\cdot 3$", "rationale": "This equals 48, not 72." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide by 2 repeatedly: $72 = 2 \\times 36 = 2 \\times 2 \\times 18 = 2 \\times 2 \\times 2 \\times 9$.",
+      "Factor 9: $9 = 3 \\times 3$.",
+      "Prime factorization: $2^3 \\cdot 3^2$."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0008",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 4,
+    "stem": "Two numbers have a GCF of 6 and an LCM of 180. If one of the numbers is 30, what is the other number?",
+    "choices": [
+      { "text": "$36$", "rationale": "Correct: Use $\\text{GCF} \\times \\text{LCM} = a \\times b$. So $6 \\times 180 = 30 \\times b$, thus $b = 36$." },
+      { "text": "$30$", "rationale": "The two numbers can't be the same with these GCF and LCM values." },
+      { "text": "$180$", "rationale": "Check: GCF(30,180) = 30, not 6." },
+      { "text": "$6$", "rationale": "Check: LCM(30,6) = 30, not 180." },
+      { "text": "$60$", "rationale": "Check: GCF(30,60) = 30, not 6." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use formula: $\\text{GCF}(a,b) \\times \\text{LCM}(a,b) = a \\times b$.",
+      "Substitute: $6 \\times 180 = 30 \\times b$.",
+      "Solve: $b = \\frac{1080}{30} = 36$."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0009",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 3,
+    "stem": "Which number is divisible by both 3 and 4?",
+    "choices": [
+      { "text": "$36$", "rationale": "Correct: $36 \\div 3 = 12$ and $36 \\div 4 = 9$. Both are whole numbers." },
+      { "text": "$30$", "rationale": "$30 \\div 4 = 7.5$, not a whole number." },
+      { "text": "$32$", "rationale": "$32 \\div 3 = 10.\\overline{6}$, not a whole number." },
+      { "text": "$27$", "rationale": "$27 \\div 4 = 6.75$, not a whole number." },
+      { "text": "$40$", "rationale": "$40 \\div 3 = 13.\\overline{3}$, not a whole number." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A number divisible by both 3 and 4 must be divisible by their LCM.",
+      "LCM(3,4) = 12 (since 3 and 4 are coprime).",
+      "36 is a multiple of 12: $36 = 12 \\times 3$."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0010",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 4,
+    "stem": "What is the smallest positive integer that is divisible by 2, 3, 4, 5, and 6?",
+    "choices": [
+      { "text": "$60$", "rationale": "Correct: LCM(2,3,4,5,6) = $2^2 \\cdot 3 \\cdot 5 = 60$." },
+      { "text": "$30$", "rationale": "30 is not divisible by 4." },
+      { "text": "$120$", "rationale": "This is a common multiple, but not the least." },
+      { "text": "$360$", "rationale": "This is a common multiple, but not the least." },
+      { "text": "$12$", "rationale": "12 is not divisible by 5." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find LCM of all five numbers.",
+      "Prime factorizations: $2=2$, $3=3$, $4=2^2$, $5=5$, $6=2\\cdot3$.",
+      "LCM = $2^2 \\cdot 3 \\cdot 5 = 60$."
+    ]
+  }
+]
+
