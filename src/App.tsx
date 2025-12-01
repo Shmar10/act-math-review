@@ -306,7 +306,7 @@ function PracticeNavBar({
             <TimerBadge seconds={timeLeft} />
           ) : (
             <span className="px-3 py-1 rounded-xl border bg-slate-700 border-slate-600 text-xs text-slate-300">
-              📖 Study Mode
+              📖 Guided Learning Mode
             </span>
           )}
         </div>

@@ -4,10 +4,30 @@ type PracticeMode = 'quick' | 'standard' | 'full' | 'study';
 type QuestionSelectionMode = 'random' | 'shuffled' | 'sequential';
 
 const PRACTICE_MODES = {
-  quick: { questions: 5, timeMinutes: 6, description: "A quick warm-up session" },
-  standard: { questions: 10, timeMinutes: 12, description: "Standard practice set" },
-  full: { questions: 60, timeMinutes: 60, description: "Full-length ACT Math test" },
-  study: { questions: 10, timeMinutes: null, description: "Untimed learning mode with solutions" },
+  quick: { 
+    questions: 5, 
+    timeMinutes: 6, 
+    displayName: "Quick Warm‑Up",
+    description: "Best for getting started or doing a short daily drill before a longer study session."
+  },
+  standard: { 
+    questions: 10, 
+    timeMinutes: 12, 
+    displayName: "Timed Practice Set",
+    description: "Best for building pacing and accuracy with a small, test‑style set."
+  },
+  full: { 
+    questions: 60, 
+    timeMinutes: 60, 
+    displayName: "Full ACT Math Simulation",
+    description: "Best for simulating the real ACT Math section and tracking score progress."
+  },
+  study: { 
+    questions: 10, 
+    timeMinutes: null, 
+    displayName: "Guided Learning Mode",
+    description: "Best for slowing down, seeing step‑by‑step solutions, and filling in skill gaps."
+  },
 } as const;
 
 type Props = {
@@ -161,7 +181,7 @@ export default function WelcomePage({
                 className="w-full rounded-lg bg-slate-900 border border-slate-600 px-4 py-2 text-left text-slate-100 focus:outline-none focus:ring-2 focus:ring-sky-500 flex items-center justify-between"
               >
                 <div>
-                  <div className="font-semibold">{selectedMode.description}</div>
+                  <div className="font-semibold">{selectedMode.displayName}</div>
                   <div className="text-xs text-slate-400">
                     {selectedMode.questions} questions
                     {selectedMode.timeMinutes ? `, ${selectedMode.timeMinutes} min` : ', untimed'}
@@ -185,13 +205,17 @@ export default function WelcomePage({
                         className={`w-full text-left px-4 py-3 hover:bg-slate-800 transition ${
                           isSelected ? 'bg-sky-900/30 border-l-4 border-sky-400' : ''
                         }`}
+                        title={modeConfig.description}
                       >
                         <div className="font-semibold text-slate-100">
-                          {modeConfig.description}
+                          {modeConfig.displayName}
                         </div>
-                        <div className="text-xs text-slate-400">
+                        <div className="text-xs text-slate-400 mb-1">
                           {modeConfig.questions} questions
                           {modeConfig.timeMinutes ? `, ${modeConfig.timeMinutes} min` : ', untimed'}
+                        </div>
+                        <div className="text-xs text-slate-500 italic">
+                          {modeConfig.description}
                         </div>
                       </button>
                     );
