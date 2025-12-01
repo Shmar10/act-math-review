@@ -17,6 +17,7 @@ export const BANKS: Bank[] = [
   { key: "ALG-LIN", topic: "Algebra", subtopic: "Linear Equations", file: "algebra-linear.json" },
   { key: "ALG-EXP", topic: "Algebra", subtopic: "Exponents & Radicals", file: "algebra-exponents.json" },
   { key: "ALG-QUA", topic: "Algebra", subtopic: "Solving Quadratics", file: "algebra-quadratics.json" },
+  { key: "ALG-ABS", topic: "Algebra", subtopic: "Absolute Value Equations", file: "algebra-absolute-value.json" },
   { key: "ALG-WRD", topic: "Algebra", subtopic: "Word Problems", file: "algebra-word-problems.json" },
 
   // ========== ALGEBRA II ==========

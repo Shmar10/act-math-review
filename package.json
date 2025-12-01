@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "validate-question": "node scripts/validate-question.js"
+    "validate-question": "node scripts/validate-question.js",
+    "generate-stats": "node scripts/generate-stats.js"
   },
   "dependencies": {
     "katex": "^0.16.25",

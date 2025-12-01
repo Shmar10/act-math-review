@@ -1,0 +1,227 @@
+[
+  {
+    "id": "ALG-ABS-0001",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 2,
+    "stem": "Solve for $x$: $$|2x - 5| = 7$$",
+    "choices": [
+      { "text": "$x = -1$ or $x = 6$", "rationale": "Correct: $2x-5=7$ gives $x=6$, and $2x-5=-7$ gives $x=-1$." },
+      { "text": "$x = 1$ or $x = -6$", "rationale": "Sign error on both solutions." },
+      { "text": "$x = 6$ only", "rationale": "Only solved the positive case, forgot the negative case." },
+      { "text": "$x = -1$ only", "rationale": "Only solved the negative case, forgot the positive case." },
+      { "text": "$x = 1$ or $x = 6$", "rationale": "Incorrectly set up the negative case as $2x-5=7$ instead of $2x-5=-7$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up two equations: $2x - 5 = 7$ or $2x - 5 = -7$.",
+      "Solve first equation: $2x = 12$, so $x = 6$.",
+      "Solve second equation: $2x = -2$, so $x = -1$.",
+      "Check: $|2(6)-5| = |7| = 7$ and $|2(-1)-5| = |-7| = 7$. Both work.",
+      "Solution: $x = -1$ or $x = 6$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0002",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 1,
+    "stem": "Solve for $x$: $$|x - 3| = 5$$",
+    "choices": [
+      { "text": "$x = -2$ or $x = 8$", "rationale": "Correct: $x - 3 = 5$ gives $x = 8$, and $x - 3 = -5$ gives $x = -2$." },
+      { "text": "$x = 2$ or $x = 8$", "rationale": "Subtracted 1 instead of 3 when solving the negative case." },
+      { "text": "$x = -8$ or $x = 2$", "rationale": "Sign errors in both cases." },
+      { "text": "$x = 8$ only", "rationale": "Forgot to consider the negative case $x - 3 = -5$." },
+      { "text": "$x = -2$ only", "rationale": "Forgot to consider the positive case $x - 3 = 5$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up two equations: $x - 3 = 5$ or $x - 3 = -5$.",
+      "From $x - 3 = 5$, add 3 to get $x = 8$.",
+      "From $x - 3 = -5$, add 3 to get $x = -2$.",
+      "Check: $|8 - 3| = |5| = 5$ and $|-2 - 3| = |-5| = 5$, so both solutions work.",
+      "Solution: $x = -2$ or $x = 8$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0003",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 1,
+    "stem": "Solve for $x$: $$|x + 4| = 3$$",
+    "choices": [
+      { "text": "$x = -1$ or $x = -7$", "rationale": "Correct: $x + 4 = 3$ gives $x = -1$, and $x + 4 = -3$ gives $x = -7$." },
+      { "text": "$x = 1$ or $x = -7$", "rationale": "Dropped the negative sign in the positive case." },
+      { "text": "$x = -1$ or $x = 7$", "rationale": "Dropped the negative sign in the negative case." },
+      { "text": "$x = -1$ only", "rationale": "Solved only $x + 4 = 3$ and ignored $x + 4 = -3$." },
+      { "text": "$x = -7$ only", "rationale": "Solved only $x + 4 = -3$ and ignored $x + 4 = 3$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Write two equations: $x + 4 = 3$ or $x + 4 = -3$.",
+      "From $x + 4 = 3$, subtract 4 to get $x = -1$.",
+      "From $x + 4 = -3$, subtract 4 to get $x = -7$.",
+      "Check: $|-1 + 4| = |3| = 3$ and $|-7 + 4| = |-3| = 3$, so both are solutions.",
+      "Solution: $x = -1$ or $x = -7$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0004",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 2,
+    "stem": "Solve for $x$: $$|3x + 1| = 8$$",
+    "choices": [
+      { "text": "$x = -3$ or $x = \\dfrac{7}{3}$", "rationale": "Correct: $3x + 1 = 8$ gives $x = \\dfrac{7}{3}$, and $3x + 1 = -8$ gives $x = -3$." },
+      { "text": "$x = -\\dfrac{7}{3}$ or $x = 3$", "rationale": "Swapped the signs of both solutions." },
+      { "text": "$x = -3$ or $x = \\dfrac{8}{3}$", "rationale": "Added 1 instead of subtracting 1 when solving $3x + 1 = 8$." },
+      { "text": "$x = \\dfrac{7}{3}$ only", "rationale": "Solved only the positive case $3x + 1 = 8$." },
+      { "text": "$x = -3$ only", "rationale": "Solved only the negative case $3x + 1 = -8$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up two equations: $3x + 1 = 8$ or $3x + 1 = -8$.",
+      "From $3x + 1 = 8$, subtract 1 to get $3x = 7$, so $x = \\dfrac{7}{3}$.",
+      "From $3x + 1 = -8$, subtract 1 to get $3x = -9$, so $x = -3$.",
+      "Check: $|3(-3) + 1| = |-8| = 8$ and $|3\\cdot\\dfrac{7}{3} + 1| = |7 + 1| = 8$, so both solutions work.",
+      "Solution: $x = -3$ or $x = \\dfrac{7}{3}$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0005",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 2,
+    "stem": "Solve for $x$: $$|2x + 5| = 3$$",
+    "choices": [
+      { "text": "$x = -4$ or $x = -1$", "rationale": "Correct: $2x + 5 = 3$ gives $x = -1$, and $2x + 5 = -3$ gives $x = -4$." },
+      { "text": "$x = 4$ or $x = 1$", "rationale": "Dropped the negative sign in both cases." },
+      { "text": "$x = -4$ or $x = 1$", "rationale": "Incorrect sign when solving $2x + 5 = 3$." },
+      { "text": "$x = -1$ only", "rationale": "Ignored the negative case $2x + 5 = -3$." },
+      { "text": "$x = -4$ only", "rationale": "Ignored the positive case $2x + 5 = 3$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Write two equations: $2x + 5 = 3$ or $2x + 5 = -3$.",
+      "From $2x + 5 = 3$, subtract 5 to get $2x = -2$, so $x = -1$.",
+      "From $2x + 5 = -3$, subtract 5 to get $2x = -8$, so $x = -4$.",
+      "Check: $|2(-1) + 5| = |3| = 3$ and $|2(-4) + 5| = |-3| = 3$, so both work.",
+      "Solution: $x = -4$ or $x = -1$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0006",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 3,
+    "stem": "Solve for $x$: $$|3x - 4| = x + 2$$",
+    "choices": [
+      { "text": "$x = 3$ or $x = \\dfrac{1}{2}$", "rationale": "Correct: Solving $3x - 4 = x + 2$ gives $x = 3$, and $3x - 4 = -(x + 2)$ gives $x = \\dfrac{1}{2}$. Both satisfy the restriction that $x + 2 \\ge 0$." },
+      { "text": "$x = 3$ or $x = 1$", "rationale": "Solved $3x - 4 = -(x + 2)$ incorrectly, getting $x = 1$ instead of $x = \\dfrac{1}{2}$." },
+      { "text": "$x = 3$ only", "rationale": "Solved only the positive case and forgot the negative case." },
+      { "text": "$x = \\dfrac{1}{2}$ only", "rationale": "Solved only the negative case and forgot the positive case." },
+      { "text": "No solution", "rationale": "Incorrectly assumed that an absolute value equation cannot equal an expression with $x$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For $|3x - 4| = x + 2$, the right side must be nonnegative, so require $x + 2 \\ge 0$, which means $x \\ge -2$.",
+      "Case 1: $3x - 4 = x + 2$. Subtract $x$ from both sides to get $2x - 4 = 2$, so $2x = 6$ and $x = 3$.",
+      "Check: $|3(3) - 4| = |5| = 5$ and $3 + 2 = 5$. Also $3 \\ge -2$, so $x = 3$ works.",
+      "Case 2: $3x - 4 = -(x + 2)$. Distribute the negative to get $3x - 4 = -x - 2$. Add $x$ to get $4x - 4 = -2$, so $4x = 2$ and $x = \\dfrac{1}{2}$.",
+      "Check: $|3\\cdot\\dfrac{1}{2} - 4| = |\\dfrac{3}{2} - 4| = | -\\dfrac{5}{2}| = \\dfrac{5}{2}$ and $\\dfrac{1}{2} + 2 = \\dfrac{5}{2}$. Also $\\dfrac{1}{2} \\ge -2$, so $x = \\dfrac{1}{2}$ works.",
+      "Solution: $x = 3$ or $x = \\dfrac{1}{2}$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0007",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 3,
+    "stem": "Solve for $x$: $$|2x - 3| = |x + 4|$$",
+    "choices": [
+      { "text": "$x = 7$ or $x = -\\dfrac{1}{3}$", "rationale": "Correct: Solving $2x - 3 = x + 4$ gives $x = 7$, and $2x - 3 = -(x + 4)$ gives $x = -\\dfrac{1}{3}$." },
+      { "text": "$x = -1$ or $x = 7$", "rationale": "Incorrectly solved $2x - 3 = -(x + 4)$ as $x = -1$ instead of $x = -\\dfrac{1}{3}$." },
+      { "text": "$x = 7$ only", "rationale": "Solved only $2x - 3 = x + 4$ and ignored the negative case." },
+      { "text": "$x = -\\dfrac{1}{3}$ only", "rationale": "Solved only $2x - 3 = -(x + 4)$ and ignored the positive case." },
+      { "text": "No solution", "rationale": "Incorrectly assumed that two absolute values cannot be equal unless the expressions are the same." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "When $|A| = |B|$, either $A = B$ or $A = -B$.",
+      "Case 1: $2x - 3 = x + 4$. Subtract $x$ to get $x - 3 = 4$, so $x = 7$.",
+      "Case 2: $2x - 3 = -(x + 4)$. Distribute to get $2x - 3 = -x - 4$. Add $x$ to get $3x - 3 = -4$, so $3x = -1$ and $x = -\\dfrac{1}{3}$.",
+      "Check $x = 7$: $|2(7) - 3| = |11| = 11$ and $|7 + 4| = |11| = 11$, so $x = 7$ works.",
+      "Check $x = -\\dfrac{1}{3}$: $|2(-\\dfrac{1}{3}) - 3| = |-\\dfrac{2}{3} - 3| = |-\\dfrac{11}{3}| = \\dfrac{11}{3}$ and $|-\\dfrac{1}{3} + 4| = |\\dfrac{11}{3}| = \\dfrac{11}{3}$, so $x = -\\dfrac{1}{3}$ works.",
+      "Solution: $x = 7$ or $x = -\\dfrac{1}{3}$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0008",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 4,
+    "stem": "Solve for $x$: $$|5x + 2| = 3x + 8$$",
+    "choices": [
+      { "text": "$x = 3$ or $x = -\\dfrac{5}{4}$", "rationale": "Correct: Solving $5x + 2 = 3x + 8$ gives $x = 3$, and $5x + 2 = -(3x + 8)$ gives $x = -\\dfrac{5}{4}$. Both satisfy the restriction $3x + 8 \\ge 0$." },
+      { "text": "$x = 3$ only", "rationale": "Solved only the positive case and did not check the negative case properly." },
+      { "text": "$x = -5$ or $x = 3$", "rationale": "Found both algebraic solutions but made an arithmetic error in the negative case." },
+      { "text": "$x = -\\dfrac{5}{4}$ only", "rationale": "Solved only the negative case and ignored the positive case." },
+      { "text": "No solution", "rationale": "Incorrectly assumed the equation has no solution." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For $|5x + 2| = 3x + 8$, the right side must be nonnegative, so require $3x + 8 \\ge 0$, which means $x \\ge -\\dfrac{8}{3}$.",
+      "Case 1: $5x + 2 = 3x + 8$. Subtract $3x$ to get $2x + 2 = 8$, so $2x = 6$ and $x = 3$.",
+      "Check: $|5(3) + 2| = |17| = 17$ and $3(3) + 8 = 17$. Also $3 \\ge -\\dfrac{8}{3}$, so $x = 3$ works.",
+      "Case 2: $5x + 2 = -(3x + 8)$. Distribute to get $5x + 2 = -3x - 8$. Add $3x$ to get $8x + 2 = -8$, so $8x = -10$ and $x = -\\dfrac{5}{4}$.",
+      "Check: $|5(-\\dfrac{5}{4}) + 2| = |-\\dfrac{25}{4} + \\dfrac{8}{4}| = |-\\dfrac{17}{4}| = \\dfrac{17}{4}$ and $3(-\\dfrac{5}{4}) + 8 = -\\dfrac{15}{4} + \\dfrac{32}{4} = \\dfrac{17}{4}$. Also $-\\dfrac{5}{4} = -1.25 > -\\dfrac{8}{3} \\approx -2.67$, so $x = -\\dfrac{5}{4}$ works.",
+      "Solution: $x = 3$ or $x = -\\dfrac{5}{4}$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0009",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 3,
+    "stem": "Solve for $x$: $$|2x - 1| = 3x - 4$$",
+    "choices": [
+      { "text": "$x = 3$ only", "rationale": "Correct: Solving $2x - 1 = 3x - 4$ gives $x = 3$. For $2x - 1 = -(3x - 4)$, we get $x = 1$, but this violates the restriction $3x - 4 \\ge 0$ since $3(1) - 4 = -1 < 0$." },
+      { "text": "$x = 3$ or $x = 1$", "rationale": "Found both algebraic solutions but did not check the restriction that $3x - 4 \\ge 0$." },
+      { "text": "$x = 1$ only", "rationale": "Solved only the negative case and ignored that it doesn't satisfy the restriction." },
+      { "text": "$x = -3$ or $x = -1$", "rationale": "Sign errors when solving both equations." },
+      { "text": "No solution", "rationale": "Incorrectly assumed there is no solution." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For $|2x - 1| = 3x - 4$ the right side must be nonnegative, so require $3x - 4 \\ge 0$, which gives $x \\ge \\dfrac{4}{3}$.",
+      "Case 1: $2x - 1 = 3x - 4$. Subtract $2x$ from both sides to get $-1 = x - 4$, so $x = 3$.",
+      "Check: $|2(3) - 1| = |5| = 5$ and $3(3) - 4 = 5$. Also $3 \\ge \\dfrac{4}{3}$, so $x = 3$ works.",
+      "Case 2: $2x - 1 = -(3x - 4)$. Distribute the negative to get $2x - 1 = -3x + 4$. Add $3x$ to get $5x - 1 = 4$, so $5x = 5$ and $x = 1$.",
+      "Check restriction: At $x = 1$, $3(1) - 4 = -1 < 0$, which violates the requirement. So $x = 1$ is extraneous and must be discarded.",
+      "Solution: $x = 3$ only."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0010",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 4,
+    "stem": "Solve for $x$: $$|x + 2| = 2x - 1$$",
+    "choices": [
+      { "text": "$x = 3$ only", "rationale": "Correct: Solving the cases and checking the restriction $2x - 1 \\ge 0$ shows that $x = 3$ is the only solution." },
+      { "text": "$x = -3$", "rationale": "Solved $x + 2 = -(2x - 1)$ correctly but did not apply the restriction that $2x - 1 \\ge 0$." },
+      { "text": "$x = 3$ or $x = -\\dfrac{1}{3}$", "rationale": "Found both algebraic solutions but did not discard the extraneous one that makes $2x - 1$ negative." },
+      { "text": "No solution", "rationale": "Assumed there is no solution because one side is not an absolute value." },
+      { "text": "$x = 1$", "rationale": "Arithmetic error when solving one of the linear equations." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For $|x + 2| = 2x - 1$, the right side must be nonnegative, so require $2x - 1 \\ge 0$, which gives $x \\ge \\dfrac{1}{2}$.",
+      "Case 1: $x + 2 = 2x - 1$. Subtract $x$ from both sides to get $2 = x - 1$, so $x = 3$.",
+      "Check: $|3 + 2| = |5| = 5$ and $2(3) - 1 = 5$. Also $3 \\ge \\dfrac{1}{2}$, so $x = 3$ works.",
+      "Case 2: $x + 2 = -(2x - 1)$. Distribute the negative to get $x + 2 = -2x + 1$. Add $2x$ to both sides to get $3x + 2 = 1$, so $3x = -1$ and $x = -\\dfrac{1}{3}$.",
+      "Check restriction: At $x = -\\dfrac{1}{3}$, $2(-\\dfrac{1}{3}) - 1 = -\\dfrac{2}{3} - 1 = -\\dfrac{5}{3} < 0$, which violates the requirement. So $x = -\\dfrac{1}{3}$ is extraneous.",
+      "Solution: $x = 3$ only."
+    ]
+  }
+]
