@@ -3,6 +3,21 @@ import { useState, useRef, useEffect } from "react";
 type PracticeMode = 'quick' | 'standard' | 'full' | 'study';
 type QuestionSelectionMode = 'random' | 'shuffled' | 'sequential';
 
+const QUESTION_SELECTION_MODES = {
+  sequential: {
+    displayName: "Sequential",
+    description: "Best for systematic learning and working through questions in a structured order."
+  },
+  shuffled: {
+    displayName: "Shuffled",
+    description: "Best for varied practice with a random order per session and no repeated questions."
+  },
+  random: {
+    displayName: "Random",
+    description: "Best for quick drills with completely random selection that may include repeats."
+  },
+} as const;
+
 const PRACTICE_MODES = {
   quick: { 
     questions: 5, 
@@ -58,9 +73,11 @@ export default function WelcomePage({
   onStartPractice,
 }: Props) {
   const [showPracticeMenu, setShowPracticeMenu] = useState(false);
+  const [showQuestionModeMenu, setShowQuestionModeMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const questionModeMenuRef = useRef<HTMLDivElement>(null);
 
-  // Close menu when clicking outside
+  // Close practice menu when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -72,6 +89,19 @@ export default function WelcomePage({
       return () => document.removeEventListener('mousedown', handleClickOutside);
     }
   }, [showPracticeMenu]);
+
+  // Close question mode menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (questionModeMenuRef.current && !questionModeMenuRef.current.contains(event.target as Node)) {
+        setShowQuestionModeMenu(false);
+      }
+    }
+    if (showQuestionModeMenu) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [showQuestionModeMenu]);
 
   const selectedMode = PRACTICE_MODES[practiceMode];
   const filteredCount = availableCount;
@@ -154,20 +184,51 @@ export default function WelcomePage({
             <label className="block text-slate-300 font-semibold mb-2">
               Question Selection Mode
             </label>
-            <select
-              className="w-full rounded-lg bg-slate-900 border border-slate-600 px-4 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
-              value={questionSelectionMode}
-              onChange={(e) => setQuestionSelectionMode(e.target.value as QuestionSelectionMode)}
-            >
-              <option value="sequential">Sequential</option>
-              <option value="shuffled">Shuffled</option>
-              <option value="random">Random</option>
-            </select>
-            <div className="text-xs text-slate-400 mt-1 space-y-1">
-              <p><strong>Sequential:</strong> Questions in order</p>
-              <p><strong>Shuffled:</strong> Random order per session, no repeats</p>
-              <p><strong>Random:</strong> Completely random, may repeat</p>
+            <div className="relative" ref={questionModeMenuRef}>
+              <button
+                onClick={() => setShowQuestionModeMenu(!showQuestionModeMenu)}
+                className="w-full rounded-lg bg-slate-900 border border-slate-600 px-4 py-2 text-left text-slate-100 focus:outline-none focus:ring-2 focus:ring-sky-500 flex items-center justify-between"
+              >
+                <div>
+                  <div className="font-semibold">
+                    {QUESTION_SELECTION_MODES[questionSelectionMode].displayName}
+                  </div>
+                </div>
+                <span className="text-xs">▼</span>
+              </button>
+              
+              {showQuestionModeMenu && (
+                <div className="absolute left-0 right-0 mt-2 bg-slate-900 border border-slate-600 rounded-lg shadow-xl z-10 overflow-hidden">
+                  {(['sequential', 'shuffled', 'random'] as QuestionSelectionMode[]).map(mode => {
+                    const modeConfig = QUESTION_SELECTION_MODES[mode];
+                    const isSelected = questionSelectionMode === mode;
+                    return (
+                      <button
+                        key={mode}
+                        onClick={() => {
+                          setQuestionSelectionMode(mode);
+                          setShowQuestionModeMenu(false);
+                        }}
+                        className={`w-full text-left px-4 py-3 hover:bg-slate-800 transition ${
+                          isSelected ? 'bg-sky-900/30 border-l-4 border-sky-400' : ''
+                        }`}
+                        title={modeConfig.description}
+                      >
+                        <div className="font-semibold text-slate-100">
+                          {modeConfig.displayName}
+                        </div>
+                        <div className="text-xs text-slate-500 italic mt-1">
+                          {modeConfig.description}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
+            <p className="text-xs text-slate-400 mt-1">
+              Choose how questions are selected for your practice session
+            </p>
           </div>
 
           {/* Practice Mode */}
