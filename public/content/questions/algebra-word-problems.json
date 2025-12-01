@@ -1,0 +1,721 @@
+[
+  {
+    "id": "ALG-WORD-0001",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 1,
+    "stem": "A gym charges a one-time joining fee of \\$50 and a monthly membership fee of \\$20. If a member has paid a total of \\$290, for how many months have they been a member?",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: $20m + 50 = 290 \\Rightarrow 20m = 240 \\Rightarrow m = 12$."
+      },
+      {
+        "text": "10",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "14",
+        "rationale": "Did not subtract the joining fee before dividing."
+      },
+      {
+        "text": "15",
+        "rationale": "Divided 290 by 20 directly."
+      },
+      {
+        "text": "6",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up the equation where $m$ is months: $50 + 20m = 290$.",
+      "Subtract 50 from both sides: $20m = 240$.",
+      "Divide by 20: $m = 12$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0002",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 1,
+    "stem": "Translate the following sentence into an algebraic equation: \"Five less than three times a number $x$ is equal to 10.\"",
+    "choices": [
+      {
+        "text": "$3x - 5 = 10$",
+        "rationale": "Correct: \"Three times a number\" is $3x$, \"five less than\" is subtraction from that term."
+      },
+      {
+        "text": "$5 - 3x = 10$",
+        "rationale": "Reversed the subtraction order."
+      },
+      {
+        "text": "$3(x - 5) = 10$",
+        "rationale": "Grouped the subtraction incorrectly."
+      },
+      {
+        "text": "$3x + 5 = 10$",
+        "rationale": "Used addition instead of subtraction."
+      },
+      {
+        "text": "$\\frac{x}{3} - 5 = 10$",
+        "rationale": "Used division instead of multiplication."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify the phrase \"three times a number $x$\": $3x$.",
+      "Identify \"five less than\": subtract 5 from the previous term.",
+      "Result: $3x - 5 = 10$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0003",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 2,
+    "stem": "The sum of three consecutive even integers is 48. What is the largest of these integers?",
+    "choices": [
+      {
+        "text": "18",
+        "rationale": "Correct: $x + (x+2) + (x+4) = 48 \\Rightarrow 3x = 42 \\Rightarrow x = 14$. Largest is $14+4=18$."
+      },
+      {
+        "text": "14",
+        "rationale": "This is the smallest integer."
+      },
+      {
+        "text": "16",
+        "rationale": "This is the middle integer."
+      },
+      {
+        "text": "20",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "24",
+        "rationale": "Divided 48 by 2."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let the integers be $x$, $x+2$, and $x+4$.",
+      "Sum: $3x + 6 = 48$.",
+      "Subtract 6: $3x = 42 \\Rightarrow x = 14$.",
+      "The largest integer is $x + 4 = 18$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0004",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 2,
+    "stem": "A car rental agency charges \\$30 per day plus \\$0.15 per mile driven. If a customer rents a car for 2 days and is charged a total of \\$105, how many miles did they drive?",
+    "choices": [
+      {
+        "text": "300",
+        "rationale": "Correct: $2(30) + 0.15m = 105 \\Rightarrow 60 + 0.15m = 105 \\Rightarrow 0.15m = 45 \\Rightarrow m = 300$."
+      },
+      {
+        "text": "500",
+        "rationale": "Forgot to account for the 2 days of rental fees."
+      },
+      {
+        "text": "200",
+        "rationale": "Only subtracted one day of rental fee."
+      },
+      {
+        "text": "450",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "150",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total Cost = (Days $\\times$ Daily Rate) + (Miles $\\times$ Mileage Rate).",
+      "$105 = (2 \\times 30) + 0.15m$.",
+      "$105 = 60 + 0.15m \\Rightarrow 45 = 0.15m$.",
+      "$m = 45 / 0.15 = 300$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0005",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 3,
+    "stem": "Tickets to a concert cost \\$15 for adults and \\$10 for students. A total of 150 tickets were sold for \\$1,900. How many adult tickets were sold?",
+    "choices": [
+      {
+        "text": "80",
+        "rationale": "Correct: $A+S=150$ and $15A+10S=1900$. $10(150-A)+15A=1900 \\Rightarrow 1500+5A=1900 \\Rightarrow A=80$."
+      },
+      {
+        "text": "70",
+        "rationale": "This is the number of student tickets."
+      },
+      {
+        "text": "100",
+        "rationale": "Estimation error."
+      },
+      {
+        "text": "50",
+        "rationale": "Guess."
+      },
+      {
+        "text": "90",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "System of equations: $A + S = 150$ and $15A + 10S = 1900$.",
+      "Multiply first eq by 10: $10A + 10S = 1500$.",
+      "Subtract from second eq: $5A = 400$.",
+      "$A = 80$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0006",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 3,
+    "stem": "At a candy store, chocolate costs \\$8 per pound and gummy bears cost \\$4 per pound. A customer creates a 5-pound mixture that costs \\$6 per pound. How many pounds of chocolate were used?",
+    "choices": [
+      {
+        "text": "2.5",
+        "rationale": "Correct: $8c + 4(5-c) = 6(5) \\Rightarrow 8c + 20 - 4c = 30 \\Rightarrow 4c = 10 \\Rightarrow c=2.5$."
+      },
+      {
+        "text": "3",
+        "rationale": "Guess."
+      },
+      {
+        "text": "2",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "1.5",
+        "rationale": "Guess."
+      },
+      {
+        "text": "3.5",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $c$ be pounds of chocolate. $5-c$ is pounds of gummy bears.",
+      "Total value: $8c + 4(5-c) = 5(6)$.",
+      "$8c + 20 - 4c = 30 \\Rightarrow 4c = 10 \\Rightarrow c = 2.5$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0007",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 3,
+    "stem": "Two cars leave from the same point at the same time traveling in opposite directions. One travels at 45 mph and the other at 55 mph. How long will it take for them to be 400 miles apart?",
+    "choices": [
+      {
+        "text": "4 hours",
+        "rationale": "Correct: Rate = $45+55=100$. $100t = 400 \\Rightarrow t=4$."
+      },
+      {
+        "text": "5 hours",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "3.5 hours",
+        "rationale": "Guess."
+      },
+      {
+        "text": "8 hours",
+        "rationale": "Used average speed incorrectly."
+      },
+      {
+        "text": "40 hours",
+        "rationale": "Divided distance by difference in speed."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Since they move in opposite directions, add their speeds: $45 + 55 = 100$ mph.",
+      "Distance = Rate $\\times$ Time.",
+      "$400 = 100t \\Rightarrow t = 4$ hours."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0008",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 3,
+    "stem": "A rectangle's length is 3 meters longer than twice its width. If the perimeter is 42 meters, what is the width?",
+    "choices": [
+      {
+        "text": "6 meters",
+        "rationale": "Correct: $2w + 2(2w+3) = 42 \\Rightarrow 6w + 6 = 42 \\Rightarrow 6w = 36 \\Rightarrow w=6$."
+      },
+      {
+        "text": "15 meters",
+        "rationale": "This is the length."
+      },
+      {
+        "text": "7 meters",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "9 meters",
+        "rationale": "Guess."
+      },
+      {
+        "text": "12 meters",
+        "rationale": "Forgot to multiply dimensions by 2 for perimeter."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $w$ = width. Length $l = 2w + 3$.",
+      "Perimeter $P = 2l + 2w$.",
+      "$42 = 2(2w + 3) + 2w$.",
+      "$42 = 4w + 6 + 2w \\Rightarrow 36 = 6w \\Rightarrow w = 6$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0009",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 4,
+    "stem": "Machine A can complete a job in 6 hours. Machine B can complete the same job in 3 hours. How long will it take them to complete the job if they work together?",
+    "choices": [
+      {
+        "text": "2 hours",
+        "rationale": "Correct: $\\frac{1}{6} + \\frac{1}{3} = \\frac{1}{t}$. $1/6 + 2/6 = 3/6 = 1/2$. So $t=2$."
+      },
+      {
+        "text": "4.5 hours",
+        "rationale": "Averaged the times."
+      },
+      {
+        "text": "9 hours",
+        "rationale": "Added the times."
+      },
+      {
+        "text": "1.5 hours",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "3 hours",
+        "rationale": "Assumed fastest machine dictates time."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Work formula: $\\frac{1}{A} + \\frac{1}{B} = \\frac{1}{T}$.",
+      "$\\frac{1}{6} + \\frac{1}{3} = \\frac{1}{T}$.",
+      "$\\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$.",
+      "$\\frac{1}{T} = \\frac{1}{2} \\Rightarrow T = 2$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0010",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 4,
+    "stem": "A jar contains dimes and quarters. There are 20 coins in total, and their total value is \\$3.05. How many quarters are in the jar?",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: $10(20-q) + 25q = 305 \\Rightarrow 200 - 10q + 25q = 305 \\Rightarrow 15q = 105 \\Rightarrow q=7$."
+      },
+      {
+        "text": "13",
+        "rationale": "This is the number of dimes."
+      },
+      {
+        "text": "10",
+        "rationale": "Guess."
+      },
+      {
+        "text": "5",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "8",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "System: $d + q = 20$ and $10d + 25q = 305$.",
+      "Substitute $d = 20 - q$: $10(20 - q) + 25q = 305$.",
+      "$200 - 10q + 25q = 305$.",
+      "$15q = 105 \\Rightarrow q = 7$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0011",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 4,
+    "stem": "A chemist needs 10 liters of a 20% acid solution. She has a 10% solution and a 50% solution available. How many liters of the 50% solution should she use?",
+    "choices": [
+      {
+        "text": "2.5 liters",
+        "rationale": "Correct: $0.10(10-x) + 0.50x = 0.20(10) \\Rightarrow 1 - 0.1x + 0.5x = 2 \\Rightarrow 0.4x = 1 \\Rightarrow x=2.5$."
+      },
+      {
+        "text": "7.5 liters",
+        "rationale": "This is the amount of the 10% solution."
+      },
+      {
+        "text": "5 liters",
+        "rationale": "Guess."
+      },
+      {
+        "text": "3 liters",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "1 liter",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $x$ be the amount of 50% solution. Then $10 - x$ is the 10% solution.",
+      "Equation: $0.10(10 - x) + 0.50(x) = 0.20(10)$.",
+      "$1 - 0.1x + 0.5x = 2$.",
+      "$0.4x = 1 \\Rightarrow x = 2.5$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0012",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 5,
+    "stem": "A boat travels 60 miles downstream in 3 hours. It travels the same distance upstream in 5 hours. What is the speed of the current?",
+    "choices": [
+      {
+        "text": "4 mph",
+        "rationale": "Correct: Down: $b+c=20$. Up: $b-c=12$. $2c=8 \\Rightarrow c=4$."
+      },
+      {
+        "text": "16 mph",
+        "rationale": "This is the speed of the boat."
+      },
+      {
+        "text": "8 mph",
+        "rationale": "Sum of speeds difference."
+      },
+      {
+        "text": "2 mph",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "20 mph",
+        "rationale": "Speed downstream."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rate Downstream = $60/3 = 20$. Equation: $b + c = 20$.",
+      "Rate Upstream = $60/5 = 12$. Equation: $b - c = 12$.",
+      "Subtract equations: $(b+c) - (b-c) = 20 - 12$.",
+      "$2c = 8 \\Rightarrow c = 4$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0013",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 5,
+    "stem": "One pipe fills a tank in 4 hours, and another fills it in 6 hours. A drain empties the tank in 8 hours. If all three are open, how long will it take to fill the tank?",
+    "choices": [
+      {
+        "text": "$\\frac{24}{7}$ hours",
+        "rationale": "Correct: $1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24$. Time is $24/7$."
+      },
+      {
+        "text": "$\\frac{7}{24}$ hours",
+        "rationale": "This is the rate, not the time."
+      },
+      {
+        "text": "3 hours",
+        "rationale": "Guess."
+      },
+      {
+        "text": "2 hours",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "5 hours",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Combined rate: Rate A + Rate B - Rate Drain.",
+      "$\\frac{1}{4} + \\frac{1}{6} - \\frac{1}{8}$.",
+      "LCD is 24: $\\frac{6}{24} + \\frac{4}{24} - \\frac{3}{24} = \\frac{7}{24}$ tanks per hour.",
+      "Time to fill: $\\frac{24}{7}$ hours."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0014",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 4,
+    "stem": "Jane has \\$5,000 to invest. She invests part of it at 4% simple interest and the rest at 6% simple interest. If her total annual interest is \\$260, how much did she invest at 6%?",
+    "choices": [
+      {
+        "text": "\\$3,000",
+        "rationale": "Correct: $0.04(5000-x) + 0.06x = 260 \\Rightarrow 200 - 0.04x + 0.06x = 260 \\Rightarrow 0.02x=60 \\Rightarrow x=3000$."
+      },
+      {
+        "text": "\\$2,000",
+        "rationale": "This is the amount at 4%."
+      },
+      {
+        "text": "\\$2,500",
+        "rationale": "Guess."
+      },
+      {
+        "text": "\\$4,000",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "\\$1,000",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $x$ be amount at 6%. $5000 - x$ is amount at 4%.",
+      "$0.04(5000 - x) + 0.06x = 260$.",
+      "$200 - 0.04x + 0.06x = 260$.",
+      "$0.02x = 60 \\Rightarrow x = 3000$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0015",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 2,
+    "stem": "Five years ago, a father was three times as old as his son. If the sum of their current ages is 62, how old is the son now?",
+    "choices": [
+      {
+        "text": "18",
+        "rationale": "Correct: Let S be son's age. $(62-S) - 5 = 3(S-5) \\Rightarrow 57-S = 3S-15 \\Rightarrow 72=4S \\Rightarrow S=18$."
+      },
+      {
+        "text": "13",
+        "rationale": "The son's age 5 years ago."
+      },
+      {
+        "text": "44",
+        "rationale": "The father's age."
+      },
+      {
+        "text": "20",
+        "rationale": "Guess."
+      },
+      {
+        "text": "15",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $S$ = son's current age. Father = $62 - S$.",
+      "Five years ago: $(62 - S - 5) = 3(S - 5)$.",
+      "$57 - S = 3S - 15$.",
+      "$72 = 4S \\Rightarrow S = 18$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0016",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 3,
+    "stem": "A store increases the price of a shirt by 20%, then puts it on sale for 10% off the new price. If the final price is \\$54, what was the original price?",
+    "choices": [
+      {
+        "text": "\\$50",
+        "rationale": "Correct: $P(1.20)(0.90) = 54 \\Rightarrow 1.08P = 54 \\Rightarrow P = 50$."
+      },
+      {
+        "text": "\\$54",
+        "rationale": "Assumed prices cancelled out."
+      },
+      {
+        "text": "\\$48",
+        "rationale": "Guess."
+      },
+      {
+        "text": "\\$45",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "\\$60",
+        "rationale": "Calculated backwards incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $P$ be original price.",
+      "Increase by 20%: $1.20P$. Decrease by 10%: Multiply by $0.90$.",
+      "$1.20P \\times 0.90 = 54 \\Rightarrow 1.08P = 54$.",
+      "$P = 54 / 1.08 = 50$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0017",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 4,
+    "stem": "The sum of the digits of a two-digit number is 9. If the digits are reversed, the new number is 27 greater than the original number. What is the original number?",
+    "choices": [
+      {
+        "text": "36",
+        "rationale": "Correct: $3+6=9$. Reverse is 63. $63-36=27$."
+      },
+      {
+        "text": "63",
+        "rationale": "This is the reversed number."
+      },
+      {
+        "text": "45",
+        "rationale": "$54-45=9$, not 27."
+      },
+      {
+        "text": "18",
+        "rationale": "$81-18=63$."
+      },
+      {
+        "text": "27",
+        "rationale": "$72-27=45$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let number = $10t + u$. $t + u = 9$.",
+      "Reversed = $10u + t$.",
+      "$(10u + t) - (10t + u) = 27 \\Rightarrow 9u - 9t = 27 \\Rightarrow u - t = 3$.",
+      "System: $u + t = 9$ and $u - t = 3$. Add them: $2u = 12 \\Rightarrow u=6$. Then $t=3$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0018",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 5,
+    "stem": "A manufacturer sells widgets. The revenue function is $R(x) = 50x$ and the cost function is $C(x) = 2000 + 10x$, where $x$ is the number of widgets. How many widgets must be sold to make a profit of \\$4,000?",
+    "choices": [
+      {
+        "text": "150",
+        "rationale": "Correct: Profit = $R - C$. $4000 = 50x - (2000 + 10x) \\Rightarrow 4000 = 40x - 2000 \\Rightarrow 6000 = 40x \\Rightarrow x=150$."
+      },
+      {
+        "text": "100",
+        "rationale": "Break-even point ($40x = 2000$)."
+      },
+      {
+        "text": "200",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "50",
+        "rationale": "Guess."
+      },
+      {
+        "text": "120",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Profit $P(x) = R(x) - C(x)$.",
+      "$4000 = 50x - (2000 + 10x)$.",
+      "$4000 = 40x - 2000$.",
+      "$6000 = 40x \\Rightarrow x = 150$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0019",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 4,
+    "stem": "Yolanda rides her bike at a speed of 12 mph to her friend's house and returns home at a speed of 8 mph. If the round trip took 5 hours, how far is the friend's house?",
+    "choices": [
+      {
+        "text": "24 miles",
+        "rationale": "Correct: $d/12 + d/8 = 5$. Mult by 24: $2d + 3d = 120 \\Rightarrow 5d = 120 \\Rightarrow d=24$."
+      },
+      {
+        "text": "48 miles",
+        "rationale": "Total distance traveled."
+      },
+      {
+        "text": "20 miles",
+        "rationale": "Used average speed (10 mph) $\\times$ 2.5 hours."
+      },
+      {
+        "text": "12 miles",
+        "rationale": "Guess."
+      },
+      {
+        "text": "30 miles",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $d$ be the distance one way.",
+      "Time = Distance/Rate. Total time = $t_1 + t_2 = 5$.",
+      "$\\frac{d}{12} + \\frac{d}{8} = 5$.",
+      "Multiply by 24: $2d + 3d = 120 \\Rightarrow 5d = 120 \\Rightarrow d = 24$."
+    ]
+  },
+  {
+    "id": "ALG-WORD-0020",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "diff": 5,
+    "stem": "The area of a rectangle is 60 square inches. If the width is increased by 2 inches and the length is decreased by 1 inch, the area remains the same. What is the original length?",
+    "choices": [
+      {
+        "text": "6 inches",
+        "rationale": "Correct: $w=10, L=6$. New $w=12, L=5$. Area $12 \\times 5 = 60$."
+      },
+      {
+        "text": "12 inches",
+        "rationale": "Swapped length and width ($w=5, L=12$ fails check)."
+      },
+      {
+        "text": "10 inches",
+        "rationale": "This is the original width."
+      },
+      {
+        "text": "5 inches",
+        "rationale": "Incorrect factor pair."
+      },
+      {
+        "text": "15 inches",
+        "rationale": "Incorrect factor pair."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $L$ be length, $w$ be width. $Lw = 60$.",
+      "$(w + 2)(L - 1) = 60$.",
+      "Substitute $w = 60/L$: $(60/L + 2)(L - 1) = 60$.",
+      "Multiply by $L$: $(60 + 2L)(L - 1) = 60L$.",
+      "$60L - 60 + 2L^2 - 2L = 60L$.",
+      "$2L^2 - 2L - 60 = 0 \\Rightarrow L^2 - L - 30 = 0$.",
+      "$(L - 6)(L + 5) = 0$. $L = 6$."
+    ]
+  }
+]

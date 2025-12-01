@@ -6,6 +6,25 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const questionsDir = join(__dirname, '..', 'public', 'content', 'questions');
 
+// Import banks to get all expected subtopics
+const banksFilePath = join(__dirname, '..', 'src', 'data', 'banks.ts');
+let allBanks = [];
+try {
+  const banksContent = readFileSync(banksFilePath, 'utf-8');
+  // Extract banks from the file using regex
+  const bankMatches = banksContent.matchAll(/\{\s*key:\s*"([^"]+)",\s*topic:\s*"([^"]+)",\s*subtopic:\s*"([^"]+)",\s*file:\s*"([^"]+)"\s*\}/g);
+  for (const match of bankMatches) {
+    allBanks.push({
+      key: match[1],
+      topic: match[2],
+      subtopic: match[3],
+      file: match[4]
+    });
+  }
+} catch (error) {
+  console.warn('⚠️  Could not read banks.ts, will only show existing files');
+}
+
 /**
  * Generate statistics markdown file with problem counts by category
  */
@@ -110,27 +129,58 @@ function generateMarkdown(stats) {
 
 `;
 
-  // Sort topics alphabetically
-  const topics = Object.keys(stats.byTopic).sort();
-  
-  topics.forEach(topic => {
-    const count = stats.byTopic[topic];
-    const percentage = ((count / stats.total) * 100).toFixed(1);
-    md += `### ${topic}\n\n`;
-    md += `**Total:** ${count} problems (${percentage}%)\n\n`;
+  // If we have banks data, include all expected subtopics
+  if (allBanks.length > 0) {
+    // Group banks by topic
+    const banksByTopic = {};
+    allBanks.forEach(bank => {
+      if (!banksByTopic[bank.topic]) {
+        banksByTopic[bank.topic] = [];
+      }
+      banksByTopic[bank.topic].push(bank);
+    });
+
+    // Sort topics alphabetically
+    const topics = Object.keys(banksByTopic).sort();
     
-    // Show subtopics for this topic
-    if (stats.bySubtopic[topic]) {
-      const subtopics = Object.keys(stats.bySubtopic[topic]).sort();
+    topics.forEach(topic => {
+      const count = stats.byTopic[topic] || 0;
+      const percentage = stats.total > 0 ? ((count / stats.total) * 100).toFixed(1) : '0.0';
+      md += `### ${topic}\n\n`;
+      md += `**Total:** ${count} problems (${percentage}%)\n\n`;
+      
       md += `**Subtopics:**\n\n`;
-      subtopics.forEach(subtopic => {
-        const subCount = stats.bySubtopic[topic][subtopic];
-        md += `- ${subtopic}: **${subCount}** problems\n`;
+      // Show all subtopics from banks.ts, even if they have 0 problems
+      const topicBanks = banksByTopic[topic].sort((a, b) => a.subtopic.localeCompare(b.subtopic));
+      topicBanks.forEach(bank => {
+        const subCount = stats.bySubtopic[topic]?.[bank.subtopic] || 0;
+        md += `- ${bank.subtopic}: **${subCount}** problems\n`;
       });
-      md += `\n`;
-    }
-    md += `---\n\n`;
-  });
+      md += `\n---\n\n`;
+    });
+  } else {
+    // Fallback to original behavior if banks.ts couldn't be read
+    const topics = Object.keys(stats.byTopic).sort();
+    
+    topics.forEach(topic => {
+      const count = stats.byTopic[topic];
+      const percentage = ((count / stats.total) * 100).toFixed(1);
+      md += `### ${topic}\n\n`;
+      md += `**Total:** ${count} problems (${percentage}%)\n\n`;
+      
+      // Show subtopics for this topic
+      if (stats.bySubtopic[topic]) {
+        const subtopics = Object.keys(stats.bySubtopic[topic]).sort();
+        md += `**Subtopics:**\n\n`;
+        subtopics.forEach(subtopic => {
+          const subCount = stats.bySubtopic[topic][subtopic];
+          md += `- ${subtopic}: **${subCount}** problems\n`;
+        });
+        md += `\n`;
+      }
+      md += `---\n\n`;
+    });
+  }
 
   md += `## Problems by Difficulty\n\n`;
   md += `| Difficulty | Count | Percentage |\n`;

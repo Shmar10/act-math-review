@@ -1,0 +1,713 @@
+[
+  {
+    "id": "COORD-CONIC-0001",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 1,
+    "stem": "Which of the following equations represents a circle?",
+    "choices": [
+      {
+        "text": "$x^2 + y^2 = 25$",
+        "rationale": "Correct: Coefficients of $x^2$ and $y^2$ are equal and positive."
+      },
+      {
+        "text": "$x^2 - y^2 = 25$",
+        "rationale": "This represents a hyperbola (signs are opposite)."
+      },
+      {
+        "text": "$y = x^2 + 25$",
+        "rationale": "This represents a parabola (only one squared term)."
+      },
+      {
+        "text": "$2x^2 + y^2 = 25$",
+        "rationale": "This represents an ellipse (coefficients are different but same sign)."
+      },
+      {
+        "text": "$x = y^2 - 25$",
+        "rationale": "This represents a horizontal parabola."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The standard equation of a circle is $(x-h)^2 + (y-k)^2 = r^2$.",
+      "This expands to $x^2 + y^2 + ...$, where the coefficients of the squared terms are equal.",
+      "$x^2 + y^2 = 25$ fits this description."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0002",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 1,
+    "stem": "Identify the center of the circle given by $(x - 3)^2 + (y + 2)^2 = 16$.",
+    "choices": [
+      {
+        "text": "$(3, -2)$",
+        "rationale": "Correct: Standard form $(x-h)^2 + (y-k)^2 = r^2$. $h=3, k=-2$."
+      },
+      {
+        "text": "$(-3, 2)$",
+        "rationale": "Reversed the signs."
+      },
+      {
+        "text": "$(3, 2)$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(-3, -2)$",
+        "rationale": "Sign error on x."
+      },
+      {
+        "text": "$(4, 4)$",
+        "rationale": "Confused radius with center."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Compare to standard form: $(x - h)^2 + (y - k)^2 = r^2$.",
+      "$x - 3 \\Rightarrow h = 3$.",
+      "$y + 2 \\Rightarrow y - (-2) \\Rightarrow k = -2$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0003",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 2,
+    "stem": "What is the radius of the circle defined by $x^2 + y^2 = 49$?",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: $r^2 = 49 \\Rightarrow r = 7$."
+      },
+      {
+        "text": "49",
+        "rationale": "Used $r^2$ as the radius."
+      },
+      {
+        "text": "24.5",
+        "rationale": "Divided 49 by 2."
+      },
+      {
+        "text": "14",
+        "rationale": "Divided 49 by $\\pi$ approximation or confused with diameter."
+      },
+      {
+        "text": "2401",
+        "rationale": "Squared 49."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The equation is in the form $x^2 + y^2 = r^2$.",
+      "$r^2 = 49$.",
+      "Take the square root: $r = 7$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0004",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 2,
+    "stem": "Which equation represents a parabola that opens to the left?",
+    "choices": [
+      {
+        "text": "$x = -2y^2$",
+        "rationale": "Correct: $x$ is a function of $y^2$ (horizontal), negative coefficient implies left."
+      },
+      {
+        "text": "$y = -2x^2$",
+        "rationale": "Opens downward."
+      },
+      {
+        "text": "$x = 2y^2$",
+        "rationale": "Opens to the right."
+      },
+      {
+        "text": "$y = 2x^2$",
+        "rationale": "Opens upward."
+      },
+      {
+        "text": "$x^2 + y^2 = 2$",
+        "rationale": "This is a circle."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A horizontal parabola has the form $x = ay^2$.",
+      "If $a > 0$, it opens right. If $a < 0$, it opens left.",
+      "$x = -2y^2$ has $a = -2$, so it opens left."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0005",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 2,
+    "stem": "Find the center of the ellipse: $$\\frac{(x+1)^2}{9} + \\frac{(y-4)^2}{25} = 1$$",
+    "choices": [
+      {
+        "text": "$(-1, 4)$",
+        "rationale": "Correct: $h=-1, k=4$."
+      },
+      {
+        "text": "$(1, -4)$",
+        "rationale": "Reversed signs."
+      },
+      {
+        "text": "$(-1, -4)$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(9, 25)$",
+        "rationale": "Used denominators."
+      },
+      {
+        "text": "$(3, 5)$",
+        "rationale": "Used square roots of denominators."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Standard ellipse form: $\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$.",
+      "$x - h = x + 1 \\Rightarrow h = -1$.",
+      "$y - k = y - 4 \\Rightarrow k = 4$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0006",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 3,
+    "stem": "What is the length of the major axis of the ellipse $\\frac{x^2}{16} + \\frac{y^2}{36} = 1$?",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: $b^2=36 \\Rightarrow b=6$. Major axis is vertical, length $2b = 12$."
+      },
+      {
+        "text": "6",
+        "rationale": "This is the semi-major axis length ($a$ or $b$)."
+      },
+      {
+        "text": "36",
+        "rationale": "This is $b^2$."
+      },
+      {
+        "text": "8",
+        "rationale": "This is the length of the minor axis ($2a = 2\\sqrt{16}$)."
+      },
+      {
+        "text": "72",
+        "rationale": "Doubled the squared value."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify the larger denominator: 36.",
+      "Since $36 > 16$, the major axis is vertical.",
+      "$a^2$ or $b^2$ is 36. Let's call the semi-major axis $a$ (general convention varies, but it's the larger one). $a = \\sqrt{36} = 6$.",
+      "Total length of major axis = $2a = 12$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0007",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 3,
+    "stem": "Determine the type of conic section represented by the equation: $$4x^2 - 9y^2 + 16x + 18y - 29 = 0$$",
+    "choices": [
+      {
+        "text": "Hyperbola",
+        "rationale": "Correct: Coefficients of squared terms have opposite signs ($4$ and $-9$)."
+      },
+      {
+        "text": "Ellipse",
+        "rationale": "Coefficients must have the same sign."
+      },
+      {
+        "text": "Circle",
+        "rationale": "Coefficients must be equal."
+      },
+      {
+        "text": "Parabola",
+        "rationale": "Only one variable would be squared."
+      },
+      {
+        "text": "Line",
+        "rationale": "No squared terms."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Examine the squared terms: $4x^2$ and $-9y^2$.",
+      "Since the signs are different (one positive, one negative), the conic is a hyperbola."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0008",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 3,
+    "stem": "Find the vertex of the parabola given by $y = 2(x - 1)^2 + 3$.",
+    "choices": [
+      {
+        "text": "$(1, 3)$",
+        "rationale": "Correct: Vertex form $y = a(x-h)^2 + k$. $h=1, k=3$."
+      },
+      {
+        "text": "$(-1, 3)$",
+        "rationale": "Sign error on x."
+      },
+      {
+        "text": "$(1, -3)$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(-1, -3)$",
+        "rationale": "Sign error on both."
+      },
+      {
+        "text": "$(0, 0)$",
+        "rationale": "Standard parabola vertex."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Compare to vertex form $y = a(x - h)^2 + k$.",
+      "$h = 1$, $k = 3$.",
+      "Vertex is $(1, 3)$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0009",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 3,
+    "stem": "Which of the following is an asymptote of the hyperbola $\\frac{x^2}{16} - \\frac{y^2}{9} = 1$?",
+    "choices": [
+      {
+        "text": "$y = \\frac{3}{4}x$",
+        "rationale": "Correct: Slopes are $\\pm b/a$. $a=4, b=3$."
+      },
+      {
+        "text": "$y = \\frac{4}{3}x$",
+        "rationale": "Used $a/b$."
+      },
+      {
+        "text": "$y = \\frac{9}{16}x$",
+        "rationale": "Used $b^2/a^2$."
+      },
+      {
+        "text": "$y = 3x$",
+        "rationale": "Used just $b$."
+      },
+      {
+        "text": "$y = 4x$",
+        "rationale": "Used just $a$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For horizontal hyperbola $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$, asymptotes are $y = \\pm \\frac{b}{a}x$.",
+      "$a^2 = 16 \\Rightarrow a = 4$. $b^2 = 9 \\Rightarrow b = 3$.",
+      "Slope is $\\pm \\frac{3}{4}$. One asymptote is $y = \\frac{3}{4}x$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0010",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 4,
+    "stem": "Identify the coordinates of the foci for the ellipse $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$.",
+    "choices": [
+      {
+        "text": "$(\\pm 4, 0)$",
+        "rationale": "Correct: $c^2 = a^2 - b^2 = 25 - 9 = 16$. $c=4$. Major axis horizontal."
+      },
+      {
+        "text": "$(0, \\pm 4)$",
+        "rationale": "Put foci on the minor axis."
+      },
+      {
+        "text": "$(\\pm \\sqrt{34}, 0)$",
+        "rationale": "Added $a^2$ and $b^2$ (hyperbola calculation)."
+      },
+      {
+        "text": "$(\\pm 5, 0)$",
+        "rationale": "These are the vertices."
+      },
+      {
+        "text": "$(\\pm 3, 0)$",
+        "rationale": "These are the co-vertices (rotated)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "In an ellipse, $c^2 = a^2 - b^2$ where $a$ is the semi-major axis.",
+      "$a^2 = 25$, $b^2 = 9$.",
+      "$c^2 = 25 - 9 = 16 \\Rightarrow c = 4$.",
+      "Since the larger denominator is under $x$, foci are on the x-axis: $(\\pm 4, 0)$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0011",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 4,
+    "stem": "Find the radius of the circle given by $x^2 + y^2 - 6x + 8y = 0$.",
+    "choices": [
+      {
+        "text": "5",
+        "rationale": "Correct: Complete square. $(x-3)^2 + (y+4)^2 = 9 + 16 = 25$. $r=5$."
+      },
+      {
+        "text": "25",
+        "rationale": "This is $r^2$."
+      },
+      {
+        "text": "7",
+        "rationale": "Added halves of linear coefficients."
+      },
+      {
+        "text": "10",
+        "rationale": "Diameter."
+      },
+      {
+        "text": "1",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Complete the square for $x$: $x^2 - 6x + 9$.",
+      "Complete the square for $y$: $y^2 + 8y + 16$.",
+      "Add constants to the right side: $0 + 9 + 16 = 25$.",
+      "Equation: $(x-3)^2 + (y+4)^2 = 25$. Radius $r = \\sqrt{25} = 5$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0012",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 4,
+    "stem": "Find the equation of the directrix of the parabola $y = \\frac{1}{8}x^2$.",
+    "choices": [
+      {
+        "text": "$y = -2$",
+        "rationale": "Correct: $a = 1/(4p) \\Rightarrow 1/8 = 1/(4p) \\Rightarrow 4p=8 \\Rightarrow p=2$. Directrix $y = -p$."
+      },
+      {
+        "text": "$y = 2$",
+        "rationale": "Focus coordinate."
+      },
+      {
+        "text": "$x = -2$",
+        "rationale": "Wrong axis."
+      },
+      {
+        "text": "$y = -8$",
+        "rationale": "Used the coefficient denominator directly."
+      },
+      {
+        "text": "$y = -\\frac{1}{2}$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Standard form: $y = \\frac{1}{4p}x^2$.",
+      "Here, $\\frac{1}{4p} = \\frac{1}{8} \\Rightarrow 4p = 8 \\Rightarrow p = 2$.",
+      "Since the parabola opens up (positive $y$), the directrix is horizontal below the vertex: $y = -p$.",
+      "$y = -2$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0013",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 5,
+    "stem": "Determine the center of the hyperbola: $$ 9x^2 - 4y^2 - 18x + 16y - 43 = 0 $$",
+    "choices": [
+      {
+        "text": "$(1, 2)$",
+        "rationale": "Correct: $9(x^2-2x+1) - 4(y^2-4y+4) = 43+9-16=36$. Center $(1, 2)$."
+      },
+      {
+        "text": "$(-1, -2)$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$(1, -2)$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(-1, 2)$",
+        "rationale": "Sign error on x."
+      },
+      {
+        "text": "$(2, 4)$",
+        "rationale": "Used half coefficients directly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Group terms: $9(x^2 - 2x) - 4(y^2 - 4y) = 43$.",
+      "Complete square x: $9(x^2 - 2x + 1)$ adds $9$.",
+      "Complete square y: $-4(y^2 - 4y + 4)$ subtracts $16$.",
+      "RHS: $43 + 9 - 16 = 36$.",
+      "Equation: $9(x-1)^2 - 4(y-2)^2 = 36$. Center is $(1, 2)$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0014",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 5,
+    "stem": "A parabola has its focus at $(2, 3)$ and its directrix is the line $y = 1$. What is the equation of the parabola?",
+    "choices": [
+      {
+        "text": "$y = \\frac{1}{4}(x - 2)^2 + 2$",
+        "rationale": "Correct: Vertex is midpoint $(2, 2)$. Distance $p=1$. $a=1/4p=1/4$."
+      },
+      {
+        "text": "$y = \\frac{1}{4}(x - 2)^2 + 3$",
+        "rationale": "Used focus y-coordinate as vertex."
+      },
+      {
+        "text": "$y = 4(x - 2)^2 + 2$",
+        "rationale": "Used $a=4p$ instead of $1/4p$."
+      },
+      {
+        "text": "$y = (x - 2)^2 + 2$",
+        "rationale": "Assumed $p=1/4$."
+      },
+      {
+        "text": "$x = \\frac{1}{4}(y - 2)^2 + 2$",
+        "rationale": "Horizontal parabola form."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Vertex is the midpoint between focus $(2,3)$ and directrix $y=1$.",
+      "Vertex $V(2, \\frac{3+1}{2}) = (2, 2)$.",
+      "Distance $p$ from vertex to focus is $3 - 2 = 1$.",
+      "Equation: $y = \\frac{1}{4p}(x-h)^2 + k$.",
+      "$y = \\frac{1}{4(1)}(x-2)^2 + 2 = \\frac{1}{4}(x-2)^2 + 2$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0015",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 2,
+    "stem": "Identify the conic section: $x^2 + 4y^2 = 16$.",
+    "choices": [
+      {
+        "text": "Ellipse",
+        "rationale": "Correct: Coefficients of squared terms are positive and different."
+      },
+      {
+        "text": "Circle",
+        "rationale": "Coefficients are not equal."
+      },
+      {
+        "text": "Hyperbola",
+        "rationale": "Signs are the same."
+      },
+      {
+        "text": "Parabola",
+        "rationale": "Two squared terms."
+      },
+      {
+        "text": "Line",
+        "rationale": "Squared terms exist."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Equation form $Ax^2 + Cy^2 = F$ with $A \\ne C$ but same sign.",
+      "This represents an ellipse."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0016",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 3,
+    "stem": "Which conic section has an eccentricity $e > 1$?",
+    "choices": [
+      {
+        "text": "Hyperbola",
+        "rationale": "Correct."
+      },
+      {
+        "text": "Ellipse",
+        "rationale": "$0 < e < 1$."
+      },
+      {
+        "text": "Parabola",
+        "rationale": "$e = 1$."
+      },
+      {
+        "text": "Circle",
+        "rationale": "$e = 0$."
+      },
+      {
+        "text": "Line",
+        "rationale": "Undefined in this context."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Eccentricity definitions:",
+      "Circle: $e = 0$.",
+      "Ellipse: $0 < e < 1$.",
+      "Parabola: $e = 1$.",
+      "Hyperbola: $e > 1$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0017",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 4,
+    "stem": "Write the equation of the circle passing through the origin with center $(3, -4)$.",
+    "choices": [
+      {
+        "text": "$(x - 3)^2 + (y + 4)^2 = 25$",
+        "rationale": "Correct: $r = \\text{distance}((3,-4), (0,0)) = \\sqrt{9+16}=5$. $r^2=25$."
+      },
+      {
+        "text": "$(x - 3)^2 + (y + 4)^2 = 5$",
+        "rationale": "Forgot to square the radius."
+      },
+      {
+        "text": "$(x + 3)^2 + (y - 4)^2 = 25$",
+        "rationale": "Signs of center reversed."
+      },
+      {
+        "text": "$x^2 + y^2 = 25$",
+        "rationale": "Center not at origin."
+      },
+      {
+        "text": "$(x - 3)^2 + (y + 4)^2 = 7$",
+        "rationale": "Added coordinates."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Center $(h, k) = (3, -4)$.",
+      "Circle passes through $(0, 0)$. Radius is distance from center to origin.",
+      "$r = \\sqrt{3^2 + (-4)^2} = \\sqrt{9 + 16} = 5$.",
+      "Eq: $(x - 3)^2 + (y + 4)^2 = 5^2 = 25$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0018",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 5,
+    "stem": "Find the distance between the foci of the hyperbola $\\frac{y^2}{16} - \\frac{x^2}{9} = 1$.",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: $c^2 = a^2 + b^2 = 16 + 9 = 25$. $c=5$. Distance $2c=10$."
+      },
+      {
+        "text": "5",
+        "rationale": "This is $c$, not the distance between foci ($2c$)."
+      },
+      {
+        "text": "2",
+        "rationale": "Difference of a and b."
+      },
+      {
+        "text": "14",
+        "rationale": "Sum of a and b ($4+3$) times 2."
+      },
+      {
+        "text": "50",
+        "rationale": "Squared value."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For hyperbola, $c^2 = a^2 + b^2$.",
+      "$c^2 = 16 + 9 = 25 \\Rightarrow c = 5$.",
+      "Foci are located $c$ units from center.",
+      "Distance between foci is $2c = 10$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0019",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 4,
+    "stem": "If the vertices of an ellipse are at $(-5, 0)$ and $(5, 0)$ and the co-vertices are at $(0, -2)$ and $(0, 2)$, what is its equation?",
+    "choices": [
+      {
+        "text": "$\\frac{x^2}{25} + \\frac{y^2}{4} = 1$",
+        "rationale": "Correct: Horizontal major axis $a=5$, minor axis $b=2$."
+      },
+      {
+        "text": "$\\frac{x^2}{4} + \\frac{y^2}{25} = 1$",
+        "rationale": "Swapped a and b."
+      },
+      {
+        "text": "$\\frac{x^2}{5} + \\frac{y^2}{2} = 1$",
+        "rationale": "Forgot to square a and b."
+      },
+      {
+        "text": "$25x^2 + 4y^2 = 1$",
+        "rationale": "Used $a^2$ as coefficient."
+      },
+      {
+        "text": "$\\frac{x^2}{25} - \\frac{y^2}{4} = 1$",
+        "rationale": "Hyperbola equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Center is midpoint of vertices: $(0, 0)$.",
+      "Vertices on x-axis $\\Rightarrow$ horizontal major axis.",
+      "$a = 5 \\Rightarrow a^2 = 25$.",
+      "$b = 2 \\Rightarrow b^2 = 4$.",
+      "$\\frac{x^2}{25} + \\frac{y^2}{4} = 1$."
+    ]
+  },
+  {
+    "id": "COORD-CONIC-0020",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Conic Sections",
+    "diff": 3,
+    "stem": "Which of the following points lies on the circle $(x - 1)^2 + (y + 2)^2 = 10$?",
+    "choices": [
+      {
+        "text": "$(4, -1)$",
+        "rationale": "Correct: $(4-1)^2 + (-1+2)^2 = 3^2 + 1^2 = 9 + 1 = 10$."
+      },
+      {
+        "text": "$(1, -2)$",
+        "rationale": "This is the center (distance 0)."
+      },
+      {
+        "text": "$(0, 0)$",
+        "rationale": "$1 + 4 = 5 \\ne 10$."
+      },
+      {
+        "text": "$(2, 2)$",
+        "rationale": "$(2-1)^2 + (2+2)^2 = 1 + 16 = 17 \\ne 10$."
+      },
+      {
+        "text": "$(1, 1)$",
+        "rationale": "$0 + 9 = 9 \\ne 10$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute choices into the equation.",
+      "Choice A: $(4-1)^2 + (-1+2)^2 = 3^2 + 1^2 = 9 + 1 = 10$. True."
+    ]
+  }
+]

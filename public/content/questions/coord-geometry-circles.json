@@ -1,0 +1,700 @@
+[
+  {
+    "id": "COORD-CIRC-0001",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 1,
+    "stem": "Which equation represents a circle with center at the origin $(0,0)$ and a radius of 6?",
+    "choices": [
+      {
+        "text": "$x^2 + y^2 = 36$",
+        "rationale": "Correct: $x^2 + y^2 = r^2$, so $6^2 = 36$."
+      },
+      {
+        "text": "$x^2 + y^2 = 6$",
+        "rationale": "Forgot to square the radius."
+      },
+      {
+        "text": "$x^2 + y^2 = 12$",
+        "rationale": "Doubled the radius instead of squaring."
+      },
+      {
+        "text": "$(x-6)^2 + (y-6)^2 = 1$",
+        "rationale": "Used radius as the center coordinates."
+      },
+      {
+        "text": "$x + y = 6$",
+        "rationale": "This is a linear equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Standard form for a circle at the origin is $x^2 + y^2 = r^2$.",
+      "Substitute $r = 6$: $x^2 + y^2 = 6^2$.",
+      "$x^2 + y^2 = 36$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0002",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 1,
+    "stem": "Identify the center of the circle given by the equation: $$(x - 5)^2 + (y + 3)^2 = 49$$",
+    "choices": [
+      {
+        "text": "$(5, -3)$",
+        "rationale": "Correct: $h=5, k=-3$."
+      },
+      {
+        "text": "$(-5, 3)$",
+        "rationale": "Reversed the signs."
+      },
+      {
+        "text": "$(5, 3)$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(-5, -3)$",
+        "rationale": "Sign error on x."
+      },
+      {
+        "text": "$(7, 7)$",
+        "rationale": "Confused radius with center."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Compare to standard form: $(x - h)^2 + (y - k)^2 = r^2$.",
+      "$x - 5 \\Rightarrow h = 5$.",
+      "$y + 3 \\Rightarrow y - (-3) \\Rightarrow k = -3$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0003",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "What is the radius of the circle defined by $(x + 2)^2 + (y - 1)^2 = 20$?",
+    "choices": [
+      {
+        "text": "$2\\sqrt{5}$",
+        "rationale": "Correct: $r = \\sqrt{20} = \\sqrt{4 \\times 5} = 2\\sqrt{5}$."
+      },
+      {
+        "text": "10",
+        "rationale": "Divided 20 by 2."
+      },
+      {
+        "text": "20",
+        "rationale": "Used $r^2$ as $r$."
+      },
+      {
+        "text": "4",
+        "rationale": "Estimation error."
+      },
+      {
+        "text": "$5\\sqrt{2}$",
+        "rationale": "Simplified radical incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify $r^2 = 20$.",
+      "Solve for radius: $r = \\sqrt{20}$.",
+      "Simplify radical: $\\sqrt{4 \\cdot 5} = 2\\sqrt{5}$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0004",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "Which point lies on the circle with equation $x^2 + y^2 = 25$?",
+    "choices": [
+      {
+        "text": "$(-3, 4)$",
+        "rationale": "Correct: $(-3)^2 + 4^2 = 9 + 16 = 25$."
+      },
+      {
+        "text": "$(3, 5)$",
+        "rationale": "$9 + 25 = 34 \\ne 25$."
+      },
+      {
+        "text": "$(0, 0)$",
+        "rationale": "This is the center."
+      },
+      {
+        "text": "$(1, 1)$",
+        "rationale": "$1 + 1 = 2 \\ne 25$."
+      },
+      {
+        "text": "$(5, 5)$",
+        "rationale": "$25 + 25 = 50 \\ne 25$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $(-3, 4)$ into the equation.",
+      "$(-3)^2 + 4^2 = 9 + 16 = 25$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0005",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "Determine the equation of a circle with center $(-2, 4)$ and radius 3.",
+    "choices": [
+      {
+        "text": "$(x + 2)^2 + (y - 4)^2 = 9$",
+        "rationale": "Correct: $(x - (-2))^2 + (y - 4)^2 = 3^2$."
+      },
+      {
+        "text": "$(x - 2)^2 + (y + 4)^2 = 9$",
+        "rationale": "Reversed signs on center."
+      },
+      {
+        "text": "$(x + 2)^2 + (y - 4)^2 = 3$",
+        "rationale": "Forgot to square the radius."
+      },
+      {
+        "text": "$(x + 2)^2 + (y - 4)^2 = 6$",
+        "rationale": "Doubled the radius instead of squaring."
+      },
+      {
+        "text": "$x^2 + y^2 = 9$",
+        "rationale": "Ignored the center shift."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use standard form: $(x - h)^2 + (y - k)^2 = r^2$.",
+      "Substitute $h = -2, k = 4, r = 3$.",
+      "$(x + 2)^2 + (y - 4)^2 = 9$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0006",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "In which quadrant is the center of the circle $(x + 5)^2 + (y - 2)^2 = 10$ located?",
+    "choices": [
+      {
+        "text": "Quadrant II",
+        "rationale": "Correct: Center is $(-5, 2)$. Negative x, positive y is QII."
+      },
+      {
+        "text": "Quadrant I",
+        "rationale": "Assumed $(5, 2)$."
+      },
+      {
+        "text": "Quadrant III",
+        "rationale": "Assumed $(-5, -2)$."
+      },
+      {
+        "text": "Quadrant IV",
+        "rationale": "Assumed $(5, -2)$."
+      },
+      {
+        "text": "On an axis",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify center $(h, k)$ from equation: $(-5, 2)$.",
+      "Coordinate $(-5, 2)$ has $x < 0$ and $y > 0$.",
+      "This corresponds to Quadrant II."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0007",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "Find the area of the circle given by the equation $(x - 1)^2 + (y + 3)^2 = 18$.",
+    "choices": [
+      {
+        "text": "$18\\pi$",
+        "rationale": "Correct: $r^2 = 18$. Area $= \\pi r^2 = 18\\pi$."
+      },
+      {
+        "text": "$9\\pi$",
+        "rationale": "Halved the $r^2$ value."
+      },
+      {
+        "text": "$36\\pi$",
+        "rationale": "Doubled the area."
+      },
+      {
+        "text": "$324\\pi$",
+        "rationale": "Squared 18 (treating it as radius)."
+      },
+      {
+        "text": "$6\\pi\\sqrt{2}$",
+        "rationale": "Calculated circumference."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify $r^2$ from the equation: $r^2 = 18$.",
+      "Area formula: $A = \\pi r^2$.",
+      "Substitute $r^2$: $A = 18\\pi$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0008",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "Determine the position of the point $(5, 5)$ relative to the circle $x^2 + y^2 = 49$.",
+    "choices": [
+      {
+        "text": "Outside the circle",
+        "rationale": "Correct: $5^2 + 5^2 = 50$, and $50 > 49$."
+      },
+      {
+        "text": "Inside the circle",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "On the circle",
+        "rationale": "Assumption error."
+      },
+      {
+        "text": "At the center",
+        "rationale": "Center is $(0,0)$."
+      },
+      {
+        "text": "Cannot be determined",
+        "rationale": "Incorrect analysis."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate the distance squared from origin to point $(5,5)$: $5^2 + 5^2 = 25 + 25 = 50$.",
+      "Compare to radius squared ($r^2 = 49$).",
+      "Since $50 > 49$, the point is outside the circle."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0009",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "A circle is translated 3 units right and 2 units down. If the original equation is $x^2 + y^2 = 9$, what is the new equation?",
+    "choices": [
+      {
+        "text": "$(x - 3)^2 + (y + 2)^2 = 9$",
+        "rationale": "Correct: Right 3 ($x-3$), Down 2 ($y+2$)."
+      },
+      {
+        "text": "$(x + 3)^2 + (y - 2)^2 = 9$",
+        "rationale": "Reversed directions (Left 3, Up 2)."
+      },
+      {
+        "text": "$(x - 3)^2 + (y - 2)^2 = 9$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(x + 3)^2 + (y + 2)^2 = 9$",
+        "rationale": "Sign error on x."
+      },
+      {
+        "text": "$x^2 + y^2 = 4$",
+        "rationale": "Changed radius/size."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Original center: $(0, 0)$.",
+      "Shift right 3: new x-coordinate 3.",
+      "Shift down 2: new y-coordinate -2.",
+      "New center: $(3, -2)$. Equation: $(x-3)^2 + (y+2)^2 = 9$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0010",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "Find the equation of a circle with a diameter having endpoints at $(0, 0)$ and $(6, 8)$.",
+    "choices": [
+      {
+        "text": "$(x - 3)^2 + (y - 4)^2 = 25$",
+        "rationale": "Correct: Center is midpoint $(3,4)$. Radius is distance to origin $\\sqrt{3^2+4^2}=5$."
+      },
+      {
+        "text": "$(x - 3)^2 + (y - 4)^2 = 100$",
+        "rationale": "Used diameter length squared ($10^2$)."
+      },
+      {
+        "text": "$x^2 + y^2 = 100$",
+        "rationale": "Used origin as center."
+      },
+      {
+        "text": "$(x + 3)^2 + (y + 4)^2 = 25$",
+        "rationale": "Sign error on center."
+      },
+      {
+        "text": "$(x - 3)^2 + (y - 4)^2 = 5$",
+        "rationale": "Forgot to square the radius."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find center (midpoint): $(\\frac{0+6}{2}, \\frac{0+8}{2}) = (3, 4)$.",
+      "Find radius (distance from center to endpoint): $\\sqrt{(3-0)^2 + (4-0)^2} = \\sqrt{9+16} = 5$.",
+      "Equation: $(x-3)^2 + (y-4)^2 = 5^2 = 25$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0011",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "Determine the center and radius of the circle given by $x^2 + y^2 + 6x - 4y - 12 = 0$.",
+    "choices": [
+      {
+        "text": "Center: $(-3, 2)$; Radius: $5$",
+        "rationale": "Correct: Complete square. $(x+3)^2 + (y-2)^2 = 12 + 9 + 4 = 25$."
+      },
+      {
+        "text": "Center: $(3, -2)$; Radius: $5$",
+        "rationale": "Sign error on center."
+      },
+      {
+        "text": "Center: $(-3, 2)$; Radius: $25$",
+        "rationale": "Forgot to square root."
+      },
+      {
+        "text": "Center: $(-3, 2)$; Radius: $\\sqrt{12}$",
+        "rationale": "Forgot to add completed square terms."
+      },
+      {
+        "text": "Center: $(3, -2)$; Radius: $1$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Group terms: $(x^2 + 6x) + (y^2 - 4y) = 12$.",
+      "Complete square x: $(x+3)^2$ adds 9.",
+      "Complete square y: $(y-2)^2$ adds 4.",
+      "Equation: $(x+3)^2 + (y-2)^2 = 12 + 9 + 4 = 25$.",
+      "Center $(-3, 2)$, Radius $\\sqrt{25} = 5$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0012",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "Which of the following lines is tangent to the circle $x^2 + y^2 = 25$ at the point $(3, 4)$?",
+    "choices": [
+      {
+        "text": "$y = -\\frac{3}{4}x + \\frac{25}{4}$",
+        "rationale": "Correct: Radius slope $4/3$. Tangent slope $-3/4$. Point $(3,4)$."
+      },
+      {
+        "text": "$y = \\frac{4}{3}x$",
+        "rationale": "Line containing the radius."
+      },
+      {
+        "text": "$y = \\frac{3}{4}x + 4$",
+        "rationale": "Used reciprocal but not negative."
+      },
+      {
+        "text": "$y = -\\frac{4}{3}x + 8$",
+        "rationale": "Incorrect slope."
+      },
+      {
+        "text": "$y = x + 1$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Slope of radius from $(0,0)$ to $(3,4)$ is $4/3$.",
+      "Tangent is perpendicular, so slope $m = -3/4$.",
+      "Equation: $y - 4 = -\\frac{3}{4}(x - 3) \\Rightarrow y = -\\frac{3}{4}x + \\frac{9}{4} + 4 = -\\frac{3}{4}x + \\frac{25}{4}$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0013",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "A circle is tangent to the x-axis and has its center at $(4, -3)$. What is the equation of the circle?",
+    "choices": [
+      {
+        "text": "$(x - 4)^2 + (y + 3)^2 = 9$",
+        "rationale": "Correct: Tangent to x-axis means radius equals $|y|$ of center, so $r=3$."
+      },
+      {
+        "text": "$(x - 4)^2 + (y + 3)^2 = 16$",
+        "rationale": "Used x-coordinate as radius."
+      },
+      {
+        "text": "$(x + 4)^2 + (y - 3)^2 = 9$",
+        "rationale": "Sign error on center."
+      },
+      {
+        "text": "$(x - 4)^2 + (y + 3)^2 = 3$",
+        "rationale": "Forgot to square radius."
+      },
+      {
+        "text": "$x^2 + y^2 = 25$",
+        "rationale": "Distance to origin logic."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Center $(4, -3)$.",
+      "Tangent to x-axis implies the vertical distance from center to axis is the radius.",
+      "$r = |-3| = 3$. Equation: $(x-4)^2 + (y+3)^2 = 9$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0014",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 5,
+    "stem": "Find the distance between the centers of the circles $x^2 + y^2 = 1$ and $(x - 6)^2 + (y - 8)^2 = 16$.",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: Centers are $(0,0)$ and $(6,8)$. Distance $\\sqrt{36+64}=10$."
+      },
+      {
+        "text": "14",
+        "rationale": "Added radii."
+      },
+      {
+        "text": "5",
+        "rationale": "Difference of radii."
+      },
+      {
+        "text": "100",
+        "rationale": "Squared distance."
+      },
+      {
+        "text": "8",
+        "rationale": "Coordinate difference."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Center 1: $(0, 0)$. Center 2: $(6, 8)$.",
+      "Distance formula: $d = \\sqrt{(6-0)^2 + (8-0)^2}$.",
+      "$d = \\sqrt{36 + 64} = \\sqrt{100} = 10$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0015",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 5,
+    "stem": "What is the maximum y-coordinate on the circle defined by $(x - 2)^2 + (y - 3)^2 = 25$?",
+    "choices": [
+      {
+        "text": "8",
+        "rationale": "Correct: Center y is 3, radius is 5. Top is $3+5=8$."
+      },
+      {
+        "text": "3",
+        "rationale": "Center y-coordinate."
+      },
+      {
+        "text": "5",
+        "rationale": "Radius length."
+      },
+      {
+        "text": "-2",
+        "rationale": "Bottom of circle."
+      },
+      {
+        "text": "7",
+        "rationale": "Max x-coordinate."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Center $(2, 3)$, Radius $r = 5$.",
+      "Max y-value = $k + r = 3 + 5 = 8$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0016",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 5,
+    "stem": "Find the points of intersection between the circle $x^2 + y^2 = 8$ and the line $y = x$.",
+    "choices": [
+      {
+        "text": "$(2, 2)$ and $(-2, -2)$",
+        "rationale": "Correct: $x^2+x^2=8 \\Rightarrow 2x^2=8 \\Rightarrow x^2=4 \\Rightarrow x=\\pm 2$."
+      },
+      {
+        "text": "$(2, 2)$ only",
+        "rationale": "Missed the negative intersection."
+      },
+      {
+        "text": "$(2, -2)$ and $(-2, 2)$",
+        "rationale": "Points lie on $y=-x$."
+      },
+      {
+        "text": "$(4, 4)$ and $(-4, -4)$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "No intersection",
+        "rationale": "Incorrect analysis."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $y = x$ into circle equation: $x^2 + x^2 = 8$.",
+      "$2x^2 = 8 \\Rightarrow x^2 = 4 \\Rightarrow x = \\pm 2$.",
+      "Since $y = x$, points are $(2, 2)$ and $(-2, -2)$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0017",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 1,
+    "stem": "A circle is defined as the locus of all points in a plane that are:",
+    "choices": [
+      {
+        "text": "Equidistant from a fixed point",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "Equidistant from a fixed line",
+        "rationale": "Definition of a line parallel to a fixed line."
+      },
+      {
+        "text": "Equidistant from two fixed points",
+        "rationale": "Perpendicular bisector."
+      },
+      {
+        "text": "Sum of distances to two points is constant",
+        "rationale": "Ellipse definition."
+      },
+      {
+        "text": "Difference of distances to two points is constant",
+        "rationale": "Hyperbola definition."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Definition of a circle."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0018",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "Which of the following represents a circle concentric with $x^2 + y^2 = 9$ but with a radius of 5?",
+    "choices": [
+      {
+        "text": "$x^2 + y^2 = 25$",
+        "rationale": "Correct: Same center $(0,0)$, new radius squared 25."
+      },
+      {
+        "text": "$x^2 + y^2 = 5$",
+        "rationale": "Forgot to square the radius."
+      },
+      {
+        "text": "$(x - 5)^2 + y^2 = 25$",
+        "rationale": "Shifted center."
+      },
+      {
+        "text": "$x^2 + y^2 = 9$",
+        "rationale": "Original circle."
+      },
+      {
+        "text": "$x^2 + y^2 = 16$",
+        "rationale": "Difference of squares logic."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Concentric means same center. Original center is $(0,0)$.",
+      "New radius $r = 5$, so $r^2 = 25$.",
+      "Equation: $x^2 + y^2 = 25$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0019",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "Given the equation $2x^2 + 2y^2 = 18$, what is the radius of the circle?",
+    "choices": [
+      {
+        "text": "3",
+        "rationale": "Correct: Divide by 2: $x^2+y^2=9$. $r=3$."
+      },
+      {
+        "text": "9",
+        "rationale": "Used simplified equation's constant as radius."
+      },
+      {
+        "text": "18",
+        "rationale": "Used original constant."
+      },
+      {
+        "text": "4.5",
+        "rationale": "Divide by 4?"
+      },
+      {
+        "text": "$\\sqrt{18}$",
+        "rationale": "Forgot to divide by 2."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide entire equation by 2: $x^2 + y^2 = 9$.",
+      "$r^2 = 9 \\Rightarrow r = 3$."
+    ]
+  },
+  {
+    "id": "COORD-CIRC-0020",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "The circumference of a circle is $12\\pi$. What is the equation of this circle if its center is at the origin?",
+    "choices": [
+      {
+        "text": "$x^2 + y^2 = 36$",
+        "rationale": "Correct: $2\\pi r = 12\\pi \\Rightarrow r=6$. $r^2=36$."
+      },
+      {
+        "text": "$x^2 + y^2 = 144$",
+        "rationale": "Squared the circumference coefficient."
+      },
+      {
+        "text": "$x^2 + y^2 = 12$",
+        "rationale": "Used circumference coefficient as $r^2$."
+      },
+      {
+        "text": "$x^2 + y^2 = 6$",
+        "rationale": "Forgot to square the radius."
+      },
+      {
+        "text": "$x^2 + y^2 = 24$",
+        "rationale": "Diameter squared."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Circumference $C = 2\\pi r = 12\\pi$.",
+      "Divide by $2\\pi$: $r = 6$.",
+      "Equation: $x^2 + y^2 = 6^2 = 36$."
+    ]
+  }
+]

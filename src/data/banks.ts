@@ -24,7 +24,7 @@ export const BANKS: Bank[] = [
 
   // ========== ALGEBRA II ==========
   { key: "A2-POL", topic: "Algebra II", subtopic: "Polynomials & Rational Expressions", file: "algebra2-polynomials.json" },
-  { key: "A2-COM", topic: "Algebra II", subtopic: "Complex Numbers", file: "algebra2-complex.json" },
+  { key: "A2-COM", topic: "Algebra II", subtopic: "Complex Numbers & Quadratics", file: "algebra2-complex.json" },
 
   // ========== FUNCTIONS ==========
   { key: "FUN-QUAD", topic: "Functions", subtopic: "Quadratic Functions", file: "functions-quadratic.json" },

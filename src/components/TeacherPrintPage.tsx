@@ -132,12 +132,14 @@ export default function TeacherPrintPage() {
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
 
-      // Get both pages (problems page and answer key page)
-      const pages = printRef.current.children;
+      // Get both pages (problems page and answer key page) - filter to only direct children
+      const pages = Array.from(printRef.current.children).filter(
+        (child) => child instanceof HTMLElement
+      ) as HTMLElement[];
       
       // Process each page (problems page and answer key page)
       for (let pageIndex = 0; pageIndex < pages.length; pageIndex++) {
-        const pageElement = pages[pageIndex] as HTMLElement;
+        const pageElement = pages[pageIndex];
         
         // Capture this page
         const canvas = await html2canvas(pageElement, {
@@ -166,7 +168,7 @@ export default function TeacherPrintPage() {
         let heightLeft = imgHeight * ratio;
         let position = 0;
 
-        while (heightLeft >= pdfHeight) {
+        while (heightLeft > pdfHeight + 1) { // Add small buffer to prevent infinite loops
           position = heightLeft - pdfHeight;
           pdf.addPage();
           pdf.addImage(imgData, "PNG", imgX, -position, imgWidth * ratio, imgHeight * ratio);
@@ -364,29 +366,31 @@ export default function TeacherPrintPage() {
             <div className="text-sm text-gray-600 mb-6 text-center">
               Generated: {new Date().toLocaleDateString()}
             </div>
-            {selections.map((selection, index) => {
-              if (!selection.question) return null;
-              const q = selection.question;
-              return (
-                <div key={index} className="mb-10 pb-8 border-b-2 border-gray-300" style={{ marginBottom: "2.5rem", paddingBottom: "2rem" }}>
-                  <div className="mb-4">
-                    <span className="text-sm font-semibold text-gray-700">
-                      Problem {index + 1}
-                    </span>
-                    <div className="mt-3 text-lg font-medium leading-relaxed" style={{ lineHeight: "1.8" }}>
-                      <PrintStem text={q.stem} />
+            <div style={{ columnCount: 2, columnGap: "2rem", columnFill: "auto" }}>
+              {selections.map((selection, index) => {
+                if (!selection.question) return null;
+                const q = selection.question;
+                return (
+                  <div key={index} className="mb-6 pb-6 border-b border-gray-300" style={{ marginBottom: "1.5rem", paddingBottom: "1rem", breakInside: "avoid", pageBreakInside: "avoid" }}>
+                    <div className="mb-3">
+                      <span className="text-sm font-semibold text-gray-700">
+                        Problem {index + 1}
+                      </span>
+                      <div className="mt-2 text-base font-medium leading-relaxed" style={{ lineHeight: "1.6" }}>
+                        <PrintStem text={q.stem} />
+                      </div>
                     </div>
+                    <ol className="list-[upper-alpha] list-inside space-y-2 ml-4" style={{ lineHeight: "1.6", fontSize: "0.9rem" }}>
+                      {q.choices.map((choice, idx) => (
+                        <li key={idx} style={{ marginBottom: "0.5rem" }}>
+                          <PrintInlinePieces text={choice.text} />
+                        </li>
+                      ))}
+                    </ol>
                   </div>
-                  <ol className="list-[upper-alpha] list-inside space-y-3 ml-6" style={{ lineHeight: "2", fontSize: "1rem" }}>
-                    {q.choices.map((choice, idx) => (
-                      <li key={idx} style={{ marginBottom: "0.75rem" }}>
-                        <PrintInlinePieces text={choice.text} />
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
           
           {/* Answer Key Page */}
