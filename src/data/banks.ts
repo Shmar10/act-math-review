@@ -60,6 +60,6 @@ export const BANKS: Bank[] = [
   { key: "PRE-CON", topic: "Precalculus", subtopic: "Conic Sections", file: "conic-sections.json" },
 
   // ========== ADVANCED TOPICS (Less Common) ==========
-  { key: "ADV-MAT", topic: "Advanced", subtopic: "Matrices", file: "matrices.json" },
+  { key: "ADV-MAT", topic: "Number & Quantity", subtopic: "Matrices", file: "matrices.json" },
   { key: "ADV-VEC", topic: "Advanced", subtopic: "Vectors", file: "vectors.json" }
 ];

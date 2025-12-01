@@ -1,2 +1,696 @@
-[]
-
+[
+  {
+    "id": "FUNC-TRANS-0001",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 1,
+    "stem": "Which equation represents the graph of $y = x^2$ shifted up by 4 units?",
+    "choices": [
+      {
+        "text": "$y = x^2 + 4$",
+        "rationale": "Correct: Adding a constant to the function shifts it vertically up."
+      },
+      {
+        "text": "$y = x^2 - 4$",
+        "rationale": "Shifts down 4 units."
+      },
+      {
+        "text": "$y = (x + 4)^2$",
+        "rationale": "Shifts left 4 units."
+      },
+      {
+        "text": "$y = (x - 4)^2$",
+        "rationale": "Shifts right 4 units."
+      },
+      {
+        "text": "$y = 4x^2$",
+        "rationale": "Vertical stretch."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A vertical shift up by $k$ units changes $f(x)$ to $f(x) + k$.",
+      "Here $k=4$, so $y = x^2 + 4$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0002",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 1,
+    "stem": "The graph of $y = |x|$ is shifted 3 units to the right. What is the new equation?",
+    "choices": [
+      {
+        "text": "$y = |x - 3|$",
+        "rationale": "Correct: Replacing $x$ with $(x-h)$ shifts right by $h$."
+      },
+      {
+        "text": "$y = |x + 3|$",
+        "rationale": "Shifts left 3 units."
+      },
+      {
+        "text": "$y = |x| - 3$",
+        "rationale": "Shifts down 3 units."
+      },
+      {
+        "text": "$y = |x| + 3$",
+        "rationale": "Shifts up 3 units."
+      },
+      {
+        "text": "$y = 3|x|$",
+        "rationale": "Vertical stretch."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A horizontal shift to the right by $h$ units changes $f(x)$ to $f(x - h)$.",
+      "Here $h=3$, so $y = |x - 3|$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0003",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 2,
+    "stem": "Describe the transformation of $f(x) = \\sqrt{x}$ to $g(x) = -\\sqrt{x}$.",
+    "choices": [
+      {
+        "text": "Reflection across the x-axis",
+        "rationale": "Correct: $g(x) = -f(x)$ reflects over the x-axis."
+      },
+      {
+        "text": "Reflection across the y-axis",
+        "rationale": "This would be $\\sqrt{-x}$."
+      },
+      {
+        "text": "Shift down 1 unit",
+        "rationale": "This would be $\\sqrt{x} - 1$."
+      },
+      {
+        "text": "Vertical compression",
+        "rationale": "Requires a coefficient between 0 and 1."
+      },
+      {
+        "text": "Shift left 1 unit",
+        "rationale": "This would be $\\sqrt{x+1}$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The negative sign is outside the function: $g(x) = -f(x)$.",
+      "This indicates a reflection across the x-axis."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0004",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 2,
+    "stem": "If the graph of $y = f(x)$ passes through the point $(2, 5)$, what point must be on the graph of $y = f(x) + 3$?",
+    "choices": [
+      {
+        "text": "$(2, 8)$",
+        "rationale": "Correct: y-coordinate increases by 3. $5+3=8$."
+      },
+      {
+        "text": "$(5, 5)$",
+        "rationale": "Added 3 to x-coordinate."
+      },
+      {
+        "text": "$(2, 2)$",
+        "rationale": "Subtracted 3 from y."
+      },
+      {
+        "text": "$(-1, 5)$",
+        "rationale": "Subtracted 3 from x."
+      },
+      {
+        "text": "$(2, 15)$",
+        "rationale": "Multiplied y by 3."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The transformation $f(x) + 3$ adds 3 to the output (y-value).",
+      "Point $(2, 5)$ becomes $(2, 5+3) = (2, 8)$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0005",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 2,
+    "stem": "What transformation turns $y = x^3$ into $y = (2x)^3$?",
+    "choices": [
+      {
+        "text": "Horizontal compression by a factor of $1/2$",
+        "rationale": "Correct: $f(bx)$ with $b=2$ compresses horizontally by $1/b$."
+      },
+      {
+        "text": "Horizontal stretch by a factor of 2",
+        "rationale": "Would be $f(0.5x)$."
+      },
+      {
+        "text": "Vertical stretch by a factor of 2",
+        "rationale": "This would be $2x^3$."
+      },
+      {
+        "text": "Shift right by 2",
+        "rationale": "This would be $(x-2)^3$."
+      },
+      {
+        "text": "Vertical compression by a factor of $1/2$",
+        "rationale": "This would be $0.5x^3$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The input $x$ is multiplied by 2 inside the function.",
+      "The form $f(bx)$ with $b > 1$ represents a horizontal compression by a factor of $1/b$.",
+      "Here $b=2$, so compression factor is $1/2$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0006",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 3,
+    "stem": "Describe the sequence of transformations from $f(x) = x^2$ to $g(x) = -2(x - 1)^2$.",
+    "choices": [
+      {
+        "text": "Shift right 1, vertical stretch by 2, reflect over x-axis",
+        "rationale": "Correct order of operations."
+      },
+      {
+        "text": "Shift left 1, vertical stretch by 2, reflect over x-axis",
+        "rationale": "Incorrect shift direction ($x-1$ is right)."
+      },
+      {
+        "text": "Shift right 1, vertical compression by 2, reflect over y-axis",
+        "rationale": "Incorrect stretch type and reflection axis."
+      },
+      {
+        "text": "Reflect over x-axis, shift down 1, vertical stretch by 2",
+        "rationale": "Incorrect shift type (horizontal vs vertical)."
+      },
+      {
+        "text": "Shift right 1, shift down 2",
+        "rationale": "Missing stretch and reflection."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "1. $(x-1)^2$: Shift right 1 unit.",
+      "2. $2(x-1)^2$: Vertical stretch by factor of 2.",
+      "3. $-2(x-1)^2$: Reflect across x-axis."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0007",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 3,
+    "stem": "Which equation represents the graph of $y = \\sqrt{x}$ reflected across the y-axis and then shifted up 2 units?",
+    "choices": [
+      {
+        "text": "$y = \\sqrt{-x} + 2$",
+        "rationale": "Correct: $f(-x)$ reflects over y-axis, $+2$ shifts up."
+      },
+      {
+        "text": "$y = -\\sqrt{x} + 2$",
+        "rationale": "Reflects over x-axis."
+      },
+      {
+        "text": "$y = \\sqrt{-(x + 2)}$",
+        "rationale": "Shifted left 2, then reflected."
+      },
+      {
+        "text": "$y = \\sqrt{x - 2}$",
+        "rationale": "Shifted right 2."
+      },
+      {
+        "text": "$y = -\\sqrt{x + 2}$",
+        "rationale": "Reflect x-axis and shift left."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Reflect across y-axis: Replace $x$ with $-x$. $y = \\sqrt{-x}$.",
+      "Shift up 2: Add 2 to the function. $y = \\sqrt{-x} + 2$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0008",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 3,
+    "stem": "If the domain of $f(x)$ is $[-2, 4]$, what is the domain of $g(x) = f(x - 3)$?",
+    "choices": [
+      {
+        "text": "$[1, 7]$",
+        "rationale": "Correct: Shift right 3 adds 3 to domain endpoints. $-2+3=1, 4+3=7$."
+      },
+      {
+        "text": "$[-5, 1]$",
+        "rationale": "Shifted left (subtracted 3)."
+      },
+      {
+        "text": "$[-2, 4]$",
+        "rationale": "Assumed domain doesn't change."
+      },
+      {
+        "text": "$[-6, 12]$",
+        "rationale": "Multiplied by 3."
+      },
+      {
+        "text": "$[0, 6]$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The transformation $f(x-3)$ is a horizontal shift right by 3 units.",
+      "Add 3 to each endpoint of the domain.",
+      "$[-2 + 3, 4 + 3] = [1, 7]$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0009",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 3,
+    "stem": "Identify the transformation that maps $y = x^2$ to $y = \\frac{1}{3}x^2$.",
+    "choices": [
+      {
+        "text": "Vertical compression by a factor of 1/3",
+        "rationale": "Correct: Multiplying by $a$ where $0 < a < 1$ compresses vertically."
+      },
+      {
+        "text": "Vertical stretch by a factor of 3",
+        "rationale": "Coefficient would be 3."
+      },
+      {
+        "text": "Horizontal compression by a factor of 1/3",
+        "rationale": "Would look like $(3x)^2$."
+      },
+      {
+        "text": "Horizontal stretch by a factor of 3",
+        "rationale": "Would look like $(\\frac{1}{3}x)^2 = \\frac{1}{9}x^2$."
+      },
+      {
+        "text": "Shift down by 3",
+        "rationale": "Would look like $x^2 - 3$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The function is multiplied by $1/3$ on the outside.",
+      "Since $0 < 1/3 < 1$, this is a vertical compression (or shrink)."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0010",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 4,
+    "stem": "The point $(4, -2)$ lies on the graph of $y = f(x)$. What point must lie on the graph of $y = 2f(x+1) - 3$?",
+    "choices": [
+      {
+        "text": "$(3, -7)$",
+        "rationale": "Correct: x: $4-1=3$. y: $2(-2)-3 = -7$."
+      },
+      {
+        "text": "$(5, -7)$",
+        "rationale": "Added 1 to x instead of subtracting."
+      },
+      {
+        "text": "$(3, -1)$",
+        "rationale": "Forgot to subtract 3 from y."
+      },
+      {
+        "text": "$(5, -1)$",
+        "rationale": "Incorrect x and y operations."
+      },
+      {
+        "text": "$(4, -7)$",
+        "rationale": "Forgot horizontal shift."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Original point $(4, -2)$ means $f(4) = -2$.",
+      "For new function, let $X$ be new coordinate. Inside: $X+1 = 4 \\Rightarrow X = 3$.",
+      "Outside: $y = 2f(4) - 3 = 2(-2) - 3 = -4 - 3 = -7$.",
+      "New point: $(3, -7)$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0011",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 4,
+    "stem": "Which equation represents the function $f(x) = |x|$ vertically stretched by a factor of 3 and shifted left 2 units?",
+    "choices": [
+      {
+        "text": "$g(x) = 3|x + 2|$",
+        "rationale": "Correct: $3 \\times f(x+2)$."
+      },
+      {
+        "text": "$g(x) = 3|x - 2|$",
+        "rationale": "Shifted right."
+      },
+      {
+        "text": "$g(x) = \\frac{1}{3}|x + 2|$",
+        "rationale": "Vertical compression."
+      },
+      {
+        "text": "$g(x) = |3x + 2|$",
+        "rationale": "Horizontal compression."
+      },
+      {
+        "text": "$g(x) = 3|x| + 2$",
+        "rationale": "Shifted up."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Shift left 2: Replace $x$ with $(x+2)$. $|x+2|$.",
+      "Vertical stretch by 3: Multiply outside by 3. $3|x+2|$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0012",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 4,
+    "stem": "If $g(x) = f(2x)$, how does the graph of $g$ compare to $f$?",
+    "choices": [
+      {
+        "text": "Horizontally compressed by a factor of 1/2",
+        "rationale": "Correct: $b=2$, factor is $1/b$."
+      },
+      {
+        "text": "Horizontally stretched by a factor of 2",
+        "rationale": "Confused stretch and compression."
+      },
+      {
+        "text": "Vertically stretched by a factor of 2",
+        "rationale": "Coefficient is inside the function."
+      },
+      {
+        "text": "Shifted left by 2",
+        "rationale": "Multiplication, not addition."
+      },
+      {
+        "text": "Shifted up by 2",
+        "rationale": "Vertical shift logic."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiplying the input $x$ by a factor $b > 1$ compresses the graph horizontally toward the y-axis by a factor of $1/b$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0013",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 5,
+    "stem": "Find the equation of the quadratic function with vertex at $(-2, 5)$ that passes through the point $(0, 13)$.",
+    "choices": [
+      {
+        "text": "$y = 2(x + 2)^2 + 5$",
+        "rationale": "Correct: $y=a(x+2)^2+5$. $13=a(2)^2+5 \\Rightarrow 4a=8 \\Rightarrow a=2$."
+      },
+      {
+        "text": "$y = (x + 2)^2 + 5$",
+        "rationale": "Assumed $a=1$."
+      },
+      {
+        "text": "$y = 2(x - 2)^2 + 5$",
+        "rationale": "Sign error on h."
+      },
+      {
+        "text": "$y = 4(x + 2)^2 + 5$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$y = -2(x + 2)^2 + 5$",
+        "rationale": "Wrong sign for a."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Vertex form: $y = a(x - h)^2 + k$.",
+      "Substitute vertex $(-2, 5)$: $y = a(x + 2)^2 + 5$.",
+      "Substitute point $(0, 13)$: $13 = a(0 + 2)^2 + 5$.",
+      "$13 = 4a + 5 \\Rightarrow 8 = 4a \\Rightarrow a = 2$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0014",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 5,
+    "stem": "Given the graph of $y = f(x)$, the graph of $y = -f(x - 2) - 1$ is obtained by:",
+    "choices": [
+      {
+        "text": "Reflecting over the x-axis, shifting right 2, shifting down 1",
+        "rationale": "Correct order and types."
+      },
+      {
+        "text": "Reflecting over the y-axis, shifting right 2, shifting down 1",
+        "rationale": "Wrong reflection axis."
+      },
+      {
+        "text": "Reflecting over the x-axis, shifting left 2, shifting down 1",
+        "rationale": "Wrong horizontal shift."
+      },
+      {
+        "text": "Shifting right 2, shifting down 1, then reflecting over x-axis",
+        "rationale": "If reflected last, the vertical shift would be inverted."
+      },
+      {
+        "text": "Reflecting over y-axis, shifting left 2, shifting up 1",
+        "rationale": "Multiple errors."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inside: $(x-2)$ shifts Right 2.",
+      "Multiply by -1: Reflects over x-axis.",
+      "Subtract 1: Shifts Down 1."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0015",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 3,
+    "stem": "The function $f(x) = x^2$ is reflected across the x-axis and vertically stretched by a factor of 4. What is the new function?",
+    "choices": [
+      {
+        "text": "$g(x) = -4x^2$",
+        "rationale": "Correct."
+      },
+      {
+        "text": "$g(x) = 4x^2$",
+        "rationale": "Missed reflection."
+      },
+      {
+        "text": "$g(x) = -(4x)^2$",
+        "rationale": "Horizontal stretch/compression logic."
+      },
+      {
+        "text": "$g(x) = \\frac{-1}{4}x^2$",
+        "rationale": "Compression instead of stretch."
+      },
+      {
+        "text": "$g(x) = -x^2 + 4$",
+        "rationale": "Vertical shift instead of stretch."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Reflection across x-axis: $-x^2$.",
+      "Vertical stretch by 4: Multiply by 4.",
+      "Result: $-4x^2$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0016",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 4,
+    "stem": "Which function represents the inverse of $f(x) = 2x - 6$?",
+    "choices": [
+      {
+        "text": "$f^{-1}(x) = \\frac{1}{2}x + 3$",
+        "rationale": "Correct: $x=2y-6 \\Rightarrow x+6=2y \\Rightarrow y=0.5x+3$."
+      },
+      {
+        "text": "$f^{-1}(x) = 2x + 6$",
+        "rationale": "Just changed the sign."
+      },
+      {
+        "text": "$f^{-1}(x) = \\frac{1}{2}x - 3$",
+        "rationale": "Divided incorrectly."
+      },
+      {
+        "text": "$f^{-1}(x) = -2x + 6$",
+        "rationale": "Negative reciprocals."
+      },
+      {
+        "text": "$f^{-1}(x) = x + 3$",
+        "rationale": "Dropped coefficient."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set $y = 2x - 6$.",
+      "Swap x and y: $x = 2y - 6$.",
+      "Solve for y: $x + 6 = 2y$.",
+      "$y = \\frac{x}{2} + 3$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0017",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 3,
+    "stem": "How is the graph of $y = (x + 1)^3 - 2$ transformed from the parent function $y = x^3$?",
+    "choices": [
+      {
+        "text": "Left 1, Down 2",
+        "rationale": "Correct."
+      },
+      {
+        "text": "Right 1, Down 2",
+        "rationale": "Incorrect horizontal shift."
+      },
+      {
+        "text": "Left 1, Up 2",
+        "rationale": "Incorrect vertical shift."
+      },
+      {
+        "text": "Right 1, Up 2",
+        "rationale": "Both shifts reversed."
+      },
+      {
+        "text": "Reflected over x-axis",
+        "rationale": "No negative coefficient."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$x+1$ indicates Left 1.",
+      "$-2$ indicates Down 2."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0018",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 5,
+    "stem": "A function $f(x)$ has a domain of $[-4, 4]$ and a range of $[0, 10]$. What are the domain and range of $g(x) = 2f(x) - 5$?",
+    "choices": [
+      {
+        "text": "Domain: $[-4, 4]$, Range: $[-5, 15]$",
+        "rationale": "Correct: Domain unchanged. Range: $2[0, 10] - 5 = [0, 20] - 5 = [-5, 15]$."
+      },
+      {
+        "text": "Domain: $[-8, 8]$, Range: $[-5, 15]$",
+        "rationale": "Changed domain incorrectly (no horizontal stretch)."
+      },
+      {
+        "text": "Domain: $[-4, 4]$, Range: $[0, 10]$",
+        "rationale": "Ignored transformation range effect."
+      },
+      {
+        "text": "Domain: $[-2, 2]$, Range: $[-5, 15]$",
+        "rationale": "Compressed domain incorrectly."
+      },
+      {
+        "text": "Domain: $[-4, 4]$, Range: $[2, 12]$",
+        "rationale": "Added 2 to range."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Transformations are vertical only ($2f(x)-5$).",
+      "Domain (x-values) remains $[-4, 4]$.",
+      "Range (y-values) is stretched by 2 then shifted down 5.",
+      "Min: $2(0) - 5 = -5$. Max: $2(10) - 5 = 15$. Range: $[-5, 15]$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0019",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 4,
+    "stem": "Which equation corresponds to the graph of $y = \\sqrt{x}$ reflected across the x-axis and shifted right 4 units?",
+    "choices": [
+      {
+        "text": "$y = -\\sqrt{x - 4}$",
+        "rationale": "Correct."
+      },
+      {
+        "text": "$y = \\sqrt{-(x - 4)}$",
+        "rationale": "Reflects over y-axis."
+      },
+      {
+        "text": "$y = -\\sqrt{x + 4}$",
+        "rationale": "Shifted left."
+      },
+      {
+        "text": "$y = \\sqrt{-x - 4}$",
+        "rationale": "Reflect y and shift."
+      },
+      {
+        "text": "$y = \\sqrt{x} - 4$",
+        "rationale": "Shifted down."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Shift right 4: $\\sqrt{x-4}$.",
+      "Reflect across x-axis: multiply whole function by -1.",
+      "$y = -\\sqrt{x-4}$."
+    ]
+  },
+  {
+    "id": "FUNC-TRANS-0020",
+    "topic": "Functions",
+    "subtopic": "Transformations",
+    "diff": 5,
+    "stem": "Determine the horizontal phase shift of the function $y = \\sin(2x - \\pi)$.",
+    "choices": [
+      {
+        "text": "Right $\\pi/2$",
+        "rationale": "Correct: Factor out 2: $\\sin(2(x - \\pi/2))$. Shift is $\\pi/2$."
+      },
+      {
+        "text": "Right $\\pi$",
+        "rationale": "Did not factor out the b value."
+      },
+      {
+        "text": "Left $\\pi$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "Left $\\pi/2$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "Right $2\\pi$",
+        "rationale": "Incorrect calculation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "To find phase shift, write argument in form $b(x - h)$.",
+      "$2x - \\pi = 2(x - \\frac{\\pi}{2})$.",
+      "The shift $h$ is $\\frac{\\pi}{2}$ to the right."
+    ]
+  }
+]

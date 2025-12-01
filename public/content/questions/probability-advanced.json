@@ -1,2 +1,716 @@
-[]
-
+[
+  {
+    "id": "STAT-ADV-0001",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "If $P(A) = 0.4$, $P(B) = 0.5$, and events A and B are independent, what is $P(A \\cup B)$?",
+    "choices": [
+      {
+        "text": "0.7",
+        "rationale": "Correct: $P(A \\cup B) = P(A) + P(B) - P(A)P(B) = 0.4 + 0.5 - (0.4)(0.5) = 0.9 - 0.2 = 0.7$."
+      },
+      {
+        "text": "0.9",
+        "rationale": "Assumed mutually exclusive ($0.4 + 0.5$)."
+      },
+      {
+        "text": "0.2",
+        "rationale": "This is the intersection $P(A \\cap B)$."
+      },
+      {
+        "text": "0.1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "0.6",
+        "rationale": "Subtracted intersection incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For independent events, $P(A \\cap B) = P(A) \\times P(B)$.",
+      "$P(A \\cap B) = 0.4 \\times 0.5 = 0.2$.",
+      "Use Addition Rule: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+      "$P(A \\cup B) = 0.4 + 0.5 - 0.2 = 0.7$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0002",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "A fair coin is tossed 5 times. What is the probability of getting **at least** one head?",
+    "choices": [
+      {
+        "text": "$\\frac{31}{32}$",
+        "rationale": "Correct: $1 - P(\\text{all tails}) = 1 - (1/2)^5 = 1 - 1/32$."
+      },
+      {
+        "text": "$\\frac{1}{32}$",
+        "rationale": "Probability of getting no heads."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Assumed 50/50 for the whole sequence."
+      },
+      {
+        "text": "$\\frac{5}{32}$",
+        "rationale": "Probability of exactly one head."
+      },
+      {
+        "text": "$\\frac{30}{32}$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the complement rule: $P(\\text{At least 1 H}) = 1 - P(\\text{No H})$.",
+      "No heads means all 5 are tails. $P(T) = 1/2$.",
+      "$P(\\text{5 Tails}) = (1/2)^5 = 1/32$.",
+      "$P(\\text{At least 1 H}) = 1 - 1/32 = 31/32$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0003",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "A committee of 3 is chosen randomly from a group of 5 men and 4 women. What is the probability that the committee contains exactly 2 men and 1 woman?",
+    "choices": [
+      {
+        "text": "$\\frac{10}{21}$",
+        "rationale": "Correct: Total ways $_9C_3 = 84$. Favorable $_5C_2 \\times _4C_1 = 10 \\times 4 = 40$. $40/84 = 10/21$."
+      },
+      {
+        "text": "$\\frac{5}{21}$",
+        "rationale": "Miscalculated combinations."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$\\frac{20}{84}$",
+        "rationale": "Forgot to simplify or miscalculated."
+      },
+      {
+        "text": "$\\frac{5}{14}$",
+        "rationale": "Probability of all men."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total ways to choose 3 people from 9: $_9C_3 = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} = 84$.",
+      "Ways to choose 2 men from 5: $_5C_2 = 10$.",
+      "Ways to choose 1 woman from 4: $_4C_1 = 4$.",
+      "Total favorable ways: $10 \\times 4 = 40$.",
+      "Probability: $40/84 = 10/21$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0004",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "A target consists of a circle of radius 4 inscribed in a square of side length 8. If a dart hits the target randomly, what is the probability it lands inside the square but outside the circle?",
+    "choices": [
+      {
+        "text": "$1 - \\frac{\\pi}{4}$",
+        "rationale": "Correct: Area Square = 64. Area Circle = $16\\pi$. Area Region = $64 - 16\\pi$. Prob = $(64-16\\pi)/64 = 1 - \\pi/4$."
+      },
+      {
+        "text": "$\\frac{\\pi}{4}$",
+        "rationale": "Probability of landing in the circle."
+      },
+      {
+        "text": "$\\frac{4 - \\pi}{2}$",
+        "rationale": "Denominator error."
+      },
+      {
+        "text": "$1 - \\pi$",
+        "rationale": "Forgot to divide $\\pi$."
+      },
+      {
+        "text": "$\\frac{1}{4}$",
+        "rationale": "Estimation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate Area of Square: $8^2 = 64$.",
+      "Calculate Area of Circle: $\\pi(4)^2 = 16\\pi$.",
+      "Area of shaded region: $64 - 16\\pi$.",
+      "Probability = $\\frac{64 - 16\\pi}{64} = 1 - \\frac{16\\pi}{64} = 1 - \\frac{\\pi}{4}$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0005",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "Two six-sided dice are rolled. What is the probability that the sum is 8, given that at least one die shows a 5?",
+    "choices": [
+      {
+        "text": "$\\frac{2}{11}$",
+        "rationale": "Correct: Pairs with at least one 5: (1,5),(2,5),(3,5),(4,5),(5,5),(6,5),(5,1),(5,2),(5,3),(5,4),(5,6) = 11 outcomes. Sum 8: (3,5), (5,3). 2 outcomes."
+      },
+      {
+        "text": "$\\frac{1}{11}$",
+        "rationale": "Missed one of the pairs."
+      },
+      {
+        "text": "$\\frac{2}{36}$",
+        "rationale": "Used total sample space instead of conditional space."
+      },
+      {
+        "text": "$\\frac{1}{6}$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$\\frac{5}{36}$",
+        "rationale": "Probability of sum 8 (unconditional)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let A = Sum is 8. Let B = At least one 5.",
+      "Sample space B: {(1,5), (2,5), (3,5), (4,5), (5,5), (6,5), (5,1), (5,2), (5,3), (5,4), (5,6)}. Total 11.",
+      "A $\\cap$ B: Outcomes in B that sum to 8. {(3,5), (5,3)}. Total 2.",
+      "$P(A|B) = \\frac{2}{11}$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0006",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "A medical test for a disease is 99% accurate (it correctly identifies positive and negative cases). If 1% of the population has the disease, what is the probability that a person who tests positive actually has the disease?",
+    "choices": [
+      {
+        "text": "0.5",
+        "rationale": "Correct: $P(D|Pos) = \\frac{P(Pos|D)P(D)}{P(Pos|D)P(D) + P(Pos|NoD)P(NoD)} = \\frac{0.99(0.01)}{0.99(0.01) + 0.01(0.99)} = 0.5$."
+      },
+      {
+        "text": "0.99",
+        "rationale": "Confused test accuracy with predictive value."
+      },
+      {
+        "text": "0.01",
+        "rationale": "Base rate."
+      },
+      {
+        "text": "0.9",
+        "rationale": "Estimate."
+      },
+      {
+        "text": "0.1",
+        "rationale": "Estimate."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Bayes' Theorem or a hypothetical population of 1000.",
+      "10 people have disease (99% test pos $\\rightarrow$ 9.9 pos).",
+      "990 do not have disease (1% test pos $\\rightarrow$ 9.9 pos).",
+      "Total positives = $9.9 + 9.9 = 19.8$.",
+      "True positives = 9.9. Probability = $9.9 / 19.8 = 0.5$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0007",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "A box contains 4 red tickets and 6 blue tickets. Two tickets are drawn without replacement. What is the probability that they are different colors?",
+    "choices": [
+      {
+        "text": "$\\frac{8}{15}$",
+        "rationale": "Correct: RB or BR. $(4/10)(6/9) + (6/10)(4/9) = 24/90 + 24/90 = 48/90 = 8/15$."
+      },
+      {
+        "text": "$\\frac{4}{15}$",
+        "rationale": "Only calculated RB."
+      },
+      {
+        "text": "$\\frac{12}{25}$",
+        "rationale": "Assumed replacement."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$\\frac{7}{15}$",
+        "rationale": "Probability of same color."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Case 1: Red then Blue. $P(R) = 4/10$. $P(B|R) = 6/9$. Prob = $24/90$.",
+      "Case 2: Blue then Red. $P(B) = 6/10$. $P(R|B) = 4/9$. Prob = $24/90$.",
+      "Total Prob = $24/90 + 24/90 = 48/90 = 8/15$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0008",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "A basketball player makes free throws with a probability of 0.8. If she shoots 3 free throws, what is the probability she makes exactly 2?",
+    "choices": [
+      {
+        "text": "0.384",
+        "rationale": "Correct: Binomial pdf. $_3C_2 (0.8)^2 (0.2)^1 = 3(0.64)(0.2) = 0.384$."
+      },
+      {
+        "text": "0.128",
+        "rationale": "Forgot the coefficient $_3C_2$ (just calculated one specific order)."
+      },
+      {
+        "text": "0.512",
+        "rationale": "Probability of making all 3."
+      },
+      {
+        "text": "0.032",
+        "rationale": "Probability of making exactly 1."
+      },
+      {
+        "text": "0.4",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Binomial Probability Formula: $P(X=k) = _nC_k p^k (1-p)^{n-k}$.",
+      "$n=3, k=2, p=0.8$.",
+      "$P(2) = _3C_2 (0.8)^2 (0.2)^1 = 3 \\times 0.64 \\times 0.2 = 0.384$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0009",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 3,
+    "stem": "Events A and B are mutually exclusive. If $P(A) = 0.3$ and $P(B) = 0.4$, what is $P(A \\text{ and } B)$?",
+    "choices": [
+      {
+        "text": "0",
+        "rationale": "Correct: Mutually exclusive events cannot happen together."
+      },
+      {
+        "text": "0.12",
+        "rationale": "Assumed independent ($0.3 \\times 0.4$)."
+      },
+      {
+        "text": "0.7",
+        "rationale": "Calculated $P(A \\text{ or } B)$."
+      },
+      {
+        "text": "0.1",
+        "rationale": "Difference."
+      },
+      {
+        "text": "0.35",
+        "rationale": "Average."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Definition: Mutually exclusive events have no intersection.",
+      "$P(A \\cap B) = 0$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0010",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "A game involves rolling a 6-sided die. If you roll a 6, you win \\$12. If you roll anything else, you lose \\$3. What is the expected value of this game?",
+    "choices": [
+      {
+        "text": "$-\\$0.50$",
+        "rationale": "Correct: $(1/6)(12) + (5/6)(-3) = 2 - 2.5 = -0.5$."
+      },
+      {
+        "text": "$\\$0.50$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$\\$2.00$",
+        "rationale": "Only considered the winning outcome."
+      },
+      {
+        "text": "$-\\$1.50$",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "$\\$0$",
+        "rationale": "Assumed fair game."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Expected Value $E(X) = \\sum x_i p_i$.",
+      "Win: $x_1 = 12, p_1 = 1/6$. Loss: $x_2 = -3, p_2 = 5/6$.",
+      "$E(X) = (12)(1/6) + (-3)(5/6) = 2 - 2.5 = -0.5$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0011",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "A string of length 10 is cut into two pieces at a random point. What is the probability that the longer piece is at least 3 times as long as the shorter piece?",
+    "choices": [
+      {
+        "text": "0.5",
+        "rationale": "Correct: Let cut be at $x$. Conditions: $x \\ge 3(10-x)$ or $10-x \\ge 3x$. Solving gives $x \\ge 7.5$ or $x \\le 2.5$. Valid length is $2.5 + 2.5 = 5$. $5/10 = 0.5$."
+      },
+      {
+        "text": "0.25",
+        "rationale": "Only considered one side."
+      },
+      {
+        "text": "0.75",
+        "rationale": "Inverted logic."
+      },
+      {
+        "text": "0.33",
+        "rationale": "Used ratio 1/3."
+      },
+      {
+        "text": "0.1",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let the cut be at position $x$ in $[0, 10]$. Pieces are $x$ and $10-x$.",
+      "Case 1 ($x$ is longer): $x \\ge 3(10-x) \\Rightarrow 4x \\ge 30 \\Rightarrow x \\ge 7.5$. (Length of region = 2.5)",
+      "Case 2 ($10-x$ is longer): $10-x \\ge 3x \\Rightarrow 10 \\ge 4x \\Rightarrow x \\le 2.5$. (Length of region = 2.5)",
+      "Total favorable length = $2.5 + 2.5 = 5$. Total length = 10.",
+      "Probability = $5/10 = 0.5$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0012",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "How many distinguishable permutations can be formed from the letters of the word MISSISSIPPI?",
+    "choices": [
+      {
+        "text": "34,650",
+        "rationale": "Correct: $\\frac{11!}{4!4!2!1!} = 34650$."
+      },
+      {
+        "text": "39,916,800",
+        "rationale": "Calculated $11!$ without dividing by repeats."
+      },
+      {
+        "text": "11",
+        "rationale": "Number of letters."
+      },
+      {
+        "text": "1,663,200",
+        "rationale": "Forgot to divide by one of the groups (e.g., Is)."
+      },
+      {
+        "text": "5,040",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total letters: 11.",
+      "Repeats: M (1), I (4), S (4), P (2).",
+      "Formula: $\\frac{11!}{4!4!2!}$.",
+      "Calculation: $\\frac{39916800}{24 \\times 24 \\times 2} = \\frac{39916800}{1152} = 34650$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0013",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "A card is drawn from a standard deck. Let A be the event of drawing a Face Card (J, Q, K). Let B be the event of drawing a Heart. Are events A and B independent?",
+    "choices": [
+      {
+        "text": "Yes, because $P(A \\cap B) = P(A)P(B)$",
+        "rationale": "Correct: $P(A) = 12/52 = 3/13$. $P(B) = 1/4$. $P(A \\cap B) = 3/52$. $(3/13)(1/4) = 3/52$."
+      },
+      {
+        "text": "No, because $P(A \\cap B) \\ne P(A)P(B)$",
+        "rationale": "Incorrect calculation."
+      },
+      {
+        "text": "Yes, because they are mutually exclusive",
+        "rationale": "They are not mutually exclusive (Jack of Hearts exists)."
+      },
+      {
+        "text": "No, because they can happen at the same time",
+        "rationale": "Intersection does not disprove independence."
+      },
+      {
+        "text": "Cannot be determined",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check condition $P(A \\cap B) = P(A)P(B)$.",
+      "$P(A) = 12/52 = 3/13$. $P(B) = 13/52 = 1/4$.",
+      "Intersection (Face AND Heart): J, Q, K of Hearts = 3 cards. $P(A \\cap B) = 3/52$.",
+      "Check: $(3/13) \\times (1/4) = 3/52$. It holds. Yes."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0014",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 3,
+    "stem": "If the odds in favor of an event are 3:7, what is the probability of the event occurring?",
+    "choices": [
+      {
+        "text": "0.3",
+        "rationale": "Correct: Prob = Success / (Success + Failure) = $3 / (3+7) = 0.3$."
+      },
+      {
+        "text": "0.43",
+        "rationale": "$3/7$ approximated."
+      },
+      {
+        "text": "0.7",
+        "rationale": "Probability of failure."
+      },
+      {
+        "text": "0.23",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "3.7",
+        "rationale": "Not a probability."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Odds of $a:b$ means Probability $P = \\frac{a}{a+b}$.",
+      "$P = \\frac{3}{3+7} = \\frac{3}{10} = 0.3$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0015",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "Five people (A, B, C, D, E) sit in a row. What is the probability that A and B sit next to each other?",
+    "choices": [
+      {
+        "text": "0.4",
+        "rationale": "Correct: Treat AB as one unit. $4! \\times 2!$ arrangements. Total $5!$. $(24 \\times 2) / 120 = 48/120 = 0.4$."
+      },
+      {
+        "text": "0.2",
+        "rationale": "Forgot the internal permutation of AB ($2!$)."
+      },
+      {
+        "text": "0.5",
+        "rationale": "Guess."
+      },
+      {
+        "text": "0.1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "0.05",
+        "rationale": "1/20 error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total arrangements: $5! = 120$.",
+      "Favorable: Treat (AB) as a single unit. We arrange {AB, C, D, E}. $4! = 24$.",
+      "Internal arrangement of A and B: $2! = 2$.",
+      "Total favorable: $24 \\times 2 = 48$.",
+      "Probability: $48/120 = 2/5 = 0.4$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0016",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "From a set of integers 1 through 20, one number is selected. What is the probability that the number is a multiple of 3 or 5?",
+    "choices": [
+      {
+        "text": "0.45",
+        "rationale": "Correct: Mults of 3: {3,6,9,12,15,18} (6). Mults of 5: {5,10,15,20} (4). Intersection {15} (1). $6+4-1=9$. $9/20=0.45$."
+      },
+      {
+        "text": "0.5",
+        "rationale": "Forgot to subtract intersection ($6+4=10$)."
+      },
+      {
+        "text": "0.3",
+        "rationale": "Only counted multiples of 3."
+      },
+      {
+        "text": "0.2",
+        "rationale": "Only counted multiples of 5."
+      },
+      {
+        "text": "0.4",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Count multiples of 3: 6 numbers.",
+      "Count multiples of 5: 4 numbers.",
+      "Count intersection (multiples of 15): 1 number.",
+      "Total = $6 + 4 - 1 = 9$.",
+      "Prob = $9/20 = 0.45$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0017",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "Bag A has 3 red and 2 blue balls. Bag B has 2 red and 4 blue balls. A coin is flipped. If Heads, a ball is drawn from Bag A. If Tails, a ball is drawn from Bag B. What is the probability of drawing a red ball?",
+    "choices": [
+      {
+        "text": "$\\frac{14}{30}$",
+        "rationale": "Correct: $0.5(3/5) + 0.5(2/6) = 0.3 + 1/6 = 3/10 + 5/30 = 9/30 + 5/30 = 14/30$."
+      },
+      {
+        "text": "$\\frac{5}{11}$",
+        "rationale": "Added all red / all balls ($5/11$). Incorrect logic."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Average."
+      },
+      {
+        "text": "$\\frac{7}{15}$",
+        "rationale": "Simplified 14/30."
+      },
+      {
+        "text": "$\\frac{1}{3}$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 3,
+    "solutionSteps": [
+      "Path 1 (Heads): $P(H)P(R|H) = (1/2)(3/5) = 3/10$.",
+      "Path 2 (Tails): $P(T)P(R|T) = (1/2)(2/6) = 1/6$.",
+      "Total Prob: $3/10 + 1/6 = 9/30 + 5/30 = 14/30 = 7/15$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0018",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 4,
+    "stem": "If $P(A) = 0.6$, $P(B) = 0.3$, and $P(A|B) = 0.5$, find $P(B|A)$.",
+    "choices": [
+      {
+        "text": "0.25",
+        "rationale": "Correct: $P(A \\cap B) = P(A|B)P(B) = 0.5 \\times 0.3 = 0.15$. $P(B|A) = 0.15 / 0.6 = 0.25$."
+      },
+      {
+        "text": "0.5",
+        "rationale": "Assumed $P(B|A) = P(A|B)$."
+      },
+      {
+        "text": "0.3",
+        "rationale": "Guess."
+      },
+      {
+        "text": "0.18",
+        "rationale": "Multiplied probabilities."
+      },
+      {
+        "text": "0.15",
+        "rationale": "Intersection value."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find intersection: $P(A \\cap B) = P(A|B) \\times P(B) = 0.5 \\times 0.3 = 0.15$.",
+      "Use conditional formula: $P(B|A) = P(A \\cap B) / P(A)$.",
+      "$0.15 / 0.6 = 0.25$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0019",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 3,
+    "stem": "A PIN code consists of 4 digits (0-9). If digits can be repeated, what is the probability that the PIN code is '1234'?",
+    "choices": [
+      {
+        "text": "$\\frac{1}{10000}$",
+        "rationale": "Correct: Total outcomes $10^4 = 10000$."
+      },
+      {
+        "text": "$\\frac{1}{5040}$",
+        "rationale": "No repetition assumption ($10 \\times 9 \\times 8 \\times 7$)."
+      },
+      {
+        "text": "$\\frac{1}{40}$",
+        "rationale": "$10 \\times 4$."
+      },
+      {
+        "text": "$\\frac{1}{9999}$",
+        "rationale": "Counting error."
+      },
+      {
+        "text": "$\\frac{4}{10}$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total possible PINs = $10 \\times 10 \\times 10 \\times 10 = 10,000$.",
+      "Only 1 combination is correct.",
+      "Probability = $1/10000$."
+    ]
+  },
+  {
+    "id": "STAT-ADV-0020",
+    "topic": "Statistics & Probability",
+    "subtopic": "Advanced Probability",
+    "diff": 5,
+    "stem": "There are 10 socks in a drawer: 4 red, 6 blue. If 2 socks are pulled out at random, what is the probability they are a matching pair?",
+    "choices": [
+      {
+        "text": "$\\frac{7}{15}$",
+        "rationale": "Correct: RR ($4/10 \\times 3/9$) + BB ($6/10 \\times 5/9$) = $12/90 + 30/90 = 42/90 = 7/15$."
+      },
+      {
+        "text": "$\\frac{8}{15}$",
+        "rationale": "Complement (probability of mismatch)."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$\\frac{2}{5}$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$\\frac{1}{3}$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Prob(Red Pair) = $\\frac{4}{10} \\times \\frac{3}{9} = \\frac{12}{90}$.",
+      "Prob(Blue Pair) = $\\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90}$.",
+      "Total Prob = $\\frac{12+30}{90} = \\frac{42}{90} = \\frac{7}{15}$."
+    ]
+  }
+]

@@ -1,2 +1,689 @@
-[]
-
+[
+  {
+    "id": "STAT-DATA-0001",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 1,
+    "stem": "Find the mean of the data set: $4, 8, 9, 12, 17$.",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: Sum is $50$. $50 / 5 = 10$."
+      },
+      {
+        "text": "9",
+        "rationale": "This is the median."
+      },
+      {
+        "text": "12",
+        "rationale": "Guess."
+      },
+      {
+        "text": "8",
+        "rationale": "Guess."
+      },
+      {
+        "text": "50",
+        "rationale": "This is the sum."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sum the values: $4 + 8 + 9 + 12 + 17 = 50$.",
+      "Divide by the count (5): $50 / 5 = 10$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0002",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 2,
+    "stem": "Find the median of the following set of numbers: $5, 2, 8, 1, 9, 4$.",
+    "choices": [
+      {
+        "text": "4.5",
+        "rationale": "Correct: Sorted: $1, 2, 4, 5, 8, 9$. Middle two are 4 and 5. Average is 4.5."
+      },
+      {
+        "text": "4",
+        "rationale": "Lower middle value."
+      },
+      {
+        "text": "5",
+        "rationale": "Upper middle value."
+      },
+      {
+        "text": "8",
+        "rationale": "Third number in unsorted list."
+      },
+      {
+        "text": "4.8",
+        "rationale": "This is the mean."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Order the data: $1, 2, 4, 5, 8, 9$.",
+      "Since there are 6 numbers (even), average the middle two ($4$ and $5$).",
+      "$\\frac{4+5}{2} = 4.5$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0003",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 2,
+    "stem": "The average (arithmetic mean) of 4 numbers is 15. If a fifth number is added, the new average is 17. What is the fifth number?",
+    "choices": [
+      {
+        "text": "25",
+        "rationale": "Correct: New sum $17 \\times 5 = 85$. Old sum $15 \\times 4 = 60$. Difference $85 - 60 = 25$."
+      },
+      {
+        "text": "23",
+        "rationale": "Added the difference in averages (2) to something?"
+      },
+      {
+        "text": "17",
+        "rationale": "Assumed the new number equals the new mean."
+      },
+      {
+        "text": "32",
+        "rationale": "Added the two means."
+      },
+      {
+        "text": "8",
+        "rationale": "Difference in sums calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sum of first 4 numbers: $4 \\times 15 = 60$.",
+      "Sum of 5 numbers: $5 \\times 17 = 85$.",
+      "Fifth number: $85 - 60 = 25$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0004",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 2,
+    "stem": "What is the mode of the data set: $3, 7, 3, 2, 9, 3, 7, 2, 3$?",
+    "choices": [
+      {
+        "text": "3",
+        "rationale": "Correct: 3 appears 4 times, more than any other."
+      },
+      {
+        "text": "7",
+        "rationale": "Appears twice."
+      },
+      {
+        "text": "2",
+        "rationale": "Appears twice."
+      },
+      {
+        "text": "4",
+        "rationale": "This is the mean (approx)."
+      },
+      {
+        "text": "No mode",
+        "rationale": "Incorrect observation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Count frequencies: 3 (4 times), 7 (2 times), 2 (2 times), 9 (1 time).",
+      "The value with the highest frequency is 3."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0005",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "A student has test scores of 85, 90, and 82. What must she score on the fourth test to have an average of 88?",
+    "choices": [
+      {
+        "text": "95",
+        "rationale": "Correct: Target sum $88 \\times 4 = 352$. Current sum $85+90+82=257$. $352-257=95$."
+      },
+      {
+        "text": "92",
+        "rationale": "Guess."
+      },
+      {
+        "text": "88",
+        "rationale": "Assumed she needs the average score."
+      },
+      {
+        "text": "100",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "89",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total points needed: $88 \\times 4 = 352$.",
+      "Current points: $85 + 90 + 82 = 257$.",
+      "Score needed: $352 - 257 = 95$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0006",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "What is the range of the following data set: $-5, 2, 0, -8, 10$?",
+    "choices": [
+      {
+        "text": "18",
+        "rationale": "Correct: Max - Min = $10 - (-8) = 18$."
+      },
+      {
+        "text": "2",
+        "rationale": "Difference between first two numbers."
+      },
+      {
+        "text": "10",
+        "rationale": "Just the maximum."
+      },
+      {
+        "text": "15",
+        "rationale": "$10 - (-5)$."
+      },
+      {
+        "text": "5",
+        "rationale": "Difference between 0 and -5."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify Max: 10.",
+      "Identify Min: -8.",
+      "Range: $10 - (-8) = 18$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0007",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "If every number in a data set is multiplied by 2, what happens to the standard deviation?",
+    "choices": [
+      {
+        "text": "It is multiplied by 2.",
+        "rationale": "Correct: Measures of spread scale with the data."
+      },
+      {
+        "text": "It remains the same.",
+        "rationale": "This is true for adding a constant."
+      },
+      {
+        "text": "It is multiplied by 4.",
+        "rationale": "This happens to the variance."
+      },
+      {
+        "text": "It is divided by 2.",
+        "rationale": "Inverse logic."
+      },
+      {
+        "text": "It increases by 2.",
+        "rationale": "Additive logic."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiplying a data set by a constant $k$ multiplies the standard deviation by $|k|$.",
+      "Here, it doubles."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0008",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 4,
+    "stem": "A class has 10 boys and 20 girls. The boys' average score is 80 and the girls' average score is 90. What is the average score for the whole class?",
+    "choices": [
+      {
+        "text": "86.7",
+        "rationale": "Correct: Weighted average. $\\frac{10(80) + 20(90)}{30} = \\frac{800+1800}{30} = \\frac{2600}{30} \\approx 86.67$."
+      },
+      {
+        "text": "85",
+        "rationale": "Simple average of 80 and 90 (ignored weights)."
+      },
+      {
+        "text": "83.3",
+        "rationale": "Inverted weights."
+      },
+      {
+        "text": "88",
+        "rationale": "Guess."
+      },
+      {
+        "text": "90",
+        "rationale": "Assumed girls' average dominates completely."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total sum = $(10 \\times 80) + (20 \\times 90) = 800 + 1800 = 2600$.",
+      "Total students = $10 + 20 = 30$.",
+      "Average = $2600 / 30 \\approx 86.7$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0009",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 4,
+    "stem": "Identify the outlier in the dataset: $12, 15, 12, 14, 85, 13$.",
+    "choices": [
+      {
+        "text": "85",
+        "rationale": "Correct: It is significantly larger than the rest."
+      },
+      {
+        "text": "12",
+        "rationale": "Mode."
+      },
+      {
+        "text": "15",
+        "rationale": "Highest normal value."
+      },
+      {
+        "text": "13",
+        "rationale": "Median area."
+      },
+      {
+        "text": "There is no outlier.",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The values cluster around 12-15.",
+      "85 is far removed from this cluster, making it an outlier."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0010",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "Which of the following statistics is NOT affected by adding a constant $k$ to every value in a dataset?",
+    "choices": [
+      {
+        "text": "Standard Deviation",
+        "rationale": "Correct: Shifting data does not change the spread."
+      },
+      {
+        "text": "Mean",
+        "rationale": "Mean increases by k."
+      },
+      {
+        "text": "Median",
+        "rationale": "Median increases by k."
+      },
+      {
+        "text": "Mode",
+        "rationale": "Mode increases by k."
+      },
+      {
+        "text": "Minimum",
+        "rationale": "Minimum increases by k."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Measures of central tendency (mean, median, mode) shift by $k$.",
+      "Measures of spread (range, standard deviation, variance) remain unchanged."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0011",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 4,
+    "stem": "The mean of a data set with 5 numbers is 20. If one number is removed, the mean becomes 18. What was the number removed?",
+    "choices": [
+      {
+        "text": "28",
+        "rationale": "Correct: Old sum $5 \\times 20=100$. New sum $4 \\times 18=72$. Removed: $100-72=28$."
+      },
+      {
+        "text": "22",
+        "rationale": "Difference in means is 2, added to 20."
+      },
+      {
+        "text": "18",
+        "rationale": "The new mean."
+      },
+      {
+        "text": "20",
+        "rationale": "The old mean."
+      },
+      {
+        "text": "2",
+        "rationale": "Difference in means."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Original Sum = $5 \\times 20 = 100$.",
+      "New Sum = $4 \\times 18 = 72$.",
+      "Removed Number = $100 - 72 = 28$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0012",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 2,
+    "stem": "In a stem-and-leaf plot, the stem represents the tens digit and the leaf represents the ones digit. If a row is `4 | 1 5 8`, what values are in this row?",
+    "choices": [
+      {
+        "text": "41, 45, 48",
+        "rationale": "Correct."
+      },
+      {
+        "text": "4.1, 4.5, 4.8",
+        "rationale": "Decimal interpretation (possible, but less common without key)."
+      },
+      {
+        "text": "14, 54, 84",
+        "rationale": "Reversed digits."
+      },
+      {
+        "text": "1, 5, 8",
+        "rationale": "Ignored the stem."
+      },
+      {
+        "text": "4158",
+        "rationale": "Combined all."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Stem 4 combined with leaves 1, 5, 8 creates 41, 45, 48."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0013",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 5,
+    "stem": "The average of $x, y, z$, and $w$ is 10. The average of $x, y,$ and $z$ is 8. What is the value of $w$?",
+    "choices": [
+      {
+        "text": "16",
+        "rationale": "Correct: Sum of 4 is 40. Sum of 3 is 24. $40-24=16$."
+      },
+      {
+        "text": "2",
+        "rationale": "Difference in averages."
+      },
+      {
+        "text": "8",
+        "rationale": "The second average."
+      },
+      {
+        "text": "12",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "18",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sum of 4 numbers: $4 \\times 10 = 40$.",
+      "Sum of 3 numbers: $3 \\times 8 = 24$.",
+      "$w = 40 - 24 = 16$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0014",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "Which of the following values divides a data set into two equal halves?",
+    "choices": [
+      {
+        "text": "Median",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "Mean",
+        "rationale": "Balance point of values, not necessarily counts."
+      },
+      {
+        "text": "Mode",
+        "rationale": "Most frequent."
+      },
+      {
+        "text": "Range",
+        "rationale": "Measure of spread."
+      },
+      {
+        "text": "Standard Deviation",
+        "rationale": "Measure of spread."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The median is the middle value when data is ordered, splitting it into upper and lower halves."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0015",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 4,
+    "stem": "A data set has a mean of 50 and a standard deviation of 10. If the number 80 is added to the data set, what happens to the standard deviation?",
+    "choices": [
+      {
+        "text": "It increases.",
+        "rationale": "Correct: 80 is 3 SDs away, so it increases spread."
+      },
+      {
+        "text": "It decreases.",
+        "rationale": "Adding extreme values increases spread."
+      },
+      {
+        "text": "It remains the same.",
+        "rationale": "Only true if the added value equals the mean (roughly)."
+      },
+      {
+        "text": "It becomes 0.",
+        "rationale": "Impossible."
+      },
+      {
+        "text": "Cannot be determined.",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "80 is far from the mean (50).",
+      "Adding a value far from the mean increases the average distance from the mean, thus increasing the standard deviation."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0016",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "Find the average of the algebraic expressions: $2x + 1$, $3x - 4$, and $x + 9$.",
+    "choices": [
+      {
+        "text": "$2x + 2$",
+        "rationale": "Correct: Sum $= 6x + 6$. Divide by 3: $2x + 2$."
+      },
+      {
+        "text": "$6x + 6$",
+        "rationale": "Sum, not average."
+      },
+      {
+        "text": "$2x + 6$",
+        "rationale": "Division error."
+      },
+      {
+        "text": "$3x + 2$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$x + 2$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sum: $(2x + 3x + x) + (1 - 4 + 9) = 6x + 6$.",
+      "Divide by 3: $(6x + 6) / 3 = 2x + 2$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0017",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 2,
+    "stem": "In a box plot (box-and-whisker), the box represents which portion of the data?",
+    "choices": [
+      {
+        "text": "The middle 50% (IQR)",
+        "rationale": "Correct."
+      },
+      {
+        "text": "The lowest 25%",
+        "rationale": "Lower whisker."
+      },
+      {
+        "text": "The highest 25%",
+        "rationale": "Upper whisker."
+      },
+      {
+        "text": "The entire range",
+        "rationale": "Box + Whiskers."
+      },
+      {
+        "text": "The mean",
+        "rationale": "Box shows median, not mean."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The box extends from the First Quartile (Q1) to the Third Quartile (Q3).",
+      "This covers the interquartile range (middle 50%)."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0018",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 5,
+    "stem": "If a distribution is skewed to the right (positive skew), which relationship is generally true?",
+    "choices": [
+      {
+        "text": "Mean > Median",
+        "rationale": "Correct: Outliers pull the mean to the right."
+      },
+      {
+        "text": "Mean < Median",
+        "rationale": "True for left skew."
+      },
+      {
+        "text": "Mean = Median",
+        "rationale": "True for symmetric distributions."
+      },
+      {
+        "text": "Mean = Mode",
+        "rationale": "Rare in skewed data."
+      },
+      {
+        "text": "No relationship",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Right skew means there is a long tail of high values.",
+      "These high values pull the arithmetic mean up, while the median stays closer to the peak.",
+      "Thus, Mean > Median."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0019",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 4,
+    "stem": "The frequency table shows the number of siblings students have:\n0 siblings: 5 students\n1 sibling: 3 students\n2 siblings: 2 students\nWhat is the mean number of siblings?",
+    "choices": [
+      {
+        "text": "0.7",
+        "rationale": "Correct: Total sibs: $0(5) + 1(3) + 2(2) = 7$. Total students: 10. $7/10 = 0.7$."
+      },
+      {
+        "text": "1",
+        "rationale": "Average of 0, 1, 2."
+      },
+      {
+        "text": "0.5",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "3.33",
+        "rationale": "Average of frequencies (5,3,2)."
+      },
+      {
+        "text": "2",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate total siblings: $(0 \\times 5) + (1 \\times 3) + (2 \\times 2) = 0 + 3 + 4 = 7$.",
+      "Calculate total students: $5 + 3 + 2 = 10$.",
+      "Mean: $7 / 10 = 0.7$."
+    ]
+  },
+  {
+    "id": "STAT-DATA-0020",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data Analysis",
+    "diff": 3,
+    "stem": "If a student scores in the 85th percentile, what does this mean?",
+    "choices": [
+      {
+        "text": "They scored better than 85% of the students.",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "They got 85% of the questions correct.",
+        "rationale": "This is a percentage score, not percentile."
+      },
+      {
+        "text": "They scored better than 15% of the students.",
+        "rationale": "Inverted logic."
+      },
+      {
+        "text": "They missed 85 questions.",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "They ranked 85th in the class.",
+        "rationale": "Rank is absolute number, percentile is relative."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A percentile rank indicates the percentage of scores that fall at or below a given score.",
+      "85th percentile means scoring higher than 85% of the group."
+    ]
+  }
+]
