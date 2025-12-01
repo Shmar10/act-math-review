@@ -93,5 +93,187 @@
       "Use $\\dfrac{a_6}{a_3}=r^{6-3}=r^3$.",
       "$r^3=\\tfrac{486}{18}=27 \\Rightarrow r=3$."
     ]
+  },
+  {
+    "id": "PRE-SEQ-0006",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 2,
+    "stem": "Find the 20th term of the arithmetic sequence: $3, 7, 11, 15, \\dots$",
+    "choices": [
+      {
+        "text": "79",
+        "rationale": "Correct: $a_n = a_1 + (n-1)d$. $a_{20} = 3 + (19)(4) = 3 + 76 = 79$."
+      },
+      {
+        "text": "83",
+        "rationale": "Multiplied by 20 instead of 19 ($3 + 20(4)$)."
+      },
+      {
+        "text": "76",
+        "rationale": "Forgot to add the first term."
+      },
+      {
+        "text": "80",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "60",
+        "rationale": "Simply multiplied $3 \\times 20$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify the first term $a_1 = 3$ and the common difference $d = 7 - 3 = 4$.",
+      "Use the formula $a_n = a_1 + (n - 1)d$.",
+      "Substitute $n = 20$: $a_{20} = 3 + (20 - 1)(4)$.",
+      "Calculate: $3 + 19(4) = 3 + 76 = 79$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0007",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Find the sum of the first 5 terms of the geometric sequence: $2, 6, 18, \\dots$",
+    "choices": [
+      {
+        "text": "242",
+        "rationale": "Correct: $S_5 = \\frac{2(1 - 3^5)}{1 - 3} = \\frac{2(1 - 243)}{-2} = 242$."
+      },
+      {
+        "text": "162",
+        "rationale": "This is the 5th term, not the sum."
+      },
+      {
+        "text": "484",
+        "rationale": "Calculation error in the formula."
+      },
+      {
+        "text": "240",
+        "rationale": "Approximate guess."
+      },
+      {
+        "text": "728",
+        "rationale": "Used wrong common ratio."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify $a_1 = 2$ and common ratio $r = 6/2 = 3$.",
+      "Use the sum formula: $S_n = a_1 \\frac{1 - r^n}{1 - r}$.",
+      "Substitute values: $S_5 = 2 \\frac{1 - 3^5}{1 - 3} = 2 \\frac{1 - 243}{-2}$.",
+      "Simplify: $2 \\frac{-242}{-2} = 242$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0008",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Evaluate the infinite geometric series sum if it converges: $$10 + 5 + 2.5 + 1.25 + \\dots$$",
+    "choices": [
+      {
+        "text": "20",
+        "rationale": "Correct: $S = \\frac{a_1}{1 - r} = \\frac{10}{1 - 0.5} = 20$."
+      },
+      {
+        "text": "25",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "15",
+        "rationale": "Added just the first two terms."
+      },
+      {
+        "text": "Diverges",
+        "rationale": "Incorrectly identified $|r| \\ge 1$."
+      },
+      {
+        "text": "18.75",
+        "rationale": "Sum of the first 4 terms only."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify $a_1 = 10$ and $r = 5/10 = 0.5$.",
+      "Since $|r| < 1$, the series converges.",
+      "Use formula $S = \\frac{a_1}{1 - r}$.",
+      "Substitute: $S = \\frac{10}{1 - 0.5} = \\frac{10}{0.5} = 20$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0009",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 4,
+    "stem": "Evaluate the summation: $$\\sum_{k=1}^{4} (k^2 - 3)$$",
+    "choices": [
+      {
+        "text": "18",
+        "rationale": "Correct: $(-2) + 1 + 6 + 13 = 18$."
+      },
+      {
+        "text": "20",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "30",
+        "rationale": "Sum of $k^2$ without subtracting the 3s."
+      },
+      {
+        "text": "6",
+        "rationale": "Used $k=4$ only."
+      },
+      {
+        "text": "15",
+        "rationale": "Sum of $k$ instead of $k^2$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find terms for $k = 1, 2, 3, 4$.",
+      "$k=1: 1^2 - 3 = -2$.",
+      "$k=2: 2^2 - 3 = 1$.",
+      "$k=3: 3^2 - 3 = 6$.",
+      "$k=4: 4^2 - 3 = 13$.",
+      "Sum: $-2 + 1 + 6 + 13 = 18$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0010",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 5,
+    "stem": "The sum of the first $n$ terms of an arithmetic sequence is given by $S_n = 3n^2 + 2n$. What is the 5th term of the sequence ($a_5$)?",
+    "choices": [
+      {
+        "text": "29",
+        "rationale": "Correct: $a_5 = S_5 - S_4 = 85 - 56 = 29$."
+      },
+      {
+        "text": "85",
+        "rationale": "This is the sum of the first 5 terms ($S_5$), not the 5th term."
+      },
+      {
+        "text": "26",
+        "rationale": "Calculation error ($S_4$ calculated incorrectly)."
+      },
+      {
+        "text": "17",
+        "rationale": "Used $n=5$ in linear formula $3n+2$."
+      },
+      {
+        "text": "32",
+        "rationale": "Arithmetic error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recall that the $n$-th term can be found by $a_n = S_n - S_{n-1}$.",
+      "Calculate $S_5 = 3(5)^2 + 2(5) = 3(25) + 10 = 75 + 10 = 85$.",
+      "Calculate $S_4 = 3(4)^2 + 2(4) = 3(16) + 8 = 48 + 8 = 56$.",
+      "Subtract: $a_5 = 85 - 56 = 29$."
+    ]
   }
 ]

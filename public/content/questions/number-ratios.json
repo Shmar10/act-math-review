@@ -94,5 +94,186 @@
       "Scale factor: 1 in $\\to$ 40 miles.",
       "So $3.5$ in $\\to 3.5\\cdot 40=140$ miles."
     ]
+  },
+  {
+    "id": "NUM-RAT-0006",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 2,
+    "stem": "A recipe calls for 3 cups of flour to make 12 muffins. How many cups of flour are needed to make 30 muffins?",
+    "choices": [
+      {
+        "text": "7.5 cups",
+        "rationale": "Correct: Ratio is $3:12$ or $1:4$. $30 / 4 = 7.5$."
+      },
+      {
+        "text": "6 cups",
+        "rationale": "Simply doubled the original amount."
+      },
+      {
+        "text": "10 cups",
+        "rationale": "Assumed 1 cup per 3 muffins."
+      },
+      {
+        "text": "8 cups",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "40 cups",
+        "rationale": "Multiplied instead of dividing by the ratio."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up a proportion: $\\frac{3 \\text{ cups}}{12 \\text{ muffins}} = \\frac{x \\text{ cups}}{30 \\text{ muffins}}$.",
+      "Simplify the left side: $\\frac{1}{4}$.",
+      "Solve for $x$: $x = 30 \\times \\frac{1}{4} = 7.5$."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0007",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "It takes 6 pumps working simultaneously to fill a tank in 20 minutes. How long would it take 15 pumps of the same type to fill the same tank?",
+    "choices": [
+      {
+        "text": "8 minutes",
+        "rationale": "Correct: Inverse proportion. $6 \\times 20 = 120$ pump-minutes. $120 / 15 = 8$."
+      },
+      {
+        "text": "50 minutes",
+        "rationale": "Used direct proportion ($6/20 = 15/x$)."
+      },
+      {
+        "text": "12 minutes",
+        "rationale": "Guessing based on numbers."
+      },
+      {
+        "text": "45 minutes",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "10 minutes",
+        "rationale": "Estimated incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "This is an inverse variation problem (more pumps = less time).",
+      "Calculate total work units: $6 \\text{ pumps} \\times 20 \\text{ minutes} = 120 \\text{ pump-minutes}$.",
+      "Divide by the new number of pumps: $120 / 15 = 8$ minutes."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0008",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "The angles of a triangle are in the ratio 2:3:4. What is the measure of the smallest angle?",
+    "choices": [
+      {
+        "text": "$40^\\circ$",
+        "rationale": "Correct: $2x+3x+4x = 180 \\Rightarrow 9x=180 \\Rightarrow x=20$. Smallest is $2(20)$."
+      },
+      {
+        "text": "$20^\\circ$",
+        "rationale": "Found the value of $x$ but didn't multiply by 2."
+      },
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Found the middle angle."
+      },
+      {
+        "text": "$80^\\circ$",
+        "rationale": "Found the largest angle."
+      },
+      {
+        "text": "$30^\\circ$",
+        "rationale": "Divided 180 by 6 incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The sum of angles in a triangle is $180^\\circ$.",
+      "Set up the equation: $2x + 3x + 4x = 180$.",
+      "Combine like terms: $9x = 180 \\Rightarrow x = 20$.",
+      "The smallest angle corresponds to $2x$: $2(20) = 40^\\circ$."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0009",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 4,
+    "stem": "If $a:b = 3:4$ and $b:c = 8:9$, what is the ratio $a:c$?",
+    "choices": [
+      {
+        "text": "2:3",
+        "rationale": "Correct: $\\frac{a}{c} = \\frac{a}{b} \\times \\frac{b}{c} = \\frac{3}{4} \\times \\frac{8}{9} = \\frac{24}{36} = \\frac{2}{3}$."
+      },
+      {
+        "text": "1:3",
+        "rationale": "Simplification error."
+      },
+      {
+        "text": "3:2",
+        "rationale": "Inverted the final ratio."
+      },
+      {
+        "text": "24:32",
+        "rationale": "Did not simplify."
+      },
+      {
+        "text": "1:1",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Write ratios as fractions: $\\frac{a}{b} = \\frac{3}{4}$ and $\\frac{b}{c} = \\frac{8}{9}$.",
+      "Multiply the fractions to eliminate $b$: $\\frac{a}{b} \\times \\frac{b}{c} = \\frac{3}{4} \\times \\frac{8}{9}$.",
+      "Simplify: $\\frac{24}{36} = \\frac{2}{3}$.",
+      "The ratio $a:c$ is 2:3."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0010",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 5,
+    "stem": "Container A contains milk and water in the ratio 1:3. Container B contains milk and water in the ratio 3:5. If equal volumes from both containers are mixed together, what is the ratio of milk to water in the new mixture?",
+    "choices": [
+      {
+        "text": "5:11",
+        "rationale": "Correct: Equalize total parts. A is $1/4$ milk. B is $3/8$ milk. Sum milk: $5/8$. Sum water: $11/8$."
+      },
+      {
+        "text": "4:8",
+        "rationale": "Added numerators and denominators directly ($1+3 : 3+5$). Incorrect."
+      },
+      {
+        "text": "1:2",
+        "rationale": "Simplified 4:8."
+      },
+      {
+        "text": "7:9",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "5:8",
+        "rationale": "Forgot to account for the water portion correctly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Container A parts: $1+3=4$. Fraction Milk = $1/4$, Water = $3/4$.",
+      "Container B parts: $3+5=8$. Fraction Milk = $3/8$, Water = $5/8$.",
+      "To add equal volumes, find a common denominator for the parts (LCM of 4 and 8 is 8).",
+      "Convert Container A: Milk = $2/8$, Water = $6/8$.",
+      "Add Milk parts: $2/8 + 3/8 = 5/8$.",
+      "Add Water parts: $6/8 + 5/8 = 11/8$.",
+      "New Ratio Milk:Water is $5:11$."
+    ]
   }
 ]

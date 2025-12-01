@@ -1,0 +1,348 @@
+[
+  {
+    "id": "ALG-SYS-0001",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 3,
+    "stem": "Solve the system: $$\\begin{cases}2x+3y=13\\\\ x-y=1\\end{cases}$$",
+    "choices": [
+      { "text": "\\left(\\dfrac{16}{5},\\,\\dfrac{11}{5}\\right)", "rationale": "Correct: From $x=y+1$, substitute into $2x+3y=13$ to get $5y=11$." },
+      { "text": "(3,\\,4)", "rationale": "Satisfies $x-y= -1$, not $1$." },
+      { "text": "(4,\\,3)", "rationale": "Gives $2x+3y=17$, not $13$." },
+      { "text": "(2,\\,1)", "rationale": "Does not satisfy $2x+3y=13$." },
+      { "text": "\\left(\\dfrac{11}{5},\\,\\dfrac{16}{5}\\right)", "rationale": "Swapped $x$ and $y$." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "From $x-y=1\\Rightarrow x=y+1$.",
+      "Substitute: $2(y+1)+3y=13\\Rightarrow 5y=11\\Rightarrow y=\\tfrac{11}{5}$.",
+      "Then $x=y+1=\\tfrac{16}{5}$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0002",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 1,
+    "stem": "Solve the system by adding the equations: $$x + y = 10$$ $$x - y = 4$$",
+    "choices": [
+      {
+        "text": "$x = 7, y = 3$",
+        "rationale": "Correct: Adding equations gives $2x = 14$, so $x = 7$. Then $7 + y = 10$, so $y = 3$."
+      },
+      {
+        "text": "$x = 6, y = 4$",
+        "rationale": "Incorrect sum calculation."
+      },
+      {
+        "text": "$x = 14, y = -4$",
+        "rationale": "Forgot to divide by 2."
+      },
+      {
+        "text": "$x = 5, y = 5$",
+        "rationale": "Guessed values that sum to 10 but don't subtract to 4."
+      },
+      {
+        "text": "$x = 3, y = 7$",
+        "rationale": "Swapped $x$ and $y$ values."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add the two equations: $(x + y) + (x - y) = 10 + 4$.",
+      "Simplify: $2x = 14 \\Rightarrow x = 7$.",
+      "Substitute $x = 7$ into the first equation: $7 + y = 10 \\Rightarrow y = 3$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0003",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 2,
+    "stem": "Solve using substitution: $$y = 3x$$ $$x + y = 20$$",
+    "choices": [
+      {
+        "text": "$x = 5, y = 15$",
+        "rationale": "Correct: Substitute $3x$ for $y$, getting $x + 3x = 20$."
+      },
+      {
+        "text": "$x = 4, y = 16$",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "$x = 20, y = 60$",
+        "rationale": "Substituted incorrectly."
+      },
+      {
+        "text": "$x = 15, y = 5$",
+        "rationale": "Swapped $x$ and $y$ values."
+      },
+      {
+        "text": "$x = 6, y = 14$",
+        "rationale": "Does not satisfy $y = 3x$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $y = 3x$ into the second equation: $x + (3x) = 20$.",
+      "Combine like terms: $4x = 20$.",
+      "Solve for $x$: $x = 5$.",
+      "Solve for $y$: $y = 3(5) = 15$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0004",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 2,
+    "stem": "Which ordered pair is a solution to the system? $$2x + y = 7$$ $$y = x - 2$$",
+    "choices": [
+      {
+        "text": "$(3, 1)$",
+        "rationale": "Correct: $2(3) + 1 = 7$ and $1 = 3 - 2$."
+      },
+      {
+        "text": "$(2, 3)$",
+        "rationale": "Fails the second equation ($3 \\ne 2 - 2$)."
+      },
+      {
+        "text": "$(4, -1)$",
+        "rationale": "Fails the second equation."
+      },
+      {
+        "text": "$(1, 5)$",
+        "rationale": "Fails the second equation ($5 \\ne 1 - 2$)."
+      },
+      {
+        "text": "$(0, 7)$",
+        "rationale": "Fails the second equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $y = x - 2$ into the first equation: $2x + (x - 2) = 7$.",
+      "$3x - 2 = 7 \\Rightarrow 3x = 9 \\Rightarrow x = 3$.",
+      "Find $y$: $y = 3 - 2 = 1$.",
+      "Solution is $(3, 1)$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0005",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 3,
+    "stem": "Solve the system: $$2x + 3y = 12$$ $$2x + y = 4$$",
+    "choices": [
+      {
+        "text": "$x = 0, y = 4$",
+        "rationale": "Correct: Subtracting equations eliminates $x$."
+      },
+      {
+        "text": "$x = 4, y = 0$",
+        "rationale": "Swapped values."
+      },
+      {
+        "text": "$x = 2, y = 2$",
+        "rationale": "Does not satisfy the first equation ($4+6=10 \\ne 12$)."
+      },
+      {
+        "text": "$x = 1, y = 3$",
+        "rationale": "Arithmetic check failed."
+      },
+      {
+        "text": "$x = 3, y = 2$",
+        "rationale": "Fails the second equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract the second equation from the first: $(2x + 3y) - (2x + y) = 12 - 4$.",
+      "Simplify: $2y = 8 \\Rightarrow y = 4$.",
+      "Substitute $y = 4$ into the second equation: $2x + 4 = 4 \\Rightarrow 2x = 0 \\Rightarrow x = 0$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0006",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 3,
+    "stem": "How many solutions does the following system have? $$y = 2x + 5$$ $$-2x + y = 1$$",
+    "choices": [
+      {
+        "text": "No solution",
+        "rationale": "Correct: The lines are parallel with different y-intercepts."
+      },
+      {
+        "text": "One solution",
+        "rationale": "Incorrect analysis of slopes."
+      },
+      {
+        "text": "Two solutions",
+        "rationale": "Linear systems cannot have exactly two solutions."
+      },
+      {
+        "text": "Infinitely many solutions",
+        "rationale": "The lines are parallel but not identical."
+      },
+      {
+        "text": "Three solutions",
+        "rationale": "Linear systems cannot have exactly three solutions."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite the second equation in slope-intercept form: $y = 2x + 1$.",
+      "Compare with the first equation: $y = 2x + 5$.",
+      "Both lines have a slope of $2$, but different y-intercepts ($5$ vs $1$).",
+      "Parallel lines never intersect, so there is no solution."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0007",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 4,
+    "stem": "A theater sells adult tickets for \\$12 and child tickets for \\$7. They sold 100 tickets in total and made \\$950. How many adult tickets were sold?",
+    "choices": [
+      {
+        "text": "50",
+        "rationale": "Correct: $12(50) + 7(50) = 600 + 350 = 950$."
+      },
+      {
+        "text": "60",
+        "rationale": "Cost would be $12(60) + 7(40) = 720 + 280 = 1000$."
+      },
+      {
+        "text": "40",
+        "rationale": "Cost would be $12(40) + 7(60) = 480 + 420 = 900$."
+      },
+      {
+        "text": "75",
+        "rationale": "Total tickets would exceed 100 or cost would be too high."
+      },
+      {
+        "text": "25",
+        "rationale": "Cost is too low."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $a$ = adult tickets and $c$ = child tickets.",
+      "Eq 1 (Quantity): $a + c = 100 \\Rightarrow c = 100 - a$.",
+      "Eq 2 (Value): $12a + 7c = 950$.",
+      "Substitute: $12a + 7(100 - a) = 950$.",
+      "$12a + 700 - 7a = 950 \\Rightarrow 5a = 250 \\Rightarrow a = 50$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0008",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 4,
+    "stem": "Solve the system: $$3x + 4y = 18$$ $$2x - 3y = -5$$",
+    "choices": [
+      {
+        "text": "$x = 2, y = 3$",
+        "rationale": "Correct: Fits both equations."
+      },
+      {
+        "text": "$x = 3, y = 2$",
+        "rationale": "Checks for eq 1 ($9+8 \\ne 18$) but fails."
+      },
+      {
+        "text": "$x = 6, y = 0$",
+        "rationale": "Fails second equation."
+      },
+      {
+        "text": "$x = -2, y = 6$",
+        "rationale": "Sign error in calculation."
+      },
+      {
+        "text": "$x = 0, y = 4.5$",
+        "rationale": "Fails second equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply top equation by 3: $9x + 12y = 54$.",
+      "Multiply bottom equation by 4: $8x - 12y = -20$.",
+      "Add them: $17x = 34 \\Rightarrow x = 2$.",
+      "Substitute back: $3(2) + 4y = 18 \\Rightarrow 6 + 4y = 18 \\Rightarrow 4y = 12 \\Rightarrow y = 3$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0009",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 4,
+    "stem": "Determine the value of $k$ so that the system has infinitely many solutions: $$2x - y = 4$$ $$4x - 2y = k$$",
+    "choices": [
+      {
+        "text": "$k = 8$",
+        "rationale": "Correct: The second equation must be a multiple of the first."
+      },
+      {
+        "text": "$k = 4$",
+        "rationale": "Equations would be parallel (no solution)."
+      },
+      {
+        "text": "$k = -8$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$k = 0$",
+        "rationale": "Lines would be parallel."
+      },
+      {
+        "text": "$k = 2$",
+        "rationale": "Arbitrary guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For infinite solutions, the lines must be identical (coincident).",
+      "Compare coefficients: The x-coeff doubles ($2 \\to 4$) and y-coeff doubles ($-1 \\to -2$).",
+      "Therefore, the constant must also double: $4 \\times 2 = k$.",
+      "So $k = 8$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0010",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 5,
+    "stem": "Solve for $(x, y)$: $$\\frac{1}{2}x + \\frac{1}{3}y = 9$$ $$\\frac{1}{4}x - \\frac{1}{5}y = -1$$",
+    "choices": [
+      {
+        "text": "$x = 8, y = 15$",
+        "rationale": "Correct: Cleared fractions and solved."
+      },
+      {
+        "text": "$x = 10, y = 12$",
+        "rationale": "Substitution error."
+      },
+      {
+        "text": "$x = 12, y = 9$",
+        "rationale": "Fails second equation."
+      },
+      {
+        "text": "$x = 4, y = 21$",
+        "rationale": "Fails first equation."
+      },
+      {
+        "text": "$x = 6, y = 18$",
+        "rationale": "Random guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply first equation by 6: $3x + 2y = 54$.",
+      "Multiply second equation by 20: $5x - 4y = -20$.",
+      "Multiply the modified first equation by 2: $6x + 4y = 108$.",
+      "Add this to the modified second equation: $(6x + 4y) + (5x - 4y) = 108 - 20$.",
+      "$11x = 88 \\Rightarrow x = 8$.",
+      "Substitute $x=8$ into $3x + 2y = 54$: $24 + 2y = 54 \\Rightarrow 2y = 30 \\Rightarrow y = 15$."
+    ]
+  }
+]
+

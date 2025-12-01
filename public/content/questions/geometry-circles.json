@@ -86,7 +86,7 @@
     "choices": [
       { "text": "$4\\pi$ cm$^2$", "rationale": "Correct: $A=\\tfrac{\\theta}{360}\\cdot\\pi r^2=\\tfrac{90}{360}\\cdot\\pi(4)^2=4\\pi$ cm$^2$." },
       { "text": "$8\\pi$ cm$^2$", "rationale": "Forgot to divide $90/360$." },
-      { "text": "$16\\pi$ cm$^2$", "rationale": "That’s the whole circle’s area." },
+      { "text": "$16\\pi$ cm$^2$", "rationale": "That's the whole circle's area." },
       { "text": "$2\\pi$ cm$^2$", "rationale": "Used $r=2$ instead of 4." },
       { "text": "$\\pi$ cm$^2$", "rationale": "Divided by 4 twice." }
     ],
@@ -94,6 +94,182 @@
     "solutionSteps": [
       "Formula: $A=\\tfrac{\\theta}{360}\\cdot\\pi r^2$.",
       "$A=\\tfrac{90}{360}\\cdot\\pi(4)^2=4\\pi$ cm$^2$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0006",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "The circumference of a circle is $18\\pi$. What is the area of the circle?",
+    "choices": [
+      {
+        "text": "$81\\pi$",
+        "rationale": "Correct: $C = 2\\pi r = 18\\pi \\Rightarrow r = 9$. Area $= \\pi r^2 = 81\\pi$."
+      },
+      {
+        "text": "$18\\pi$",
+        "rationale": "Confused area with circumference."
+      },
+      {
+        "text": "$324\\pi$",
+        "rationale": "Squared the diameter instead of the radius."
+      },
+      {
+        "text": "$9\\pi$",
+        "rationale": "Forgot to square the radius or calculated radius incorrectly."
+      },
+      {
+        "text": "$36\\pi$",
+        "rationale": "Used diameter as radius."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the circumference formula: $C = 2\\pi r$.",
+      "Substitute $18\\pi$: $18\\pi = 2\\pi r$. Divide by $2\\pi$ to get $r = 9$.",
+      "Use the area formula: $A = \\pi r^2$.",
+      "Substitute $r = 9$: $A = \\pi (9)^2 = 81\\pi$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0007",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "Identify the center and radius of the circle given by the equation: $$(x - 2)^2 + (y + 5)^2 = 49$$",
+    "choices": [
+      {
+        "text": "Center: $(2, -5)$; Radius: $7$",
+        "rationale": "Correct: Matches form $(x-h)^2 + (y-k)^2 = r^2$."
+      },
+      {
+        "text": "Center: $(-2, 5)$; Radius: $7$",
+        "rationale": "Reversed the signs of the center coordinates."
+      },
+      {
+        "text": "Center: $(2, -5)$; Radius: $49$",
+        "rationale": "Forgot to take the square root of $r^2$."
+      },
+      {
+        "text": "Center: $(-2, 5)$; Radius: $49$",
+        "rationale": "Reversed signs and forgot to square root radius."
+      },
+      {
+        "text": "Center: $(2, 5)$; Radius: $7$",
+        "rationale": "Sign error on the y-coordinate."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Compare to standard form: $(x - h)^2 + (y - k)^2 = r^2$.",
+      "Identify $h = 2$ and $k = -5$, so Center is $(2, -5)$.",
+      "Identify $r^2 = 49$, so Radius $r = 7$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0008",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "In a circle, an inscribed angle intercepts an arc that measures $110^\\circ$. What is the measure of the inscribed angle?",
+    "choices": [
+      {
+        "text": "$55^\\circ$",
+        "rationale": "Correct: The inscribed angle is half the measure of the intercepted arc."
+      },
+      {
+        "text": "$110^\\circ$",
+        "rationale": "Confused inscribed angle with central angle."
+      },
+      {
+        "text": "$220^\\circ$",
+        "rationale": "Doubled the arc measure instead of halving it."
+      },
+      {
+        "text": "$70^\\circ$",
+        "rationale": "Subtracting from 180 (incorrect logic)."
+      },
+      {
+        "text": "$35^\\circ$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The Measure of an Inscribed Angle Theorem states that the angle is half the measure of its intercepted arc.",
+      "Angle $= \\frac{1}{2} \\times 110^\\circ = 55^\\circ$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0009",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "A circle has a radius of 12 cm. What is the area of a sector formed by a central angle of $60^\\circ$?",
+    "choices": [
+      {
+        "text": "$24\\pi$ cm$^2$",
+        "rationale": "Correct: $\\frac{60}{360} \\times \\pi (12)^2 = \\frac{1}{6} \\times 144\\pi = 24\\pi$."
+      },
+      {
+        "text": "$12\\pi$ cm$^2$",
+        "rationale": "Calculated arc length instead of area."
+      },
+      {
+        "text": "$144\\pi$ cm$^2$",
+        "rationale": "Calculated the area of the full circle."
+      },
+      {
+        "text": "$72\\pi$ cm$^2$",
+        "rationale": "Used wrong fraction ($1/2$)."
+      },
+      {
+        "text": "$4\\pi$ cm$^2$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the fraction of the circle: $\\frac{60}{360} = \\frac{1}{6}$.",
+      "Calculate total area: $A = \\pi r^2 = \\pi (12)^2 = 144\\pi$.",
+      "Multiply total area by fraction: $\\frac{1}{6} \\times 144\\pi = 24\\pi$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0010",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 5,
+    "stem": "A chord is 6 units away from the center of a circle. If the radius of the circle is 10 units, what is the length of the chord?",
+    "choices": [
+      {
+        "text": "16",
+        "rationale": "Correct: Half-chord is $\\sqrt{100-36}=8$, total length is 16."
+      },
+      {
+        "text": "8",
+        "rationale": "Found only half the length of the chord."
+      },
+      {
+        "text": "12",
+        "rationale": "Guessed based on numbers given."
+      },
+      {
+        "text": "20",
+        "rationale": "This is the diameter."
+      },
+      {
+        "text": "4",
+        "rationale": "Subtraction error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Draw a right triangle with the radius as the hypotenuse ($10$) and the distance from center as a leg ($6$).",
+      "Let $x$ be half the chord length. By Pythagorean theorem: $x^2 + 6^2 = 10^2$.",
+      "$x^2 + 36 = 100 \\Rightarrow x^2 = 64 \\Rightarrow x = 8$.",
+      "The total chord length is $2x = 16$."
     ]
   }
 ]

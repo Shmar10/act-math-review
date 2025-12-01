@@ -96,5 +96,182 @@
       "Take half of $4$, square it: $(\\tfrac{4}{2})^2=4$.",
       "Add and subtract 4: $y=(x^2+4x+4)-3=(x+2)^2-3$."
     ]
+  },
+  {
+    "id": "FUNC-QUA-0006",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 2,
+    "stem": "Identify the coordinates of the vertex for the quadratic function: $$f(x) = (x - 5)^2 + 3$$",
+    "choices": [
+      {
+        "text": "$(5, 3)$",
+        "rationale": "Correct: For $f(x) = a(x-h)^2 + k$, the vertex is $(h, k)$."
+      },
+      {
+        "text": "$(-5, 3)$",
+        "rationale": "Incorrect sign on the x-coordinate."
+      },
+      {
+        "text": "$(5, -3)$",
+        "rationale": "Incorrect sign on the y-coordinate."
+      },
+      {
+        "text": "$(-5, -3)$",
+        "rationale": "Incorrect signs on both coordinates."
+      },
+      {
+        "text": "$(3, 5)$",
+        "rationale": "Swapped x and y coordinates."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The function is in vertex form: $f(x) = a(x - h)^2 + k$.",
+      "Identify $h = 5$ and $k = 3$.",
+      "The vertex is $(h, k) = (5, 3)$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0007",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "Find the equation of the axis of symmetry for the function: $$g(x) = 2x^2 - 12x + 5$$",
+    "choices": [
+      {
+        "text": "$x = 3$",
+        "rationale": "Correct: Used formula $x = -b / (2a)$."
+      },
+      {
+        "text": "$x = -3$",
+        "rationale": "Sign error in the formula."
+      },
+      {
+        "text": "$x = 6$",
+        "rationale": "Forgot to divide by 2."
+      },
+      {
+        "text": "$y = 3$",
+        "rationale": "Confused axis of symmetry (vertical line) with a horizontal line."
+      },
+      {
+        "text": "$x = 12$",
+        "rationale": "Just took the coefficient $-b$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify coefficients: $a = 2$, $b = -12$.",
+      "Use the axis of symmetry formula: $x = \\frac{-b}{2a}$.",
+      "Substitute: $x = \\frac{-(-12)}{2(2)} = \\frac{12}{4} = 3$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0008",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "Determine the range of the function: $$h(x) = -x^2 + 4$$",
+    "choices": [
+      {
+        "text": "$(-\\infty, 4]$",
+        "rationale": "Correct: Parabola opens downward with vertex at $(0, 4)$."
+      },
+      {
+        "text": "$[4, \\infty)$",
+        "rationale": "Assumed parabola opens upward."
+      },
+      {
+        "text": "$(-\\infty, \\infty)$",
+        "rationale": "Confused range with domain."
+      },
+      {
+        "text": "$(-\\infty, 0]$",
+        "rationale": "Ignored the vertical shift."
+      },
+      {
+        "text": "$[-4, \\infty)$",
+        "rationale": "Sign error on the vertex y-coordinate."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The coefficient of $x^2$ is negative ($-1$), so the parabola opens downward.",
+      "The vertex is at $(0, 4)$, which represents the maximum value.",
+      "Therefore, the range includes all real numbers less than or equal to 4."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0009",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 4,
+    "stem": "Convert the function $f(x) = 3x^2 + 12x - 7$ into vertex form.",
+    "choices": [
+      {
+        "text": "$f(x) = 3(x + 2)^2 - 19$",
+        "rationale": "Correct: Completed the square correctly."
+      },
+      {
+        "text": "$f(x) = 3(x + 2)^2 - 7$",
+        "rationale": "Forgot to subtract the value added inside the parenthesis from the outside."
+      },
+      {
+        "text": "$f(x) = 3(x - 2)^2 - 19$",
+        "rationale": "Sign error on $h$."
+      },
+      {
+        "text": "$f(x) = 3(x + 4)^2 - 19$",
+        "rationale": "Did not factor out the 3 from the linear term correctly."
+      },
+      {
+        "text": "$f(x) = (3x + 6)^2 - 19$",
+        "rationale": "Included the leading coefficient inside the square incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor 3 from the first two terms: $f(x) = 3(x^2 + 4x) - 7$.",
+      "Complete the square: $(\\frac{4}{2})^2 = 4$. Add and subtract 4 inside: $3(x^2 + 4x + 4 - 4) - 7$.",
+      "Move the $-4$ out (multiply by 3): $3(x + 2)^2 - 12 - 7$.",
+      "Simplify: $f(x) = 3(x + 2)^2 - 19$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0010",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 5,
+    "stem": "A ball is thrown upward. Its height $h$ in feet after $t$ seconds is given by $h(t) = -16t^2 + 64t + 5$. What is the maximum height reached by the ball?",
+    "choices": [
+      {
+        "text": "$69$ feet",
+        "rationale": "Correct: Vertex occurs at $t=2$, height is $h(2) = 69$."
+      },
+      {
+        "text": "$64$ feet",
+        "rationale": "Confused the initial velocity with max height."
+      },
+      {
+        "text": "$5$ feet",
+        "rationale": "This is the initial height."
+      },
+      {
+        "text": "$2$ feet",
+        "rationale": "This is the time it takes to reach max height, not the height itself."
+      },
+      {
+        "text": "$100$ feet",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the time of max height ($t$) using $t = \\frac{-b}{2a}$.",
+      "$t = \\frac{-64}{2(-16)} = \\frac{-64}{-32} = 2$ seconds.",
+      "Substitute $t = 2$ into the equation to find height.",
+      "$h(2) = -16(2)^2 + 64(2) + 5 = -16(4) + 128 + 5 = -64 + 128 + 5 = 69$."
+    ]
   }
 ]

@@ -92,5 +92,184 @@
     "solutionSteps": [
       "Take square root: $x=\\pm\\sqrt{-9}=\\pm3i$."
     ]
+  },
+  {
+    "id": "ALG2-COMP-0006",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 2,
+    "stem": "Simplify: $$i^{23}$$",
+    "choices": [
+      {
+        "text": "$-i$",
+        "rationale": "Correct: $23 \\div 4$ has a remainder of 3, so $i^{23} = i^3 = -i$."
+      },
+      {
+        "text": "$i$",
+        "rationale": "Incorrect calculation of the remainder."
+      },
+      {
+        "text": "$-1$",
+        "rationale": "Confused with $i^2$."
+      },
+      {
+        "text": "$1$",
+        "rationale": "Confused with $i^4$."
+      },
+      {
+        "text": "$0$",
+        "rationale": "Powers of $i$ are never zero."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide the exponent by 4: $23 \\div 4 = 5$ with a remainder of $3$.",
+      "Use the remainder to simplify: $i^{23} = i^3$.",
+      "Recall that $i^3 = -i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0007",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "Perform the operation and simplify: $$(4 - 3i)(2 + 5i)$$",
+    "choices": [
+      {
+        "text": "$23 + 14i$",
+        "rationale": "Correct: FOIL method yields $8 + 20i - 6i - 15i^2 = 8 + 14i + 15$."
+      },
+      {
+        "text": "$8 - 15i$",
+        "rationale": "Multiplied first terms and last terms only."
+      },
+      {
+        "text": "$23 - 14i$",
+        "rationale": "Sign error on the imaginary part."
+      },
+      {
+        "text": "$8 + 14i$",
+        "rationale": "Forgot to convert $i^2$ to $-1$."
+      },
+      {
+        "text": "$-7 + 14i$",
+        "rationale": "Incorrectly calculated $8 - 15$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the FOIL method: $(4)(2) + (4)(5i) + (-3i)(2) + (-3i)(5i)$.",
+      "Multiply: $8 + 20i - 6i - 15i^2$.",
+      "Substitute $i^2 = -1$: $8 + 14i - 15(-1) = 8 + 14i + 15$.",
+      "Combine real parts: $23 + 14i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0008",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "Solve for $x$: $$3x^2 + 75 = 0$$",
+    "choices": [
+      {
+        "text": "$x = \\pm 5i$",
+        "rationale": "Correct: $3x^2 = -75 \\Rightarrow x^2 = -25$."
+      },
+      {
+        "text": "$x = \\pm 5$",
+        "rationale": "Ignored the negative sign."
+      },
+      {
+        "text": "$x = \\pm 25i$",
+        "rationale": "Forgot to take the square root of 25."
+      },
+      {
+        "text": "$x = 5i$ only",
+        "rationale": "Missed the negative root."
+      },
+      {
+        "text": "$x = \\pm 15$",
+        "rationale": "Divided incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 75 from both sides: $3x^2 = -75$.",
+      "Divide by 3: $x^2 = -25$.",
+      "Take the square root: $x = \\pm\\sqrt{-25}$.",
+      "Simplify: $x = \\pm 5i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0009",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 4,
+    "stem": "Find the solutions to: $$x^2 - 4x + 13 = 0$$",
+    "choices": [
+      {
+        "text": "$x = 2 \\pm 3i$",
+        "rationale": "Correct: Quadratic formula yields $\\frac{4 \\pm \\sqrt{16-52}}{2}$."
+      },
+      {
+        "text": "$x = 2 \\pm 3$",
+        "rationale": "Calculated discriminant as positive 36."
+      },
+      {
+        "text": "$x = -2 \\pm 3i$",
+        "rationale": "Sign error on the linear term $-b$."
+      },
+      {
+        "text": "$x = 4 \\pm 6i$",
+        "rationale": "Forgot to divide by $2a$."
+      },
+      {
+        "text": "$x = 2 \\pm 9i$",
+        "rationale": "Square root error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify coefficients: $a=1, b=-4, c=13$.",
+      "Discriminant ($b^2 - 4ac$): $(-4)^2 - 4(1)(13) = 16 - 52 = -36$.",
+      "Apply quadratic formula: $x = \\frac{-(-4) \\pm \\sqrt{-36}}{2(1)}$.",
+      "Simplify: $x = \\frac{4 \\pm 6i}{2} = 2 \\pm 3i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0010",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 5,
+    "stem": "Simplify the quotient by rationalizing the denominator: $$\\frac{3 + 2i}{1 - i}$$",
+    "choices": [
+      {
+        "text": "$\\frac{1}{2} + \\frac{5}{2}i$",
+        "rationale": "Correct: Multiplied numerator and denominator by the conjugate $1+i$."
+      },
+      {
+        "text": "$1 + 5i$",
+        "rationale": "Forgot to divide by the denominator $1^2 + 1^2 = 2$."
+      },
+      {
+        "text": "$\\frac{5}{2} + \\frac{5}{2}i$",
+        "rationale": "Calculation error in the numerator."
+      },
+      {
+        "text": "$3 - 2i$",
+        "rationale": "Incorrect assumption about division."
+      },
+      {
+        "text": "$\\frac{1}{2} - \\frac{5}{2}i$",
+        "rationale": "Sign error in the imaginary part."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply numerator and denominator by the conjugate of $1-i$, which is $1+i$.",
+      "Numerator: $(3+2i)(1+i) = 3 + 3i + 2i + 2i^2 = 3 + 5i - 2 = 1 + 5i$.",
+      "Denominator: $(1-i)(1+i) = 1 - i^2 = 1 - (-1) = 2$.",
+      "Result: $\\frac{1 + 5i}{2} = \\frac{1}{2} + \\frac{5}{2}i$."
+    ]
   }
 ]

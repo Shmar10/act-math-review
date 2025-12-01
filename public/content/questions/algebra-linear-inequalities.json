@@ -1,0 +1,337 @@
+[
+  {
+    "id": "ALG-LIN-INQ-0001",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 2,
+    "stem": "Solve: $$5-2(3-x) > 4x + 1$$",
+    "choices": [
+      { "text": "x < -1", "rationale": "Correct: $5-6+2x>4x+1\\Rightarrow -1+2x>4x+1\\Rightarrow -2>2x\\Rightarrow x<-1$." },
+      { "text": "x > -1", "rationale": "Forgot to reverse direction after dividing by a negative." },
+      { "text": "x < 1", "rationale": "Arithmetic slip combining constants." },
+      { "text": "x > 1", "rationale": "Signs mishandled when distributing $-2$." },
+      { "text": "x = -1", "rationale": "Inequality is strict; $x=-1$ does not satisfy it." }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $5-6+2x>4x+1\\Rightarrow -1+2x>4x+1$.",
+      "Move terms: $-2>2x$.",
+      "Divide by $2$: $x<-1$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0002",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 1,
+    "stem": "Solve for $x$: $$x + 5 \\le 12$$",
+    "choices": [
+      {
+        "text": "$x \\le 7$",
+        "rationale": "Correct: Subtract 5 from both sides."
+      },
+      {
+        "text": "$x \\ge 7$",
+        "rationale": "Incorrectly flipped the inequality symbol."
+      },
+      {
+        "text": "$x \\le 17$",
+        "rationale": "Added 5 instead of subtracting."
+      },
+      {
+        "text": "$x < 7$",
+        "rationale": "Changed inclusive inequality to strict inequality."
+      },
+      {
+        "text": "$x = 7$",
+        "rationale": "Treated the inequality as an equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 5 from both sides: $x \\le 12 - 5$.",
+      "Simplify: $x \\le 7$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0003",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 2,
+    "stem": "Solve for $y$: $$3y - 7 > 8$$",
+    "choices": [
+      {
+        "text": "$y > 5$",
+        "rationale": "Correct: $3y > 15$, so $y > 5$."
+      },
+      {
+        "text": "$y > \\dfrac{1}{3}$",
+        "rationale": "Subtracted 7 incorrectly."
+      },
+      {
+        "text": "$y < 5$",
+        "rationale": "Flipped the sign without dividing by a negative."
+      },
+      {
+        "text": "$y \\ge 5$",
+        "rationale": "Added equality condition."
+      },
+      {
+        "text": "$y > 15$",
+        "rationale": "Forgot to divide by 3."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add 7 to both sides: $3y > 15$.",
+      "Divide by 3: $y > 5$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0004",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 2,
+    "stem": "Solve for $x$: $$-4x \\ge 20$$",
+    "choices": [
+      {
+        "text": "$x \\le -5$",
+        "rationale": "Correct: When dividing by a negative number, flip the inequality sign."
+      },
+      {
+        "text": "$x \\ge -5$",
+        "rationale": "Forgot to flip the inequality sign."
+      },
+      {
+        "text": "$x \\le 5$",
+        "rationale": "Sign error on the 5."
+      },
+      {
+        "text": "$x \\ge 5$",
+        "rationale": "Sign error and forgot to flip."
+      },
+      {
+        "text": "$x = -5$",
+        "rationale": "Treated as an equation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide both sides by -4.",
+      "Flip the inequality sign because we divided by a negative.",
+      "$x \\le -5$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0005",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 3,
+    "stem": "Solve for $x$: $$5x - 3 < 2x + 9$$",
+    "choices": [
+      {
+        "text": "$x < 4$",
+        "rationale": "Correct: $3x < 12 \\Rightarrow x < 4$."
+      },
+      {
+        "text": "$x > 4$",
+        "rationale": "Flipped sign incorrectly."
+      },
+      {
+        "text": "$x < 2$",
+        "rationale": "Calculation error ($5x - 2x = 3x$ and $9+3=12$, result implies math error)."
+      },
+      {
+        "text": "$x < 6$",
+        "rationale": "Incorrectly added coefficients."
+      },
+      {
+        "text": "$x > -4$",
+        "rationale": "Sign error in calculation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract $2x$ from both sides: $3x - 3 < 9$.",
+      "Add 3 to both sides: $3x < 12$.",
+      "Divide by 3: $x < 4$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0006",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 3,
+    "stem": "Solve the compound inequality: $$3 < 2x + 1 \\le 9$$",
+    "choices": [
+      {
+        "text": "$1 < x \\le 4$",
+        "rationale": "Correct: Subtract 1 from all parts, then divide by 2."
+      },
+      {
+        "text": "$2 < x \\le 8$",
+        "rationale": "Only subtracted 1."
+      },
+      {
+        "text": "$1 \\le x < 4$",
+        "rationale": "Swapped the inclusive/exclusive signs."
+      },
+      {
+        "text": "$4 < x \\le 10$",
+        "rationale": "Added 1 instead of subtracting."
+      },
+      {
+        "text": "$1 < x < 4$",
+        "rationale": "Lost the 'or equal to' condition."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 1 from all three parts: $2 < 2x \\le 8$.",
+      "Divide all three parts by 2: $1 < x \\le 4$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0007",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 3,
+    "stem": "Solve: $$x + 2 < -1 \\quad \\text{or} \\quad x - 3 > 2$$",
+    "choices": [
+      {
+        "text": "$x < -3$ or $x > 5$",
+        "rationale": "Correct: Solved both inequalities separately."
+      },
+      {
+        "text": "$-3 < x < 5$",
+        "rationale": "Confused OR (union) with AND (intersection)."
+      },
+      {
+        "text": "$x < 1$ or $x > -1$",
+        "rationale": "Sign errors in calculation."
+      },
+      {
+        "text": "$x > -3$ or $x < 5$",
+        "rationale": "Flipped inequality signs."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrectly looked for overlap."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inequality 1: $x + 2 < -1 \\Rightarrow x < -3$.",
+      "Inequality 2: $x - 3 > 2 \\Rightarrow x > 5$.",
+      "Solution: $x < -3$ or $x > 5$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0008",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 4,
+    "stem": "Solve for $x$: $$2(3x - 1) \\le 4x + 10$$",
+    "choices": [
+      {
+        "text": "$x \\le 6$",
+        "rationale": "Correct: $6x - 2 \\le 4x + 10 \\Rightarrow 2x \\le 12$."
+      },
+      {
+        "text": "$x \\ge 6$",
+        "rationale": "Flipped sign without cause."
+      },
+      {
+        "text": "$x \\le 4$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$x \\le 5.5$",
+        "rationale": "Didn't distribute the 2 correctly ($2 \\times -1$)."
+      },
+      {
+        "text": "$x \\le 12$",
+        "rationale": "Forgot to divide by the coefficient 2."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute the 2: $6x - 2 \\le 4x + 10$.",
+      "Subtract $4x$ from both sides: $2x - 2 \\le 10$.",
+      "Add 2 to both sides: $2x \\le 12$.",
+      "Divide by 2: $x \\le 6$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0009",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 4,
+    "stem": "Solve: $$\\frac{2}{3}x - 4 > \\frac{1}{2}x$$",
+    "choices": [
+      {
+        "text": "$x > 24$",
+        "rationale": "Correct: Multiplied by common denominator 6 to clear fractions."
+      },
+      {
+        "text": "$x > 4$",
+        "rationale": "Ignored fractions."
+      },
+      {
+        "text": "$x < 24$",
+        "rationale": "Flipped sign incorrectly."
+      },
+      {
+        "text": "$x > 12$",
+        "rationale": "Used wrong common denominator."
+      },
+      {
+        "text": "$x > 8$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply entire inequality by 6 to clear fractions: $6(\\frac{2}{3}x) - 6(4) > 6(\\frac{1}{2}x)$.",
+      "Simplify: $4x - 24 > 3x$.",
+      "Subtract $3x$ from both sides: $x - 24 > 0$.",
+      "Add 24: $x > 24$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0010",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 5,
+    "stem": "Solve: $$2(x - 3) < 2x + 5$$",
+    "choices": [
+      {
+        "text": "All real numbers",
+        "rationale": "Correct: Reduces to $-6 < 5$, which is always true."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Mistook the always true statement for a contradiction."
+      },
+      {
+        "text": "$x < 0$",
+        "rationale": "Calculation error trying to force a variable solution."
+      },
+      {
+        "text": "$x < 5$",
+        "rationale": "Ignored the variable cancellation."
+      },
+      {
+        "text": "$x > -6$",
+        "rationale": "Confused the constants with the variable."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $2x - 6 < 2x + 5$.",
+      "Subtract $2x$ from both sides: $-6 < 5$.",
+      "Since $-6$ is always less than 5, the inequality is true for all real values of $x$."
+    ]
+  }
+]
+

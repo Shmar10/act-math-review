@@ -95,5 +95,180 @@
       "$|7-10|<x<17\\Rightarrow3<x<17$.",
       "Integer solutions: $4$ through $16$."
     ]
+  },
+  {
+    "id": "GEO-TRI-0006",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 2,
+    "stem": "In $\\triangle ABC$, $AB = AC$ and the measure of vertex angle $\\angle A = 40^\\circ$. What is the measure of base angle $\\angle B$?",
+    "choices": [
+      {
+        "text": "$70^\\circ$",
+        "rationale": "Correct: Base angles are equal. $(180 - 40) / 2 = 70$."
+      },
+      {
+        "text": "$40^\\circ$",
+        "rationale": "Assumed all angles are equal to the vertex angle."
+      },
+      {
+        "text": "$100^\\circ$",
+        "rationale": "Calculation error or thinking of exterior angles."
+      },
+      {
+        "text": "$140^\\circ$",
+        "rationale": "Forgot to divide the remaining sum by 2."
+      },
+      {
+        "text": "$50^\\circ$",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "In an isosceles triangle, the base angles are congruent ($\\angle B \\cong \\angle C$).",
+      "The sum of angles is $180^\\circ$. So, $40 + 2x = 180$.",
+      "$2x = 140 \\Rightarrow x = 70^\\circ$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0007",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 2,
+    "stem": "Which of the following sets of side lengths can form a triangle?",
+    "choices": [
+      {
+        "text": "7, 10, 12",
+        "rationale": "Correct: $7 + 10 > 12$, $7 + 12 > 10$, $10 + 12 > 7$."
+      },
+      {
+        "text": "3, 4, 8",
+        "rationale": "$3 + 4 = 7$, which is not greater than 8$."
+      },
+      {
+        "text": "5, 5, 10",
+        "rationale": "$5 + 5 = 10$, not greater than 10 (degenerate)."
+      },
+      {
+        "text": "6, 8, 15",
+        "rationale": "$6 + 8 = 14$, which is not greater than 15$."
+      },
+      {
+        "text": "2, 2, 5",
+        "rationale": "$2 + 2 = 4$, which is not greater than 5$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the Triangle Inequality Theorem: The sum of any two sides must be greater than the third side.",
+      "Check 7, 10, 12: $7+10 > 12$ (True). This is the only valid set."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0008",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "Triangle $ABC$ is similar to triangle $DEF$. If $AB = 8$, $BC = 12$, and $DE = 6$, what is the length of $EF$?",
+    "choices": [
+      {
+        "text": "9",
+        "rationale": "Correct: Scale factor is $6/8 = 0.75$. $12 \\times 0.75 = 9$."
+      },
+      {
+        "text": "10",
+        "rationale": "Subtracted 2 ($8-6$) instead of using ratios."
+      },
+      {
+        "text": "16",
+        "rationale": "Used the inverse ratio ($8/6$) incorrectly."
+      },
+      {
+        "text": "4",
+        "rationale": "Calculated $12 - 8$."
+      },
+      {
+        "text": "8",
+        "rationale": "Random guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up a proportion based on corresponding sides: $\\frac{AB}{DE} = \\frac{BC}{EF}$.",
+      "$\\frac{8}{6} = \\frac{12}{x}$.",
+      "Cross-multiply: $8x = 72 \\Rightarrow x = 9$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0009",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 4,
+    "stem": "Find the altitude of an equilateral triangle with a side length of 10.",
+    "choices": [
+      {
+        "text": "$5\\sqrt{3}$",
+        "rationale": "Correct: In a 30-60-90 triangle, the long leg is $x\\sqrt{3}$ where $x$ is half the side."
+      },
+      {
+        "text": "$5$",
+        "rationale": "This is half of the side length."
+      },
+      {
+        "text": "$10\\sqrt{3}$",
+        "rationale": "Did not divide the side by 2."
+      },
+      {
+        "text": "$5\\sqrt{2}$",
+        "rationale": "Confused with 45-45-90 triangle ratios."
+      },
+      {
+        "text": "$7.5$",
+        "rationale": "Estimate without using radical form."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Drawing an altitude creates two 30-60-90 right triangles.",
+      "The base is split into two segments of 5.",
+      "The altitude is the long leg opposite the $60^\\circ$ angle.",
+      "Formula: altitude $= \\text{short leg} \\times \\sqrt{3} = 5\\sqrt{3}$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0010",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 5,
+    "stem": "In a right triangle, the altitude drawn to the hypotenuse divides the hypotenuse into two segments of length 4 and 9. What is the length of the altitude?",
+    "choices": [
+      {
+        "text": "6",
+        "rationale": "Correct: Geometric Mean Theorem $h^2 = 4 \\times 9$."
+      },
+      {
+        "text": "6.5",
+        "rationale": "Calculated the average $(4+9)/2$."
+      },
+      {
+        "text": "13",
+        "rationale": "Added the lengths."
+      },
+      {
+        "text": "36",
+        "rationale": "Forgot to take the square root."
+      },
+      {
+        "text": "$2\\sqrt{13}$",
+        "rationale": "Geometric mean of leg and hypotenuse confusion."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "According to the Geometric Mean (Altitude) Theorem, the altitude squared equals the product of the two segments of the hypotenuse.",
+      "$h^2 = 4 \\times 9 = 36$.",
+      "$h = \\sqrt{36} = 6$."
+    ]
   }
 ]

@@ -91,5 +91,188 @@
       "Set $y=0$: $0=-(x-1)^2+16\\Rightarrow (x-1)^2=16$.",
       "So $x=1\\pm4\\Rightarrow x=-3,5$ → intercepts $(-3,0)$ and $(5,0)$."
     ]
+  },
+  {
+    "id": "COORD-LIN-0006",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 2,
+    "stem": "Find the equation of the line passing through the points $(-2, 5)$ and $(4, -7)$.",
+    "choices": [
+      {
+        "text": "$y = -2x + 1$",
+        "rationale": "Correct: Slope $m = \\frac{-7-5}{4-(-2)} = -2$. Use $y-5 = -2(x+2)$."
+      },
+      {
+        "text": "$y = -2x - 3$",
+        "rationale": "Used the wrong y-intercept during calculation."
+      },
+      {
+        "text": "$y = 2x + 9$",
+        "rationale": "Calculated the slope as positive."
+      },
+      {
+        "text": "$y = -\\frac{1}{2}x + 4$",
+        "rationale": "Used the reciprocal of the slope."
+      },
+      {
+        "text": "$y = -2x + 5$",
+        "rationale": "Assumed the y-intercept was the y-coordinate of the first point."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate slope: $m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-7 - 5}{4 - (-2)} = \\frac{-12}{6} = -2$.",
+      "Use point-slope form with $(-2, 5)$: $y - 5 = -2(x - (-2))$.",
+      "Simplify: $y - 5 = -2(x + 2) \\Rightarrow y - 5 = -2x - 4$.",
+      "Solve for $y$: $y = -2x + 1$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0007",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 3,
+    "stem": "Which equation represents a line that passes through $(4, 1)$ and is perpendicular to the line $2x + 3y = 9$?",
+    "choices": [
+      {
+        "text": "$y = \\frac{3}{2}x - 5$",
+        "rationale": "Correct: Original slope is $-2/3$, perpendicular slope is $3/2$."
+      },
+      {
+        "text": "$y = -\\frac{2}{3}x + \\frac{11}{3}$",
+        "rationale": "Used a parallel slope."
+      },
+      {
+        "text": "$y = \\frac{2}{3}x - \\frac{5}{3}$",
+        "rationale": "Used the reciprocal slope without changing the sign."
+      },
+      {
+        "text": "$y = -\\frac{3}{2}x + 7$",
+        "rationale": "Flipped the fraction but kept the negative sign."
+      },
+      {
+        "text": "$y = 3x - 11$",
+        "rationale": "Used the coefficient of y as the slope."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find slope of given line: $3y = -2x + 9 \\Rightarrow y = -\\frac{2}{3}x + 3$. Slope is $m_1 = -\\frac{2}{3}$.",
+      "Perpendicular slope $m_2$ is the negative reciprocal: $m_2 = \\frac{3}{2}$.",
+      "Use point-slope form: $y - 1 = \\frac{3}{2}(x - 4)$.",
+      "Simplify: $y = \\frac{3}{2}x - 6 + 1 \\Rightarrow y = \\frac{3}{2}x - 5$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0008",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 4,
+    "stem": "Find the equation of the parabola with vertex $(3, -2)$ that passes through the point $(4, 1)$.",
+    "choices": [
+      {
+        "text": "$y = 3(x - 3)^2 - 2$",
+        "rationale": "Correct: Plugged in point to find $a=3$."
+      },
+      {
+        "text": "$y = (x - 3)^2 - 2$",
+        "rationale": "Assumed $a=1$."
+      },
+      {
+        "text": "$y = 3(x + 3)^2 - 2$",
+        "rationale": "Sign error on the h-value of the vertex."
+      },
+      {
+        "text": "$y = -3(x - 3)^2 - 2$",
+        "rationale": "Calculation error finding $a$."
+      },
+      {
+        "text": "$y = 2(x - 3)^2 + 1$",
+        "rationale": "Mixed up vertex coordinates with the passing point."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use vertex form: $y = a(x - h)^2 + k$.",
+      "Substitute vertex $(3, -2)$: $y = a(x - 3)^2 - 2$.",
+      "Substitute point $(4, 1)$ to find $a$: $1 = a(4 - 3)^2 - 2$.",
+      "$1 = a(1)^2 - 2 \\Rightarrow 1 = a - 2 \\Rightarrow a = 3$.",
+      "Equation: $y = 3(x - 3)^2 - 2$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0009",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 4,
+    "stem": "Find the intersection points of the line $y = 2x + 3$ and the parabola $y = x^2$.",
+    "choices": [
+      {
+        "text": "$(3, 9)$ and $(-1, 1)$",
+        "rationale": "Correct: Solutions to $x^2 - 2x - 3 = 0$."
+      },
+      {
+        "text": "$(-3, 9)$ and $(1, 1)$",
+        "rationale": "Sign error on x-values."
+      },
+      {
+        "text": "$(3, 6)$ and $(-1, -2)$",
+        "rationale": "Substituted x-values into linear equation incorrectly."
+      },
+      {
+        "text": "$(2, 4)$ and $(0, 0)$",
+        "rationale": "Guessed points."
+      },
+      {
+        "text": "No intersection",
+        "rationale": "Incorrect discriminant calculation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set equations equal: $x^2 = 2x + 3$.",
+      "Rearrange: $x^2 - 2x - 3 = 0$.",
+      "Factor: $(x - 3)(x + 1) = 0$.",
+      "x-values are $3$ and $-1$.",
+      "Find y-values: if $x=3, y=9$. If $x=-1, y=1$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0010",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 5,
+    "stem": "Find the coordinates of the focus of the parabola given by the equation $$y = \\frac{1}{8}x^2$$",
+    "choices": [
+      {
+        "text": "$(0, 2)$",
+        "rationale": "Correct: $a = \\frac{1}{4p}$. $\\frac{1}{8} = \\frac{1}{4p} \\Rightarrow p=2$."
+      },
+      {
+        "text": "$(0, 8)$",
+        "rationale": "Confused coefficient $a$ with $p$."
+      },
+      {
+        "text": "$(2, 0)$",
+        "rationale": "Put focus on x-axis (wrong orientation)."
+      },
+      {
+        "text": "$(0, \\frac{1}{2})$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$(0, -2)$",
+        "rationale": "Sign error (this would be the directrix intersection)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Standard form is $y = \\frac{1}{4p}x^2$ for a parabola opening up/down with vertex at origin.",
+      "Given $a = \\frac{1}{8}$, set $\\frac{1}{4p} = \\frac{1}{8}$.",
+      "Solve for $p$: $4p = 8 \\Rightarrow p = 2$.",
+      "Since $a$ is positive, parabola opens up.",
+      "Focus is at $(0, p)$, which is $(0, 2)$."
+    ]
   }
 ]

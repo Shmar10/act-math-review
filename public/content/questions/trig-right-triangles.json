@@ -78,7 +78,7 @@
     "topic": "Trigonometry",
     "subtopic": "Right Triangles",
     "diff": 3,
-    "stem": "A surveyor measures the angle of elevation to the top of a building as $35^\\circ$ from a point 120 ft from the base. The instrument is 5 ft above ground. Estimate the building’s height.",
+    "stem": "A surveyor measures the angle of elevation to the top of a building as $35^\\circ$ from a point 120 ft from the base. The instrument is 5 ft above ground. Estimate the building's height.",
     "choices": [
       { "text": "$\\,120\\tan35^\\circ+5\\,$ ft", "rationale": "Correct: Height above instrument $=120\\tan35^\\circ$; add 5 ft instrument height." },
       { "text": "$\\,120\\sin35^\\circ+5\\,$ ft", "rationale": "Used opposite/hypotenuse instead of opposite/adjacent." },
@@ -90,6 +90,186 @@
     "solutionSteps": [
       "Opposite $=120\\tan35^\\circ$ (angle of elevation with adjacent 120).",
       "Add the 5 ft instrument height: total $=120\\tan35^\\circ+5$ ft."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0006",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 2,
+    "stem": "In a right triangle, the side opposite angle $\\theta$ is 5 and the hypotenuse is 13. What is the value of $\\cos \\theta$?",
+    "choices": [
+      {
+        "text": "$\\frac{12}{13}$",
+        "rationale": "Correct: Find adjacent side: $\\sqrt{13^2 - 5^2} = 12$. $\\cos = \\text{adj}/\\text{hyp} = 12/13$."
+      },
+      {
+        "text": "$\\frac{5}{13}$",
+        "rationale": "This is $\\sin \\theta$ (opp/hyp)."
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "rationale": "This is $\\tan \\theta$ (opp/adj)."
+      },
+      {
+        "text": "$\\frac{13}{5}$",
+        "rationale": "This is $\\csc \\theta$ (hyp/opp)."
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "rationale": "This is $\\cot \\theta$ (adj/opp)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the Pythagorean theorem to find the adjacent leg ($a$): $a^2 + 5^2 = 13^2$.",
+      "$a^2 + 25 = 169 \\Rightarrow a^2 = 144 \\Rightarrow a = 12$.",
+      "Cosine is defined as Adjacent / Hypotenuse.",
+      "$\\cos \\theta = \\frac{12}{13}$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0007",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 3,
+    "stem": "A ladder leans against a wall, making an angle of $60^\\circ$ with the ground. If the base of the ladder is 10 feet from the wall, what is the length of the ladder?",
+    "choices": [
+      {
+        "text": "20 feet",
+        "rationale": "Correct: $\\cos(60^\\circ) = 10/L \\Rightarrow 0.5 = 10/L \\Rightarrow L=20$."
+      },
+      {
+        "text": "$10\\sqrt{3}$ feet",
+        "rationale": "Calculated the height of the wall (opposite side) instead."
+      },
+      {
+        "text": "15 feet",
+        "rationale": "Guessing."
+      },
+      {
+        "text": "5 feet",
+        "rationale": "Multiplied 10 by $\\cos(60^\\circ)$ instead of dividing."
+      },
+      {
+        "text": "25 feet",
+        "rationale": "Estimation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify sides relative to $60^\\circ$: Adjacent = 10, Hypotenuse = $L$ (ladder length).",
+      "Use Cosine ratio: $\\cos(60^\\circ) = \\frac{\\text{Adj}}{\\text{Hyp}}$.",
+      "$\\frac{1}{2} = \\frac{10}{L}$.",
+      "Solve for $L$: $L = 20$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0008",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 3,
+    "stem": "If $\\sin \\theta = 0.6$ and $\\theta$ is an acute angle in a right triangle, what is the value of $\\tan \\theta$?",
+    "choices": [
+      {
+        "text": "0.75",
+        "rationale": "Correct: $0.6 = 3/5$. Adj side is 4. Tan = $3/4 = 0.75$."
+      },
+      {
+        "text": "0.8",
+        "rationale": "This is $\\cos \\theta$."
+      },
+      {
+        "text": "1.33",
+        "rationale": "This is $\\cot \\theta$ ($4/3$)."
+      },
+      {
+        "text": "0.4",
+        "rationale": "Subtraction $1 - 0.6$ (incorrect logic)."
+      },
+      {
+        "text": "0.5",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convert decimal to fraction: $\\sin \\theta = 0.6 = \\frac{3}{5} = \\frac{\\text{Opp}}{\\text{Hyp}}$.",
+      "Find Adjacent side ($a$) using Pythagoras: $a^2 + 3^2 = 5^2$.",
+      "$a^2 = 16 \\Rightarrow a = 4$.",
+      "$\\tan \\theta = \\frac{\\text{Opp}}{\\text{Adj}} = \\frac{3}{4} = 0.75$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0009",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 4,
+    "stem": "In $\\triangle ABC$, $\\angle C = 90^\\circ$, $AC = 7$, and $BC = 7$. What is the measure of $\\angle A$?",
+    "choices": [
+      {
+        "text": "$45^\\circ$",
+        "rationale": "Correct: Triangle is isosceles right. $\\tan A = 7/7 = 1$."
+      },
+      {
+        "text": "$30^\\circ$",
+        "rationale": "Requires leg ratio of $1 : \\sqrt{3}$."
+      },
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Requires leg ratio of $\\sqrt{3} : 1$."
+      },
+      {
+        "text": "$90^\\circ$",
+        "rationale": "Angle A cannot be 90 in a right triangle at C."
+      },
+      {
+        "text": "$22.5^\\circ$",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify sides relative to Angle A: Opposite ($BC$) = 7, Adjacent ($AC$) = 7.",
+      "Use Tangent: $\\tan A = \\frac{7}{7} = 1$.",
+      "Take inverse tangent: $A = \\tan^{-1}(1)$.",
+      "$A = 45^\\circ$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0010",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 5,
+    "stem": "From the top of a 100 m vertical cliff, the angle of depression to a boat at sea is $30^\\circ$. How far is the boat from the base of the cliff?",
+    "choices": [
+      {
+        "text": "$100\\sqrt{3}$ m",
+        "rationale": "Correct: Angle of elevation is also $30^\\circ$. $\\tan(30) = 100/x$."
+      },
+      {
+        "text": "$100$ m",
+        "rationale": "Assumed angle was $45^\\circ$."
+      },
+      {
+        "text": "$\\frac{100}{\\sqrt{3}}$ m",
+        "rationale": "Used $\\tan(60) = 100/x$ or swapped ratios."
+      },
+      {
+        "text": "$200$ m",
+        "rationale": "Calculated the hypotenuse distance."
+      },
+      {
+        "text": "$50$ m",
+        "rationale": "Incorrect trig application."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The angle of depression from the top equals the angle of elevation from the boat ($30^\\circ$).",
+      "In the right triangle, Opposite side (cliff) = 100, Adjacent side (distance) = $x$.",
+      "$\\tan(30^\\circ) = \\frac{100}{x}$.",
+      "$\\frac{1}{\\sqrt{3}} = \\frac{100}{x} \\Rightarrow x = 100\\sqrt{3}$."
     ]
   }
 ]

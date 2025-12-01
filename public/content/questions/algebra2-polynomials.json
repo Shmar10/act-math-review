@@ -97,5 +97,189 @@
       "Numerator: $3y-2x$, Denominator: $y-x$.",
       "Simplify: $\\tfrac{3y-2x}{y-x} = 3x - 2y$ (after factoring $-1$ from top and bottom)."
     ]
+  },
+  {
+    "id": "ALG2-POLY-0006",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 2,
+    "stem": "Simplify the expression: $$ (3x^2 - 4x + 5) - (x^2 + 6x - 2) $$",
+    "choices": [
+      {
+        "text": "$2x^2 - 10x + 7$",
+        "rationale": "Correct: Distributed the negative sign: $3x^2 - x^2 = 2x^2$, $-4x - 6x = -10x$, $5 - (-2) = 7$."
+      },
+      {
+        "text": "$2x^2 + 2x + 3$",
+        "rationale": "Forgot to distribute the negative sign to the second and third terms."
+      },
+      {
+        "text": "$4x^2 + 2x + 3$",
+        "rationale": "Added the polynomials instead of subtracting."
+      },
+      {
+        "text": "$2x^2 - 10x + 3$",
+        "rationale": "Subtracting error on the constant term ($5 - 2$ instead of $5 - (-2)$)."
+      },
+      {
+        "text": "$2x^2 - 2x + 7$",
+        "rationale": "Arithmetic error on the linear term."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute the negative sign to the second polynomial: $-x^2 - 6x + 2$.",
+      "Combine like terms with the first polynomial.",
+      "$x^2$: $3x^2 - x^2 = 2x^2$.",
+      "$x$: $-4x - 6x = -10x$.",
+      "Constants: $5 + 2 = 7$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0007",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Factor completely: $$x^3 + 27$$",
+    "choices": [
+      {
+        "text": "$(x + 3)(x^2 - 3x + 9)$",
+        "rationale": "Correct: Used the sum of cubes formula $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$."
+      },
+      {
+        "text": "$(x + 3)(x^2 + 3x + 9)$",
+        "rationale": "Incorrect sign in the quadratic factor."
+      },
+      {
+        "text": "$(x - 3)(x^2 + 3x + 9)$",
+        "rationale": "Used the difference of cubes pattern incorrecty."
+      },
+      {
+        "text": "$(x + 3)^3$",
+        "rationale": "Confused sum of cubes with the cube of a binomial."
+      },
+      {
+        "text": "$(x + 3)(x^2 - 6x + 9)$",
+        "rationale": "Squared the 3 in the middle term instead of multiplying $a \\cdot b$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify the expression as a sum of cubes: $x^3 + 3^3$.",
+      "Apply the formula: $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$.",
+      "Substitute $a = x$ and $b = 3$: $(x + 3)(x^2 - 3x + 9)$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0008",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Simplify the rational expression: $$\\frac{x^2 - 16}{x^2 - x - 12}$$",
+    "choices": [
+      {
+        "text": "$\\frac{x - 4}{x - 3}$",
+        "rationale": "Incorrectly cancelled $(x+4)$ instead of $(x-4)$, and factored denominator incorrectly."
+      },
+      {
+        "text": "$\\frac{x + 4}{x + 3}$",
+        "rationale": "Correct: Factors to $\\frac{(x-4)(x+4)}{(x-4)(x+3)}$, cancel $(x-4)$."
+      },
+      {
+        "text": "$\\frac{x - 4}{x + 3}$",
+        "rationale": "Cancelled $(x+4)$ incorrectly."
+      },
+      {
+        "text": "$\\frac{4}{3}$",
+        "rationale": "Incorrectly cancelled $x^2$ terms and divided constants."
+      },
+      {
+        "text": "$\\frac{x + 4}{x - 3}$",
+        "rationale": "Factoring error in the denominator."
+      }
+    ],
+    "answerIndex": 1,
+    "solutionSteps": [
+      "Factor the numerator (Difference of Squares): $(x - 4)(x + 4)$.",
+      "Factor the denominator: $(x - 4)(x + 3)$.",
+      "Cancel the common factor $(x - 4)$.",
+      "Result: $\\frac{x + 4}{x + 3}$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0009",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 4,
+    "stem": "Perform the division: $$(x^3 - 2x^2 - 5x + 6) \\div (x - 3)$$",
+    "choices": [
+      {
+        "text": "$x^2 + x - 2$",
+        "rationale": "Correct: Synthetic division yields coefficients 1, 1, -2 with remainder 0."
+      },
+      {
+        "text": "$x^2 - 5x + 10$",
+        "rationale": "Calculation error in division."
+      },
+      {
+        "text": "$x^2 + x + 2$",
+        "rationale": "Sign error on the constant term."
+      },
+      {
+        "text": "$x^2 - x - 2$",
+        "rationale": "Sign error on the linear term."
+      },
+      {
+        "text": "$x^2 + 5x + 6$",
+        "rationale": "Factoring guess that is incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use synthetic division with root 3.",
+      "Coefficients: 1, -2, -5, 6.",
+      "Drop 1. $1 \\times 3 = 3$. Add to -2: $1$.",
+      "$1 \\times 3 = 3$. Add to -5: $-2$.",
+      "$-2 \\times 3 = -6$. Add to 6: $0$ (No remainder).",
+      "Result: $1x^2 + 1x - 2$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0010",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 5,
+    "stem": "Solve for $x$: $$\\frac{x}{x-2} + \\frac{1}{x-4} = \\frac{2}{x^2 - 6x + 8}$$",
+    "choices": [
+      {
+        "text": "$x = -1$",
+        "rationale": "Correct: Found $x=4$ and $x=-1$, but $x=4$ is extraneous."
+      },
+      {
+        "text": "$x = 4$ or $x = -1$",
+        "rationale": "Failed to reject the extraneous solution $x=4$."
+      },
+      {
+        "text": "$x = 4$",
+        "rationale": "Only found the extraneous solution."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrectly assumed both solutions were extraneous."
+      },
+      {
+        "text": "$x = 1$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor denominator: $x^2 - 6x + 8 = (x-2)(x-4)$.",
+      "Multiply by LCD $(x-2)(x-4)$: $x(x-4) + 1(x-2) = 2$.",
+      "Simplify: $x^2 - 4x + x - 2 = 2 \\Rightarrow x^2 - 3x - 4 = 0$.",
+      "Factor: $(x-4)(x+1) = 0$. Solutions: $x = 4, x = -1$.",
+      "Check restrictions: $x \\ne 2, x \\ne 4$. Thus, $x=4$ is extraneous.",
+      "Final Answer: $x = -1$."
+    ]
   }
 ]

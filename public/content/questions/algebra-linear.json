@@ -40,46 +40,6 @@
     ]
   },
   {
-    "id": "ALG-LIN-0004",
-    "topic": "Algebra",
-    "subtopic": "Systems of Linear Equations",
-    "diff": 3,
-    "stem": "Solve the system: $$\\begin{cases}2x+3y=13\\\\ x-y=1\\end{cases}$$",
-    "choices": [
-      { "text": "\\left(\\dfrac{16}{5},\\,\\dfrac{11}{5}\\right)", "rationale": "Correct: From $x=y+1$, substitute into $2x+3y=13$ to get $5y=11$." },
-      { "text": "(3,\\,4)", "rationale": "Satisfies $x-y= -1$, not $1$." },
-      { "text": "(4,\\,3)", "rationale": "Gives $2x+3y=17$, not $13$." },
-      { "text": "(2,\\,1)", "rationale": "Does not satisfy $2x+3y=13$." },
-      { "text": "\\left(\\dfrac{11}{5},\\,\\dfrac{16}{5}\\right)", "rationale": "Swapped $x$ and $y$." }
-    ],
-    "answerIndex": 0,
-    "solutionSteps": [
-      "From $x-y=1\\Rightarrow x=y+1$.",
-      "Substitute: $2(y+1)+3y=13\\Rightarrow 5y=11\\Rightarrow y=\\tfrac{11}{5}$.",
-      "Then $x=y+1=\\tfrac{16}{5}$."
-    ]
-  },
-  {
-    "id": "ALG-LIN-0005",
-    "topic": "Algebra",
-    "subtopic": "Linear Inequalities",
-    "diff": 2,
-    "stem": "Solve: $$5-2(3-x) > 4x + 1$$",
-    "choices": [
-      { "text": "x < -1", "rationale": "Correct: $5-6+2x>4x+1\\Rightarrow -1+2x>4x+1\\Rightarrow -2>2x\\Rightarrow x<-1$." },
-      { "text": "x > -1", "rationale": "Forgot to reverse direction after dividing by a negative." },
-      { "text": "x < 1", "rationale": "Arithmetic slip combining constants." },
-      { "text": "x > 1", "rationale": "Signs mishandled when distributing $-2$." },
-      { "text": "x = -1", "rationale": "Inequality is strict; $x=-1$ does not satisfy it." }
-    ],
-    "answerIndex": 0,
-    "solutionSteps": [
-      "Distribute: $5-6+2x>4x+1\\Rightarrow -1+2x>4x+1$.",
-      "Move terms: $-2>2x$.",
-      "Divide by $2$: $x<-1$."
-    ]
-  },
-  {
     "id": "ALG-LIN-0006",
     "topic": "Algebra",
     "subtopic": "Absolute Value Equations",

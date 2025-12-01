@@ -15,6 +15,8 @@ export const BANKS: Bank[] = [
   // ========== ALGEBRA ==========
   { key: "ALG-MIX", topic: "Algebra", subtopic: "Mixed Practice", file: "algebra.json" },
   { key: "ALG-LIN", topic: "Algebra", subtopic: "Linear Equations", file: "algebra-linear.json" },
+  { key: "ALG-INEQ", topic: "Algebra", subtopic: "Linear Inequalities", file: "algebra-linear-inequalities.json" },
+  { key: "ALG-SYS", topic: "Algebra", subtopic: "Systems of Linear Equations", file: "algebra-systems.json" },
   { key: "ALG-EXP", topic: "Algebra", subtopic: "Exponents & Radicals", file: "algebra-exponents.json" },
   { key: "ALG-QUA", topic: "Algebra", subtopic: "Solving Quadratics", file: "algebra-quadratics.json" },
   { key: "ALG-ABS", topic: "Algebra", subtopic: "Absolute Value Equations", file: "algebra-absolute-value.json" },

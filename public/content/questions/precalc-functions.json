@@ -82,7 +82,7 @@
     "diff": 3,
     "stem": "Given $f(x)=2x-1$ and $g(x)=x^2+3$, compute $(f\\circ g)(-2)$.",
     "choices": [
-      { "text": "$5$", "rationale": "Correct: $g(-2)=4+3=7$; $f(7)=2\\cdot7-1=13$ → wait, re-evaluate; actually $13$, not $5$." },
+      { "text": "$5$", "rationale": "Likely computed $f(-2)$ then squared or calculation error." },
       { "text": "$13$", "rationale": "Correct: $g(-2)=7$ and $f(7)=13$." },
       { "text": "$-5$", "rationale": "Likely computed $f(-2)$ then squared." },
       { "text": "$-13$", "rationale": "Sign error when evaluating $f(\\cdot)$." },
@@ -92,6 +92,188 @@
     "solutionSteps": [
       "Compute $g(-2)=(-2)^2+3=7$.",
       "Then $(f\\circ g)(-2)=f(g(-2))=f(7)=2\\cdot7-1=13$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0006",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 2,
+    "stem": "Find the domain of the function: $$f(x) = \\sqrt{3x - 12}$$",
+    "choices": [
+      {
+        "text": "$[4, \\infty)$",
+        "rationale": "Correct: $3x - 12 \\ge 0 \\Rightarrow 3x \\ge 12 \\Rightarrow x \\ge 4$."
+      },
+      {
+        "text": "$(4, \\infty)$",
+        "rationale": "Excluded 4, but the square root of 0 is defined."
+      },
+      {
+        "text": "$(-\\infty, 4]$",
+        "rationale": "Reversed the inequality sign."
+      },
+      {
+        "text": "$[-4, \\infty)$",
+        "rationale": "Sign error in calculation."
+      },
+      {
+        "text": "$[0, \\infty)$",
+        "rationale": "Ignored the expression inside the radical."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The expression inside a square root must be non-negative.",
+      "Set $3x - 12 \\ge 0$.",
+      "Add 12 to both sides: $3x \\ge 12$.",
+      "Divide by 3: $x \\ge 4$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0007",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 3,
+    "stem": "Given $f(x) = x^2 + 1$ and $g(x) = \\sqrt{x - 2}$, find the composite function $(f \\circ g)(x)$.",
+    "choices": [
+      {
+        "text": "$x - 1$",
+        "rationale": "Correct: $f(g(x)) = (\\sqrt{x-2})^2 + 1 = x - 2 + 1 = x - 1$."
+      },
+      {
+        "text": "$\\sqrt{x^2 - 1}$",
+        "rationale": "Calculated $g(f(x))$ instead."
+      },
+      {
+        "text": "$x - 3$",
+        "rationale": "Calculation error ($x - 2 - 1$)."
+      },
+      {
+        "text": "$x + 1$",
+        "rationale": "Forgot to subtract the 2 from the radical."
+      },
+      {
+        "text": "$x^2 - 1$",
+        "rationale": "Squared the $x$ but ignored the square root property."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $g(x)$ into $f(x)$: $f(g(x)) = f(\\sqrt{x - 2})$.",
+      "Replace $x$ in $f(x)$ with $\\sqrt{x - 2}$: $(\\sqrt{x - 2})^2 + 1$.",
+      "Simplify: $(x - 2) + 1 = x - 1$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0008",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 3,
+    "stem": "Find the inverse function $f^{-1}(x)$ for $$f(x) = \\frac{2x + 1}{x - 3}$$",
+    "choices": [
+      {
+        "text": "$f^{-1}(x) = \\frac{3x + 1}{x - 2}$",
+        "rationale": "Correct: Swapped x and y and solved for y."
+      },
+      {
+        "text": "$f^{-1}(x) = \\frac{x - 3}{2x + 1}$",
+        "rationale": "Just took the reciprocal of the function."
+      },
+      {
+        "text": "$f^{-1}(x) = \\frac{3x - 1}{x + 2}$",
+        "rationale": "Sign errors during algebraic manipulation."
+      },
+      {
+        "text": "$f^{-1}(x) = \\frac{2x - 3}{x + 1}$",
+        "rationale": "Mixed up coefficients."
+      },
+      {
+        "text": "$f^{-1}(x) = \\frac{x + 1}{x - 2}$",
+        "rationale": "Lost the coefficient 3."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Replace $f(x)$ with $y$: $y = \\frac{2x + 1}{x - 3}$.",
+      "Swap $x$ and $y$: $x = \\frac{2y + 1}{y - 3}$.",
+      "Multiply by $(y - 3)$: $x(y - 3) = 2y + 1 \\Rightarrow xy - 3x = 2y + 1$.",
+      "Group $y$ terms: $xy - 2y = 3x + 1$.",
+      "Factor out $y$: $y(x - 2) = 3x + 1$.",
+      "Divide by $(x - 2)$: $y = \\frac{3x + 1}{x - 2}$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0009",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 4,
+    "stem": "Determine which of the following functions is an **odd** function.",
+    "choices": [
+      {
+        "text": "$f(x) = x^3 - 4x$",
+        "rationale": "Correct: $f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -(x^3 - 4x) = -f(x)$."
+      },
+      {
+        "text": "$f(x) = x^2 + 5$",
+        "rationale": "This is an even function ($f(-x) = f(x)$)."
+      },
+      {
+        "text": "$f(x) = x^3 + 1$",
+        "rationale": "Neither even nor odd ($f(-x) \\ne -f(x)$ due to the constant)."
+      },
+      {
+        "text": "$f(x) = |x|$",
+        "rationale": "This is an even function."
+      },
+      {
+        "text": "$f(x) = (x - 2)^2$",
+        "rationale": "Neither even nor odd (shifted parabola)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A function is odd if $f(-x) = -f(x)$ (symmetry about the origin).",
+      "Test $f(x) = x^3 - 4x$: Replace $x$ with $-x$.",
+      "$(-x)^3 - 4(-x) = -x^3 + 4x$.",
+      "Factor out $-1$: $-(x^3 - 4x) = -f(x)$.",
+      "Thus, it is an odd function."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0010",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 5,
+    "stem": "The graph of $y = f(x)$ is transformed to create the graph of $g(x) = -2f(x - 3) + 1$. Which description correctly identifies the sequence of transformations?",
+    "choices": [
+      {
+        "text": "Shift right 3, vertical stretch by 2, reflect over x-axis, shift up 1",
+        "rationale": "Correct: Order of operations matters. Inside parenthesis first (shift), then multiplication (stretch/reflect), then addition (shift up)."
+      },
+      {
+        "text": "Shift left 3, vertical stretch by 2, reflect over y-axis, shift up 1",
+        "rationale": "Incorrect shift direction and reflection axis."
+      },
+      {
+        "text": "Shift right 3, vertical compression by 1/2, reflect over x-axis, shift down 1",
+        "rationale": "Incorrect stretch factor and vertical shift."
+      },
+      {
+        "text": "Shift up 1, reflect over x-axis, vertical stretch by 2, shift right 3",
+        "rationale": "Transformations applied in the wrong order."
+      },
+      {
+        "text": "Shift right 3, shift up 1, then vertical stretch by 2",
+        "rationale": "Missed the reflection and applied vertical shift before stretch."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "1. $x - 3$: Shift horizontally to the right by 3 units.",
+      "2. Multiply by 2: Vertical stretch by a factor of 2.",
+      "3. Negative sign ($-2$): Reflect across the x-axis.",
+      "4. $+ 1$: Shift vertically up by 1 unit."
     ]
   }
 ]
