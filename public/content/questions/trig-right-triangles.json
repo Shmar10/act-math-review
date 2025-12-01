@@ -271,5 +271,181 @@
       "$\\tan(30^\\circ) = \\frac{100}{x}$.",
       "$\\frac{1}{\\sqrt{3}} = \\frac{100}{x} \\Rightarrow x = 100\\sqrt{3}$."
     ]
+  },
+  {
+    "id": "TRIG-RIGHT-0011",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 2,
+    "stem": "Which trigonometric ratio is defined as $\\frac{\\text{Opposite}}{\\text{Adjacent}}$?",
+    "choices": [
+      {
+        "text": "Tangent",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "Sine",
+        "rationale": "Opposite/Hypotenuse."
+      },
+      {
+        "text": "Cosine",
+        "rationale": "Adjacent/Hypotenuse."
+      },
+      {
+        "text": "Secant",
+        "rationale": "Hypotenuse/Adjacent."
+      },
+      {
+        "text": "Cosecant",
+        "rationale": "Hypotenuse/Opposite."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recall SOH CAH TOA.",
+      "TOA stands for Tangent = Opposite / Adjacent."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0012",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 3,
+    "stem": "Find the length of side $x$ in a right triangle if the hypotenuse is 20 and the angle adjacent to $x$ is $60^\\circ$.",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: $\\cos(60) = x/20 \\Rightarrow 0.5 = x/20 \\Rightarrow x=10$."
+      },
+      {
+        "text": "$10\\sqrt{3}$",
+        "rationale": "Calculated the opposite side."
+      },
+      {
+        "text": "20",
+        "rationale": "Same as hypotenuse (impossible)."
+      },
+      {
+        "text": "40",
+        "rationale": "Multiplied instead of using ratio."
+      },
+      {
+        "text": "5",
+        "rationale": "Used wrong trig ratio."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Cosine: $\\cos(60^\\circ) = \\frac{\\text{Adj}}{\\text{Hyp}} = \\frac{x}{20}$.",
+      "Know that $\\cos(60^\\circ) = 0.5$.",
+      "$0.5 = \\frac{x}{20} \\Rightarrow x = 10$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0013",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 3,
+    "stem": "If $\\sin \\theta = \\frac{5}{13}$, what is $\\cos \\theta$?",
+    "choices": [
+      {
+        "text": "$\\frac{12}{13}$",
+        "rationale": "Correct: Pythagorean triple 5-12-13. Cos is adj/hyp."
+      },
+      {
+        "text": "$\\frac{13}{12}$",
+        "rationale": "Secant ratio."
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "rationale": "Tangent ratio."
+      },
+      {
+        "text": "$\\frac{8}{13}$",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "$\\frac{1}{13}$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ or Pythagorean triple.",
+      "$5^2 + b^2 = 13^2 \\Rightarrow 25 + b^2 = 169 \\Rightarrow b^2 = 144 \\Rightarrow b = 12$.",
+      "$\\cos \\theta = \\frac{12}{13}$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0014",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 4,
+    "stem": "Simplify the expression: $$\\tan \\theta \\cdot \\cos \\theta$$",
+    "choices": [
+      {
+        "text": "$\\sin \\theta$",
+        "rationale": "Correct: $\\frac{\\sin}{\\cos} \\cdot \\cos = \\sin$."
+      },
+      {
+        "text": "$\\cos \\theta$",
+        "rationale": "Incorrect cancellation."
+      },
+      {
+        "text": "$1$",
+        "rationale": "Confused with reciprocal identities."
+      },
+      {
+        "text": "$\\cot \\theta$",
+        "rationale": "Wrong function."
+      },
+      {
+        "text": "$\\sec \\theta$",
+        "rationale": "Wrong function."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite $\\tan \\theta$ as $\\frac{\\sin \\theta}{\\cos \\theta}$.",
+      "Multiply: $\\frac{\\sin \\theta}{\\cos \\theta} \\cdot \\cos \\theta$.",
+      "Cancel $\\cos \\theta$: Result is $\\sin \\theta$."
+    ]
+  },
+  {
+    "id": "TRIG-RIGHT-0015",
+    "topic": "Trigonometry",
+    "subtopic": "Right Triangles",
+    "diff": 5,
+    "stem": "A surveyor measures the angle of elevation to the top of a building as $45^\\circ$. Moving 20 meters further away, the angle of elevation becomes $30^\\circ$. What is the height of the building?",
+    "choices": [
+      {
+        "text": "$10(\\sqrt{3} + 1)$ meters",
+        "rationale": "Correct: $h = x$ (from 45 deg). $h/(x+20) = \\tan 30$. Solve system."
+      },
+      {
+        "text": "20 meters",
+        "rationale": "Assumed height equals distance moved."
+      },
+      {
+        "text": "$20\\sqrt{3}$ meters",
+        "rationale": "Used simple 30-60-90 logic incorrectly."
+      },
+      {
+        "text": "$10\\sqrt{3}$ meters",
+        "rationale": "Half of the wrong calculation."
+      },
+      {
+        "text": "30 meters",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $h$ be height. At $45^\\circ$, distance is $h$ (isosceles).",
+      "At $30^\\circ$, distance is $h + 20$.",
+      "$\\tan(30) = \\frac{1}{\\sqrt{3}} = \\frac{h}{h + 20}$.",
+      "$h\\sqrt{3} = h + 20 \\Rightarrow h(\\sqrt{3} - 1) = 20$.",
+      "$h = \\frac{20}{\\sqrt{3} - 1}$. Rationalize: $\\frac{20(\\sqrt{3}+1)}{2} = 10(\\sqrt{3} + 1)$."
+    ]
   }
 ]

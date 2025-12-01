@@ -198,6 +198,183 @@
       "Prime factorizations: $2=2$, $3=3$, $4=2^2$, $5=5$, $6=2\\cdot3$.",
       "LCM = $2^2 \\cdot 3 \\cdot 5 = 60$."
     ]
+  },
+  {
+    "id": "NUM-FAC-0011",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 1,
+    "stem": "Which of the following numbers is a prime number?",
+    "choices": [
+      {
+        "text": "29",
+        "rationale": "Correct: Only factors are 1 and 29."
+      },
+      {
+        "text": "27",
+        "rationale": "Divisible by 3 and 9."
+      },
+      {
+        "text": "15",
+        "rationale": "Divisible by 3 and 5."
+      },
+      {
+        "text": "21",
+        "rationale": "Divisible by 3 and 7."
+      },
+      {
+        "text": "9",
+        "rationale": "Divisible by 3."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check factors for each.",
+      "27 ($3 \\times 9$), 15 ($3 \\times 5$), 21 ($3 \\times 7$), 9 ($3 \\times 3$).",
+      "29 has no factors other than 1 and itself."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0012",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 2,
+    "stem": "Find the Least Common Multiple (LCM) of 6 and 8.",
+    "choices": [
+      {
+        "text": "24",
+        "rationale": "Correct: Multiples of 8: 8, 16, 24. 24 is divisible by 6."
+      },
+      {
+        "text": "48",
+        "rationale": "This is $6 \\times 8$, but not the *least* common multiple."
+      },
+      {
+        "text": "2",
+        "rationale": "This is the GCF."
+      },
+      {
+        "text": "12",
+        "rationale": "Multiple of 6 but not 8."
+      },
+      {
+        "text": "14",
+        "rationale": "Sum of the numbers."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiples of 6: 6, 12, 18, 24, 30...",
+      "Multiples of 8: 8, 16, 24, 32...",
+      "Smallest common number is 24."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0013",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 3,
+    "stem": "What is the Greatest Common Factor (GCF) of 48 and 72?",
+    "choices": [
+      {
+        "text": "24",
+        "rationale": "Correct: $48 = 24 \\times 2$, $72 = 24 \\times 3$."
+      },
+      {
+        "text": "12",
+        "rationale": "Common factor, but not the greatest."
+      },
+      {
+        "text": "8",
+        "rationale": "Common factor, but not the greatest."
+      },
+      {
+        "text": "144",
+        "rationale": "This is the LCM."
+      },
+      {
+        "text": "6",
+        "rationale": "Common factor, too small."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Prime factorization of 48: $2^4 \\times 3$.",
+      "Prime factorization of 72: $2^3 \\times 3^2$.",
+      "Take lowest powers common to both: $2^3 \\times 3^1 = 8 \\times 3 = 24$."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0014",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 3,
+    "stem": "A florist has 36 roses and 24 tulips. She wants to make identical bouquets with no flowers left over. What is the greatest number of bouquets she can make?",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: GCF of 36 and 24 is 12."
+      },
+      {
+        "text": "6",
+        "rationale": "Common factor, but not the greatest (6 bouquets would have 6 roses, 4 tulips)."
+      },
+      {
+        "text": "4",
+        "rationale": "Not the greatest factor."
+      },
+      {
+        "text": "72",
+        "rationale": "Used LCM logic."
+      },
+      {
+        "text": "3",
+        "rationale": "Too small."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the GCF of 36 and 24.",
+      "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24.",
+      "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+      "Largest common factor is 12."
+    ]
+  },
+  {
+    "id": "NUM-FAC-0015",
+    "topic": "Pre-Algebra",
+    "subtopic": "Factors & Multiples",
+    "diff": 4,
+    "stem": "Light A flashes every 12 seconds. Light B flashes every 15 seconds. If they both flash together now, how many seconds will pass until they flash together again?",
+    "choices": [
+      {
+        "text": "60 seconds",
+        "rationale": "Correct: LCM of 12 and 15 is 60."
+      },
+      {
+        "text": "180 seconds",
+        "rationale": "Multiple of 60, but not the first time."
+      },
+      {
+        "text": "30 seconds",
+        "rationale": "Not divisible by 12."
+      },
+      {
+        "text": "3 seconds",
+        "rationale": "This is the GCF."
+      },
+      {
+        "text": "27 seconds",
+        "rationale": "Sum of intervals."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the LCM of 12 and 15.",
+      "$12 = 2^2 \\times 3$.",
+      "$15 = 3 \\times 5$.",
+      "LCM = $2^2 \\times 3 \\times 5 = 4 \\times 3 \\times 5 = 60$."
+    ]
   }
 ]
 

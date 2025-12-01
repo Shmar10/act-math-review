@@ -271,5 +271,180 @@
       "$x^2 + 36 = 100 \\Rightarrow x^2 = 64 \\Rightarrow x = 8$.",
       "The total chord length is $2x = 16$."
     ]
+  },
+  {
+    "id": "GEO-CIRC-0011",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 2,
+    "stem": "A circle has a diameter of 14 units. What is the length of its radius?",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: Radius is half the diameter."
+      },
+      {
+        "text": "28",
+        "rationale": "Doubled the diameter."
+      },
+      {
+        "text": "14",
+        "rationale": "Confused radius with diameter."
+      },
+      {
+        "text": "49",
+        "rationale": "Squared the radius (area related)."
+      },
+      {
+        "text": "3.5",
+        "rationale": "Divided by 4."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The radius ($r$) is half of the diameter ($d$).",
+      "$r = d / 2 = 14 / 2 = 7$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0012",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 3,
+    "stem": "Find the equation of a circle with center $(0, 0)$ that passes through the point $(3, 4)$.",
+    "choices": [
+      {
+        "text": "$x^2 + y^2 = 25$",
+        "rationale": "Correct: $r^2 = 3^2 + 4^2 = 9+16=25$."
+      },
+      {
+        "text": "$x^2 + y^2 = 5$",
+        "rationale": "Forgot to square the radius in the equation."
+      },
+      {
+        "text": "$x^2 + y^2 = 7$",
+        "rationale": "Added coordinates $3+4$."
+      },
+      {
+        "text": "$(x-3)^2 + (y-4)^2 = 25$",
+        "rationale": "Used the point as the center."
+      },
+      {
+        "text": "$x^2 + y^2 = 100$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate radius using distance formula from center $(0,0)$ to point $(3,4)$.",
+      "$r = \\sqrt{(3-0)^2 + (4-0)^2} = \\sqrt{9+16} = \\sqrt{25} = 5$.",
+      "Equation is $x^2 + y^2 = r^2$.",
+      "$x^2 + y^2 = 25$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0013",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "Line $L$ is tangent to a circle at point $P$. If the radius of the circle is 5 and the distance from the center of the circle to a point $Q$ on line $L$ is 13, what is the distance from $P$ to $Q$?",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: Tangent is perpendicular to radius. $5^2 + x^2 = 13^2 \\Rightarrow x=12$."
+      },
+      {
+        "text": "8",
+        "rationale": "Subtraction $13-5$."
+      },
+      {
+        "text": "18",
+        "rationale": "Addition $13+5$."
+      },
+      {
+        "text": "$\\sqrt{194}$",
+        "rationale": "Used Pythagorean theorem with legs 5 and 13."
+      },
+      {
+        "text": "10",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The radius drawn to the point of tangency is perpendicular to the tangent line.",
+      "This forms a right triangle with hypotenuse 13 and leg 5.",
+      "$5^2 + x^2 = 13^2 \\Rightarrow 25 + x^2 = 169 \\Rightarrow x^2 = 144 \\Rightarrow x = 12$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0014",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 4,
+    "stem": "Calculate the length of an arc intercepted by a central angle of $90^\\circ$ in a circle with radius 10.",
+    "choices": [
+      {
+        "text": "$5\\pi$",
+        "rationale": "Correct: $90/360 = 1/4$. $C = 20\\pi$. Arc $= 5\\pi$."
+      },
+      {
+        "text": "$10\\pi$",
+        "rationale": "Used area formula logic or calculated half circle."
+      },
+      {
+        "text": "$25\\pi$",
+        "rationale": "Calculated area of sector."
+      },
+      {
+        "text": "$2.5\\pi$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$20\\pi$",
+        "rationale": "Circumference of the whole circle."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Circumference $C = 2\\pi r = 20\\pi$.",
+      "Fraction of circle: $90^\\circ / 360^\\circ = 1/4$.",
+      "Arc length $= \\frac{1}{4} \\times 20\\pi = 5\\pi$."
+    ]
+  },
+  {
+    "id": "GEO-CIRC-0015",
+    "topic": "Geometry",
+    "subtopic": "Circles",
+    "diff": 5,
+    "stem": "Two chords intersect inside a circle. The segments of the first chord measure 3 and 8. The segments of the second chord measure 4 and $x$. What is the value of $x$?",
+    "choices": [
+      {
+        "text": "6",
+        "rationale": "Correct: Intersecting Chords Theorem: $3 \\times 8 = 4 \\times x \\Rightarrow 24 = 4x \\Rightarrow x=6$."
+      },
+      {
+        "text": "12",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "5",
+        "rationale": "Additive logic ($3+8 = 4+x$)."
+      },
+      {
+        "text": "2",
+        "rationale": "Division error."
+      },
+      {
+        "text": "24",
+        "rationale": "Did not divide by 4."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The Intersecting Chords Theorem states that the products of the segments of each chord are equal.",
+      "$3 \\cdot 8 = 4 \\cdot x$.",
+      "$24 = 4x \\Rightarrow x = 6$."
+    ]
   }
 ]

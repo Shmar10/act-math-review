@@ -274,5 +274,182 @@
       "Since $a$ is positive, parabola opens up.",
       "Focus is at $(0, p)$, which is $(0, 2)$."
     ]
+  },
+  {
+    "id": "COORD-LIN-0011",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 2,
+    "stem": "What is the slope of the line given by the equation $3x - 5y = 15$?",
+    "choices": [
+      {
+        "text": "$\\frac{3}{5}$",
+        "rationale": "Correct: $5y = 3x - 15 \\Rightarrow y = \\frac{3}{5}x - 3$."
+      },
+      {
+        "text": "$\\frac{5}{3}$",
+        "rationale": "Inverted rise/run."
+      },
+      {
+        "text": "$-\\frac{3}{5}$",
+        "rationale": "Sign error when moving terms."
+      },
+      {
+        "text": "$3$",
+        "rationale": "Just took the x-coefficient."
+      },
+      {
+        "text": "$-3$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Isolate $y$ to put in slope-intercept form ($y = mx + b$).",
+      "$-5y = -3x + 15$.",
+      "Divide by -5: $y = \\frac{3}{5}x - 3$.",
+      "Slope is $\\frac{3}{5}$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0012",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 3,
+    "stem": "Find the minimum value of the parabola: $$ y = x^2 - 6x + 10 $$",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: Vertex x = -b/2a = 3. y = 9 - 18 + 10 = 1."
+      },
+      {
+        "text": "3",
+        "rationale": "This is the x-coordinate of the vertex."
+      },
+      {
+        "text": "10",
+        "rationale": "This is the y-intercept."
+      },
+      {
+        "text": "-1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "0",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the x-coordinate of the vertex: $x = \\frac{-b}{2a} = \\frac{6}{2} = 3$.",
+      "Substitute $x=3$ into the equation: $y = (3)^2 - 6(3) + 10$.",
+      "$y = 9 - 18 + 10 = 1$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0013",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 3,
+    "stem": "Find the equation of the line passing through $(2, 5)$ and parallel to $y = 4x - 1$.",
+    "choices": [
+      {
+        "text": "$y = 4x - 3$",
+        "rationale": "Correct: $m=4$. $y-5=4(x-2) \\Rightarrow y=4x-8+5$."
+      },
+      {
+        "text": "$y = 4x + 5$",
+        "rationale": "Used the y-coordinate as the intercept."
+      },
+      {
+        "text": "$y = -\\frac{1}{4}x + 5.5$",
+        "rationale": "Used perpendicular slope."
+      },
+      {
+        "text": "$y = 4x - 8$",
+        "rationale": "Forgot to add the 5."
+      },
+      {
+        "text": "$y = 2x + 1$",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Parallel lines have the same slope, so $m = 4$.",
+      "Use point-slope form: $y - 5 = 4(x - 2)$.",
+      "Simplify: $y = 4x - 8 + 5 \\Rightarrow y = 4x - 3$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0014",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 4,
+    "stem": "Determine the vertex of the parabola defined by $x = 2(y - 3)^2 + 1$.",
+    "choices": [
+      {
+        "text": "$(1, 3)$",
+        "rationale": "Correct: Form is $x = a(y-k)^2 + h$. Vertex is $(h,k)$."
+      },
+      {
+        "text": "$(3, 1)$",
+        "rationale": "Swapped h and k."
+      },
+      {
+        "text": "$(-1, -3)$",
+        "rationale": "Sign errors."
+      },
+      {
+        "text": "$(1, -3)$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$(0, 0)$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "This is a horizontal parabola in the form $x = a(y - k)^2 + h$.",
+      "The vertex is $(h, k)$.",
+      "Identify $h = 1$ and $k = 3$. Vertex is $(1, 3)$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0015",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 5,
+    "stem": "Find the area of the triangle formed by the line $2x + 3y = 12$, the x-axis, and the y-axis.",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: x-int is 6, y-int is 4. Area = $0.5 \\times 6 \\times 4$."
+      },
+      {
+        "text": "6",
+        "rationale": "Calculated $0.5 \\times 2 \\times 3$?"
+      },
+      {
+        "text": "24",
+        "rationale": "Forgot to multiply by 1/2."
+      },
+      {
+        "text": "10",
+        "rationale": "Added intercepts."
+      },
+      {
+        "text": "18",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find x-intercept (set $y=0$): $2x = 12 \\Rightarrow x = 6$.",
+      "Find y-intercept (set $x=0$): $3y = 12 \\Rightarrow y = 4$.",
+      "The triangle is a right triangle with legs 6 and 4.",
+      "Area $= \\frac{1}{2} \\cdot \\text{base} \\cdot \\text{height} = \\frac{1}{2}(6)(4) = 12$."
+    ]
   }
 ]

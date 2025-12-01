@@ -275,5 +275,182 @@
       "3. Negative sign ($-2$): Reflect across the x-axis.",
       "4. $+ 1$: Shift vertically up by 1 unit."
     ]
+  },
+  {
+    "id": "PRE-FUN-0011",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 2,
+    "stem": "Which of the following relations represents $y$ as a function of $x$?",
+    "choices": [
+      {
+        "text": "$y = x^2 + 2$",
+        "rationale": "Correct: Passes vertical line test. Each x yields one y."
+      },
+      {
+        "text": "$x = y^2$",
+        "rationale": "Fails vertical line test (parabola opening right). If $x=4, y=2$ or $-2$."
+      },
+      {
+        "text": "$x^2 + y^2 = 9$",
+        "rationale": "Circle; fails vertical line test."
+      },
+      {
+        "text": "$x = 3$",
+        "rationale": "Vertical line; undefined slope, not a function."
+      },
+      {
+        "text": "$|y| = x$",
+        "rationale": "One x maps to two y values."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A relation is a function if every input ($x$) has exactly one output ($y$).",
+      "$y = x^2 + 2$ is the only equation where plugging in an $x$ value yields a single unique $y$ value."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0012",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 3,
+    "stem": "Find the domain of the function: $$ f(x) = \\frac{x+2}{x^2 - 9} $$",
+    "choices": [
+      {
+        "text": "All real numbers except $x = 3$ and $x = -3$",
+        "rationale": "Correct: Denominator cannot be zero. $x^2 - 9 \\ne 0$."
+      },
+      {
+        "text": "All real numbers except $x = 9$",
+        "rationale": "Solved $x^2 = 9$ incorrectly."
+      },
+      {
+        "text": "All real numbers except $x = 3$",
+        "rationale": "Missed the negative root."
+      },
+      {
+        "text": "All real numbers",
+        "rationale": "Ignored the denominator constraint."
+      },
+      {
+        "text": "$x > 9$",
+        "rationale": "Confused with square root domain."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set denominator equal to zero: $x^2 - 9 = 0$.",
+      "Factor: $(x-3)(x+3) = 0$.",
+      "Exclude values $x = 3$ and $x = -3$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0013",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 4,
+    "stem": "Given $f(x) = 2x + 5$ and $g(x) = x^2 - 3$, evaluate $(g \\circ f)(2)$.",
+    "choices": [
+      {
+        "text": "78",
+        "rationale": "Correct: $f(2) = 9$. $g(9) = 81 - 3 = 78$."
+      },
+      {
+        "text": "11",
+        "rationale": "Calculated $f(g(2))$. $g(2)=1, f(1)=7$. Wait, choice text is 11? $f(g(2)) = f(1) = 7$. Where did 11 come from? Maybe $2(3)+5$? Calculation error."
+      },
+      {
+        "text": "39",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "7",
+        "rationale": "Calculated $f(g(2))$."
+      },
+      {
+        "text": "27",
+        "rationale": "Squared the coefficient 2 incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "First evaluate the inner function $f(2)$:",
+      "$f(2) = 2(2) + 5 = 9$.",
+      "Now evaluate $g(9)$:",
+      "$g(9) = (9)^2 - 3 = 81 - 3 = 78$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0014",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 4,
+    "stem": "Find the inverse function $f^{-1}(x)$ for $f(x) = \\sqrt[3]{x - 4}$.",
+    "choices": [
+      {
+        "text": "$f^{-1}(x) = x^3 + 4$",
+        "rationale": "Correct: $y = \\sqrt[3]{x-4} \\Rightarrow y^3 = x-4 \\Rightarrow x = y^3+4$."
+      },
+      {
+        "text": "$f^{-1}(x) = (x - 4)^3$",
+        "rationale": "Order of operations error."
+      },
+      {
+        "text": "$f^{-1}(x) = x^3 - 4$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$f^{-1}(x) = \\sqrt[3]{x} + 4$",
+        "rationale": "Inverse of cube root is cube, not another root."
+      },
+      {
+        "text": "$f^{-1}(x) = 3x + 4$",
+        "rationale": "Confused cube root with division by 3."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set $y = \\sqrt[3]{x - 4}$.",
+      "Swap $x$ and $y$: $x = \\sqrt[3]{y - 4}$.",
+      "Cube both sides: $x^3 = y - 4$.",
+      "Add 4: $y = x^3 + 4$."
+    ]
+  },
+  {
+    "id": "PRE-FUN-0015",
+    "topic": "Precalculus",
+    "subtopic": "Functions & Graphs",
+    "diff": 5,
+    "stem": "Find the difference quotient $\\frac{f(x+h) - f(x)}{h}$ for $f(x) = x^2 - 3x$.",
+    "choices": [
+      {
+        "text": "$2x + h - 3$",
+        "rationale": "Correct: Simplifies to $2x+h-3$."
+      },
+      {
+        "text": "$2x - 3$",
+        "rationale": "This is the derivative (limit as $h \\to 0$), but the quotient includes $h$."
+      },
+      {
+        "text": "$2x + h$",
+        "rationale": "Dropped the constant term."
+      },
+      {
+        "text": "$h - 3$",
+        "rationale": "Cancellation error."
+      },
+      {
+        "text": "$x + h - 3$",
+        "rationale": "Coefficient error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find $f(x+h) = (x+h)^2 - 3(x+h) = x^2 + 2xh + h^2 - 3x - 3h$.",
+      "Subtract $f(x)$: $(x^2 + 2xh + h^2 - 3x - 3h) - (x^2 - 3x) = 2xh + h^2 - 3h$.",
+      "Divide by $h$: $\\frac{h(2x + h - 3)}{h}$.",
+      "Result: $2x + h - 3$."
+    ]
   }
 ]

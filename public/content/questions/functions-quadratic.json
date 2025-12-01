@@ -273,5 +273,184 @@
       "Substitute $t = 2$ into the equation to find height.",
       "$h(2) = -16(2)^2 + 64(2) + 5 = -16(4) + 128 + 5 = -64 + 128 + 5 = 69$."
     ]
+  },
+  {
+    "id": "FUNC-QUA-0011",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 2,
+    "stem": "Evaluate the function $f(x) = x^2 - 5x + 2$ at $x = -3$.",
+    "choices": [
+      {
+        "text": "26",
+        "rationale": "Correct: $(-3)^2 - 5(-3) + 2 = 9 + 15 + 2 = 26$."
+      },
+      {
+        "text": "-4",
+        "rationale": "Sign error ($9 - 15 + 2$)."
+      },
+      {
+        "text": "20",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "8",
+        "rationale": "Did not square the negative correctly."
+      },
+      {
+        "text": "-22",
+        "rationale": "Sign errors on multiple terms."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $x = -3$ into the function.",
+      "$f(-3) = (-3)^2 - 5(-3) + 2$.",
+      "$f(-3) = 9 + 15 + 2$.",
+      "$f(-3) = 26$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0012",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "Find the x-intercepts of the graph of $y = x^2 - 7x + 12$.",
+    "choices": [
+      {
+        "text": "$(3, 0)$ and $(4, 0)$",
+        "rationale": "Correct: Factors to $(x-3)(x-4)=0$."
+      },
+      {
+        "text": "$(-3, 0)$ and $(-4, 0)$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$(2, 0)$ and $(6, 0)$",
+        "rationale": "Factors sum to 8, not 7."
+      },
+      {
+        "text": "$(1, 0)$ and $(12, 0)$",
+        "rationale": "Factors sum to 13."
+      },
+      {
+        "text": "$(0, 12)$",
+        "rationale": "This is the y-intercept."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set $y = 0$: $x^2 - 7x + 12 = 0$.",
+      "Factor the quadratic: $(x - 3)(x - 4) = 0$.",
+      "Solve for $x$: $x = 3$ or $x = 4$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0013",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "A farmer has 40 meters of fencing to enclose a rectangular garden. What is the maximum possible area of the garden?",
+    "choices": [
+      {
+        "text": "100 m$^2$",
+        "rationale": "Correct: Square maximizes area. Side 10. Area 100."
+      },
+      {
+        "text": "40 m$^2$",
+        "rationale": "Confused perimeter with area."
+      },
+      {
+        "text": "20 m$^2$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "400 m$^2$",
+        "rationale": "Squared the perimeter."
+      },
+      {
+        "text": "80 m$^2$",
+        "rationale": "Used dimensions $20 \\times 2$ (perimeter 44, incorrect)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Perimeter $2L + 2W = 40 \\Rightarrow L + W = 20 \\Rightarrow W = 20 - L$.",
+      "Area $A = L \\times W = L(20 - L) = 20L - L^2$.",
+      "Vertex of parabola (max value) is at $L = -b/2a = -20/-2 = 10$.",
+      "If $L=10, W=10$. Max Area $= 10 \\times 10 = 100$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0014",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 4,
+    "stem": "For which value of $c$ will the graph of $y = x^2 + 8x + c$ touch the x-axis at exactly one point?",
+    "choices": [
+      {
+        "text": "16",
+        "rationale": "Correct: Discriminant must be 0. $64 - 4c = 0 \\Rightarrow c=16$."
+      },
+      {
+        "text": "8",
+        "rationale": "Used $b$ value directly."
+      },
+      {
+        "text": "4",
+        "rationale": "Used half of $b$."
+      },
+      {
+        "text": "64",
+        "rationale": "Used $b^2$."
+      },
+      {
+        "text": "0",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For one x-intercept, the discriminant must be zero.",
+      "$b^2 - 4ac = 0$.",
+      "$8^2 - 4(1)(c) = 0 \\Rightarrow 64 - 4c = 0$.",
+      "$4c = 64 \\Rightarrow c = 16$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0015",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 5,
+    "stem": "Determine the values of $x$ for which the function $f(x) = -x^2 + 6x - 5$ is positive ($f(x) > 0$).",
+    "choices": [
+      {
+        "text": "$1 < x < 5$",
+        "rationale": "Correct: Roots are 1 and 5. Parabola opens down, so positive between roots."
+      },
+      {
+        "text": "$x < 1$ or $x > 5$",
+        "rationale": "Identified outside the roots (where it is negative)."
+      },
+      {
+        "text": "$x > 3$",
+        "rationale": "Only considered one side of the vertex."
+      },
+      {
+        "text": "$-5 < x < -1$",
+        "rationale": "Sign error on roots."
+      },
+      {
+        "text": "All real numbers",
+        "rationale": "Incorrect analysis."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find roots: $-x^2 + 6x - 5 = 0 \\Rightarrow -(x^2 - 6x + 5) = 0$.",
+      "$-(x - 5)(x - 1) = 0$. Roots are $1$ and $5$.",
+      "Since $a = -1$ (opens down), the function is positive *between* the roots.",
+      "Interval: $1 < x < 5$."
+    ]
   }
 ]

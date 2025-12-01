@@ -271,5 +271,180 @@
       "Denominator: $(1-i)(1+i) = 1 - i^2 = 1 - (-1) = 2$.",
       "Result: $\\frac{1 + 5i}{2} = \\frac{1}{2} + \\frac{5}{2}i$."
     ]
+  },
+  {
+    "id": "ALG2-COMP-0011",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 2,
+    "stem": "Calculate the product of the complex number and its conjugate: $$(3 + 2i)(3 - 2i)$$",
+    "choices": [
+      {
+        "text": "13",
+        "rationale": "Correct: $3^2 - (2i)^2 = 9 - 4(-1) = 9 + 4 = 13$."
+      },
+      {
+        "text": "5",
+        "rationale": "Subtracted instead of added ($9-4$)."
+      },
+      {
+        "text": "$9 - 4i$",
+        "rationale": "Did not square the $2i$ term correctly."
+      },
+      {
+        "text": "13 + 12i",
+        "rationale": "Forgot that middle terms cancel in conjugates."
+      },
+      {
+        "text": "9",
+        "rationale": "Ignored the imaginary part entirely."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the difference of squares pattern: $(a+bi)(a-bi) = a^2 - (bi)^2$.",
+      "$3^2 - 4i^2 = 9 - 4(-1)$.",
+      "$9 + 4 = 13$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0012",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "Evaluate the power of $i$: $$ i^{101} $$",
+    "choices": [
+      {
+        "text": "$i$",
+        "rationale": "Correct: $101 \\div 4 = 25$ R $1$. So $i^{101} = i^1 = i$."
+      },
+      {
+        "text": "$-i$",
+        "rationale": "Incorrect remainder calculation."
+      },
+      {
+        "text": "$1$",
+        "rationale": "Assumed remainder 0."
+      },
+      {
+        "text": "$-1$",
+        "rationale": "Assumed remainder 2."
+      },
+      {
+        "text": "$0$",
+        "rationale": "Impossible for powers of $i$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the remainder when dividing the exponent by 4.",
+      "$101 \\div 4 = 25$ with a remainder of 1.",
+      "$i^{101} = i^1 = i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0013",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 4,
+    "stem": "Determine the discriminant of $2x^2 - 4x + 5 = 0$ and describe the nature of the roots.",
+    "choices": [
+      {
+        "text": "$-24$; two complex roots",
+        "rationale": "Correct: $b^2 - 4ac = 16 - 40 = -24$."
+      },
+      {
+        "text": "$24$; two real roots",
+        "rationale": "Sign error in calculation."
+      },
+      {
+        "text": "$0$; one real root",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$-16$; two complex roots",
+        "rationale": "Calculation error ($16-32$)."
+      },
+      {
+        "text": "$-24$; two real roots",
+        "rationale": "Incorrect interpretation of negative discriminant."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Calculate $D = b^2 - 4ac$.",
+      "$D = (-4)^2 - 4(2)(5) = 16 - 40 = -24$.",
+      "Since $D < 0$, there are two complex (imaginary) roots."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0014",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 4,
+    "stem": "Solve for $x$: $$ x^2 + 4x + 29 = 0 $$",
+    "choices": [
+      {
+        "text": "$-2 \\pm 5i$",
+        "rationale": "Correct: $\\frac{-4 \\pm \\sqrt{16-116}}{2} = \\frac{-4 \\pm 10i}{2}$."
+      },
+      {
+        "text": "$2 \\pm 5i$",
+        "rationale": "Sign error on the real part."
+      },
+      {
+        "text": "$-4 \\pm 10i$",
+        "rationale": "Forgot to divide by 2."
+      },
+      {
+        "text": "$-2 \\pm 25i$",
+        "rationale": "Forgot to take square root of 100."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Failed to identify complex roots."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Quadratic Formula: $x = \\frac{-4 \\pm \\sqrt{4^2 - 4(1)(29)}}{2}$.",
+      "$x = \\frac{-4 \\pm \\sqrt{16 - 116}}{2} = \\frac{-4 \\pm \\sqrt{-100}}{2}$.",
+      "$x = \\frac{-4 \\pm 10i}{2} = -2 \\pm 5i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0015",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 5,
+    "stem": "Find the absolute value (modulus) of the complex number $z = 5 - 12i$.",
+    "choices": [
+      {
+        "text": "13",
+        "rationale": "Correct: $|z| = \\sqrt{a^2 + b^2} = \\sqrt{25 + 144} = 13$."
+      },
+      {
+        "text": "17",
+        "rationale": "Added absolute values of components ($5+12$)."
+      },
+      {
+        "text": "7",
+        "rationale": "Subtracted components."
+      },
+      {
+        "text": "$\\sqrt{119}$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$13i$",
+        "rationale": "The modulus is a real number, not imaginary."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The modulus is the distance from the origin: $|z| = \\sqrt{a^2 + b^2}$.",
+      "$|z| = \\sqrt{5^2 + (-12)^2} = \\sqrt{25 + 144}$.",
+      "$|z| = \\sqrt{169} = 13$."
+    ]
   }
 ]

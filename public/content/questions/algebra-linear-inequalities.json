@@ -332,6 +332,183 @@
       "Subtract $2x$ from both sides: $-6 < 5$.",
       "Since $-6$ is always less than 5, the inequality is true for all real values of $x$."
     ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0011",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 2,
+    "stem": "A taxi charges a base fee of \\$3.00 plus \\$2.00 per mile. If you have at most \\$15.00 to spend, what is the maximum number of miles ($m$) you can travel?",
+    "choices": [
+      {
+        "text": "$m \\le 6$",
+        "rationale": "Correct: $3 + 2m \\le 15 \\Rightarrow 2m \\le 12 \\Rightarrow m \\le 6$."
+      },
+      {
+        "text": "$m \\le 7.5$",
+        "rationale": "Forgot to subtract the base fee."
+      },
+      {
+        "text": "$m < 6$",
+        "rationale": "Used strict inequality (cannot equal 15)."
+      },
+      {
+        "text": "$m \\le 9$",
+        "rationale": "Subtracted incorrectly."
+      },
+      {
+        "text": "$m \\le 5$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up inequality: $3 + 2m \\le 15$.",
+      "Subtract 3: $2m \\le 12$.",
+      "Divide by 2: $m \\le 6$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0012",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 3,
+    "stem": "Solve: $$ \\frac{2x - 5}{3} \\ge 3 $$",
+    "choices": [
+      {
+        "text": "$x \\ge 7$",
+        "rationale": "Correct: $2x - 5 \\ge 9 \\Rightarrow 2x \\ge 14 \\Rightarrow x \\ge 7$."
+      },
+      {
+        "text": "$x \\ge 4$",
+        "rationale": "Forgot to multiply by 3."
+      },
+      {
+        "text": "$x \\ge 2$",
+        "rationale": "Added 5 instead of multiplying by 3 first."
+      },
+      {
+        "text": "$x \\le 7$",
+        "rationale": "Flipped inequality sign unnecessarily."
+      },
+      {
+        "text": "$x \\ge 14$",
+        "rationale": "Forgot to divide by 2."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply both sides by 3: $2x - 5 \\ge 9$.",
+      "Add 5 to both sides: $2x \\ge 14$.",
+      "Divide by 2: $x \\ge 7$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0013",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 3,
+    "stem": "Solve the compound inequality: $$ 2x < -4 \\quad \\text{or} \\quad 3x > 9 $$",
+    "choices": [
+      {
+        "text": "$x < -2$ or $x > 3$",
+        "rationale": "Correct: Solve each simple inequality."
+      },
+      {
+        "text": "$-2 < x < 3$",
+        "rationale": "Confused OR with AND (intersection)."
+      },
+      {
+        "text": "$x < -2$",
+        "rationale": "Missed the second part."
+      },
+      {
+        "text": "$x > 3$",
+        "rationale": "Missed the first part."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrectly looked for overlap."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "First inequality: $2x < -4 \\Rightarrow x < -2$.",
+      "Second inequality: $3x > 9 \\Rightarrow x > 3$.",
+      "Solution is the union: $x < -2$ or $x > 3$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0014",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 4,
+    "stem": "Solve: $$ 1 < 5 - 2x \\le 11 $$",
+    "choices": [
+      {
+        "text": "$-3 \\le x < 2$",
+        "rationale": "Correct: Subtract 5 to get $-4 < -2x \\le 6$. Divide by -2 and flip signs: $2 > x \\ge -3$."
+      },
+      {
+        "text": "$-3 < x \\le 2$",
+        "rationale": "Forgot to flip inequality signs."
+      },
+      {
+        "text": "$2 < x \\le 8$",
+        "rationale": "Added 5 instead of subtracting."
+      },
+      {
+        "text": "$-2 < x \\le 3$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$x \\ge -3$",
+        "rationale": "Incomplete solution."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 5 from all parts: $1 - 5 < -2x \\le 11 - 5$.",
+      "$-4 < -2x \\le 6$.",
+      "Divide by -2 (and flip symbols): $2 > x \\ge -3$.",
+      "Rewrite: $-3 \\le x < 2$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0015",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 5,
+    "stem": "Solve for integer values of $x$: $$ |3x - 6| < 9 $$",
+    "choices": [
+      {
+        "text": "$x \\in \\{0, 1, 2, 3, 4\\}$",
+        "rationale": "Correct: $-1 < x < 5$. Integers are 0, 1, 2, 3, 4."
+      },
+      {
+        "text": "$x \\in \\{-1, 0, 1, 2, 3, 4, 5\\}$",
+        "rationale": "Included the endpoints (strict inequality)."
+      },
+      {
+        "text": "$x \\in \\{1, 2, 3, 4\\}$",
+        "rationale": "Missed 0."
+      },
+      {
+        "text": "$x < 5$",
+        "rationale": "Did not account for the lower bound."
+      },
+      {
+        "text": "$x > -1$",
+        "rationale": "Did not account for the upper bound."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite absolute value inequality: $-9 < 3x - 6 < 9$.",
+      "Add 6 to all parts: $-3 < 3x < 15$.",
+      "Divide by 3: $-1 < x < 5$.",
+      "Integer values between -1 and 5 are 0, 1, 2, 3, 4."
+    ]
   }
 ]
 

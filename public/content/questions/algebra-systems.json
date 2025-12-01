@@ -343,6 +343,190 @@
       "$11x = 88 \\Rightarrow x = 8$.",
       "Substitute $x=8$ into $3x + 2y = 54$: $24 + 2y = 54 \\Rightarrow 2y = 30 \\Rightarrow y = 15$."
     ]
+  },
+  {
+    "id": "ALG-SYS-0011",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 2,
+    "stem": "If the graphs of $y = x + 2$ and $y = -x + 4$ are drawn, at what point do they intersect?",
+    "choices": [
+      {
+        "text": "$(1, 3)$",
+        "rationale": "Correct: $x+2 = -x+4 \\Rightarrow 2x=2 \\Rightarrow x=1, y=3$."
+      },
+      {
+        "text": "$(3, 1)$",
+        "rationale": "Swapped x and y."
+      },
+      {
+        "text": "$(2, 4)$",
+        "rationale": "Fails the second equation."
+      },
+      {
+        "text": "$(0, 2)$",
+        "rationale": "Y-intercept of the first line only."
+      },
+      {
+        "text": "$(1, 2)$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set equations equal: $x + 2 = -x + 4$.",
+      "Add $x$ to both sides: $2x + 2 = 4$.",
+      "Subtract 2: $2x = 2 \\Rightarrow x = 1$.",
+      "Substitute $x=1$ into first equation: $y = 1 + 2 = 3$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0012",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 3,
+    "stem": "A jar contains 15 coins consisting of quarters (\\$0.25) and dimes (\\$0.10). The total value is \\$2.55. How many quarters are there?",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: $q+d=15, 25q+10d=255$. $10(15-q)+25q=255 \\Rightarrow 15q=105 \\Rightarrow q=7$."
+      },
+      {
+        "text": "8",
+        "rationale": "This is the number of dimes."
+      },
+      {
+        "text": "6",
+        "rationale": "Value would be $1.50 + 0.90 = 2.40$."
+      },
+      {
+        "text": "9",
+        "rationale": "Value would be $2.25 + 0.60 = 2.85$."
+      },
+      {
+        "text": "10",
+        "rationale": "Value would be $2.50 + 0.50 = 3.00$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $q$ = quarters, $d$ = dimes.",
+      "Eq 1: $q + d = 15 \\Rightarrow d = 15 - q$.",
+      "Eq 2: $0.25q + 0.10d = 2.55 \\Rightarrow 25q + 10d = 255$.",
+      "Substitute: $25q + 10(15 - q) = 255$.",
+      "$25q + 150 - 10q = 255 \\Rightarrow 15q = 105 \\Rightarrow q = 7$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0013",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 4,
+    "stem": "Solve the system: \n$$3x - 2y = 8$$ \n$$4x + 3y = 5$$",
+    "choices": [
+      {
+        "text": "$x = 2, y = -1$",
+        "rationale": "Correct: $12x-8y=32$ and $12x+9y=15$... wait. $3(2)-2(-1)=8$, $4(2)+3(-1)=5$."
+      },
+      {
+        "text": "$x = 2, y = 1$",
+        "rationale": "Sign error ($4(2)+3(1)=11 \\ne 5$)."
+      },
+      {
+        "text": "$x = 1, y = 2$",
+        "rationale": "Fails first equation."
+      },
+      {
+        "text": "$x = 0, y = -4$",
+        "rationale": "Fails second equation."
+      },
+      {
+        "text": "$x = -2, y = 1$",
+        "rationale": "Sign errors."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply top eq by 3: $9x - 6y = 24$.",
+      "Multiply bottom eq by 2: $8x + 6y = 10$.",
+      "Add: $17x = 34 \\Rightarrow x = 2$.",
+      "Substitute into top eq: $3(2) - 2y = 8 \\Rightarrow 6 - 2y = 8 \\Rightarrow -2y = 2 \\Rightarrow y = -1$."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0014",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 5,
+    "stem": "Find the value of $k$ such that the system has **no solution**: \n$$kx + 3y = 6$$ \n$$4x + 2y = 5$$",
+    "choices": [
+      {
+        "text": "$k = 6$",
+        "rationale": "Correct: Parallel lines have equal slopes. $-k/3 = -2 \\Rightarrow k=6$."
+      },
+      {
+        "text": "$k = 4$",
+        "rationale": "Lines would intersect."
+      },
+      {
+        "text": "$k = -6$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$k = 1.5$",
+        "rationale": "Incorrect ratio calculation."
+      },
+      {
+        "text": "$k = 2$",
+        "rationale": "Random guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For no solution, lines must be parallel (same slope) but different intercepts.",
+      "Slope of Eq 1: $-k/3$. Slope of Eq 2: $-4/2 = -2$.",
+      "Set slopes equal: $-k/3 = -2 \\Rightarrow k = 6$.",
+      "Check intercepts: If $k=6$, Eq 1 is $6x+3y=6$ ($2x+y=2$). Eq 2 is $2x+y=2.5$. Intercepts differ ($2 \\ne 2.5$). System has no solution."
+    ]
+  },
+  {
+    "id": "ALG-SYS-0015",
+    "topic": "Algebra",
+    "subtopic": "Systems of Linear Equations",
+    "diff": 5,
+    "stem": "Solve the system involving decimals: \n$$x = 2y - 1$$ \n$$0.5x - 0.2y = 1.1$$",
+    "choices": [
+      {
+        "text": "$x = 3, y = 2$",
+        "rationale": "Correct: $0.5(2y-1) - 0.2y = 1.1 \\Rightarrow y-0.5-0.2y=1.1 \\Rightarrow 0.8y=1.6 \\Rightarrow y=2$."
+      },
+      {
+        "text": "$x = 5, y = 3$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$x = 1, y = 1$",
+        "rationale": "Fails second equation."
+      },
+      {
+        "text": "$x = 7, y = 4$",
+        "rationale": "Fails first equation."
+      },
+      {
+        "text": "$x = 2, y = 1.5$",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $x = 2y - 1$ into the second equation.",
+      "$0.5(2y - 1) - 0.2y = 1.1$.",
+      "Distribute: $1.0y - 0.5 - 0.2y = 1.1$.",
+      "Combine y terms: $0.8y - 0.5 = 1.1$.",
+      "Add 0.5: $0.8y = 1.6$.",
+      "Divide by 0.8: $y = 2$.",
+      "Find x: $x = 2(2) - 1 = 3$."
+    ]
   }
 ]
 

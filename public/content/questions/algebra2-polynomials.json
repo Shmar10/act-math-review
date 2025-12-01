@@ -281,5 +281,183 @@
       "Check restrictions: $x \\ne 2, x \\ne 4$. Thus, $x=4$ is extraneous.",
       "Final Answer: $x = -1$."
     ]
+  },
+  {
+    "id": "ALG2-POLY-0011",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 2,
+    "stem": "Simplify the rational expression: $$ \\frac{4x^2}{2x} \\cdot \\frac{x - 3}{x} $$",
+    "choices": [
+      {
+        "text": "$2(x - 3)$",
+        "rationale": "Correct: $\\frac{4x^2(x-3)}{2x^2} = 2(x-3)$."
+      },
+      {
+        "text": "$2x(x - 3)$",
+        "rationale": "Failed to cancel the second $x$."
+      },
+      {
+        "text": "$4(x - 3)$",
+        "rationale": "Division error ($4/2$)."
+      },
+      {
+        "text": "$2x - 3$",
+        "rationale": "Distribution error."
+      },
+      {
+        "text": "$\\frac{x-3}{2}$",
+        "rationale": "Inverted the coefficient division."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply numerators: $4x^2(x - 3)$.",
+      "Multiply denominators: $2x(x) = 2x^2$.",
+      "Divide: $\\frac{4x^2(x - 3)}{2x^2} = 2(x - 3)$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0012",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Use the Remainder Theorem to find the remainder when $f(x) = x^3 - 2x^2 + 4x - 5$ is divided by $(x - 2)$.",
+    "choices": [
+      {
+        "text": "3",
+        "rationale": "Correct: $f(2) = 8 - 8 + 8 - 5 = 3$."
+      },
+      {
+        "text": "-5",
+        "rationale": "Evaluated $f(0)$ instead."
+      },
+      {
+        "text": "1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "13",
+        "rationale": "Sign error ($f(-2)$)."
+      },
+      {
+        "text": "0",
+        "rationale": "Incorrectly assumed it was a factor."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The Remainder Theorem states that the remainder of $f(x) / (x - a)$ is $f(a)$.",
+      "Substitute $x = 2$: $2^3 - 2(2)^2 + 4(2) - 5$.",
+      "$8 - 8 + 8 - 5 = 3$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0013",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Solve for $x$: $$ \\frac{3}{x} + \\frac{1}{2} = \\frac{5}{x} $$",
+    "choices": [
+      {
+        "text": "$x = 4$",
+        "rationale": "Correct: Multiply by $2x \\Rightarrow 6 + x = 10 \\Rightarrow x = 4$."
+      },
+      {
+        "text": "$x = 2$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$x = -4$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$x = 8$",
+        "rationale": "Double the correct answer."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrectly assumed $x=0$ was the root."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract $\\frac{3}{x}$ from both sides: $\\frac{1}{2} = \\frac{2}{x}$.",
+      "Cross multiply: $1 \\cdot x = 2 \\cdot 2$.",
+      "$x = 4$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0014",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 4,
+    "stem": "Find the value of $k$ so that $(x + 3)$ is a factor of $P(x) = 2x^3 + kx^2 - 5x + 6$.",
+    "choices": [
+      {
+        "text": "$k = 3$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$k = 5$",
+        "rationale": "Calculated incorrectly."
+      },
+      {
+        "text": "$k = 1$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$k = \\frac{11}{3}$",
+        "rationale": "Correct: $P(-3) = 0 \\Rightarrow -54 + 9k + 15 + 6 = 0 \\Rightarrow 9k = 33 \\Rightarrow k = 11/3$."
+      },
+      {
+        "text": "$k = -3$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 3,
+    "solutionSteps": [
+      "By Factor Theorem, $P(-3)$ must equal 0.",
+      "$2(-3)^3 + k(-3)^2 - 5(-3) + 6 = 0$.",
+      "$-54 + 9k + 15 + 6 = 0$.",
+      "$-33 + 9k = 0 \\Rightarrow 9k = 33 \\Rightarrow k = 33/9 = 11/3$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0015",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 5,
+    "stem": "Subtract and simplify: $$ \\frac{x}{x-1} - \\frac{2x - 1}{x^2 - 1} $$",
+    "choices": [
+      {
+        "text": "$\\frac{x - 1}{x + 1}$",
+        "rationale": "Incorrect simplification."
+      },
+      {
+        "text": "$\\frac{x^2 - x + 1}{x^2 - 1}$",
+        "rationale": "Correct: LCD is $(x-1)(x+1)$. Numerator becomes $x(x+1) - (2x-1) = x^2+x-2x+1 = x^2-x+1$."
+      },
+      {
+        "text": "$\\frac{x - 1}{x^2 - 1}$",
+        "rationale": "Simplification error."
+      },
+      {
+        "text": "$\\frac{1}{x+1}$",
+        "rationale": "Incorrect cancellation."
+      },
+      {
+        "text": "$\\frac{x}{x+1}$",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 1,
+    "solutionSteps": [
+      "LCD is $(x-1)(x+1)$.",
+      "Convert first fraction: $\\frac{x(x+1)}{(x-1)(x+1)} = \\frac{x^2+x}{x^2-1}$.",
+      "Subtract: $\\frac{(x^2+x) - (2x-1)}{x^2-1}$.",
+      "Simplify numerator: $x^2 - x + 1$.",
+      "Result: $\\frac{x^2 - x + 1}{x^2 - 1}$. (This does not factor further)."
+    ]
   }
 ]

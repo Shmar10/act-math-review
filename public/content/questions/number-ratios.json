@@ -275,5 +275,182 @@
       "Add Water parts: $6/8 + 5/8 = 11/8$.",
       "New Ratio Milk:Water is $5:11$."
     ]
+  },
+  {
+    "id": "NUM-RAT-0011",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 2,
+    "stem": "A car travels 240 miles in 4 hours. At this rate, how far will it travel in 7 hours?",
+    "choices": [
+      {
+        "text": "420 miles",
+        "rationale": "Correct: Rate $= 60$ mph. $60 \\times 7 = 420$."
+      },
+      {
+        "text": "360 miles",
+        "rationale": "Calculated for 6 hours."
+      },
+      {
+        "text": "280 miles",
+        "rationale": "Added 40 to the original distance."
+      },
+      {
+        "text": "1680 miles",
+        "rationale": "Multiplied 240 by 7 directly."
+      },
+      {
+        "text": "480 miles",
+        "rationale": "Doubled the original distance."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find unit rate: $240 \\text{ miles} / 4 \\text{ hours} = 60$ miles per hour.",
+      "Multiply rate by new time: $60 \\times 7 = 420$ miles."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0012",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "On a map, 2 inches represent 50 miles. If two cities are 7 inches apart on the map, what is the actual distance between them?",
+    "choices": [
+      {
+        "text": "175 miles",
+        "rationale": "Correct: $1 \\text{ inch} = 25 \\text{ miles}$. $7 \\times 25 = 175$."
+      },
+      {
+        "text": "350 miles",
+        "rationale": "Multiplied 7 by 50."
+      },
+      {
+        "text": "100 miles",
+        "rationale": "Doubled the base miles."
+      },
+      {
+        "text": "125 miles",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "14 miles",
+        "rationale": "Multiplied inches by inches."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set up proportion: $\\frac{2 \\text{ in}}{50 \\text{ mi}} = \\frac{7 \\text{ in}}{x \\text{ mi}}$.",
+      "Find unit ratio: $1 \\text{ inch} = 25 \\text{ miles}$.",
+      "$x = 7 \\times 25 = 175$ miles."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0013",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "The ratio of boys to girls in a class is 4:5. If there are 36 students in total, how many are girls?",
+    "choices": [
+      {
+        "text": "20",
+        "rationale": "Correct: Total parts $4+5=9$. Girls = $5/9 \\times 36 = 20$."
+      },
+      {
+        "text": "16",
+        "rationale": "This is the number of boys."
+      },
+      {
+        "text": "9",
+        "rationale": "This is the number of groups."
+      },
+      {
+        "text": "25",
+        "rationale": "Squared the ratio part."
+      },
+      {
+        "text": "15",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add ratio parts: $4 + 5 = 9$ total parts.",
+      "Divide total students by total parts: $36 / 9 = 4$ students per part.",
+      "Multiply by girl's ratio part: $5 \\times 4 = 20$ girls."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0014",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 4,
+    "stem": "If $\\frac{x}{y} = \\frac{2}{3}$, evaluate the expression $\\frac{3x + 2y}{2x - y}$.",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: Let $x=2, y=3$. $(6+6)/(4-3) = 12/1 = 12$."
+      },
+      {
+        "text": "6",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "8",
+        "rationale": "Used incorrect substitution."
+      },
+      {
+        "text": "0",
+        "rationale": "Assumed numerator cancels."
+      },
+      {
+        "text": "4",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $x = 2k$ and $y = 3k$ (or simply $x=2, y=3$).",
+      "Numerator: $3(2) + 2(3) = 6 + 6 = 12$.",
+      "Denominator: $2(2) - 3 = 4 - 3 = 1$.",
+      "Result: $12 / 1 = 12$."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0015",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 5,
+    "stem": "A sum of money is divided among A, B, and C in the ratio 2:3:5. If C receives \\$60 more than B, what is the total sum of money?",
+    "choices": [
+      {
+        "text": "\\$300",
+        "rationale": "Correct: $5x - 3x = 2x = 60 \\Rightarrow x=30$. Total sum $10x = 300$."
+      },
+      {
+        "text": "\\$150",
+        "rationale": "Calculated total based on difference being 1 part."
+      },
+      {
+        "text": "\\$200",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "\\$600",
+        "rationale": "Doubled the answer."
+      },
+      {
+        "text": "\\$100",
+        "rationale": "Sum of parts only."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let amounts be $2x, 3x, 5x$.",
+      "Difference between C and B is $5x - 3x = 2x$.",
+      "Given $2x = 60$, so $x = 30$.",
+      "Total sum is $2x + 3x + 5x = 10x$.",
+      "Total = $10(30) = \\$300$."
+    ]
   }
 ]

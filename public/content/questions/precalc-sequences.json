@@ -275,5 +275,181 @@
       "Calculate $S_4 = 3(4)^2 + 2(4) = 3(16) + 8 = 48 + 8 = 56$.",
       "Subtract: $a_5 = 85 - 56 = 29$."
     ]
+  },
+  {
+    "id": "PRE-SEQ-0011",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 2,
+    "stem": "Given the recursive sequence $a_1 = 4$ and $a_n = 2a_{n-1} - 3$, find $a_3$.",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: $a_2 = 2(4)-3=5$. $a_3 = 2(5)-3=7$."
+      },
+      {
+        "text": "5",
+        "rationale": "This is $a_2$."
+      },
+      {
+        "text": "11",
+        "rationale": "Added instead of subtracted 3."
+      },
+      {
+        "text": "9",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "4",
+        "rationale": "Assumed constant sequence."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find $a_2$: $2(a_1) - 3 = 2(4) - 3 = 5$.",
+      "Find $a_3$: $2(a_2) - 3 = 2(5) - 3 = 7$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0012",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Find the sum of the first 20 terms of the arithmetic series: $5 + 10 + 15 + \\dots$",
+    "choices": [
+      {
+        "text": "1050",
+        "rationale": "Correct: $S_{20} = \\frac{20}{2}(5 + 100) = 10(105) = 1050$."
+      },
+      {
+        "text": "1000",
+        "rationale": "Approximation."
+      },
+      {
+        "text": "100",
+        "rationale": "Just found the 20th term."
+      },
+      {
+        "text": "2100",
+        "rationale": "Forgot to divide by 2 in the sum formula."
+      },
+      {
+        "text": "500",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the 20th term ($a_{20}$): $5 + (19)(5) = 100$.",
+      "Use Sum formula: $S_n = \\frac{n}{2}(a_1 + a_n)$.",
+      "$S_{20} = \\frac{20}{2}(5 + 100) = 10(105) = 1050$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0013",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Which of the following infinite geometric series converges?",
+    "choices": [
+      {
+        "text": "$100 + 50 + 25 + \\dots$",
+        "rationale": "Correct: $r = 0.5$, which is $|r| < 1$."
+      },
+      {
+        "text": "$2 + 4 + 8 + \\dots$",
+        "rationale": "$r = 2$, diverges."
+      },
+      {
+        "text": "$1 - 2 + 4 - 8 + \\dots$",
+        "rationale": "$r = -2$, diverges."
+      },
+      {
+        "text": "$5 + 5 + 5 + \\dots$",
+        "rationale": "$r = 1$, diverges."
+      },
+      {
+        "text": "$1 + 1.1 + 1.21 + \\dots$",
+        "rationale": "$r = 1.1$, diverges."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convergence requires common ratio $|r| < 1$.",
+      "For $100 + 50 + 25$, $r = 50/100 = 0.5$. Since $0.5 < 1$, it converges."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0014",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 4,
+    "stem": "Evaluate: $$ \\sum_{n=1}^{3} 2^n $$",
+    "choices": [
+      {
+        "text": "14",
+        "rationale": "Correct: $2^1 + 2^2 + 2^3 = 2 + 4 + 8 = 14$."
+      },
+      {
+        "text": "12",
+        "rationale": "Added $2 \\times 3$?"
+      },
+      {
+        "text": "6",
+        "rationale": "Added exponents $1+2+3$."
+      },
+      {
+        "text": "8",
+        "rationale": "Just the last term."
+      },
+      {
+        "text": "16",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Write out the terms:",
+      "$n=1: 2^1 = 2$.",
+      "$n=2: 2^2 = 4$.",
+      "$n=3: 2^3 = 8$.",
+      "Sum: $2 + 4 + 8 = 14$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0015",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 5,
+    "stem": "The 3rd term of a geometric sequence is 12 and the 5th term is 48. Find the positive common ratio $r$.",
+    "choices": [
+      {
+        "text": "2",
+        "rationale": "Correct: $ar^2 = 12, ar^4 = 48$. Ratio $r^2 = 4 \\Rightarrow r=2$."
+      },
+      {
+        "text": "4",
+        "rationale": "Result of $48/12$ (this is $r^2$)."
+      },
+      {
+        "text": "3",
+        "rationale": "Guess."
+      },
+      {
+        "text": "1.5",
+        "rationale": "Guess."
+      },
+      {
+        "text": "6",
+        "rationale": "Subtracting logic."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use formula $a_n = a_1 r^{n-1}$.",
+      "$a_5 / a_3 = (a_1 r^4) / (a_1 r^2) = r^2$.",
+      "$48 / 12 = 4$.",
+      "So $r^2 = 4$. Since $r$ is positive, $r = 2$."
+    ]
   }
 ]

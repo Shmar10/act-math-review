@@ -270,5 +270,182 @@
       "$h^2 = 4 \\times 9 = 36$.",
       "$h = \\sqrt{36} = 6$."
     ]
+  },
+  {
+    "id": "GEO-TRI-0011",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 2,
+    "stem": "Find the length of the hypotenuse of a right triangle with legs of lengths 6 and 8.",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: $\\sqrt{36+64} = \\sqrt{100} = 10$."
+      },
+      {
+        "text": "14",
+        "rationale": "Added the legs ($6+8$)."
+      },
+      {
+        "text": "100",
+        "rationale": "Forgot to take the square root."
+      },
+      {
+        "text": "7",
+        "rationale": "Average of 6 and 8."
+      },
+      {
+        "text": "48",
+        "rationale": "Area calculation ($6 \\times 8$)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Pythagorean Theorem: $a^2 + b^2 = c^2$.",
+      "$6^2 + 8^2 = c^2 \\Rightarrow 36 + 64 = c^2$.",
+      "$100 = c^2 \\Rightarrow c = 10$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0012",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "The area of a triangle is 24 square units. If the base is 8 units, what is the height?",
+    "choices": [
+      {
+        "text": "6 units",
+        "rationale": "Correct: $A = 0.5bh \\Rightarrow 24 = 0.5(8)h \\Rightarrow 24 = 4h \\Rightarrow h=6$."
+      },
+      {
+        "text": "3 units",
+        "rationale": "Forgot the 0.5 factor ($24 = 8h$)."
+      },
+      {
+        "text": "12 units",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "4 units",
+        "rationale": "Guess."
+      },
+      {
+        "text": "192 units",
+        "rationale": "Multiplied area by base."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Area formula: $A = \\frac{1}{2}bh$.",
+      "$24 = \\frac{1}{2}(8)(h)$.",
+      "$24 = 4h \\Rightarrow h = 6$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0013",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "In $\\triangle ABC$, the exterior angle at vertex $C$ measures $120^\\circ$. If $\\angle A = 50^\\circ$, what is the measure of $\\angle B$?",
+    "choices": [
+      {
+        "text": "$70^\\circ$",
+        "rationale": "Correct: Exterior angle = Sum of remote interiors. $120 = 50 + B \\Rightarrow B=70$."
+      },
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Supplementary to exterior angle (this is angle C, not B)."
+      },
+      {
+        "text": "$170^\\circ$",
+        "rationale": "Addition error."
+      },
+      {
+        "text": "$50^\\circ$",
+        "rationale": "Assumed isosceles."
+      },
+      {
+        "text": "$130^\\circ$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The Exterior Angle Theorem states that the measure of an exterior angle is equal to the sum of the measures of the two remote interior angles.",
+      "$120^\\circ = \\angle A + \\angle B$.",
+      "$120^\\circ = 50^\\circ + \\angle B \\Rightarrow \\angle B = 70^\\circ$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0014",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 4,
+    "stem": "In a $45^\\circ-45^\\circ-90^\\circ$ triangle, the hypotenuse is $8\\sqrt{2}$. What is the length of each leg?",
+    "choices": [
+      {
+        "text": "8",
+        "rationale": "Correct: Hypotenuse = leg $\\times \\sqrt{2}$. $8\\sqrt{2} = x\\sqrt{2} \\Rightarrow x=8$."
+      },
+      {
+        "text": "4",
+        "rationale": "Divided hypotenuse by 2 incorrectly."
+      },
+      {
+        "text": "$8\\sqrt{2}$",
+        "rationale": "Same as hypotenuse (impossible)."
+      },
+      {
+        "text": "16",
+        "rationale": "Multiplied by $\\sqrt{2}$ again."
+      },
+      {
+        "text": "$4\\sqrt{2}$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "In a $45-45-90$ triangle, the ratio of legs to hypotenuse is $x : x : x\\sqrt{2}$.",
+      "Given hypotenuse $8\\sqrt{2}$.",
+      "Set $x\\sqrt{2} = 8\\sqrt{2}$.",
+      "Divide by $\\sqrt{2}$ to get $x = 8$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0015",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 5,
+    "stem": "Two similar triangles have side lengths in the ratio $2:3$. If the area of the smaller triangle is 12, what is the area of the larger triangle?",
+    "choices": [
+      {
+        "text": "27",
+        "rationale": "Correct: Area ratio is square of side ratio ($4:9$). $12/x = 4/9 \\Rightarrow 4x=108 \\Rightarrow x=27$."
+      },
+      {
+        "text": "18",
+        "rationale": "Used the side ratio ($1.5 \\times 12$) directly."
+      },
+      {
+        "text": "8",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "24",
+        "rationale": "Doubled the area."
+      },
+      {
+        "text": "36",
+        "rationale": " squared the base area instead of ratio."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The ratio of areas of similar triangles is the square of the ratio of their corresponding sides.",
+      "Side ratio = $2:3$. Area ratio = $2^2 : 3^2 = 4:9$.",
+      "Proportion: $\\frac{12}{A} = \\frac{4}{9}$.",
+      "$4A = 108 \\Rightarrow A = 27$."
+    ]
   }
 ]
