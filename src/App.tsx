@@ -7,6 +7,12 @@ import type { ActQuestion } from "./types";
 import type { ProgressMap } from "./types.progress";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { BANKS } from "./data/banks";
+import { 
+  trackPracticeStarted, 
+  trackQuestionAnswered, 
+  trackPracticeCompleted,
+  trackAdminAccess 
+} from "./utils/analytics";
 
 type PracticeMode = 'quick' | 'standard' | 'full' | 'study';
 type QuestionSelectionMode = 'random' | 'shuffled' | 'sequential';
@@ -108,6 +114,12 @@ export default function App() {
     // Track session-specific results
     setSessionResults(prev => ({ ...prev, [id]: correct }));
     
+    // Track question answered in analytics
+    const question = all.find(q => q.id === id);
+    if (question) {
+      trackQuestionAnswered(id, correct, question.topic);
+    }
+    
     // Update persistent progress
     setProgress(p => {
       const prev = p[id] ?? { correct: 0, wrong: 0, lastAt: 0 };
@@ -132,17 +144,39 @@ export default function App() {
       setShuffledQuestions(shuffleArray(filtered));
     }
     
+    // Track practice session started
+    trackPracticeStarted(practiceMode, topic, diff);
+    
     setInPractice(true);
   }
 
   const done = inPractice && (sessionIdx >= sessionLen || (practiceMode !== 'study' && timeLeft <= 0));
+
+  // Track practice completion
+  useEffect(() => {
+    if (done && inPractice && Object.keys(sessionResults).length > 0) {
+      const correct = Object.values(sessionResults).filter(r => r).length;
+      const total = Object.keys(sessionResults).length;
+      trackPracticeCompleted(practiceMode, total, correct);
+    }
+  }, [done, inPractice, sessionResults, practiceMode]);
+
+  // Track admin access
+  useEffect(() => {
+    if (isAdminMode && isAuthenticated) {
+      trackAdminAccess();
+    }
+  }, [isAdminMode, isAuthenticated]);
 
   // Show admin review if admin mode is enabled and authenticated
   if (isAdminMode) {
     if (!isAuthenticated) {
       return (
         <AdminPasswordPrompt
-          onSuccess={() => setIsAuthenticated(true)}
+          onSuccess={() => {
+            setIsAuthenticated(true);
+            trackAdminAccess();
+          }}
           onCancel={() => {
             // Remove admin parameter and go back to main page
             window.history.replaceState({}, "", window.location.pathname);
