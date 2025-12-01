@@ -455,6 +455,183 @@
       "$e^x$ is never 0, so set $e^x - 5 = 0$.",
       "$e^x = 5 \\Rightarrow x = \\ln 5$."
     ]
+  },
+  {
+    "id": "PRE-LOG-0016",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 2,
+    "stem": "Evaluate $\\log_4(64)$.",
+    "choices": [
+      {
+        "text": "3",
+        "rationale": "Correct: $4^3 = 64$."
+      },
+      {
+        "text": "16",
+        "rationale": "Division ($64/4$)."
+      },
+      {
+        "text": "4",
+        "rationale": "Guess."
+      },
+      {
+        "text": "2",
+        "rationale": "Square root logic."
+      },
+      {
+        "text": "8",
+        "rationale": "Square root of 64."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Ask: 4 raised to what power equals 64?",
+      "$4^1 = 4, 4^2 = 16, 4^3 = 64$.",
+      "Answer is 3."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0017",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 3,
+    "stem": "Which expression is equivalent to $\\ln(e^5 x)$?",
+    "choices": [
+      {
+        "text": "$5 + \\ln x$",
+        "rationale": "Correct: $\\ln(e^5) + \\ln x = 5 + \\ln x$."
+      },
+      {
+        "text": "$5 \\ln x$",
+        "rationale": "Applied power rule to the product incorrectly."
+      },
+      {
+        "text": "$e^5 \\ln x$",
+        "rationale": "No log rule supports this."
+      },
+      {
+        "text": "$\\ln(5x)$",
+        "rationale": "Incorrect simplification."
+      },
+      {
+        "text": "$5x$",
+        "rationale": "Dropped the log incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Product rule: $\\ln(AB) = \\ln A + \\ln B$.",
+      "$\\ln(e^5) + \\ln x$.",
+      "$\\ln(e^5) = 5$. Result: $5 + \\ln x$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0018",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 4,
+    "stem": "The population of a bacteria colony doubles every 3 hours. If the initial population is 100, what is the population after 12 hours?",
+    "choices": [
+      {
+        "text": "1600",
+        "rationale": "Correct: $12/3 = 4$ doubling periods. $100 \\times 2^4 = 1600$."
+      },
+      {
+        "text": "1200",
+        "rationale": "Linear growth ($100 \\times 12$?)."
+      },
+      {
+        "text": "800",
+        "rationale": "Doubled 3 times ($2^3$)."
+      },
+      {
+        "text": "3200",
+        "rationale": "Doubled 5 times."
+      },
+      {
+        "text": "400",
+        "rationale": "Linear approximation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: $P(t) = P_0 2^{t/d}$.",
+      "$t = 12, d = 3$. Number of doublings $= 12/3 = 4$.",
+      "$P(12) = 100 \\times 2^4 = 100 \\times 16 = 1600$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0019",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 4,
+    "stem": "Solve for $x$: $$\\log(x) + \\log(x + 3) = 1$$",
+    "choices": [
+      {
+        "text": "2",
+        "rationale": "Correct: $\\log(x^2+3x) = 1 \\Rightarrow x^2+3x=10 \\Rightarrow (x+5)(x-2)=0$. Reject -5."
+      },
+      {
+        "text": "5",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "2 or -5",
+        "rationale": "Did not check for extraneous solutions."
+      },
+      {
+        "text": "7",
+        "rationale": "Linear addition $2x+3=10$."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrect check."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Combine logs: $\\log(x(x+3)) = 1$.",
+      "Exponentiate (base 10): $x(x+3) = 10^1$.",
+      "$x^2 + 3x - 10 = 0$.",
+      "$(x + 5)(x - 2) = 0$. $x = -5, 2$.",
+      "Since domain of log is positive numbers, reject -5. $x = 2$."
+    ]
+  },
+  {
+    "id": "PRE-LOG-0020",
+    "topic": "Precalculus",
+    "subtopic": "Logarithms & Exponentials",
+    "diff": 5,
+    "stem": "Find the domain of the function $f(x) = \\ln(4 - x^2)$.",
+    "choices": [
+      {
+        "text": "$(-2, 2)$",
+        "rationale": "Correct: Argument must be positive. $4 - x^2 > 0 \\Rightarrow x^2 < 4$."
+      },
+      {
+        "text": "$(-\\infty, -2) \\cup (2, \\infty)$",
+        "rationale": "Sign error on inequality ($x^2 > 4$)."
+      },
+      {
+        "text": "$[-2, 2]$",
+        "rationale": "Log is undefined at 0."
+      },
+      {
+        "text": "$x > 2$",
+        "rationale": "Ignored the other boundary."
+      },
+      {
+        "text": "$x < 4$",
+        "rationale": "Did not take square root."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Argument of $\\ln$ must be positive: $4 - x^2 > 0$.",
+      "Factor: $(2 - x)(2 + x) > 0$.",
+      "This is a parabola opening down, positive between the roots $-2$ and $2$."
+    ]
   }
 ]
 

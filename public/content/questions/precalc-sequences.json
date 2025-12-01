@@ -451,5 +451,179 @@
       "$48 / 12 = 4$.",
       "So $r^2 = 4$. Since $r$ is positive, $r = 2$."
     ]
+  },
+  {
+    "id": "PRE-SEQ-0016",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 2,
+    "stem": "Find the common difference of the arithmetic sequence: $10, 4, -2, -8, \\dots$",
+    "choices": [
+      {
+        "text": "-6",
+        "rationale": "Correct: $4 - 10 = -6$."
+      },
+      {
+        "text": "6",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "-4",
+        "rationale": "Subtraction error."
+      },
+      {
+        "text": "0.4",
+        "rationale": "Calculated ratio."
+      },
+      {
+        "text": "-10",
+        "rationale": "First term."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract any term from the subsequent term.",
+      "$4 - 10 = -6$.",
+      "$-2 - 4 = -6$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0017",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Determine the 5th term of the geometric sequence defined by $a_n = 3 \\cdot 2^{n-1}$.",
+    "choices": [
+      {
+        "text": "48",
+        "rationale": "Correct: $3 \\cdot 2^4 = 3 \\cdot 16 = 48$."
+      },
+      {
+        "text": "96",
+        "rationale": "Used $n$ exponent instead of $n-1$."
+      },
+      {
+        "text": "24",
+        "rationale": "Calculated 4th term."
+      },
+      {
+        "text": "32",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "162",
+        "rationale": "Calculated $3^5$?"
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $n=5$: $a_5 = 3 \\cdot 2^{5-1}$.",
+      "$a_5 = 3 \\cdot 2^4 = 3 \\cdot 16 = 48$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0018",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 3,
+    "stem": "Express the sum $2 + 4 + 6 + 8$ using sigma notation.",
+    "choices": [
+      {
+        "text": "$\\sum_{n=1}^{4} 2n$",
+        "rationale": "Correct: Terms are $2(1), 2(2), 2(3), 2(4)$."
+      },
+      {
+        "text": "$\\sum_{n=1}^{4} n^2$",
+        "rationale": "Generates $1, 4, 9, 16$."
+      },
+      {
+        "text": "$\\sum_{n=0}^{3} 2n$",
+        "rationale": "Starts at 0."
+      },
+      {
+        "text": "$\\sum_{n=1}^{8} n$",
+        "rationale": "Sum of integers."
+      },
+      {
+        "text": "$\\sum_{n=1}^{4} (n+1)$",
+        "rationale": "Generates $2, 3, 4, 5$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify pattern: Multiples of 2.",
+      "Formula is $2n$.",
+      "Range is $n=1$ to $n=4$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0019",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 4,
+    "stem": "Find the limit of the sequence $a_n = \\frac{3n^2 + 1}{2n^2 - 5}$ as $n \\to \\infty$.",
+    "choices": [
+      {
+        "text": "1.5",
+        "rationale": "Correct: Ratio of leading coefficients $3/2$."
+      },
+      {
+        "text": "0",
+        "rationale": "Incorrect limit rule."
+      },
+      {
+        "text": "$\\infty$",
+        "rationale": "Incorrect degree analysis."
+      },
+      {
+        "text": "3",
+        "rationale": "Numerator coefficient only."
+      },
+      {
+        "text": "-0.2",
+        "rationale": "Ratio of constants."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Since numerator and denominator have the same degree (2), the limit is the ratio of the leading coefficients.",
+      "Limit = $3/2 = 1.5$."
+    ]
+  },
+  {
+    "id": "PRE-SEQ-0020",
+    "topic": "Precalculus",
+    "subtopic": "Sequences & Series",
+    "diff": 5,
+    "stem": "Find the sum of the infinite geometric series: $1 - \\frac{1}{3} + \\frac{1}{9} - \\frac{1}{27} + \\dots$",
+    "choices": [
+      {
+        "text": "$\\frac{3}{4}$",
+        "rationale": "Correct: $a=1, r=-1/3$. $S = 1 / (1 - (-1/3)) = 1 / (4/3) = 3/4$."
+      },
+      {
+        "text": "$\\frac{3}{2}$",
+        "rationale": "Used $r=1/3$."
+      },
+      {
+        "text": "$\\frac{2}{3}$",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "$\\frac{4}{3}$",
+        "rationale": "Calculated denominator only."
+      },
+      {
+        "text": "Diverges",
+        "rationale": "Incorrect check of $|r|$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Identify $a = 1$.",
+      "Identify common ratio $r = -1/3$.",
+      "Check convergence: $|-1/3| < 1$, so it converges.",
+      "Sum formula: $S = \\frac{a}{1 - r} = \\frac{1}{1 - (-1/3)} = \\frac{1}{4/3} = \\frac{3}{4}$."
+    ]
   }
 ]

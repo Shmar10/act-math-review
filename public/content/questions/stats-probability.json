@@ -445,5 +445,177 @@
       "Probability of second Ace (given first was Ace): $3/51 = 1/17$.",
       "Multiply: $\\frac{1}{13} \\times \\frac{1}{17} = \\frac{1}{221}$."
     ]
+  },
+  {
+    "id": "STAT-PROB-0016",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 2,
+    "stem": "If you flip a fair coin 3 times, what is the probability of getting exactly 3 heads?",
+    "choices": [
+      {
+        "text": "$\\frac{1}{8}$",
+        "rationale": "Correct: $0.5 \\times 0.5 \\times 0.5 = 0.125$."
+      },
+      {
+        "text": "$\\frac{1}{6}$",
+        "rationale": "Additve error."
+      },
+      {
+        "text": "$\\frac{3}{8}$",
+        "rationale": "Probability of 2 heads?"
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Probability of one flip."
+      },
+      {
+        "text": "$\\frac{1}{4}$",
+        "rationale": "Probability of 2 heads."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Independent events: $P(H) = 1/2$.",
+      "$P(H,H,H) = \\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{8}$."
+    ]
+  },
+  {
+    "id": "STAT-PROB-0017",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 3,
+    "stem": "A box contains 5 red, 3 green, and 2 blue balls. A ball is drawn at random. What is the probability that it is NOT green?",
+    "choices": [
+      {
+        "text": "0.7",
+        "rationale": "Correct: Total 10. Non-green = 7. $7/10 = 0.7$."
+      },
+      {
+        "text": "0.3",
+        "rationale": "Probability of green."
+      },
+      {
+        "text": "0.5",
+        "rationale": "Probability of red."
+      },
+      {
+        "text": "0.2",
+        "rationale": "Probability of blue."
+      },
+      {
+        "text": "0.8",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total balls = $5 + 3 + 2 = 10$.",
+      "Green balls = 3.",
+      "Not green = $10 - 3 = 7$.",
+      "Probability = $7/10 = 0.7$."
+    ]
+  },
+  {
+    "id": "STAT-PROB-0018",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 3,
+    "stem": "Which measure of central tendency is most affected by outliers?",
+    "choices": [
+      {
+        "text": "Mean",
+        "rationale": "Correct: Averages take all values into account."
+      },
+      {
+        "text": "Median",
+        "rationale": "Resistant to outliers."
+      },
+      {
+        "text": "Mode",
+        "rationale": "Determined by frequency, not magnitude."
+      },
+      {
+        "text": "Range",
+        "rationale": "This is a measure of spread, not central tendency."
+      },
+      {
+        "text": "IQR",
+        "rationale": "Measure of spread."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The mean involves summing all values, so a very large or small number changes the sum significantly.",
+      "The median depends on position, so outliers at the ends don't affect the middle value."
+    ]
+  },
+  {
+    "id": "STAT-PROB-0019",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 4,
+    "stem": "In a normal distribution, approximately what percentage of data falls within one standard deviation of the mean?",
+    "choices": [
+      {
+        "text": "68%",
+        "rationale": "Correct: Empirical rule."
+      },
+      {
+        "text": "95%",
+        "rationale": "Two standard deviations."
+      },
+      {
+        "text": "99.7%",
+        "rationale": "Three standard deviations."
+      },
+      {
+        "text": "50%",
+        "rationale": "Half the data."
+      },
+      {
+        "text": "34%",
+        "rationale": "One side of the mean."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "According to the Empirical Rule (68-95-99.7), 68% of data falls within $\\mu \\pm \\sigma$."
+    ]
+  },
+  {
+    "id": "STAT-PROB-0020",
+    "topic": "Statistics & Probability",
+    "subtopic": "Data & Probability",
+    "diff": 5,
+    "stem": "How many distinct permutations can be made from the letters of the word 'APPLE'?",
+    "choices": [
+      {
+        "text": "60",
+        "rationale": "Correct: $5! / 2!$ (for the two Ps). $120 / 2 = 60$."
+      },
+      {
+        "text": "120",
+        "rationale": "Forgot to divide by duplicates ($5!$)."
+      },
+      {
+        "text": "24",
+        "rationale": "Calculated $4!$."
+      },
+      {
+        "text": "10",
+        "rationale": "Combination logic."
+      },
+      {
+        "text": "20",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total letters = 5. Duplicate letter 'P' appears twice.",
+      "Formula: $\\frac{n!}{p_1!}$.",
+      "$\\frac{5!}{2!} = \\frac{120}{2} = 60$."
+    ]
   }
 ]
