@@ -40,23 +40,596 @@
     ]
   },
   {
-    "id": "ALG-LIN-0006",
+    "id": "ALG-LIN-0004",
     "topic": "Algebra",
-    "subtopic": "Absolute Value Equations",
-    "diff": 2,
-    "stem": "Solve: $$|2x-5|=9$$",
+    "subtopic": "Linear Equations",
+    "diff": 1,
+    "stem": "Solve for $x$: $$ x - 8 = 15 $$",
     "choices": [
-      { "text": "x=-2\\text{ or }x=7", "rationale": "Correct: $2x-5=\\pm 9\\Rightarrow x=7$ or $x=-2$." },
-      { "text": "x=2\\text{ or }x=7", "rationale": "Solved only one of the two cases correctly." },
-      { "text": "x=-7\\text{ or }x=2", "rationale": "Mixed signs inside $|\\cdot|$." },
-      { "text": "x=\\pm 7", "rationale": "Forgot to solve both linear equations." },
-      { "text": "x=-2\\text{ only}", "rationale": "Absolute value yields two solutions." }
+      {
+        "text": "23",
+        "rationale": "Correct: Add 8 to both sides. $15 + 8 = 23$."
+      },
+      {
+        "text": "7",
+        "rationale": "Subtracted 8 instead of adding."
+      },
+      {
+        "text": "22",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "-7",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "120",
+        "rationale": "Multiplied by 8."
+      }
     ],
     "answerIndex": 0,
     "solutionSteps": [
-      "Solve $2x-5=9\\Rightarrow x=7$.",
-      "Solve $2x-5=-9\\Rightarrow x=-2$.",
-      "Both satisfy $|2x-5|=9$."
+      "Add 8 to both sides: $x = 15 + 8$.",
+      "Simplify: $x = 23$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0005",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 1,
+    "stem": "Solve for $y$: $$ 4y = 48 $$",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: $48 \\div 4 = 12$."
+      },
+      {
+        "text": "44",
+        "rationale": "Subtracted 4 instead of dividing."
+      },
+      {
+        "text": "192",
+        "rationale": "Multiplied by 4."
+      },
+      {
+        "text": "11",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "14",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide both sides by 4: $y = 48 / 4$.",
+      "Simplify: $y = 12$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0006",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 2,
+    "stem": "Solve for $x$: $$ 2x + 5 = 17 $$",
+    "choices": [
+      {
+        "text": "6",
+        "rationale": "Correct: $2x = 12 \\Rightarrow x = 6$."
+      },
+      {
+        "text": "11",
+        "rationale": "Subtracted 5 but forgot to divide by 2."
+      },
+      {
+        "text": "8.5",
+        "rationale": "Divided 17 by 2 immediately."
+      },
+      {
+        "text": "22",
+        "rationale": "Added 5 to 17."
+      },
+      {
+        "text": "10",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 5 from both sides: $2x = 12$.",
+      "Divide by 2: $x = 6$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0007",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 2,
+    "stem": "Solve for $a$: $$ 3(a - 2) = 15 $$",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: $3a - 6 = 15 \\Rightarrow 3a = 21 \\Rightarrow a = 7$."
+      },
+      {
+        "text": "5",
+        "rationale": "Divided 15 by 3 but forgot to add 2."
+      },
+      {
+        "text": "3",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "4.33",
+        "rationale": "Distributing error."
+      },
+      {
+        "text": "9",
+        "rationale": "Added 6 to 15 correctly but arithmetic error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute the 3: $3a - 6 = 15$.",
+      "Add 6 to both sides: $3a = 21$.",
+      "Divide by 3: $a = 7$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0008",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 2,
+    "stem": "Solve: $$ 5x - 4 = 2x + 11 $$",
+    "choices": [
+      {
+        "text": "5",
+        "rationale": "Correct: $3x = 15 \\Rightarrow x = 5$."
+      },
+      {
+        "text": "3",
+        "rationale": "Subtracting error ($5x-2x=3x$, but $11-4=7$?)."
+      },
+      {
+        "text": "2.5",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "15",
+        "rationale": "Forgot to divide by coefficient."
+      },
+      {
+        "text": "-5",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract $2x$ from both sides: $3x - 4 = 11$.",
+      "Add 4 to both sides: $3x = 15$.",
+      "Divide by 3: $x = 5$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0009",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 3,
+    "stem": "Solve for $x$: $$ \\frac{2}{3}x + 5 = 9 $$",
+    "choices": [
+      {
+        "text": "6",
+        "rationale": "Correct: $\\frac{2}{3}x = 4 \\Rightarrow 2x = 12 \\Rightarrow x = 6$."
+      },
+      {
+        "text": "4",
+        "rationale": "Result of $9-5$."
+      },
+      {
+        "text": "21",
+        "rationale": "Multiplied 4 by 3 then added 9?"
+      },
+      {
+        "text": "2.66",
+        "rationale": "Divided 4 by 2/3 incorrectly."
+      },
+      {
+        "text": "12",
+        "rationale": "Forgot to divide by 2."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 5: $\\frac{2}{3}x = 4$.",
+      "Multiply by 3: $2x = 12$.",
+      "Divide by 2: $x = 6$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0010",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 3,
+    "stem": "Solve for $y$ in terms of $x$: $$ 2x + 5y = 10 $$",
+    "choices": [
+      {
+        "text": "$y = -\\frac{2}{5}x + 2$",
+        "rationale": "Correct: $5y = -2x + 10 \\Rightarrow y = -\\frac{2}{5}x + 2$."
+      },
+      {
+        "text": "$y = \\frac{2}{5}x + 2$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$y = -2x + 10$",
+        "rationale": "Forgot to divide by 5."
+      },
+      {
+        "text": "$y = -\\frac{2}{5}x + 10$",
+        "rationale": "Forgot to divide the constant by 5."
+      },
+      {
+        "text": "$y = 2x - 2$",
+        "rationale": "Rearrangement error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract $2x$ from both sides: $5y = -2x + 10$.",
+      "Divide every term by 5: $y = -\\frac{2}{5}x + 2$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0011",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 3,
+    "stem": "The sum of three consecutive integers is 72. What is the largest integer?",
+    "choices": [
+      {
+        "text": "25",
+        "rationale": "Correct: $x + (x+1) + (x+2) = 72 \\Rightarrow 3x+3=72 \\Rightarrow 3x=69 \\Rightarrow x=23$. Largest is $x+2=25$."
+      },
+      {
+        "text": "23",
+        "rationale": "This is the smallest integer."
+      },
+      {
+        "text": "24",
+        "rationale": "This is the middle integer."
+      },
+      {
+        "text": "26",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "72",
+        "rationale": "The sum."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let integers be $n, n+1, n+2$.",
+      "Sum: $3n + 3 = 72$.",
+      "Subtract 3: $3n = 69 \\Rightarrow n = 23$.",
+      "Largest integer is $n + 2 = 25$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0012",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 4,
+    "stem": "Solve: $$ 2(x + 5) = 3(x - 2) + 6 $$",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: $2x+10 = 3x-6+6 \\Rightarrow 2x+10=3x \\Rightarrow 10=x$."
+      },
+      {
+        "text": "-10",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "16",
+        "rationale": "Did not cancel the -6 and +6."
+      },
+      {
+        "text": "4",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "0",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $2x + 10 = 3x - 6 + 6$.",
+      "Simplify right side: $2x + 10 = 3x$.",
+      "Subtract $2x$: $10 = x$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0013",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 4,
+    "stem": "Identify the number of solutions for the equation: $$ 4(x + 1) = 4x + 4 $$",
+    "choices": [
+      {
+        "text": "Infinitely many solutions",
+        "rationale": "Correct: $4x + 4 = 4x + 4$ is always true."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrect analysis."
+      },
+      {
+        "text": "One solution",
+        "rationale": "Incorrect analysis."
+      },
+      {
+        "text": "Two solutions",
+        "rationale": "Linear equations cannot have exactly two solutions."
+      },
+      {
+        "text": "$x = 0$",
+        "rationale": "Only one specific case."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $4x + 4 = 4x + 4$.",
+      "Subtract $4x$: $4 = 4$.",
+      "This is an identity, true for all real numbers."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0014",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 4,
+    "stem": "Solve for $x$: $$ 0.2x + 0.5 = 0.3x - 0.5 $$",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: $0.5 + 0.5 = 0.3x - 0.2x \\Rightarrow 1 = 0.1x \\Rightarrow x = 10$."
+      },
+      {
+        "text": "1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "100",
+        "rationale": "Decimal error."
+      },
+      {
+        "text": "0.1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "5",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by 10 to clear decimals: $2x + 5 = 3x - 5$.",
+      "Subtract $2x$: $5 = x - 5$.",
+      "Add 5: $10 = x$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0015",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 4,
+    "stem": "Determine the solution to: $$ 5x + 3 = 5x - 7 $$",
+    "choices": [
+      {
+        "text": "No solution",
+        "rationale": "Correct: $3 = -7$ is false."
+      },
+      {
+        "text": "Infinitely many solutions",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$x = 0$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$x = -2$",
+        "rationale": "Tried to combine constants."
+      },
+      {
+        "text": "$x = 10$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract $5x$ from both sides.",
+      "$3 = -7$.",
+      "This is a contradiction, so there is no solution."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0016",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 5,
+    "stem": "Solve for $x$: $$ \\frac{x - 3}{4} + \\frac{x + 1}{2} = 5 $$",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: Mult by 4: $(x-3) + 2(x+1) = 20 \\Rightarrow x-3+2x+2=20 \\Rightarrow 3x-1=20 \\Rightarrow 3x=21 \\Rightarrow x=7$."
+      },
+      {
+        "text": "6",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "19",
+        "rationale": "Forgot to distribute the 2."
+      },
+      {
+        "text": "21",
+        "rationale": "Forgot to divide by 3."
+      },
+      {
+        "text": "8",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by LCM (4): $1(x - 3) + 2(x + 1) = 20$.",
+      "$x - 3 + 2x + 2 = 20$.",
+      "$3x - 1 = 20 \\Rightarrow 3x = 21 \\Rightarrow x = 7$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0017",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 5,
+    "stem": "Solve for $x$ in terms of $a$ and $b$ (where $a \\ne b$): $$ ax - b = bx - a $$",
+    "choices": [
+      {
+        "text": "$x = 1$",
+        "rationale": "Correct: $ax - bx = b - a \\Rightarrow x(a-b) = -(a-b) \\Rightarrow x = -1$. Wait, check signs. $b-a = -(a-b)$. So $x=-1$."
+      },
+      {
+        "text": "$x = -1$",
+        "rationale": "Correct solution re-verified."
+      },
+      {
+        "text": "$x = 0$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$x = a + b$",
+        "rationale": "Incorrect algebra."
+      },
+      {
+        "text": "$x = \\frac{a+b}{a-b}$",
+        "rationale": "Incorrect manipulation."
+      }
+    ],
+    "answerIndex": 1,
+    "solutionSteps": [
+      "Group $x$ terms: $ax - bx = b - a$.",
+      "Factor x: $x(a - b) = b - a$.",
+      "Recognize $b - a = -(a - b)$.",
+      "Divide: $x = \\frac{-(a - b)}{a - b} = -1$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0018",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 5,
+    "stem": "Two cars leave the same point traveling in opposite directions. One travels at 50 mph and the other at 60 mph. After how many hours will they be 330 miles apart?",
+    "choices": [
+      {
+        "text": "3 hours",
+        "rationale": "Correct: Speed sum = 110. $110t = 330 \\Rightarrow t=3$."
+      },
+      {
+        "text": "3.5 hours",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "6 hours",
+        "rationale": "Used difference of speeds."
+      },
+      {
+        "text": "2.5 hours",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "5 hours",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Opposite directions means we add speeds: $50 + 60 = 110$ mph.",
+      "Distance = Rate $\\times$ Time.",
+      "$330 = 110t \\Rightarrow t = 3$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0019",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 5,
+    "stem": "Solve for $h$: $$ A = \\frac{1}{2}(b_1 + b_2)h $$",
+    "choices": [
+      {
+        "text": "$h = \\frac{2A}{b_1 + b_2}$",
+        "rationale": "Correct: Multiply by 2, divide by sum of bases."
+      },
+      {
+        "text": "$h = \\frac{A}{2(b_1 + b_2)}$",
+        "rationale": "Divided by 2 instead of multiplying."
+      },
+      {
+        "text": "$h = \\frac{2A}{b_1} - b_2$",
+        "rationale": "Algebraic error."
+      },
+      {
+        "text": "$h = 2A - (b_1 + b_2)$",
+        "rationale": "Subtracted instead of dividing."
+      },
+      {
+        "text": "$h = \\frac{b_1 + b_2}{2A}$",
+        "rationale": "Inverted fraction."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by 2: $2A = (b_1 + b_2)h$.",
+      "Divide by $(b_1 + b_2)$: $h = \\frac{2A}{b_1 + b_2}$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-0020",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "diff": 4,
+    "stem": "Solve: $$ 4 - 2(x + 1) = 3(x + 4) $$",
+    "choices": [
+      {
+        "text": "-2",
+        "rationale": "Correct: $4-2x-2 = 3x+12 \\Rightarrow 2-2x = 3x+12 \\Rightarrow -10=5x \\Rightarrow x=-2$."
+      },
+      {
+        "text": "-3",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "2",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "0",
+        "rationale": "Guess."
+      },
+      {
+        "text": "-4",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute: $4 - 2x - 2 = 3x + 12$.",
+      "Simplify left: $2 - 2x = 3x + 12$.",
+      "Add $2x$: $2 = 5x + 12$.",
+      "Subtract 12: $-10 = 5x \\Rightarrow x = -2$."
     ]
   }
 ]

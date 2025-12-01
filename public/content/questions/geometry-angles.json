@@ -191,6 +191,352 @@
       "Set up equation: $x = 2(180° - x) + 30°$.",
       "Solve: $x = 360° - 2x + 30°$, so $3x = 390°$, thus $x = 130°$."
     ]
+  },
+  {
+    "id": "GEO-ANG-0011",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 1,
+    "stem": "If angle $A$ measures $40^\\circ$, what is the measure of its complementary angle?",
+    "choices": [
+      {
+        "text": "$50^\\circ$",
+        "rationale": "Correct: Complementary angles sum to $90^\\circ$. $90 - 40 = 50$."
+      },
+      {
+        "text": "$140^\\circ$",
+        "rationale": "Supplementary angle."
+      },
+      {
+        "text": "$40^\\circ$",
+        "rationale": "Same angle."
+      },
+      {
+        "text": "$320^\\circ$",
+        "rationale": "Explementary angle ($360 - 40$)."
+      },
+      {
+        "text": "$90^\\circ$",
+        "rationale": "Total sum."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Complementary angles sum to $90^\\circ$.",
+      "$90^\\circ - 40^\\circ = 50^\\circ$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0012",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 2,
+    "stem": "Two lines intersect to form vertical angles. If one angle measures $(2x + 10)^\\circ$ and the other measures $50^\\circ$, what is the value of $x$?",
+    "choices": [
+      {
+        "text": "20",
+        "rationale": "Correct: $2x+10=50 \\Rightarrow 2x=40 \\Rightarrow x=20$."
+      },
+      {
+        "text": "30",
+        "rationale": "Solved $2x=60$ (added 10)."
+      },
+      {
+        "text": "10",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "40",
+        "rationale": "Forgot to divide by 2."
+      },
+      {
+        "text": "25",
+        "rationale": "Assumed $2x = 50$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Vertical angles are equal.",
+      "$2x + 10 = 50$.",
+      "$2x = 40 \\Rightarrow x = 20$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0013",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 2,
+    "stem": "Lines $l$ and $m$ are parallel. A transversal intersects them. If a pair of alternate interior angles measure $70^\\circ$ and $(x + 20)^\\circ$, find $x$.",
+    "choices": [
+      {
+        "text": "50",
+        "rationale": "Correct: Alt interior angles are equal. $x+20=70 \\Rightarrow x=50$."
+      },
+      {
+        "text": "70",
+        "rationale": "Assumed x equals the angle."
+      },
+      {
+        "text": "90",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "110",
+        "rationale": "Used supplementary logic."
+      },
+      {
+        "text": "20",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Alternate interior angles are congruent.",
+      "$x + 20 = 70 \\Rightarrow x = 50$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0014",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 3,
+    "stem": "Two angles form a linear pair. One angle is 4 times larger than the other. What is the measure of the smaller angle?",
+    "choices": [
+      {
+        "text": "$36^\\circ$",
+        "rationale": "Correct: $x + 4x = 180 \\Rightarrow 5x=180 \\Rightarrow x=36$."
+      },
+      {
+        "text": "$45^\\circ$",
+        "rationale": "Assumed $4x = 180$."
+      },
+      {
+        "text": "$144^\\circ$",
+        "rationale": "This is the larger angle."
+      },
+      {
+        "text": "$18^\\circ$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$30^\\circ$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Linear pair sums to $180^\\circ$.",
+      "Let smaller angle $= x$. Larger $= 4x$.",
+      "$x + 4x = 180 \\Rightarrow 5x = 180 \\Rightarrow x = 36$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0015",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 3,
+    "stem": "The measure of an angle is $30^\\circ$ more than its supplement. Find the measure of the angle.",
+    "choices": [
+      {
+        "text": "$105^\\circ$",
+        "rationale": "Correct: $x + (x-30) = 180 \\Rightarrow 2x=210 \\Rightarrow x=105$."
+      },
+      {
+        "text": "$75^\\circ$",
+        "rationale": "This is the supplement."
+      },
+      {
+        "text": "$90^\\circ$",
+        "rationale": "Average."
+      },
+      {
+        "text": "$120^\\circ$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let angle be $x$. Supplement is $180 - x$.",
+      "$x = (180 - x) + 30$.",
+      "$2x = 210 \\Rightarrow x = 105$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0016",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 4,
+    "stem": "In $\\triangle ABC$, line $DE$ is parallel to $BC$ with $D$ on $AB$ and $E$ on $AC$. If $\\angle ADE = 60^\\circ$ and $\\angle ACB = 50^\\circ$, find $\\angle ABC$.",
+    "choices": [
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Correct: $\\angle ABC$ corresponds to $\\angle ADE$."
+      },
+      {
+        "text": "$50^\\circ$",
+        "rationale": "Confused with $\\angle ACB$."
+      },
+      {
+        "text": "$70^\\circ$",
+        "rationale": "Sum of angles calc ($180-60-50$)."
+      },
+      {
+        "text": "$120^\\circ$",
+        "rationale": "Supplementary to 60."
+      },
+      {
+        "text": "$30^\\circ$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Since $DE \\parallel BC$, corresponding angles are equal.",
+      "$\\angle ABC = \\angle ADE = 60^\\circ$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0017",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 4,
+    "stem": "Five rays meet at a common point to form five adjacent angles on a straight line. If the angles are in the ratio 1:2:3:4:5, find the largest angle.",
+    "choices": [
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Correct: $15x = 180 \\Rightarrow x=12$. Largest $5(12)=60$."
+      },
+      {
+        "text": "$72^\\circ$",
+        "rationale": "Assumed sum is 360."
+      },
+      {
+        "text": "$48^\\circ$",
+        "rationale": "Calculated 4th angle."
+      },
+      {
+        "text": "$12^\\circ$",
+        "rationale": "Smallest angle."
+      },
+      {
+        "text": "$36^\\circ$",
+        "rationale": "Median angle."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Straight line angle sum is $180^\\circ$.",
+      "$x + 2x + 3x + 4x + 5x = 180$.",
+      "$15x = 180 \\Rightarrow x = 12$.",
+      "Largest angle is $5x = 5(12) = 60^\\circ$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0018",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 5,
+    "stem": "Two parallel lines are intersected by a transversal. The consecutive interior angles (same-side interior) are $3x - 10$ and $2x + 20$. Find $x$.",
+    "choices": [
+      {
+        "text": "34",
+        "rationale": "Correct: Sum is 180. $5x + 10 = 180 \\Rightarrow 5x=170 \\Rightarrow x=34$."
+      },
+      {
+        "text": "30",
+        "rationale": "Set angles equal ($3x-10 = 2x+20$). Incorrect for same-side."
+      },
+      {
+        "text": "40",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "20",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "10",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Consecutive interior angles are supplementary.",
+      "$(3x - 10) + (2x + 20) = 180$.",
+      "$5x + 10 = 180 \\Rightarrow 5x = 170 \\Rightarrow x = 34$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0019",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 5,
+    "stem": "If an interior angle of a regular polygon measures $144^\\circ$, how many sides does the polygon have?",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: Exterior angle $180-144=36$. Sides $360/36=10$."
+      },
+      {
+        "text": "12",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "8",
+        "rationale": "Octagon interior is 135."
+      },
+      {
+        "text": "9",
+        "rationale": "Nonagon interior is 140."
+      },
+      {
+        "text": "15",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Exterior angle measure = $180 - 144 = 36^\\circ$.",
+      "Sum of exterior angles is always $360^\\circ$.",
+      "Number of sides $n = 360 / 36 = 10$."
+    ]
+  },
+  {
+    "id": "GEO-ANG-0020",
+    "topic": "Geometry",
+    "subtopic": "Angles & Lines",
+    "diff": 1,
+    "stem": "Which term describes two angles that share a common vertex and side but no common interior points?",
+    "choices": [
+      {
+        "text": "Adjacent",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "Vertical",
+        "rationale": "Opposite angles."
+      },
+      {
+        "text": "Complementary",
+        "rationale": "Sum to 90, not necessarily adjacent."
+      },
+      {
+        "text": "Supplementary",
+        "rationale": "Sum to 180."
+      },
+      {
+        "text": "Linear Pair",
+        "rationale": "Must also form a line."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Definition of adjacent angles."
+    ]
   }
 ]
 

@@ -201,6 +201,361 @@
       "Solve: $x_R = 2(2) - (-1) = 5$ and $y_R = 2(4) - 2 = 6$.",
       "Therefore: $R = (5, 6)$."
     ]
+  },
+  {
+    "id": "COO-DST-0011",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 1,
+    "stem": "Find the midpoint of the segment connecting $(2, 4)$ and $(8, 10)$.",
+    "choices": [
+      {
+        "text": "$(5, 7)$",
+        "rationale": "Correct: $(\\frac{2+8}{2}, \\frac{4+10}{2}) = (5, 7)$."
+      },
+      {
+        "text": "$(6, 6)$",
+        "rationale": "Subtracted coordinates."
+      },
+      {
+        "text": "$(10, 14)$",
+        "rationale": "Forgot to divide by 2."
+      },
+      {
+        "text": "$(3, 3)$",
+        "rationale": "Division error."
+      },
+      {
+        "text": "$(4, 8)$",
+        "rationale": "Averaged x with y."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Midpoint formula: $M = (\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$.",
+      "$M = (\\frac{2+8}{2}, \\frac{4+10}{2}) = (\\frac{10}{2}, \\frac{14}{2}) = (5, 7)$."
+    ]
+  },
+  {
+    "id": "COO-DST-0012",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 2,
+    "stem": "Find the distance between the points $(1, 2)$ and $(4, 6)$.",
+    "choices": [
+      {
+        "text": "5",
+        "rationale": "Correct: $\\sqrt{(4-1)^2 + (6-2)^2} = \\sqrt{9+16} = 5$."
+      },
+      {
+        "text": "7",
+        "rationale": "Added differences $3+4$."
+      },
+      {
+        "text": "25",
+        "rationale": "Forgot square root."
+      },
+      {
+        "text": "1",
+        "rationale": "Subtracted differences."
+      },
+      {
+        "text": "$\\sqrt{7}$",
+        "rationale": "Added without squaring."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distance formula: $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.",
+      "$d = \\sqrt{(4-1)^2 + (6-2)^2} = \\sqrt{3^2 + 4^2}$.",
+      "$d = \\sqrt{9 + 16} = \\sqrt{25} = 5$."
+    ]
+  },
+  {
+    "id": "COO-DST-0013",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 3,
+    "stem": "The midpoint of segment $AB$ is $M(3, -2)$. If point $A$ is located at $(5, 4)$, find the coordinates of point $B$.",
+    "choices": [
+      {
+        "text": "$(1, -8)$",
+        "rationale": "Correct: $3 = (5+x)/2 \\Rightarrow x=1$. $-2 = (4+y)/2 \\Rightarrow y=-8$."
+      },
+      {
+        "text": "$(4, 1)$",
+        "rationale": "Averaged M and A."
+      },
+      {
+        "text": "$(2, 6)$",
+        "rationale": "Subtraction error."
+      },
+      {
+        "text": "$(8, 2)$",
+        "rationale": "Added coordinates instead of solving for endpoint."
+      },
+      {
+        "text": "$(-1, -6)$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $B = (x, y)$. Midpoint formula applies.",
+      "$3 = \\frac{5 + x}{2} \\Rightarrow 6 = 5 + x \\Rightarrow x = 1$.",
+      "$-2 = \\frac{4 + y}{2} \\Rightarrow -4 = 4 + y \\Rightarrow y = -8$."
+    ]
+  },
+  {
+    "id": "COO-DST-0014",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 3,
+    "stem": "Calculate the perimeter of the triangle with vertices at $(0, 0)$, $(3, 0)$, and $(0, 4)$.",
+    "choices": [
+      {
+        "text": "12",
+        "rationale": "Correct: Sides are 3, 4, and hypotenuse 5. $3+4+5=12$."
+      },
+      {
+        "text": "7",
+        "rationale": "Sum of legs only."
+      },
+      {
+        "text": "6",
+        "rationale": "Area calculation."
+      },
+      {
+        "text": "14",
+        "rationale": "Miscalculated hypotenuse."
+      },
+      {
+        "text": "25",
+        "rationale": "Squared sum."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Side 1 (on x-axis): length 3.",
+      "Side 2 (on y-axis): length 4.",
+      "Side 3 (hypotenuse): Distance between $(3,0)$ and $(0,4) = \\sqrt{3^2+4^2}=5$.",
+      "Perimeter $= 3 + 4 + 5 = 12$."
+    ]
+  },
+  {
+    "id": "COO-DST-0015",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 4,
+    "stem": "Find the value of $y$ if the distance between $(3, y)$ and $(3, 2)$ is 5.",
+    "choices": [
+      {
+        "text": "$y = 7$ or $y = -3$",
+        "rationale": "Correct: $|y-2|=5 \\Rightarrow y-2=5$ or $y-2=-5$."
+      },
+      {
+        "text": "$y = 7$ only",
+        "rationale": "Missed the negative case."
+      },
+      {
+        "text": "$y = 5$",
+        "rationale": "Assumed distance from origin."
+      },
+      {
+        "text": "$y = 3$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$y = -7$ or $y = 3$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Since x-coordinates are the same, distance is $|y_2 - y_1|$.",
+      "$|2 - y| = 5$.",
+      "$2 - y = 5 \\Rightarrow y = -3$.",
+      "$2 - y = -5 \\Rightarrow y = 7$."
+    ]
+  },
+  {
+    "id": "COO-DST-0016",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 4,
+    "stem": "Which point on the x-axis is equidistant from $(2, 3)$ and $(4, 5)$?",
+    "choices": [
+      {
+        "text": "$(7, 0)$",
+        "rationale": "Correct: $(x-2)^2 + 9 = (x-4)^2 + 25$. Solve for x."
+      },
+      {
+        "text": "$(3, 0)$",
+        "rationale": "Midpoint of x-coordinates."
+      },
+      {
+        "text": "$(5, 0)$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$(0, 0)$",
+        "rationale": "Origin."
+      },
+      {
+        "text": "$(6, 0)$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let point be $P(x, 0)$. Distances squared must be equal.",
+      "$(x-2)^2 + (0-3)^2 = (x-4)^2 + (0-5)^2$.",
+      "$x^2 - 4x + 4 + 9 = x^2 - 8x + 16 + 25$.",
+      "$-4x + 13 = -8x + 41$.",
+      "$4x = 28 \\Rightarrow x = 7$. Point is $(7, 0)$."
+    ]
+  },
+  {
+    "id": "COO-DST-0017",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 2,
+    "stem": "What is the length of the diameter of a circle with center $(1, 1)$ passing through $(4, 5)$?",
+    "choices": [
+      {
+        "text": "10",
+        "rationale": "Correct: Radius is 5. Diameter is 10."
+      },
+      {
+        "text": "5",
+        "rationale": "This is the radius."
+      },
+      {
+        "text": "25",
+        "rationale": "Radius squared."
+      },
+      {
+        "text": "7",
+        "rationale": "Sum of coordinates."
+      },
+      {
+        "text": "8",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find radius $r$: Distance from $(1,1)$ to $(4,5)$.",
+      "$r = \\sqrt{(4-1)^2 + (5-1)^2} = \\sqrt{3^2 + 4^2} = 5$.",
+      "Diameter $d = 2r = 10$."
+    ]
+  },
+  {
+    "id": "COO-DST-0018",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 5,
+    "stem": "Find the distance between the points $(a, b)$ and $(b, a)$.",
+    "choices": [
+      {
+        "text": "$|a - b|\\sqrt{2}$",
+        "rationale": "Correct: $\\sqrt{(b-a)^2 + (a-b)^2} = \\sqrt{2(a-b)^2} = |a-b|\\sqrt{2}$."
+      },
+      {
+        "text": "$a - b$",
+        "rationale": "Missing radical."
+      },
+      {
+        "text": "$0$",
+        "rationale": "Assumed same point."
+      },
+      {
+        "text": "$2|a - b|$",
+        "rationale": "Incorrect radical simplification."
+      },
+      {
+        "text": "$\\sqrt{a^2 + b^2}$",
+        "rationale": "Distance from origin logic."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$d = \\sqrt{(b - a)^2 + (a - b)^2}$.",
+      "Note that $(b - a)^2 = (a - b)^2$.",
+      "$d = \\sqrt{2(a - b)^2} = |a - b|\\sqrt{2}$."
+    ]
+  },
+  {
+    "id": "COO-DST-0019",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 5,
+    "stem": "Three vertices of a parallelogram are $A(1, 1)$, $B(4, 2)$, and $C(5, 5)$. If $AC$ is the diagonal, find the fourth vertex $D$.",
+    "choices": [
+      {
+        "text": "$(2, 4)$",
+        "rationale": "Correct: Midpoint of AC must equal Midpoint of BD."
+      },
+      {
+        "text": "$(8, 8)$",
+        "rationale": "Added coordinates."
+      },
+      {
+        "text": "$(0, 0)$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$(3, 3)$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$(6, 6)$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Diagonals of a parallelogram bisect each other.",
+      "Midpoint of $AC$: $(\\frac{1+5}{2}, \\frac{1+5}{2}) = (3, 3)$.",
+      "Let $D = (x, y)$. Midpoint of $BD$ is $(\\frac{4+x}{2}, \\frac{2+y}{2})$.",
+      "$\\frac{4+x}{2} = 3 \\Rightarrow 4+x=6 \\Rightarrow x=2$.",
+      "$\\frac{2+y}{2} = 3 \\Rightarrow 2+y=6 \\Rightarrow y=4$. D is $(2, 4)$."
+    ]
+  },
+  {
+    "id": "COO-DST-0020",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Distance & Midpoint",
+    "diff": 1,
+    "stem": "Identify the coordinates of the midpoint of the segment with endpoints $(-3, 0)$ and $(3, 0)$.",
+    "choices": [
+      {
+        "text": "$(0, 0)$",
+        "rationale": "Correct: $(\\frac{-3+3}{2}, 0) = (0, 0)$."
+      },
+      {
+        "text": "$(3, 0)$",
+        "rationale": "One endpoint."
+      },
+      {
+        "text": "$(-3, 0)$",
+        "rationale": "One endpoint."
+      },
+      {
+        "text": "$(0, 3)$",
+        "rationale": "Swapped coordinates."
+      },
+      {
+        "text": "$(6, 0)$",
+        "rationale": "Subtracted instead of averaged."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Average the x-values: $(-3 + 3) / 2 = 0$.",
+      "Average the y-values: $(0 + 0) / 2 = 0$.",
+      "Midpoint: $(0, 0)$."
+    ]
   }
 ]
 

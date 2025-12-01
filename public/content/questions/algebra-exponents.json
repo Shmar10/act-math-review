@@ -61,41 +61,523 @@
   {
     "id": "ALG-EXP-0006",
     "topic": "Algebra",
-    "subtopic": "Exponents & Radicals",
+    "subtopic": "Exponents",
     "diff": 1,
-    "stem": "Solve for $x$: $$3^{x+1}=27$$",
+    "stem": "Simplify: $x^3 \\cdot x^4$",
     "choices": [
-      { "text": "$2$", "rationale": "Correct: $27=3^3$, so $x+1=3\\Rightarrow x=2$." },
-      { "text": "$3$", "rationale": "Set $x=3$ instead of $x+1=3$." },
-      { "text": "$1$", "rationale": "Solved $3^x=27$ not $3^{x+1}=27$." },
-      { "text": "$-2$", "rationale": "Sign error isolating $x$." },
-      { "text": "$\\dfrac{3}{2}$", "rationale": "Equated exponents incorrectly." }
+      {
+        "text": "$x^7$",
+        "rationale": "Correct: Add exponents when multiplying with the same base ($3+4=7$)."
+      },
+      {
+        "text": "$x^{12}$",
+        "rationale": "Multiplied exponents instead of adding."
+      },
+      {
+        "text": "$2x^7$",
+        "rationale": "Added coefficients incorrectly."
+      },
+      {
+        "text": "$x^1$",
+        "rationale": "Subtracted exponents."
+      },
+      {
+        "text": "$x$",
+        "rationale": "Guess."
+      }
     ],
     "answerIndex": 0,
     "solutionSteps": [
-      "Rewrite $27$ as a power of $3$: $27=3^3$.",
-      "Then $3^{x+1}=3^3\\Rightarrow x+1=3$.",
-      "So $x=2$."
+      "Use the Product Rule: $x^a \\cdot x^b = x^{a+b}$.",
+      "$x^3 \\cdot x^4 = x^{3+4} = x^7$."
     ]
   },
   {
     "id": "ALG-EXP-0007",
     "topic": "Algebra",
-    "subtopic": "Exponents & Radicals",
-    "diff": 3,
-    "stem": "Rationalize the denominator: $$\\dfrac{5}{\\sqrt{3}-\\sqrt{2}}$$",
+    "subtopic": "Exponents",
+    "diff": 1,
+    "stem": "Evaluate: $5^0$",
     "choices": [
-      { "text": "$5(\\sqrt{3}+\\sqrt{2})$", "rationale": "Correct: Multiply by the conjugate; denominator becomes $3-2=1$." },
-      { "text": "$\\dfrac{5(\\sqrt{3}+\\sqrt{2})}{2}$", "rationale": "Used $3+2$ in denominator instead of $3-2$." },
-      { "text": "$\\dfrac{5(\\sqrt{3}-\\sqrt{2})}{1}$", "rationale": "Did not change the denominator." },
-      { "text": "$\\dfrac{5}{\\sqrt{3}+\\sqrt{2}}$", "rationale": "Rationalized with the same denominator." },
-      { "text": "$5(\\sqrt{3}-\\sqrt{2})$", "rationale": "Used the wrong conjugate sign in the numerator." }
+      {
+        "text": "1",
+        "rationale": "Correct: Any non-zero number raised to the power of 0 is 1."
+      },
+      {
+        "text": "0",
+        "rationale": "Common misconception."
+      },
+      {
+        "text": "5",
+        "rationale": "Thought the exponent implies \"one copy\" of the number."
+      },
+      {
+        "text": "Undefined",
+        "rationale": "Only $0^0$ is undefined."
+      },
+      {
+        "text": "-1",
+        "rationale": "Guess."
+      }
     ],
     "answerIndex": 0,
     "solutionSteps": [
-      "Multiply numerator and denominator by the conjugate $\\sqrt{3}+\\sqrt{2}$.",
-      "$\\dfrac{5}{\\sqrt{3}-\\sqrt{2}}\\cdot\\dfrac{\\sqrt{3}+\\sqrt{2}}{\\sqrt{3}+\\sqrt{2}}=\\dfrac{5(\\sqrt{3}+\\sqrt{2})}{(\\sqrt{3})^2-(\\sqrt{2})^2}=\\dfrac{5(\\sqrt{3}+\\sqrt{2})}{3-2}$.",
-      "Result: $5(\\sqrt{3}+\\sqrt{2})$."
+      "Apply the Zero Exponent Rule: $a^0 = 1$ for $a \\ne 0$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0008",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 2,
+    "stem": "Simplify: $\\frac{y^8}{y^2}$",
+    "choices": [
+      {
+        "text": "$y^6$",
+        "rationale": "Correct: Subtract exponents ($8-2=6$)."
+      },
+      {
+        "text": "$y^4$",
+        "rationale": "Divided exponents."
+      },
+      {
+        "text": "$y^{10}$",
+        "rationale": "Added exponents."
+      },
+      {
+        "text": "$y^{16}$",
+        "rationale": "Multiplied exponents."
+      },
+      {
+        "text": "$1$",
+        "rationale": "Assumed cancellation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the Quotient Rule: $\\frac{x^a}{x^b} = x^{a-b}$.",
+      "$y^{8-2} = y^6$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0009",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 2,
+    "stem": "Simplify: $(2x^3)^2$",
+    "choices": [
+      {
+        "text": "$4x^6$",
+        "rationale": "Correct: Square the coefficient ($2^2=4$) and multiply exponents ($3 \\times 2=6$)."
+      },
+      {
+        "text": "$2x^6$",
+        "rationale": "Forgot to square the coefficient."
+      },
+      {
+        "text": "$4x^5$",
+        "rationale": "Added exponents instead of multiplying."
+      },
+      {
+        "text": "$4x^9$",
+        "rationale": "Squared the exponent ($3^2=9$)."
+      },
+      {
+        "text": "$2x^5$",
+        "rationale": "Added exponents and forgot to square coefficient."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute the exponent: $2^2 \\cdot (x^3)^2$.",
+      "$4 \\cdot x^{3 \\cdot 2} = 4x^6$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0010",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 2,
+    "stem": "Which expression is equivalent to $x^{-5}$?",
+    "choices": [
+      {
+        "text": "$\\frac{1}{x^5}$",
+        "rationale": "Correct: Definition of negative exponent."
+      },
+      {
+        "text": "$-x^5$",
+        "rationale": "Confused negative exponent with negative coefficient."
+      },
+      {
+        "text": "$-5x$",
+        "rationale": "Confused exponent with multiplication."
+      },
+      {
+        "text": "$x^{1/5}$",
+        "rationale": "Confused with fractional exponent."
+      },
+      {
+        "text": "$\\frac{1}{-x^5}$",
+        "rationale": "Made the base negative."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use the Negative Exponent Rule: $x^{-n} = \\frac{1}{x^n}$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0011",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 3,
+    "stem": "Simplify: $$\\frac{12a^5 b^2}{4a^2 b}$$",
+    "choices": [
+      {
+        "text": "$3a^3 b$",
+        "rationale": "Correct: $12/4=3$, $a^{5-2}=a^3$, $b^{2-1}=b$."
+      },
+      {
+        "text": "$3a^{2.5} b^2$",
+        "rationale": "Divided exponents."
+      },
+      {
+        "text": "$8a^3 b$",
+        "rationale": "Subtracted coefficients."
+      },
+      {
+        "text": "$3a^7 b^3$",
+        "rationale": "Added exponents."
+      },
+      {
+        "text": "$3a^3 b^2$",
+        "rationale": "Did not subtract the exponent of b (assumed $b^0$). "
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide coefficients: $12/4 = 3$.",
+      "Subtract exponents for a: $5 - 2 = 3$.",
+      "Subtract exponents for b: $2 - 1 = 1$.",
+      "Result: $3a^3 b$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0012",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 3,
+    "stem": "Evaluate $27^{2/3}$.",
+    "choices": [
+      {
+        "text": "9",
+        "rationale": "Correct: Cube root of 27 is 3, then square it to get 9."
+      },
+      {
+        "text": "18",
+        "rationale": "Multiplied $27 \\times 2/3$."
+      },
+      {
+        "text": "3",
+        "rationale": "Found cube root but forgot to square."
+      },
+      {
+        "text": "27",
+        "rationale": "No change."
+      },
+      {
+        "text": "81",
+        "rationale": "Squared first then cube rooted incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite as $(\\sqrt[3]{27})^2$.",
+      "$\\sqrt[3]{27} = 3$.",
+      "$3^2 = 9$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0013",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 3,
+    "stem": "Solve for $x$: $$2^{x+1} = 32$$",
+    "choices": [
+      {
+        "text": "4",
+        "rationale": "Correct: $32 = 2^5$, so $x+1=5 \\Rightarrow x=4$."
+      },
+      {
+        "text": "5",
+        "rationale": "This is the exponent, forgot to subtract 1."
+      },
+      {
+        "text": "3",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "16",
+        "rationale": "Divided 32 by 2."
+      },
+      {
+        "text": "6",
+        "rationale": "Added 1 instead of subtracting."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite 32 with base 2: $32 = 2^5$.",
+      "Set exponents equal: $x + 1 = 5$.",
+      "Solve: $x = 4$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0014",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 4,
+    "stem": "Simplify the expression to contain only positive exponents: $$\\frac{x^{-3} y^4}{x^2 y^{-1}}$$",
+    "choices": [
+      {
+        "text": "$\\frac{y^5}{x^5}$",
+        "rationale": "Correct: $y^{4 - (-1)} = y^5$. $x^{-3 - 2} = x^{-5} = 1/x^5$."
+      },
+      {
+        "text": "$\\frac{y^3}{x^5}$",
+        "rationale": "Subtracted $y$ exponents incorrectly ($4-1$)."
+      },
+      {
+        "text": "$\\frac{y^5}{x}$",
+        "rationale": "Subtracted $x$ exponents incorrectly ($-3+2$)."
+      },
+      {
+        "text": "$x^5 y^5$",
+        "rationale": "Moved x to numerator."
+      },
+      {
+        "text": "$\\frac{y^3}{x}$",
+        "rationale": "Multiple errors."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Combine x terms: $x^{-3} / x^2 = x^{-3-2} = x^{-5} = 1/x^5$.",
+      "Combine y terms: $y^4 / y^{-1} = y^{4 - (-1)} = y^5$.",
+      "Result: $\\frac{y^5}{x^5}$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0015",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 4,
+    "stem": "Solve for $x$: $$9^{x} = 27^{x-1}$$",
+    "choices": [
+      {
+        "text": "3",
+        "rationale": "Correct: $3^{2x} = 3^{3(x-1)} \\Rightarrow 2x = 3x - 3 \\Rightarrow x = 3$."
+      },
+      {
+        "text": "2",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "-3",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "1",
+        "rationale": "Guess."
+      },
+      {
+        "text": "1.5",
+        "rationale": "Ratio of bases."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convert to base 3: $9=3^2, 27=3^3$.",
+      "$(3^2)^x = (3^3)^{x-1}$.",
+      "$2x = 3(x - 1) \\Rightarrow 2x = 3x - 3$.",
+      "$3 = x$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0016",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 4,
+    "stem": "Simplify: $$\\left( \\frac{2x^2}{3y^3} \\right)^{-2}$$",
+    "choices": [
+      {
+        "text": "$\\frac{9y^6}{4x^4}$",
+        "rationale": "Correct: Flip fraction, square coefficients and exponents."
+      },
+      {
+        "text": "$\\frac{4x^4}{9y^6}$",
+        "rationale": "Forgot to flip for negative exponent."
+      },
+      {
+        "text": "-\\frac{4x^4}{9y^6}",
+        "rationale": "Made term negative instead of flipping."
+      },
+      {
+        "text": "$\\frac{9y^5}{4x^4}$",
+        "rationale": "Added 2 to exponent instead of multiplying."
+      },
+      {
+        "text": "$\\frac{3y^6}{2x^4}$",
+        "rationale": "Forgot to square coefficients."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Negative exponent flips the fraction: $(\\frac{3y^3}{2x^2})^2$.",
+      "Distribute the square: $\\frac{3^2 y^{3 \\cdot 2}}{2^2 x^{2 \\cdot 2}}$.",
+      "Simplify: $\\frac{9y^6}{4x^4}$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0017",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 5,
+    "stem": "Simplify the expression: $$\\sqrt[4]{16x^8 y^{12}}$$",
+    "choices": [
+      {
+        "text": "$2x^2 y^3$",
+        "rationale": "Correct: $\\sqrt[4]{16}=2$, $x^{8/4}=x^2$, $y^{12/4}=y^3$."
+      },
+      {
+        "text": "$4x^2 y^3$",
+        "rationale": "Square rooted 16 instead of 4th root."
+      },
+      {
+        "text": "$2x^4 y^8$",
+        "rationale": "Subtracted 4 from exponents."
+      },
+      {
+        "text": "$16x^2 y^3$",
+        "rationale": "Forgot to root the coefficient."
+      },
+      {
+        "text": "$2xy^3$",
+        "rationale": "Rooted x exponent incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Convert to fractional exponents: $(16 x^8 y^{12})^{1/4}$.",
+      "$16^{1/4} = 2$.",
+      "$x^{8/4} = x^2$.",
+      "$y^{12/4} = y^3$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0018",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 5,
+    "stem": "Solve for $x$: $$4^{x^2} = 16^{x + 4}$$",
+    "choices": [
+      {
+        "text": "$x = 4$ or $x = -2$",
+        "rationale": "Correct: $4^{x^2} = (4^2)^{x+4} \\Rightarrow x^2 = 2x + 8$. Factors to $(x-4)(x+2)$."
+      },
+      {
+        "text": "$x = 4$ only",
+        "rationale": "Missed the negative solution."
+      },
+      {
+        "text": "$x = -4$ or $x = 2$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$x = 8$",
+        "rationale": "Linear equation error."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrect setup."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Base 4 match: $16 = 4^2$.",
+      "Equation: $x^2 = 2(x + 4) \\Rightarrow x^2 = 2x + 8$.",
+      "$x^2 - 2x - 8 = 0$.",
+      "$(x - 4)(x + 2) = 0$. Roots: $4, -2$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0019",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 5,
+    "stem": "Simplify: $$\\frac{2^{n+3} - 2^n}{2^n}$$",
+    "choices": [
+      {
+        "text": "7",
+        "rationale": "Correct: Factor out $2^n$ in numerator: $2^n(2^3 - 1)/2^n = 8-1=7$."
+      },
+      {
+        "text": "3",
+        "rationale": "Subtracted exponents linearly."
+      },
+      {
+        "text": "$2^3$",
+        "rationale": "Cancelled $2^n$ terms incorrectly leaving $2^3$."
+      },
+      {
+        "text": "$2^3 - 1$",
+        "rationale": "Unsimplified."
+      },
+      {
+        "text": "8",
+        "rationale": "Forgot the $-1$ from the factored term."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Split the first term: $2^{n+3} = 2^n \\cdot 2^3$.",
+      "Factor numerator: $2^n(2^3 - 1)$.",
+      "Divide by denominator: $\\frac{2^n(8 - 1)}{2^n} = 7$."
+    ]
+  },
+  {
+    "id": "ALG-EXP-0020",
+    "topic": "Algebra",
+    "subtopic": "Exponents",
+    "diff": 3,
+    "stem": "Write $0.00045$ in scientific notation.",
+    "choices": [
+      {
+        "text": "$4.5 \\times 10^{-4}$",
+        "rationale": "Correct: Decimal moved 4 places right."
+      },
+      {
+        "text": "$4.5 \\times 10^4$",
+        "rationale": "Positive exponent implies large number."
+      },
+      {
+        "text": "$45 \\times 10^{-5}$",
+        "rationale": "Not in proper scientific notation ($1 \\le a < 10$)."
+      },
+      {
+        "text": "$4.5 \\times 10^{-3}$",
+        "rationale": "Counted zeros only."
+      },
+      {
+        "text": "$0.45 \\times 10^{-3}$",
+        "rationale": "Not proper scientific notation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Move decimal point to get a number between 1 and 10: $4.5$.",
+      "Moved 4 places to the right, so exponent is $-4$.",
+      "$4.5 \\times 10^{-4}$."
     ]
   }
 ]

@@ -38,5 +38,632 @@
     "Subtract exponents: $x^{5-2}=x^3$, $y^{2-1}=y$.",
     "Result: $\\dfrac{x^3y}{3}$."
   ]
-}
+},
+  {
+    "id": "ALG-GEN-0003",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 1,
+    "stem": "Evaluate the expression $3x^2 - 4x + 2$ when $x = 3$.",
+    "choices": [
+      {
+        "text": "17",
+        "rationale": "Correct: $3(3)^2 - 4(3) + 2 = 3(9) - 12 + 2 = 27 - 12 + 2 = 17$."
+      },
+      {
+        "text": "11",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "23",
+        "rationale": "Added 4x instead of subtracting."
+      },
+      {
+        "text": "35",
+        "rationale": " squared 3x instead of just x."
+      },
+      {
+        "text": "-13",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $x=3$: $3(3)^2 - 4(3) + 2$.",
+      "Exponent first: $3(9) - 12 + 2$.",
+      "Multiply: $27 - 12 + 2$.",
+      "Add/Subtract: $15 + 2 = 17$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0004",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 1,
+    "stem": "Simplify by combining like terms: $5x - 3 + 2x + 8$",
+    "choices": [
+      {
+        "text": "$7x + 5$",
+        "rationale": "Correct: $5x+2x=7x$, $-3+8=5$."
+      },
+      {
+        "text": "$3x + 5$",
+        "rationale": "Subtracted coefficients."
+      },
+      {
+        "text": "$7x - 11$",
+        "rationale": "Subtracted 8 from -3."
+      },
+      {
+        "text": "$12x$",
+        "rationale": "Combined variable and constant terms."
+      },
+      {
+        "text": "$7x + 11$",
+        "rationale": "Ignored the negative sign on 3."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Combine $x$ terms: $5x + 2x = 7x$.",
+      "Combine constants: $-3 + 8 = 5$.",
+      "Result: $7x + 5$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0005",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 1,
+    "stem": "Translate the phrase into an algebraic expression: \"Five less than twice a number $n$\".",
+    "choices": [
+      {
+        "text": "$2n - 5$",
+        "rationale": "Correct: \"Twice a number\" is $2n$, \"five less than\" subtracts 5 from it."
+      },
+      {
+        "text": "$5 - 2n$",
+        "rationale": "Reversed order of subtraction."
+      },
+      {
+        "text": "$2(n - 5)$",
+        "rationale": "Grouped incorrectly."
+      },
+      {
+        "text": "$5 < 2n$",
+        "rationale": "Used inequality symbol."
+      },
+      {
+        "text": "$2n + 5$",
+        "rationale": "Added instead of subtracted."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "\"Twice a number $n$\" $\\rightarrow 2n$.",
+      "\"Five less than...\" means subtract 5 from that value.",
+      "Expression: $2n - 5$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0006",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 2,
+    "stem": "Simplify: $2(3a - 4) - 3(a + 2)$",
+    "choices": [
+      {
+        "text": "$3a - 14$",
+        "rationale": "Correct: $6a - 8 - 3a - 6 = 3a - 14$."
+      },
+      {
+        "text": "$3a - 2$",
+        "rationale": "Sign error on distributing -3 to 2."
+      },
+      {
+        "text": "$9a - 14$",
+        "rationale": "Added coefficients."
+      },
+      {
+        "text": "$3a + 10$",
+        "rationale": "Multiple sign errors."
+      },
+      {
+        "text": "$3a - 10$",
+        "rationale": "Addition error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Distribute 2: $6a - 8$.",
+      "Distribute -3: $-3a - 6$.",
+      "Combine: $(6a - 3a) + (-8 - 6) = 3a - 14$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0007",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 2,
+    "stem": "Solve the formula $D = rt$ for $t$.",
+    "choices": [
+      {
+        "text": "$t = \\frac{D}{r}$",
+        "rationale": "Correct: Divide both sides by $r$."
+      },
+      {
+        "text": "$t = Dr$",
+        "rationale": "Multiplied instead of dividing."
+      },
+      {
+        "text": "$t = D - r$",
+        "rationale": "Subtracted instead of dividing."
+      },
+      {
+        "text": "$t = \\frac{r}{D}$",
+        "rationale": "Inverted fraction."
+      },
+      {
+        "text": "$t = D + r$",
+        "rationale": "Added instead of dividing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Start with $D = rt$.",
+      "To isolate $t$, divide both sides by $r$.",
+      "$t = D/r$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0008",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 2,
+    "stem": "Simplify the fraction: $$\\frac{4x + 8}{4}$$",
+    "choices": [
+      {
+        "text": "$x + 2$",
+        "rationale": "Correct: Factor out 4: $4(x+2)/4 = x+2$."
+      },
+      {
+        "text": "$x + 8$",
+        "rationale": "Cancelled 4 from first term only."
+      },
+      {
+        "text": "$4x + 2$",
+        "rationale": "Divided only the constant."
+      },
+      {
+        "text": "$x + 4$",
+        "rationale": "Division error."
+      },
+      {
+        "text": "$2x + 4$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Divide each term in the numerator by 4.",
+      "$\\frac{4x}{4} + \\frac{8}{4} = x + 2$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0009",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 3,
+    "stem": "If $a = 5$ and $b = -2$, evaluate $a^2 - b^2$.",
+    "choices": [
+      {
+        "text": "21",
+        "rationale": "Correct: $25 - (-2)^2 = 25 - 4 = 21$."
+      },
+      {
+        "text": "29",
+        "rationale": "Subtracted a negative ($25 - (-4)$)."
+      },
+      {
+        "text": "23",
+        "rationale": "Did not square $b$ correctly."
+      },
+      {
+        "text": "3",
+        "rationale": "Subtracted bases first ($5 - (-2) = 7$? No)."
+      },
+      {
+        "text": "27",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute values: $5^2 - (-2)^2$.",
+      "Square terms: $25 - 4$.",
+      "Subtract: $21$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0010",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 3,
+    "stem": "Simplify: $2[3(x - 1) + 4]$",
+    "choices": [
+      {
+        "text": "$6x + 2$",
+        "rationale": "Correct: Inside: $3x-3+4=3x+1$. Outside: $2(3x+1)=6x+2$."
+      },
+      {
+        "text": "$6x + 10$",
+        "rationale": "Distributed 2 to the 4 separately and the 3."
+      },
+      {
+        "text": "$6x - 2$",
+        "rationale": "Sign error inside bracket."
+      },
+      {
+        "text": "$5x + 7$",
+        "rationale": "Addition error."
+      },
+      {
+        "text": "$6x + 8$",
+        "rationale": "Did not simplify inside first."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Work inside brackets first: $3(x - 1) + 4 = 3x - 3 + 4 = 3x + 1$.",
+      "Multiply by outer 2: $2(3x + 1) = 6x + 2$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0011",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 3,
+    "stem": "The arithmetic mean (average) of $x$, 12, and 15 is 15. What is the value of $x$?",
+    "choices": [
+      {
+        "text": "18",
+        "rationale": "Correct: $(x+12+15)/3 = 15 \\Rightarrow x+27=45 \\Rightarrow x=18$."
+      },
+      {
+        "text": "15",
+        "rationale": "Assumed $x$ must be the mean."
+      },
+      {
+        "text": "12",
+        "rationale": "Guess."
+      },
+      {
+        "text": "45",
+        "rationale": "Forgot to divide by 3."
+      },
+      {
+        "text": "3",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Average formula: $\\frac{x + 12 + 15}{3} = 15$.",
+      "Multiply by 3: $x + 27 = 45$.",
+      "Subtract 27: $x = 18$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0012",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 3,
+    "stem": "Solve the volume formula $V = \\frac{1}{3}Bh$ for $B$.",
+    "choices": [
+      {
+        "text": "$B = \\frac{3V}{h}$",
+        "rationale": "Correct: Multiply by 3, divide by h."
+      },
+      {
+        "text": "$B = \\frac{V}{3h}$",
+        "rationale": "Divided by 3 instead of multiplying."
+      },
+      {
+        "text": "$B = 3Vh$",
+        "rationale": "Multiplied by h instead of dividing."
+      },
+      {
+        "text": "$B = \\frac{3h}{V}$",
+        "rationale": "Inverted fraction."
+      },
+      {
+        "text": "$B = V - 3h$",
+        "rationale": "Subtraction error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by 3: $3V = Bh$.",
+      "Divide by $h$: $B = \\frac{3V}{h}$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0013",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 4,
+    "stem": "If $y$ varies directly as $x$, and $y = 12$ when $x = 4$, find $y$ when $x = 9$.",
+    "choices": [
+      {
+        "text": "27",
+        "rationale": "Correct: $k = y/x = 12/4 = 3$. $y = 3(9) = 27$."
+      },
+      {
+        "text": "3",
+        "rationale": "This is the constant $k$."
+      },
+      {
+        "text": "36",
+        "rationale": "Multiplied 9 by 4."
+      },
+      {
+        "text": "17",
+        "rationale": "Additive relationship ($4+8=12, 9+8=17$)."
+      },
+      {
+        "text": "108",
+        "rationale": "Multiplied $12 \\times 9$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Direct variation: $y = kx$.",
+      "Find $k$: $12 = k(4) \\Rightarrow k = 3$.",
+      "Find new $y$: $y = 3(9) = 27$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0014",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 4,
+    "stem": "If $y$ varies inversely as $x$, and $y = 8$ when $x = 3$, what is $y$ when $x = 4$?",
+    "choices": [
+      {
+        "text": "6",
+        "rationale": "Correct: $k = xy = 24$. $y = 24/4 = 6$."
+      },
+      {
+        "text": "12",
+        "rationale": "Direct variation assumption."
+      },
+      {
+        "text": "24",
+        "rationale": "This is the constant $k$."
+      },
+      {
+        "text": "2",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "9",
+        "rationale": "Additive assumption."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inverse variation: $y = k/x$ or $xy = k$.",
+      "Find $k$: $3 \\times 8 = 24$.",
+      "Find new $y$: $y = 24 / 4 = 6$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0015",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 4,
+    "stem": "The sum of three consecutive odd integers is 51. What is the smallest of these integers?",
+    "choices": [
+      {
+        "text": "15",
+        "rationale": "Correct: $x + (x+2) + (x+4) = 51 \\Rightarrow 3x+6=51 \\Rightarrow 3x=45 \\Rightarrow x=15$."
+      },
+      {
+        "text": "17",
+        "rationale": "This is the middle integer."
+      },
+      {
+        "text": "13",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "19",
+        "rationale": "This is the largest integer."
+      },
+      {
+        "text": "51",
+        "rationale": "The sum."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let integers be $x, x+2, x+4$.",
+      "$3x + 6 = 51 \\Rightarrow 3x = 45 \\Rightarrow x = 15$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0016",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 5,
+    "stem": "Define the operation $a \\star b = a^2 - 2ab + b$. Evaluate $4 \\star 3$.",
+    "choices": [
+      {
+        "text": "-5",
+        "rationale": "Correct: $4^2 - 2(4)(3) + 3 = 16 - 24 + 3 = -5$."
+      },
+      {
+        "text": "-11",
+        "rationale": "Forgot to add the last $b$."
+      },
+      {
+        "text": "7",
+        "rationale": "Sign error on subtraction."
+      },
+      {
+        "text": "19",
+        "rationale": "Added $2ab$."
+      },
+      {
+        "text": "1",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $a=4, b=3$ into definition.",
+      "$4^2 - 2(4)(3) + 3$.",
+      "$16 - 24 + 3 = -8 + 3 = -5$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0017",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 5,
+    "stem": "A two-digit number is 4 times the sum of its digits. If 18 is added to the number, the digits are reversed. Find the number.",
+    "choices": [
+      {
+        "text": "24",
+        "rationale": "Correct: $24 = 4(2+4)$. $24+18=42$ (reversed)."
+      },
+      {
+        "text": "12",
+        "rationale": "$12 = 4(1+2)$. $12+18=30 \\ne 21$."
+      },
+      {
+        "text": "36",
+        "rationale": "$36 = 4(9)$. $36+18=54$ (not 63)."
+      },
+      {
+        "text": "48",
+        "rationale": "$48 = 4(12)$. $48+18=66$."
+      },
+      {
+        "text": "42",
+        "rationale": "This is the reversed number."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let number be $10t + u$.",
+      "Eq 1: $10t + u = 4(t + u) \\Rightarrow 10t + u = 4t + 4u \\Rightarrow 6t = 3u \\Rightarrow u = 2t$.",
+      "Eq 2: $10t + u + 18 = 10u + t \\Rightarrow 9u - 9t = 18 \\Rightarrow u - t = 2$.",
+      "Substitute $u=2t$ into $u-t=2$: $2t - t = 2 \\Rightarrow t = 2$.",
+      "$u = 2(2) = 4$. Number is 24."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0018",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 5,
+    "stem": "Identify the property illustrated by: $a(b + c) = ab + ac$.",
+    "choices": [
+      {
+        "text": "Distributive Property",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "Associative Property",
+        "rationale": "Grouping change."
+      },
+      {
+        "text": "Commutative Property",
+        "rationale": "Order change."
+      },
+      {
+        "text": "Identity Property",
+        "rationale": "Adding 0 or multiplying by 1."
+      },
+      {
+        "text": "Inverse Property",
+        "rationale": "Canceling to identity."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The Distributive Property states that multiplying a sum by a number is the same as multiplying each addend by the number and then adding."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0019",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 4,
+    "stem": "Simplify the complex fraction: $$\\frac{\\frac{1}{x} + \\frac{1}{y}}{\\frac{1}{xy}}$$",
+    "choices": [
+      {
+        "text": "$x + y$",
+        "rationale": "Correct: $(\\frac{y+x}{xy}) \\cdot xy = x+y$."
+      },
+      {
+        "text": "$xy$",
+        "rationale": "Multiplication error."
+      },
+      {
+        "text": "$\\frac{1}{x+y}$",
+        "rationale": "Inversion error."
+      },
+      {
+        "text": "$\\frac{x+y}{xy}$",
+        "rationale": "Forgot to multiply by denominator reciprocal."
+      },
+      {
+        "text": "1",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Numerator LCD is $xy$: $\\frac{y+x}{xy}$.",
+      "Divide by $\\frac{1}{xy}$ (multiply by $xy$).",
+      "$\\frac{y+x}{xy} \\cdot xy = y + x$."
+    ]
+  },
+  {
+    "id": "ALG-GEN-0020",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "diff": 5,
+    "stem": "Simplify completely: $$\\frac{x^2 - 1}{x^2 + 2x + 1}$$",
+    "choices": [
+      {
+        "text": "$\\frac{x - 1}{x + 1}$",
+        "rationale": "Correct: $\\frac{(x-1)(x+1)}{(x+1)(x+1)}$. Cancel $(x+1)$."
+      },
+      {
+        "text": "$\\frac{x + 1}{x - 1}$",
+        "rationale": "Inverted."
+      },
+      {
+        "text": "$\\frac{x - 1}{x + 2}$",
+        "rationale": "Factoring error."
+      },
+      {
+        "text": "$-1$",
+        "rationale": "Cancelled $x^2$ terms incorrectly."
+      },
+      {
+        "text": "$x - 1$",
+        "rationale": "Denominator error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor numerator: $(x - 1)(x + 1)$ (Difference of squares).",
+      "Factor denominator: $(x + 1)(x + 1)$ (Perfect square trinomial).",
+      "Cancel one $(x + 1)$: Result $\\frac{x - 1}{x + 1}$."
+    ]
+  }
 ]
