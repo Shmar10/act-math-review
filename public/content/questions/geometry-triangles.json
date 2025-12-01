@@ -447,5 +447,180 @@
       "Proportion: $\\frac{12}{A} = \\frac{4}{9}$.",
       "$4A = 108 \\Rightarrow A = 27$."
     ]
+  },
+  {
+    "id": "GEO-TRI-0016",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 2,
+    "stem": "If the three angles of a triangle are $x$, $2x$, and $3x$, what is the value of $x$?",
+    "choices": [
+      {
+        "text": "$30^\\circ$",
+        "rationale": "Correct: $6x = 180 \\Rightarrow x = 30$."
+      },
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$45^\\circ$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$90^\\circ$",
+        "rationale": "Largest angle."
+      },
+      {
+        "text": "$20^\\circ$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sum of angles is $180^\\circ$.",
+      "$x + 2x + 3x = 180$.",
+      "$6x = 180 \\Rightarrow x = 30$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0017",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "Identify the type of triangle with side lengths 9, 12, and 15.",
+    "choices": [
+      {
+        "text": "Right Triangle",
+        "rationale": "Correct: $9^2 + 12^2 = 81 + 144 = 225 = 15^2$."
+      },
+      {
+        "text": "Acute Triangle",
+        "rationale": "Incorrect classification."
+      },
+      {
+        "text": "Obtuse Triangle",
+        "rationale": "Incorrect classification."
+      },
+      {
+        "text": "Isosceles Triangle",
+        "rationale": "All sides are different."
+      },
+      {
+        "text": "Not a triangle",
+        "rationale": "Satisfies triangle inequality."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check Pythagorean theorem: $a^2 + b^2 = c^2$.",
+      "$9^2 + 12^2 = 81 + 144 = 225$.",
+      "$15^2 = 225$.",
+      "Since $a^2 + b^2 = c^2$, it is a right triangle."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0018",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 3,
+    "stem": "In $\\triangle XYZ$, the centroid is point $G$. If the length of the median from $X$ to the midpoint of $YZ$ is 12 units, what is the length of segment $XG$?",
+    "choices": [
+      {
+        "text": "8",
+        "rationale": "Correct: Centroid divides median 2:1. $XG = 2/3$ of 12."
+      },
+      {
+        "text": "6",
+        "rationale": "Midpoint logic (incorrect for centroid)."
+      },
+      {
+        "text": "4",
+        "rationale": "Length of the shorter segment."
+      },
+      {
+        "text": "10",
+        "rationale": "Guess."
+      },
+      {
+        "text": "9",
+        "rationale": "3/4 ratio incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The centroid divides the median into a $2:1$ ratio from the vertex.",
+      "$XG = \\frac{2}{3} \\times 12 = 8$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0019",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 4,
+    "stem": "Find the area of an equilateral triangle with a perimeter of 18.",
+    "choices": [
+      {
+        "text": "$9\\sqrt{3}$",
+        "rationale": "Correct: Side $s=6$. Area $\\frac{\\sqrt{3}}{4}s^2 = \\frac{\\sqrt{3}}{4}(36) = 9\\sqrt{3}$."
+      },
+      {
+        "text": "$18\\sqrt{3}$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$9$",
+        "rationale": "Forgot radical."
+      },
+      {
+        "text": "$36\\sqrt{3}$",
+        "rationale": "Used perimeter as side length."
+      },
+      {
+        "text": "$4.5\\sqrt{3}$",
+        "rationale": "Half of the correct area."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Side length $s = 18 / 3 = 6$.",
+      "Area formula: $A = \\frac{s^2 \\sqrt{3}}{4}$.",
+      "$A = \\frac{36\\sqrt{3}}{4} = 9\\sqrt{3}$."
+    ]
+  },
+  {
+    "id": "GEO-TRI-0020",
+    "topic": "Geometry",
+    "subtopic": "Triangles",
+    "diff": 5,
+    "stem": "In $\\triangle ABC$, $AB = 7$, $AC = 9$, and $BC = 12$. Which angle is the smallest?",
+    "choices": [
+      {
+        "text": "$\\angle C$",
+        "rationale": "Correct: Smallest angle is opposite smallest side ($AB=7$)."
+      },
+      {
+        "text": "$\\angle B$",
+        "rationale": "Opposite side 9 (middle)."
+      },
+      {
+        "text": "$\\angle A$",
+        "rationale": "Opposite side 12 (largest)."
+      },
+      {
+        "text": "Cannot be determined",
+        "rationale": "Inequality theorem applies."
+      },
+      {
+        "text": "All are equal",
+        "rationale": "Not equilateral."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Triangle Inequality Theorem relative to angles: The smallest angle is opposite the smallest side.",
+      "Smallest side is $AB = 7$.",
+      "Opposite angle is $\\angle C$."
+    ]
   }
 ]

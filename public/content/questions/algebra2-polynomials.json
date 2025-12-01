@@ -459,5 +459,183 @@
       "Simplify numerator: $x^2 - x + 1$.",
       "Result: $\\frac{x^2 - x + 1}{x^2 - 1}$. (This does not factor further)."
     ]
+  },
+  {
+    "id": "ALG2-POLY-0016",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 2,
+    "stem": "Multiply: $$(x - 2)(x^2 + 2x + 4)$$",
+    "choices": [
+      {
+        "text": "$x^3 - 8$",
+        "rationale": "Correct: Difference of cubes pattern."
+      },
+      {
+        "text": "$x^3 + 8$",
+        "rationale": "Incorrect sign."
+      },
+      {
+        "text": "$x^3 - 4x^2 + 8x - 8$",
+        "rationale": "Expansion error."
+      },
+      {
+        "text": "$x^2 + 4x - 8$",
+        "rationale": "Incorrect terms."
+      },
+      {
+        "text": "$x^3 + 4x^2 + 8$",
+        "rationale": "Expansion error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recognize pattern $(a-b)(a^2+ab+b^2) = a^3 - b^3$.",
+      "Here $a=x, b=2$.",
+      "Result is $x^3 - 2^3 = x^3 - 8$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0017",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 3,
+    "stem": "Identify the vertical asymptote(s) of $$f(x) = \\frac{x + 2}{x^2 - 1}$$",
+    "choices": [
+      {
+        "text": "$x = 1, x = -1$",
+        "rationale": "Correct: Denominator factors to $(x-1)(x+1)$. Neither cancels with numerator."
+      },
+      {
+        "text": "$x = 1$ only",
+        "rationale": "Missed negative root."
+      },
+      {
+        "text": "$x = -2$",
+        "rationale": "This is the x-intercept."
+      },
+      {
+        "text": "$y = 0$",
+        "rationale": "This is the horizontal asymptote."
+      },
+      {
+        "text": "No vertical asymptotes",
+        "rationale": "Incorrect analysis."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Set denominator to 0: $x^2 - 1 = 0$.",
+      "Solve: $x = 1, x = -1$.",
+      "Check numerator: $x+2$. No common factors, so both are asymptotes."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0018",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 4,
+    "stem": "Solve for $x$: $$ \\frac{2}{x+3} - \\frac{1}{x} = \\frac{-6}{x(x+3)} $$",
+    "choices": [
+      {
+        "text": "$x = -3$ (Extraneous)",
+        "rationale": "This is the algebraic solution but it violates domain restrictions."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Correct: The only algebraic solution is extraneous."
+      },
+      {
+        "text": "$x = 3$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$x = 0$",
+        "rationale": "Restriction on domain."
+      },
+      {
+        "text": "$x = -6$",
+        "rationale": "Algebra error."
+      }
+    ],
+    "answerIndex": 1,
+    "solutionSteps": [
+      "Multiply by LCD $x(x+3)$: $2x - 1(x+3) = -6$.",
+      "$2x - x - 3 = -6$.",
+      "$x - 3 = -6 \\Rightarrow x = -3$.",
+      "Check domain: $x \\ne 0, x \\ne -3$.",
+      "Since $x = -3$ is restricted, there is no solution."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0019",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 4,
+    "stem": "Find the zeros of the polynomial $P(x) = x^3 - 2x^2 - 5x + 6$, given that $x = 1$ is a zero.",
+    "choices": [
+      {
+        "text": "$1, 3, -2$",
+        "rationale": "Correct: Synthetic division by 1 gives $x^2-x-6$. Factors to $(x-3)(x+2)$."
+      },
+      {
+        "text": "$1, -3, 2$",
+        "rationale": "Sign error on factors."
+      },
+      {
+        "text": "$1, 2, 3$",
+        "rationale": "Incorrect signs."
+      },
+      {
+        "text": "$1, -1, 6$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$-1, -3, -2$",
+        "rationale": "Sign errors."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Synthetic division with root 1 on coefficients 1, -2, -5, 6.",
+      "Result: $1, -1, -6$ (Polynomial $x^2 - x - 6$).",
+      "Factor quadratic: $(x - 3)(x + 2) = 0$. Roots $3, -2$.",
+      "Total roots: $1, 3, -2$."
+    ]
+  },
+  {
+    "id": "ALG2-POLY-0020",
+    "topic": "Algebra II",
+    "subtopic": "Polynomials & Rational Expressions",
+    "diff": 5,
+    "stem": "Divide and simplify: $$ \\frac{x^2 - 9}{x^2 + 6x + 9} \\div \\frac{x - 3}{x + 3} $$",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: $\\frac{(x-3)(x+3)}{(x+3)(x+3)} \\cdot \\frac{x+3}{x-3}$. All terms cancel."
+      },
+      {
+        "text": "$\\frac{x-3}{x+3}$",
+        "rationale": "Forgot to flip the second fraction."
+      },
+      {
+        "text": "$(x-3)^2$",
+        "rationale": "Incorrect cancellation."
+      },
+      {
+        "text": "$\\frac{1}{x+3}$",
+        "rationale": "Leftover term."
+      },
+      {
+        "text": "0",
+        "rationale": "Division result is never 0 unless numerator is 0."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor terms: $\\frac{(x-3)(x+3)}{(x+3)^2}$.",
+      "Change division to multiplication by reciprocal: $\\cdot \\frac{x+3}{x-3}$.",
+      "$\\frac{(x-3)(x+3)(x+3)}{(x+3)(x+3)(x-3)} = 1$."
+    ]
   }
 ]

@@ -397,5 +397,179 @@
       "Case 1: $2x + 1 = x - 3 \\Rightarrow x = -4$. (Reject because $-4 < 3$).",
       "Case 2: $2x + 1 = -(x - 3) \\Rightarrow 2x + 1 = -x + 3 \\Rightarrow 3x = 2 \\Rightarrow x = 2/3$. (Reject because $2/3 < 3$)."
     ]
+  },
+  {
+    "id": "ALG-ABS-0016",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 2,
+    "stem": "Solve for $x$: $$ |5 - 2x| = 7 $$",
+    "choices": [
+      {
+        "text": "$x = -1$ or $x = 6$",
+        "rationale": "Correct: $5 - 2x = 7 \\Rightarrow -2x = 2 \\Rightarrow x = -1$. And $5 - 2x = -7 \\Rightarrow -2x = -12 \\Rightarrow x = 6$."
+      },
+      {
+        "text": "$x = -1$ only",
+        "rationale": "Missed the negative case."
+      },
+      {
+        "text": "$x = 1$ or $x = -6$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$x = 6$ only",
+        "rationale": "Missed the positive case."
+      },
+      {
+        "text": "$x = -6$ or $x = 1$",
+        "rationale": "Reversed signs."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Case 1: $5 - 2x = 7 \\Rightarrow -2x = 2 \\Rightarrow x = -1$.",
+      "Case 2: $5 - 2x = -7 \\Rightarrow -2x = -12 \\Rightarrow x = 6$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0017",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 3,
+    "stem": "Solve for $x$: $$ -2|x + 4| + 5 = -3 $$",
+    "choices": [
+      {
+        "text": "$x = 0$ or $x = -8$",
+        "rationale": "Correct: $-2|x+4| = -8 \\Rightarrow |x+4|=4$. Cases: $x+4=4$ or $x+4=-4$."
+      },
+      {
+        "text": "$x = 0$ only",
+        "rationale": "Missed the negative case."
+      },
+      {
+        "text": "$x = 8$ or $x = -8$",
+        "rationale": "Incorrectly solved $x+4=4$."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrectly stopped at $-2|...| = -8$ thinking it's impossible."
+      },
+      {
+        "text": "$x = -2$ or $x = -6$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 5: $-2|x + 4| = -8$.",
+      "Divide by -2: $|x + 4| = 4$.",
+      "Case 1: $x + 4 = 4 \\Rightarrow x = 0$.",
+      "Case 2: $x + 4 = -4 \\Rightarrow x = -8$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0018",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 4,
+    "stem": "Solve the equation: $$ |x^2 - 10| = 6 $$",
+    "choices": [
+      {
+        "text": "$x = \\pm 4$ or $x = \\pm 2$",
+        "rationale": "Correct: $x^2 - 10 = 6 \\Rightarrow x^2 = 16$. $x^2 - 10 = -6 \\Rightarrow x^2 = 4$."
+      },
+      {
+        "text": "$x = 4$ or $x = 2$",
+        "rationale": "Missed negative roots."
+      },
+      {
+        "text": "$x = \\pm 4$",
+        "rationale": "Missed the second case."
+      },
+      {
+        "text": "$x = \\pm 16$ or $x = \\pm 4$",
+        "rationale": "Forgot to take square roots."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrect setup."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Case 1: $x^2 - 10 = 6 \\Rightarrow x^2 = 16 \\Rightarrow x = \\pm 4$.",
+      "Case 2: $x^2 - 10 = -6 \\Rightarrow x^2 = 4 \\Rightarrow x = \\pm 2$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0019",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 4,
+    "stem": "Solve for $x$: $$ |2x - 3| = |x + 6| $$",
+    "choices": [
+      {
+        "text": "$x = 9$ or $x = -1$",
+        "rationale": "Correct: $2x-3 = x+6 \\Rightarrow x=9$. $2x-3 = -(x+6) \\Rightarrow 3x = -3$."
+      },
+      {
+        "text": "$x = 9$ or $x = 1$",
+        "rationale": "Sign error on second case."
+      },
+      {
+        "text": "$x = -9$ or $x = 1$",
+        "rationale": "Reversed signs."
+      },
+      {
+        "text": "$x = 9$ only",
+        "rationale": "Missed the negative case."
+      },
+      {
+        "text": "$x = 3$ or $x = -3$",
+        "rationale": "Guessing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Case 1 (Positive): $2x - 3 = x + 6 \\Rightarrow x = 9$.",
+      "Case 2 (Negative): $2x - 3 = -(x + 6) \\Rightarrow 2x - 3 = -x - 6 \\Rightarrow 3x = -3 \\Rightarrow x = -1$."
+    ]
+  },
+  {
+    "id": "ALG-ABS-0020",
+    "topic": "Algebra",
+    "subtopic": "Absolute Value Equations",
+    "diff": 5,
+    "stem": "Solve: $$ ||x - 1| - 2| = 5 $$",
+    "choices": [
+      {
+        "text": "$x = 8$ or $x = -6$",
+        "rationale": "Correct: $|x-1|-2 = 5 \\Rightarrow |x-1|=7$. $|x-1|-2 = -5$ is impossible."
+      },
+      {
+        "text": "$x = 8, -6, 4, -2$",
+        "rationale": "Attempted to solve impossible case $|x-1| = -3$."
+      },
+      {
+        "text": "$x = 8$ or $x = 6$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$x = -8$ or $x = 6$",
+        "rationale": "Reversed signs."
+      },
+      {
+        "text": "No solution",
+        "rationale": "Incorrectly deemed all cases impossible."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Outer split: $|x - 1| - 2 = 5$ OR $|x - 1| - 2 = -5$.",
+      "Path 1: $|x - 1| = 7 \\Rightarrow x - 1 = 7 \\text{ or } x - 1 = -7$. Solutions: $x = 8, x = -6$.",
+      "Path 2: $|x - 1| = -3$. Impossible (absolute value cannot be negative).",
+      "Final Solutions: $x = 8, -6$."
+    ]
   }
 ]

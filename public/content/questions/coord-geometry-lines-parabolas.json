@@ -451,5 +451,179 @@
       "The triangle is a right triangle with legs 6 and 4.",
       "Area $= \\frac{1}{2} \\cdot \\text{base} \\cdot \\text{height} = \\frac{1}{2}(6)(4) = 12$."
     ]
+  },
+  {
+    "id": "COORD-LIN-0016",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 2,
+    "stem": "Which of the following lines passes through the origin?",
+    "choices": [
+      {
+        "text": "$y = 3x$",
+        "rationale": "Correct: y-intercept is 0."
+      },
+      {
+        "text": "$y = 3x + 1$",
+        "rationale": "Passes through $(0, 1)$."
+      },
+      {
+        "text": "$y = x - 3$",
+        "rationale": "Passes through $(0, -3)$."
+      },
+      {
+        "text": "$y = 2$",
+        "rationale": "Horizontal line through $(0, 2)$."
+      },
+      {
+        "text": "$x = 5$",
+        "rationale": "Vertical line through $(5, 0)$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A line passes through the origin $(0,0)$ if its y-intercept $b$ is 0.",
+      "$y = 3x$ fits the form $y = mx + 0$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0017",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 3,
+    "stem": "Convert the equation $y = \\frac{2}{3}x - 4$ into standard form $Ax + By = C$, where $A, B, C$ are integers.",
+    "choices": [
+      {
+        "text": "$2x - 3y = 12$",
+        "rationale": "Correct: Multiply by 3: $3y = 2x - 12 \\Rightarrow -2x + 3y = -12 \\Rightarrow 2x - 3y = 12$."
+      },
+      {
+        "text": "$2x + 3y = 12$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$3x - 2y = 12$",
+        "rationale": "Swapped coefficients."
+      },
+      {
+        "text": "$2x - 3y = -4$",
+        "rationale": "Forgot to multiply the constant by 3."
+      },
+      {
+        "text": "$3y - 2x = 4$",
+        "rationale": "Sign and constant error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by 3 to clear fraction: $3y = 2x - 12$.",
+      "Subtract $2x$: $-2x + 3y = -12$.",
+      "Multiply by -1 to make A positive: $2x - 3y = 12$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0018",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 4,
+    "stem": "Determine the vertex of the parabola $y = 2x^2 + 8x - 5$.",
+    "choices": [
+      {
+        "text": "$(-2, -13)$",
+        "rationale": "Correct: $x = -8/4 = -2$. $y = 2(4) - 16 - 5 = -13$."
+      },
+      {
+        "text": "$(2, 19)$",
+        "rationale": "Sign error on x."
+      },
+      {
+        "text": "$(-2, -5)$",
+        "rationale": "Used y-intercept as y-coordinate."
+      },
+      {
+        "text": "$(-4, -5)$",
+        "rationale": "Used $b$ instead of $b/2a$."
+      },
+      {
+        "text": "$(-2, 3)$",
+        "rationale": "Arithmetic error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find x-coordinate: $x = -b / (2a) = -8 / 4 = -2$.",
+      "Find y-coordinate: $y = 2(-2)^2 + 8(-2) - 5$.",
+      "$y = 8 - 16 - 5 = -13$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0019",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 4,
+    "stem": "Find the equation of the line that is the perpendicular bisector of the segment connecting $(0, 0)$ and $(6, 8)$.",
+    "choices": [
+      {
+        "text": "$y = -\\frac{3}{4}x + \\frac{25}{4}$",
+        "rationale": "Correct: Midpoint $(3,4)$. Slope of segment $4/3$. Perp slope $-3/4$. $y-4 = -3/4(x-3)$."
+      },
+      {
+        "text": "$y = \\frac{4}{3}x$",
+        "rationale": "This is the line containing the segment."
+      },
+      {
+        "text": "$y = -\\frac{3}{4}x$",
+        "rationale": "Parallel line passing through origin."
+      },
+      {
+        "text": "$y = -\\frac{4}{3}x + 8$",
+        "rationale": "Wrong slope."
+      },
+      {
+        "text": "$y = \\frac{3}{4}x + 2$",
+        "rationale": "Wrong slope."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Midpoint: $(\\frac{0+6}{2}, \\frac{0+8}{2}) = (3, 4)$.",
+      "Slope of segment: $\\frac{8-0}{6-0} = \\frac{8}{6} = \\frac{4}{3}$.",
+      "Perpendicular slope: $-\\frac{3}{4}$.",
+      "Equation: $y - 4 = -\\frac{3}{4}(x - 3) \\Rightarrow y = -\\frac{3}{4}x + \\frac{9}{4} + \\frac{16}{4} = -\\frac{3}{4}x + \\frac{25}{4}$."
+    ]
+  },
+  {
+    "id": "COORD-LIN-0020",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Lines & Parabolas",
+    "diff": 5,
+    "stem": "Which of the following points lies inside the parabola $y > x^2 - 2$?",
+    "choices": [
+      {
+        "text": "$(0, 0)$",
+        "rationale": "Correct: $0 > 0^2 - 2 \\Rightarrow 0 > -2$ (True)."
+      },
+      {
+        "text": "$(2, 1)$",
+        "rationale": "$1 > 4 - 2 \\Rightarrow 1 > 2$ (False)."
+      },
+      {
+        "text": "$(3, 5)$",
+        "rationale": "$5 > 9 - 2 \\Rightarrow 5 > 7$ (False)."
+      },
+      {
+        "text": "$(0, -3)$",
+        "rationale": "$-3 > -2$ (False)."
+      },
+      {
+        "text": "$(1, -1)$",
+        "rationale": "$-1 > 1 - 2 \\Rightarrow -1 > -1$ (False, equality)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Test $(0,0)$: Is $0 > 0^2 - 2$? Yes, $0 > -2$.",
+      "The point $(0,0)$ is inside the region."
+    ]
   }
 ]

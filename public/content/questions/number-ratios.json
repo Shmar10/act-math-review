@@ -452,5 +452,180 @@
       "Total sum is $2x + 3x + 5x = 10x$.",
       "Total = $10(30) = \\$300$."
     ]
+  },
+  {
+    "id": "NUM-RAT-0016",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 2,
+    "stem": "Convert a speed of 72 km/h to m/s.",
+    "choices": [
+      {
+        "text": "20 m/s",
+        "rationale": "Correct: $72 \\times 1000 / 3600 = 20$."
+      },
+      {
+        "text": "720 m/s",
+        "rationale": "Multiplied by 10."
+      },
+      {
+        "text": "200 m/s",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "10 m/s",
+        "rationale": "Guess."
+      },
+      {
+        "text": "25.9 m/s",
+        "rationale": "Conversion error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$72 \\text{ km/h} = \\frac{72 \\times 1000 \\text{ meters}}{3600 \\text{ seconds}}$.",
+      "$72000 / 3600 = 20$ m/s."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0017",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "If 5 workers can build a wall in 12 days, how many days will it take 8 workers to build the same wall (assuming equal work rate)?",
+    "choices": [
+      {
+        "text": "7.5 days",
+        "rationale": "Correct: $5 \\times 12 = 60$ man-days. $60/8 = 7.5$."
+      },
+      {
+        "text": "19.2 days",
+        "rationale": "Used direct proportion ($5/12 = 8/x$)."
+      },
+      {
+        "text": "6 days",
+        "rationale": "Guess."
+      },
+      {
+        "text": "4 days",
+        "rationale": "Guess."
+      },
+      {
+        "text": "10 days",
+        "rationale": "Approximation."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Inverse variation: $W_1 D_1 = W_2 D_2$.",
+      "$5 \\times 12 = 8 \\times x$.",
+      "$60 = 8x \\Rightarrow x = 7.5$."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0018",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 3,
+    "stem": "A 100g alloy contains copper and zinc in the ratio 3:2. How much copper is in the alloy?",
+    "choices": [
+      {
+        "text": "60g",
+        "rationale": "Correct: Copper is $3/5$ of total. $0.6 \\times 100 = 60$."
+      },
+      {
+        "text": "40g",
+        "rationale": "This is the amount of zinc."
+      },
+      {
+        "text": "30g",
+        "rationale": "Used 3 parts but ignored total parts."
+      },
+      {
+        "text": "75g",
+        "rationale": "Used 3/4 ratio."
+      },
+      {
+        "text": "50g",
+        "rationale": "Equal split."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Total parts: $3 + 2 = 5$.",
+      "Copper fraction: $3/5$.",
+      "Amount: $\\frac{3}{5} \\times 100 = 60$g."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0019",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 4,
+    "stem": "The ratio of the areas of two squares is 16:25. What is the ratio of their perimeters?",
+    "choices": [
+      {
+        "text": "4:5",
+        "rationale": "Correct: Side ratio is $\\sqrt{16}:\\sqrt{25} = 4:5$. Perimeter ratio is same as side ratio."
+      },
+      {
+        "text": "16:25",
+        "rationale": "Same as area ratio."
+      },
+      {
+        "text": "2:2.5",
+        "rationale": "Unsimplified."
+      },
+      {
+        "text": "256:625",
+        "rationale": "Squared the area ratio."
+      },
+      {
+        "text": "8:12.5",
+        "rationale": "Used half area."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Ratio of areas = $(\\text{scale factor})^2$.",
+      "$k^2 = 16/25 \\Rightarrow k = 4/5$.",
+      "Ratio of perimeters is $k$, so $4:5$."
+    ]
+  },
+  {
+    "id": "NUM-RAT-0020",
+    "topic": "Number & Quantity",
+    "subtopic": "Ratios & Proportions",
+    "diff": 5,
+    "stem": "In a mixture of 60 liters, the ratio of milk to water is 2:1. If this ratio is to be 1:2, what is the quantity of water to be further added?",
+    "choices": [
+      {
+        "text": "60 liters",
+        "rationale": "Correct: Current: 40L milk, 20L water. New: Milk is fixed (40L). For 1:2, water must be 80L. Add $80-20=60$."
+      },
+      {
+        "text": "40 liters",
+        "rationale": "Difference in total volume needed."
+      },
+      {
+        "text": "20 liters",
+        "rationale": "Initial water amount."
+      },
+      {
+        "text": "30 liters",
+        "rationale": "Guess."
+      },
+      {
+        "text": "80 liters",
+        "rationale": "Final water amount."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Initial: 60L total. Ratio 2:1. Milk = 40L, Water = 20L.",
+      "New Ratio 1:2. Milk stays 40L. So 1 part = 40L. 2 parts = 80L.",
+      "Target water = 80L.",
+      "Added water = $80 - 20 = 60$ liters."
+    ]
   }
 ]

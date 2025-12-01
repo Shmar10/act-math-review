@@ -452,5 +452,179 @@
       "Since $a = -1$ (opens down), the function is positive *between* the roots.",
       "Interval: $1 < x < 5$."
     ]
+  },
+  {
+    "id": "FUNC-QUA-0016",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 2,
+    "stem": "Which direction does the parabola $f(x) = -3x^2 + 12x - 5$ open?",
+    "choices": [
+      {
+        "text": "Down",
+        "rationale": "Correct: Leading coefficient $-3$ is negative."
+      },
+      {
+        "text": "Up",
+        "rationale": "Ignored the negative sign."
+      },
+      {
+        "text": "Left",
+        "rationale": "This is a function of x, not y."
+      },
+      {
+        "text": "Right",
+        "rationale": "This is a function of x."
+      },
+      {
+        "text": "Cannot be determined",
+        "rationale": "Standard form always indicates direction."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Check the coefficient of the $x^2$ term ($a$).",
+      "Since $a = -3$ and $-3 < 0$, the parabola opens downward."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0017",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 3,
+    "stem": "If $f(x) = x^2 - 4$, compute $f(x-2)$.",
+    "choices": [
+      {
+        "text": "$x^2 - 4x$",
+        "rationale": "Correct: $(x-2)^2 - 4 = x^2 - 4x + 4 - 4 = x^2 - 4x$."
+      },
+      {
+        "text": "$x^2 - 8$",
+        "rationale": "Calculated $f(x) - 4$?"
+      },
+      {
+        "text": "$x^2 - 4x + 8$",
+        "rationale": "Forgot to subtract the 4."
+      },
+      {
+        "text": "$x^2 - 6$",
+        "rationale": "Just subtracted 2 from the constant."
+      },
+      {
+        "text": "$x^2 - 4x - 8$",
+        "rationale": "Sign error in expansion."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $(x-2)$ for $x$.",
+      "$(x-2)^2 - 4 = (x^2 - 4x + 4) - 4$.",
+      "Simplify: $x^2 - 4x$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0018",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 4,
+    "stem": "Identify the interval where the function $f(x) = x^2 - 6x + 5$ is decreasing.",
+    "choices": [
+      {
+        "text": "$(-\\infty, 3)$",
+        "rationale": "Correct: Vertex is at $x=3$. Opens up. Decreasing to the left of vertex."
+      },
+      {
+        "text": "$(3, \\infty)$",
+        "rationale": "Increasing interval."
+      },
+      {
+        "text": "$(-\\infty, \\infty)$",
+        "rationale": "Quadratic functions are not monotonic."
+      },
+      {
+        "text": "$(-\\infty, 6)$",
+        "rationale": "Used axis of symmetry calculation incorrectly."
+      },
+      {
+        "text": "$(1, 5)$",
+        "rationale": "Interval between roots."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find the vertex x-coordinate: $x = -b/2a = 6/2 = 3$.",
+      "Since parabola opens up ($a=1 > 0$), it decreases until the vertex.",
+      "Decreasing on $(-\\infty, 3)$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0019",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 4,
+    "stem": "Determine the maximum height of a projectile given by $h(t) = -16t^2 + 64t$.",
+    "choices": [
+      {
+        "text": "64 ft",
+        "rationale": "Correct: Vertex at $t=2$. $h(2) = -64 + 128 = 64$."
+      },
+      {
+        "text": "32 ft",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "128 ft",
+        "rationale": "Ignored the $t^2$ term."
+      },
+      {
+        "text": "4 ft",
+        "rationale": "This is the time to hit the ground."
+      },
+      {
+        "text": "2 ft",
+        "rationale": "This is the time to max height."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Time to max height: $t = -64 / (2 \\times -16) = 2$ seconds.",
+      "Max height: $h(2) = -16(2)^2 + 64(2) = -64 + 128 = 64$."
+    ]
+  },
+  {
+    "id": "FUNC-QUA-0020",
+    "topic": "Functions",
+    "subtopic": "Quadratic Functions",
+    "diff": 5,
+    "stem": "A parabola has x-intercepts at -2 and 4, and passes through the point $(2, 16)$. What is its equation?",
+    "choices": [
+      {
+        "text": "$y = -2(x + 2)(x - 4)$",
+        "rationale": "Correct: $y=a(x+2)(x-4)$. $16=a(4)(-2) \\Rightarrow -8a=16 \\Rightarrow a=-2$."
+      },
+      {
+        "text": "$y = 2(x - 2)(x + 4)$",
+        "rationale": "Sign error on factors."
+      },
+      {
+        "text": "$y = (x + 2)(x - 4)$",
+        "rationale": "Assumed $a=1$."
+      },
+      {
+        "text": "$y = -2(x - 2)(x + 4)$",
+        "rationale": "Incorrect factors."
+      },
+      {
+        "text": "$y = 4(x + 2)(x - 4)$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Intercept form: $y = a(x - p)(x - q)$.",
+      "$y = a(x + 2)(x - 4)$.",
+      "Substitute $(2, 16)$: $16 = a(2 + 2)(2 - 4)$.",
+      "$16 = a(4)(-2) \\Rightarrow -8a = 16 \\Rightarrow a = -2$."
+    ]
   }
 ]

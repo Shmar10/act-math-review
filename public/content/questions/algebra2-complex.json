@@ -446,5 +446,178 @@
       "$|z| = \\sqrt{5^2 + (-12)^2} = \\sqrt{25 + 144}$.",
       "$|z| = \\sqrt{169} = 13$."
     ]
+  },
+  {
+    "id": "ALG2-COMP-0016",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 2,
+    "stem": "Simplify: $$(2 - 5i) - (3 + 4i)$$",
+    "choices": [
+      {
+        "text": "$-1 - 9i$",
+        "rationale": "Correct: $2-3 = -1$ and $-5i-4i = -9i$."
+      },
+      {
+        "text": "$5 - i$",
+        "rationale": "Added the real parts instead of subtracting."
+      },
+      {
+        "text": "$-1 - i$",
+        "rationale": "Subtracted $4i$ from $-5i$ incorrectly."
+      },
+      {
+        "text": "$-5 - 9i$",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "$1 + 9i$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract real parts: $2 - 3 = -1$.",
+      "Subtract imaginary parts: $-5i - 4i = -9i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0017",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "Simplify the expression to $a + bi$ form: $$\\frac{10}{2 + i}$$",
+    "choices": [
+      {
+        "text": "$4 - 2i$",
+        "rationale": "Correct: $\\frac{10(2-i)}{(2+i)(2-i)} = \\frac{20-10i}{5} = 4-2i$."
+      },
+      {
+        "text": "$4 + 2i$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$2 - i$",
+        "rationale": "Division error."
+      },
+      {
+        "text": "$20 - 10i$",
+        "rationale": "Forgot to divide by the denominator."
+      },
+      {
+        "text": "$2 + i$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by conjugate: $\\frac{10(2 - i)}{(2 + i)(2 - i)}$.",
+      "Denominator: $2^2 + 1^2 = 5$.",
+      "Numerator: $20 - 10i$.",
+      "Divide: $\\frac{20}{5} - \\frac{10i}{5} = 4 - 2i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0018",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 3,
+    "stem": "What is the complex conjugate of $-3 + 7i$?",
+    "choices": [
+      {
+        "text": "$-3 - 7i$",
+        "rationale": "Correct: Change sign of the imaginary part."
+      },
+      {
+        "text": "$3 + 7i$",
+        "rationale": "Changed sign of the real part."
+      },
+      {
+        "text": "$3 - 7i$",
+        "rationale": "Changed both signs."
+      },
+      {
+        "text": "$-3 + 7i$",
+        "rationale": "No change."
+      },
+      {
+        "text": "$7i - 3$",
+        "rationale": "Just reordered."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The conjugate of $a + bi$ is $a - bi$.",
+      "Change $+7i$ to $-7i$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0019",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 4,
+    "stem": "Find the values of $x$ and $y$ that satisfy the equation: $$ 2x - 3yi = 14 + 12i $$",
+    "choices": [
+      {
+        "text": "$x = 7, y = -4$",
+        "rationale": "Correct: $2x=14 \\Rightarrow x=7$. $-3y=12 \\Rightarrow y=-4$."
+      },
+      {
+        "text": "$x = 7, y = 4$",
+        "rationale": "Sign error on y."
+      },
+      {
+        "text": "$x = 6, y = -4$",
+        "rationale": "Arithmetic error."
+      },
+      {
+        "text": "$x = 14, y = 12$",
+        "rationale": "Ignored coefficients."
+      },
+      {
+        "text": "$x = 7, y = -9$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Equate real parts: $2x = 14 \\Rightarrow x = 7$.",
+      "Equate imaginary parts: $-3y = 12 \\Rightarrow y = -4$."
+    ]
+  },
+  {
+    "id": "ALG2-COMP-0020",
+    "topic": "Algebra II",
+    "subtopic": "Complex Numbers & Quadratics",
+    "diff": 5,
+    "stem": "Solve $x^4 - 16 = 0$ over the complex numbers.",
+    "choices": [
+      {
+        "text": "$2, -2, 2i, -2i$",
+        "rationale": "Correct: $(x^2-4)(x^2+4)=0$. $x^2=4 \\Rightarrow \\pm 2$. $x^2=-4 \\Rightarrow \\pm 2i$."
+      },
+      {
+        "text": "$2, -2$",
+        "rationale": "Missed imaginary roots."
+      },
+      {
+        "text": "$4, -4, 4i, -4i$",
+        "rationale": "Square root error."
+      },
+      {
+        "text": "$2, 2i$",
+        "rationale": "Missed negative roots."
+      },
+      {
+        "text": "$16, -16$",
+        "rationale": "Incorrect factoring."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor as difference of squares: $(x^2 - 4)(x^2 + 4) = 0$.",
+      "Factor $x^2 - 4$: $(x - 2)(x + 2) = 0 \\Rightarrow x = \\pm 2$.",
+      "Factor $x^2 + 4$: $x^2 = -4 \\Rightarrow x = \\pm 2i$."
+    ]
   }
 ]

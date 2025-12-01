@@ -509,6 +509,179 @@
       "Divide by 3: $-1 < x < 5$.",
       "Integer values between -1 and 5 are 0, 1, 2, 3, 4."
     ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0016",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 2,
+    "stem": "Solve for $y$: $$ 4 - 3y < 10 $$",
+    "choices": [
+      {
+        "text": "$y > -2$",
+        "rationale": "Correct: $-3y < 6$, divide by -3 flips sign."
+      },
+      {
+        "text": "$y < -2$",
+        "rationale": "Forgot to flip the inequality sign."
+      },
+      {
+        "text": "$y > 2$",
+        "rationale": "Sign error in subtraction."
+      },
+      {
+        "text": "$y < 2$",
+        "rationale": "Sign error and no flip."
+      },
+      {
+        "text": "$y > -\\frac{14}{3}$",
+        "rationale": "Added 4 instead of subtracting."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Subtract 4 from both sides: $-3y < 6$.",
+      "Divide by -3 and flip the sign: $y > -2$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0017",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 3,
+    "stem": "Solve: $$ -5 \\le 2x - 7 < 3 $$",
+    "choices": [
+      {
+        "text": "$1 \\le x < 5$",
+        "rationale": "Correct: Add 7 to all parts ($2 \\le 2x < 10$), divide by 2."
+      },
+      {
+        "text": "$-1 \\le x < 5$",
+        "rationale": "Sign error in addition."
+      },
+      {
+        "text": "$1 < x \\le 5$",
+        "rationale": "Swapped inequality types."
+      },
+      {
+        "text": "$2 \\le x < 10$",
+        "rationale": "Forgot to divide by 2."
+      },
+      {
+        "text": "$1 \\le x < 3$",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add 7 to all sides: $-5 + 7 \\le 2x < 3 + 7$.",
+      "$2 \\le 2x < 10$.",
+      "Divide by 2: $1 \\le x < 5$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0018",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 4,
+    "stem": "Solve the inequality: $$ \\frac{x}{3} - 2 > \\frac{x}{2} $$",
+    "choices": [
+      {
+        "text": "$x < -12$",
+        "rationale": "Correct: $2x - 12 > 3x \\Rightarrow -12 > x$."
+      },
+      {
+        "text": "$x > -12$",
+        "rationale": "Sign flip error."
+      },
+      {
+        "text": "$x < -6$",
+        "rationale": "Used LCM 6 but miscalculated constant."
+      },
+      {
+        "text": "$x > 12$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$x < 12$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply entire inequality by 6 (LCM): $2x - 12 > 3x$.",
+      "Subtract $2x$ from both sides: $-12 > x$.",
+      "Rewrite: $x < -12$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0019",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 4,
+    "stem": "A rectangular garden has a length that is 4 meters longer than its width ($w$). If the perimeter must be less than 60 meters, which inequality represents the possible values for the width?",
+    "choices": [
+      {
+        "text": "$w < 13$",
+        "rationale": "Correct: $2w + 2(w+4) < 60 \\Rightarrow 4w + 8 < 60 \\Rightarrow 4w < 52$."
+      },
+      {
+        "text": "$w < 15$",
+        "rationale": "Forgot the +4 term."
+      },
+      {
+        "text": "$w < 11$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$w > 13$",
+        "rationale": "Wrong inequality direction."
+      },
+      {
+        "text": "$w < 14$",
+        "rationale": "Used perimeter formula incorrectly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Let $w$ = width, $l = w + 4$.",
+      "Perimeter $P = 2w + 2(w + 4) < 60$.",
+      "$2w + 2w + 8 < 60 \\Rightarrow 4w < 52 \\Rightarrow w < 13$."
+    ]
+  },
+  {
+    "id": "ALG-LIN-INQ-0020",
+    "topic": "Algebra",
+    "subtopic": "Linear Inequalities",
+    "diff": 5,
+    "stem": "Find the solution set for the inequality involving absolute value: $$ |3 - 2x| \\ge 7 $$",
+    "choices": [
+      {
+        "text": "$x \\le -2$ or $x \\ge 5$",
+        "rationale": "Correct: $3-2x \\ge 7$ or $3-2x \\le -7$. Solve both."
+      },
+      {
+        "text": "$-2 \\le x \\le 5$",
+        "rationale": "Confused 'greater than' (OR) with 'less than' (AND)."
+      },
+      {
+        "text": "$x \\le -5$ or $x \\ge 2$",
+        "rationale": "Sign errors."
+      },
+      {
+        "text": "$x \\ge 5$",
+        "rationale": "Missed the negative case."
+      },
+      {
+        "text": "$x \\ge -2$",
+        "rationale": "Incomplete solution."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Case 1: $3 - 2x \\ge 7 \\Rightarrow -2x \\ge 4 \\Rightarrow x \\le -2$.",
+      "Case 2: $3 - 2x \\le -7 \\Rightarrow -2x \\le -10 \\Rightarrow x \\ge 5$."
+    ]
   }
 ]
 
