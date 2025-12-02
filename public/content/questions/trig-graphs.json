@@ -1,2 +1,695 @@
-[]
-
+[
+  {
+    "id": "TRIG-GRAPH-0001",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 1,
+    "stem": "What is the amplitude of the function $y = -4 \\sin(2x)$?",
+    "choices": [
+      {
+        "text": "4",
+        "rationale": "Correct: Amplitude is $|a| = |-4| = 4$."
+      },
+      {
+        "text": "-4",
+        "rationale": "Amplitude is always positive."
+      },
+      {
+        "text": "2",
+        "rationale": "This is the $b$ value (frequency)."
+      },
+      {
+        "text": "8",
+        "rationale": "Multiplied incorrectly."
+      },
+      {
+        "text": "$\\pi$",
+        "rationale": "Confused with period."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "For $y = a \\sin(bx)$, amplitude is $|a|$.",
+      "$| -4 | = 4$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0002",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 1,
+    "stem": "What is the period of the function $y = \\cos(x)$?",
+    "choices": [
+      {
+        "text": "$2\\pi$",
+        "rationale": "Correct: Standard period of cosine."
+      },
+      {
+        "text": "$\\pi$",
+        "rationale": "Period of tangent."
+      },
+      {
+        "text": "$4\\pi$",
+        "rationale": "Doubled."
+      },
+      {
+        "text": "1",
+        "rationale": "Frequency."
+      },
+      {
+        "text": "$360$",
+        "rationale": "Degrees, but usually radians are implied in calculus/functions."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The standard cosine function repeats every $2\\pi$ radians."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0003",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 2,
+    "stem": "Determine the period of the function $y = 3 \\tan(2x)$.",
+    "choices": [
+      {
+        "text": "$\\frac{\\pi}{2}$",
+        "rationale": "Correct: Period of tan is $\\pi/b = \\pi/2$."
+      },
+      {
+        "text": "$\\pi$",
+        "rationale": "Standard period of tan."
+      },
+      {
+        "text": "$2\\pi$",
+        "rationale": "Standard period of sin/cos."
+      },
+      {
+        "text": "$\\frac{2\\pi}{3}$",
+        "rationale": "Used amplitude in calculation."
+      },
+      {
+        "text": "$4\\pi$",
+        "rationale": "Multiplied instead of dividing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The period of $y = \\tan(bx)$ is $\\frac{\\pi}{|b|}$.",
+      "Here $b=2$, so Period $= \\frac{\\pi}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0004",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 2,
+    "stem": "What is the range of the function $y = 2\\sin(x) + 1$?",
+    "choices": [
+      {
+        "text": "$[-1, 3]$",
+        "rationale": "Correct: Max $1+2=3$, Min $1-2=-1$."
+      },
+      {
+        "text": "$[-2, 2]$",
+        "rationale": "Ignored vertical shift."
+      },
+      {
+        "text": "$[1, 3]$",
+        "rationale": "Incorrect minimum."
+      },
+      {
+        "text": "$(-\\infty, \\infty)$",
+        "rationale": "Range of tangent, not sine."
+      },
+      {
+        "text": "$[0, 2]$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Amplitude is 2, Vertical Shift is +1.",
+      "Maximum = Shift + Amp = $1 + 2 = 3$.",
+      "Minimum = Shift - Amp = $1 - 2 = -1$.",
+      "Range: $[-1, 3]$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0005",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 3,
+    "stem": "Which description matches the graph of $y = \\cos(x - \\frac{\\pi}{2})$?",
+    "choices": [
+      {
+        "text": "Standard cosine graph shifted right by $\\frac{\\pi}{2}$",
+        "rationale": "Correct: $x - h$ indicates shift right."
+      },
+      {
+        "text": "Standard cosine graph shifted left by $\\frac{\\pi}{2}$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "Standard cosine graph shifted up by $\\frac{\\pi}{2}$",
+        "rationale": "Vertical shift would be outside the parentheses."
+      },
+      {
+        "text": "Standard cosine graph reflected over the x-axis",
+        "rationale": "Requires negative coefficient."
+      },
+      {
+        "text": "It is identical to $y = \\cos(x)$",
+        "rationale": "Phase shift changes graph."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The term $(x - c)$ represents a horizontal phase shift.",
+      "Since $c = \\frac{\\pi}{2}$ is subtracted, the shift is to the right."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0006",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 3,
+    "stem": "Find the maximum value of $y = -5 \\cos(3x) - 4$.",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: Max of $\\cos$ is 1? No, max of $-5\\cos$ is 5. $5 - 4 = 1$."
+      },
+      {
+        "text": "-9",
+        "rationale": "This is the minimum value ($-5 - 4$)."
+      },
+      {
+        "text": "9",
+        "rationale": "Added amplitudes incorrectly."
+      },
+      {
+        "text": "-1",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "5",
+        "rationale": "Amplitude only."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The range of $\\cos(3x)$ is $[-1, 1]$.",
+      "The term $-5\\cos(3x)$ has a range of $[-5, 5]$.",
+      "Shift down 4: Maximum is $5 - 4 = 1$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0007",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 3,
+    "stem": "What is the period of the function $y = 4 \\sin(\\frac{\\pi}{3}x)$?",
+    "choices": [
+      {
+        "text": "6",
+        "rationale": "Correct: $2\\pi / (\\pi/3) = 6$."
+      },
+      {
+        "text": "3",
+        "rationale": "Just the denominator."
+      },
+      {
+        "text": "$\\frac{2}{3}$",
+        "rationale": "Inverted calculation."
+      },
+      {
+        "text": "$6\\pi$",
+        "rationale": "Pi didn't cancel."
+      },
+      {
+        "text": "$\\frac{3}{2}$",
+        "rationale": "Reciprocal."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Formula: Period = $\\frac{2\\pi}{b}$.",
+      "$b = \\frac{\\pi}{3}$.",
+      "Period = $\\frac{2\\pi}{\\pi/3} = 2\\pi \\cdot \\frac{3}{\\pi} = 6$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0008",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 4,
+    "stem": "Determine the phase shift of the function $y = 2 \\sin(3x - \\pi)$.",
+    "choices": [
+      {
+        "text": "Right $\\frac{\\pi}{3}$",
+        "rationale": "Correct: Factor out 3: $2\\sin(3(x - \\pi/3))$. Shift is $\\pi/3$."
+      },
+      {
+        "text": "Right $\\pi$",
+        "rationale": "Did not divide by $b$."
+      },
+      {
+        "text": "Left $\\frac{\\pi}{3}$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "Left $\\pi$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "Right $3\\pi$",
+        "rationale": "Multiplied instead of dividing."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite the argument in the form $b(x - h)$.",
+      "$3x - \\pi = 3(x - \\frac{\\pi}{3})$.",
+      "The phase shift $h$ is $\\frac{\\pi}{3}$ to the right."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0009",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 4,
+    "stem": "Which function has a period of $\\pi$ and an amplitude of 3?",
+    "choices": [
+      {
+        "text": "$y = 3 \\sin(2x)$",
+        "rationale": "Correct: Amp=3, Period=$2\\pi/2 = \\pi$."
+      },
+      {
+        "text": "$y = 3 \\sin(x)$",
+        "rationale": "Period is $2\\pi$."
+      },
+      {
+        "text": "$y = 2 \\sin(3x)$",
+        "rationale": "Amp is 2."
+      },
+      {
+        "text": "$y = 3 \\sin(\\pi x)$",
+        "rationale": "Period is $2\\pi/\\pi = 2$."
+      },
+      {
+        "text": "$y = 3 \\sin(\\frac{1}{2}x)$",
+        "rationale": "Period is $4\\pi$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Amplitude = 3 means coefficient $a = 3$.",
+      "Period = $\\pi$ means $\\frac{2\\pi}{b} = \\pi \\Rightarrow b = 2$.",
+      "Equation: $y = 3 \\sin(2x)$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0010",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 4,
+    "stem": "Identify the vertical asymptotes of $y = \\tan(x)$ in the interval $(-\\pi, \\pi)$.",
+    "choices": [
+      {
+        "text": "$x = -\\frac{\\pi}{2}, x = \\frac{\\pi}{2}$",
+        "rationale": "Correct: Cosine is zero at these points."
+      },
+      {
+        "text": "$x = 0, x = \\pi$",
+        "rationale": "These are x-intercepts."
+      },
+      {
+        "text": "$x = -\\frac{\\pi}{4}, x = \\frac{\\pi}{4}$",
+        "rationale": "Tangents are 1 or -1 here."
+      },
+      {
+        "text": "No vertical asymptotes",
+        "rationale": "Tangent is undefined where cos(x)=0."
+      },
+      {
+        "text": "$x = -\\pi, x = \\pi$",
+        "rationale": "Tangent is 0 here."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Tangent is defined as $\\frac{\\sin x}{\\cos x}$.",
+      "Vertical asymptotes occur where $\\cos x = 0$.",
+      "In $(-\\pi, \\pi)$, $\\cos x = 0$ at $x = \\frac{\\pi}{2}$ and $x = -\\frac{\\pi}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0011",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 5,
+    "stem": "A Ferris wheel has a radius of 20 feet and its center is 25 feet above the ground. It completes one rotation every 40 seconds. Which equation models the height $h$ (in feet) of a passenger at time $t$ (seconds), assuming they start at the bottom?",
+    "choices": [
+      {
+        "text": "$h(t) = -20 \\cos(\\frac{\\pi}{20}t) + 25$",
+        "rationale": "Correct: Neg cosine starts at bottom. Amp 20. Vert shift 25. Period 40 $\\Rightarrow b = 2\\pi/40 = \\pi/20$."
+      },
+      {
+        "text": "$h(t) = 20 \\cos(\\frac{\\pi}{20}t) + 25$",
+        "rationale": "Starts at the top."
+      },
+      {
+        "text": "$h(t) = -20 \\sin(\\frac{\\pi}{20}t) + 25$",
+        "rationale": "Starts at midline going down."
+      },
+      {
+        "text": "$h(t) = -25 \\cos(40t) + 20$",
+        "rationale": "Swapped amp/shift and period/b."
+      },
+      {
+        "text": "$h(t) = 20 \\sin(40t) + 25$",
+        "rationale": "Incorrect trig function and b value."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Center height = Vertical Shift = 25.",
+      "Radius = Amplitude = 20.",
+      "Start at bottom $\\Rightarrow$ Negative Cosine.",
+      "Period = 40 sec. $b = \\frac{2\\pi}{40} = \\frac{\\pi}{20}$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0012",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 3,
+    "stem": "What is the y-intercept of the function $y = 3 \\cos(2x) - 1$?",
+    "choices": [
+      {
+        "text": "2",
+        "rationale": "Correct: $3(1) - 1 = 2$."
+      },
+      {
+        "text": "-1",
+        "rationale": "Ignored the cosine term."
+      },
+      {
+        "text": "3",
+        "rationale": "Amplitude."
+      },
+      {
+        "text": "0",
+        "rationale": "Guess."
+      },
+      {
+        "text": "1",
+        "rationale": "Calculation error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "To find y-intercept, set $x = 0$.",
+      "$y = 3 \\cos(0) - 1$.",
+      "$\\cos(0) = 1$, so $y = 3(1) - 1 = 2$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0013",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 5,
+    "stem": "What is the domain of the function $y = \\arcsin(x)$?",
+    "choices": [
+      {
+        "text": "$[-1, 1]$",
+        "rationale": "Correct: Inverse sine is only defined for inputs between -1 and 1."
+      },
+      {
+        "text": "$[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$",
+        "rationale": "This is the range."
+      },
+      {
+        "text": "$(-\\infty, \\infty)$",
+        "rationale": "Domain of $\\sin(x)$."
+      },
+      {
+        "text": "$[0, \\pi]$",
+        "rationale": "Range of $\\arccos(x)$."
+      },
+      {
+        "text": "$[-1, \\pi]$",
+        "rationale": "Mix of domain/range."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The input for $\\arcsin(x)$ must be a valid output for $\\sin(\\theta)$.",
+      "Since $\\sin(\\theta)$ is between -1 and 1, the domain of $\\arcsin$ is $[-1, 1]$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0014",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 2,
+    "stem": "Identify the graph transformation of $y = \\sin(x) + 2$.",
+    "choices": [
+      {
+        "text": "Shifted up 2 units",
+        "rationale": "Correct."
+      },
+      {
+        "text": "Shifted left 2 units",
+        "rationale": "Would be $\\sin(x+2)$."
+      },
+      {
+        "text": "Shifted right 2 units",
+        "rationale": "Would be $\\sin(x-2)$."
+      },
+      {
+        "text": "Vertically stretched by 2",
+        "rationale": "Would be $2\\sin(x)$."
+      },
+      {
+        "text": "Shifted down 2 units",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Adding a constant $k$ to the function shifts the graph vertically.",
+      "$+2$ indicates a shift up by 2."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0015",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 4,
+    "stem": "Which function has vertical asymptotes at $x = k\\pi$ for any integer $k$?",
+    "choices": [
+      {
+        "text": "$y = \\csc(x)$",
+        "rationale": "Correct: $\\csc x = 1/\\sin x$. Undefined when $\\sin x = 0$, which is at $k\\pi$."
+      },
+      {
+        "text": "$y = \\sec(x)$",
+        "rationale": "Undefined at $\\pi/2 + k\\pi$."
+      },
+      {
+        "text": "$y = \\tan(x)$",
+        "rationale": "Undefined at $\\pi/2 + k\\pi$."
+      },
+      {
+        "text": "$y = \\sin(x)$",
+        "rationale": "No asymptotes."
+      },
+      {
+        "text": "$y = \\cos(x)$",
+        "rationale": "No asymptotes."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Vertical asymptotes occur where the denominator is zero.",
+      "$\\csc(x) = \\frac{1}{\\sin(x)}$. $\\sin(x) = 0$ at $0, \\pi, 2\\pi...$ ($k\\pi$)."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0016",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 3,
+    "stem": "Which equation corresponds to a cosine wave with amplitude 5 and period $4\\pi$?",
+    "choices": [
+      {
+        "text": "$y = 5 \\cos(\\frac{1}{2}x)$",
+        "rationale": "Correct: Amp 5. $b = 2\\pi / 4\\pi = 1/2$."
+      },
+      {
+        "text": "$y = 5 \\cos(4x)$",
+        "rationale": "Period would be $\\pi/2$."
+      },
+      {
+        "text": "$y = \\frac{1}{2} \\cos(5x)$",
+        "rationale": "Swapped amp and b."
+      },
+      {
+        "text": "$y = 5 \\cos(2x)$",
+        "rationale": "Period would be $\\pi$."
+      },
+      {
+        "text": "$y = 4 \\cos(5x)$",
+        "rationale": "Swapped variables."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Amplitude = 5.",
+      "Period = $4\\pi$.",
+      "$b = \\frac{2\\pi}{\\text{Period}} = \\frac{2\\pi}{4\\pi} = \\frac{1}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0017",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 5,
+    "stem": "Find the minimum value of the function $f(x) = 3 - 4\\sin^2(x)$.",
+    "choices": [
+      {
+        "text": "-1",
+        "rationale": "Correct: Max $\\sin^2$ is 1. $3 - 4(1) = -1$."
+      },
+      {
+        "text": "3",
+        "rationale": "When $\\sin x = 0$."
+      },
+      {
+        "text": "-4",
+        "rationale": "Incorrect evaluation."
+      },
+      {
+        "text": "7",
+        "rationale": "Incorrect sign logic."
+      },
+      {
+        "text": "0",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The range of $\\sin(x)$ is $[-1, 1]$, so $\\sin^2(x)$ is $[0, 1]$.",
+      "To minimize $3 - 4\\sin^2(x)$, we need the largest subtraction.",
+      "Let $\\sin^2(x) = 1$. $3 - 4(1) = -1$."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0018",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 4,
+    "stem": "Describe the shift from $y = \\cos(x)$ to $y = \\cos(2x + \\pi)$.",
+    "choices": [
+      {
+        "text": "Left $\\frac{\\pi}{2}$",
+        "rationale": "Correct: Factor $2(x + \\pi/2)$. Shift left $\\pi/2$."
+      },
+      {
+        "text": "Left $\\pi$",
+        "rationale": "Did not divide by 2."
+      },
+      {
+        "text": "Right $\\frac{\\pi}{2}$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "Right $\\pi$",
+        "rationale": "Sign and factor error."
+      },
+      {
+        "text": "Left $2\\pi$",
+        "rationale": "Multiplied."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor the inside: $\\cos(2(x + \\frac{\\pi}{2}))$.",
+      "The phase shift is $\\frac{\\pi}{2}$ to the left."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0019",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 2,
+    "stem": "Which of these functions passes through the origin $(0,0)$?",
+    "choices": [
+      {
+        "text": "$y = \\sin(x)$",
+        "rationale": "Correct: $\\sin(0) = 0$."
+      },
+      {
+        "text": "$y = \\cos(x)$",
+        "rationale": "$\\cos(0) = 1$."
+      },
+      {
+        "text": "$y = \\tan(x) + 1$",
+        "rationale": "$\\tan(0)+1 = 1$."
+      },
+      {
+        "text": "$y = \\sec(x)$",
+        "rationale": "$\\sec(0) = 1$."
+      },
+      {
+        "text": "$y = \\cos(x) - 2$",
+        "rationale": "$\\cos(0)-2 = -1$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Evaluate each at $x=0$.",
+      "$\\sin(0) = 0$. The graph passes through the origin."
+    ]
+  },
+  {
+    "id": "TRIG-GRAPH-0020",
+    "topic": "Trigonometry",
+    "subtopic": "Graphs & Functions",
+    "diff": 5,
+    "stem": "Identify the equation of the tangent function that has a period of $2\\pi$ and is shifted right by $\\pi$.",
+    "choices": [
+      {
+        "text": "$y = \\tan(\\frac{1}{2}(x - \\pi))$",
+        "rationale": "Correct: Period $\\pi/b = 2\\pi \\Rightarrow b = 1/2$. Shift right $\\pi$."
+      },
+      {
+        "text": "$y = \\tan(2(x - \\pi))$",
+        "rationale": "Period would be $\\pi/2$."
+      },
+      {
+        "text": "$y = \\tan(\\frac{1}{2}x) - \\pi$",
+        "rationale": "Vertical shift."
+      },
+      {
+        "text": "$y = \\tan(x - 2\\pi)$",
+        "rationale": "Period $\\pi$."
+      },
+      {
+        "text": "$y = \\tan(x - \\pi)$",
+        "rationale": "Period $\\pi$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Period of tangent is $\\pi/b$.",
+      "$\\pi/b = 2\\pi \\Rightarrow b = 1/2$.",
+      "Horizontal shift right $\\pi$ implies $(x - \\pi)$.",
+      "Equation: $y = \\tan(\\frac{1}{2}(x - \\pi))$."
+    ]
+  }
+]

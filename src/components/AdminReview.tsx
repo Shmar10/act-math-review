@@ -8,6 +8,7 @@ export default function AdminReview() {
   const [allQuestions, setAllQuestions] = useState<ActQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterTopic, setFilterTopic] = useState<string>("All");
+  const [filterSubtopic, setFilterSubtopic] = useState<string>("All");
   const [filterDiff, setFilterDiff] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState("");
   const [showAllAnswers, setShowAllAnswers] = useState(false);
@@ -34,9 +35,34 @@ export default function AdminReview() {
   }, []);
 
   const topics = [...new Set(allQuestions.map((q) => q.topic))].sort();
+  
+  // Get subtopics filtered by selected topic
+  const subtopics = [
+    ...new Set(
+      allQuestions
+        .filter((q) => filterTopic === "All" || q.topic === filterTopic)
+        .map((q) => q.subtopic)
+    )
+  ].sort();
+
+  // Reset subtopic filter when topic changes
+  useEffect(() => {
+    if (filterTopic === "All") {
+      setFilterSubtopic("All");
+    } else {
+      // Check if current subtopic is still valid for the new topic
+      const validSubtopic = allQuestions.some(
+        (q) => q.topic === filterTopic && q.subtopic === filterSubtopic
+      );
+      if (!validSubtopic) {
+        setFilterSubtopic("All");
+      }
+    }
+  }, [filterTopic, allQuestions, filterSubtopic]);
 
   const filtered = allQuestions.filter((q) => {
     const topicMatch = filterTopic === "All" || q.topic === filterTopic;
+    const subtopicMatch = filterSubtopic === "All" || q.subtopic === filterSubtopic;
     const diffMatch = filterDiff === 0 || q.diff === filterDiff;
     const term = searchTerm.toLowerCase();
     const searchMatch =
@@ -44,7 +70,7 @@ export default function AdminReview() {
       q.id.toLowerCase().includes(term) ||
       q.stem.toLowerCase().includes(term) ||
       q.subtopic.toLowerCase().includes(term);
-    return topicMatch && diffMatch && searchMatch;
+    return topicMatch && subtopicMatch && diffMatch && searchMatch;
   });
 
   if (loading) {
@@ -106,6 +132,23 @@ export default function AdminReview() {
               {topics.map((t) => (
                 <option key={t} value={t}>
                   {t}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="text-slate-300">
+            Subtopic:
+            <select
+              className="ml-2 rounded-lg bg-slate-700 border border-slate-600 px-2 py-1"
+              value={filterSubtopic}
+              onChange={(e) => setFilterSubtopic(e.target.value)}
+              disabled={subtopics.length === 0}
+            >
+              <option value="All">All</option>
+              {subtopics.map((s) => (
+                <option key={s} value={s}>
+                  {s}
                 </option>
               ))}
             </select>

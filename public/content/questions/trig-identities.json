@@ -1,2 +1,695 @@
-[]
-
+[
+  {
+    "id": "TRIG-ID-0001",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 1,
+    "stem": "Simplify the expression: $\\sin^2 \\theta + \\cos^2 \\theta$",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: This is the fundamental Pythagorean identity."
+      },
+      {
+        "text": "0",
+        "rationale": "Confused with $\\sin^2 - \\sin^2$."
+      },
+      {
+        "text": "$\\tan^2 \\theta$",
+        "rationale": "Incorrect identity."
+      },
+      {
+        "text": "$2$",
+        "rationale": "Added coefficients?"
+      },
+      {
+        "text": "$\\sin 2\\theta$",
+        "rationale": "Confused with double angle."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The Pythagorean Identity states that for any angle $\\theta$, $\\sin^2 \\theta + \\cos^2 \\theta = 1$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0002",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 1,
+    "stem": "Which of the following is equivalent to $\\tan x$?",
+    "choices": [
+      {
+        "text": "$\\frac{\\sin x}{\\cos x}$",
+        "rationale": "Correct definition."
+      },
+      {
+        "text": "$\\frac{\\cos x}{\\sin x}$",
+        "rationale": "This is $\\cot x$."
+      },
+      {
+        "text": "$\\frac{1}{\\sin x}$",
+        "rationale": "This is $\\csc x$."
+      },
+      {
+        "text": "$\\frac{1}{\\cos x}$",
+        "rationale": "This is $\\sec x$."
+      },
+      {
+        "text": "$\\sin x \\cos x$",
+        "rationale": "Product, not quotient."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "By definition, $\\tan x = \\frac{\\sin x}{\\cos x}$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0003",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 2,
+    "stem": "Simplify: $\\tan \\theta \\cdot \\cos \\theta$",
+    "choices": [
+      {
+        "text": "$\\sin \\theta$",
+        "rationale": "Correct: $(\\sin/\\cos) \\cdot \\cos = \\sin$."
+      },
+      {
+        "text": "$\\cos \\theta$",
+        "rationale": "Incorrect cancellation."
+      },
+      {
+        "text": "$\\sec \\theta$",
+        "rationale": "Reciprocal function."
+      },
+      {
+        "text": "1",
+        "rationale": "Terms are not reciprocals."
+      },
+      {
+        "text": "$\\cot \\theta$",
+        "rationale": "Reciprocal of tan."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$.",
+      "Multiply: $\\frac{\\sin \\theta}{\\cos \\theta} \\cdot \\cos \\theta$.",
+      "Cancel $\\cos \\theta$ to get $\\sin \\theta$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0004",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 2,
+    "stem": "Which expression is equivalent to $1 - \\sin^2 x$?",
+    "choices": [
+      {
+        "text": "$\\cos^2 x$",
+        "rationale": "Correct: Rearranged $\\sin^2 + \\cos^2 = 1$."
+      },
+      {
+        "text": "$\\sin^2 x$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$\\tan^2 x$",
+        "rationale": "Identity is $\\sec^2 - 1$."
+      },
+      {
+        "text": "$\\csc^2 x$",
+        "rationale": "Reciprocal identity."
+      },
+      {
+        "text": "$-1$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Pythagorean Identity: $\\sin^2 x + \\cos^2 x = 1$.",
+      "Subtract $\\sin^2 x$ from both sides: $\\cos^2 x = 1 - \\sin^2 x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0005",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 3,
+    "stem": "Simplify the expression: $\\frac{1}{\\sec^2 \\theta} + \\frac{1}{\\csc^2 \\theta}$",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: $\\cos^2 + \\sin^2 = 1$."
+      },
+      {
+        "text": "0",
+        "rationale": "Sum of squares is positive."
+      },
+      {
+        "text": "$\\tan^2 \\theta$",
+        "rationale": "Incorrect identity."
+      },
+      {
+        "text": "2",
+        "rationale": "Added 1+1 incorrectly."
+      },
+      {
+        "text": "$\\sin \\theta \\cos \\theta$",
+        "rationale": "Incorrect simplification."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use reciprocal identities: $\\frac{1}{\\sec \\theta} = \\cos \\theta$ and $\\frac{1}{\\csc \\theta} = \\sin \\theta$.",
+      "Expression becomes $\\cos^2 \\theta + \\sin^2 \\theta$.",
+      "By Pythagorean identity, this equals 1."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0006",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 3,
+    "stem": "Simplify: $(1 - \\cos x)(1 + \\cos x)$",
+    "choices": [
+      {
+        "text": "$\\sin^2 x$",
+        "rationale": "Correct: $1 - \\cos^2 x = \\sin^2 x$."
+      },
+      {
+        "text": "$\\cos^2 x$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "1",
+        "rationale": "Assumed terms cancel completely."
+      },
+      {
+        "text": "$\\sin x$",
+        "rationale": "Forgot the square."
+      },
+      {
+        "text": "$1 + \\cos^2 x$",
+        "rationale": "FOIL error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use difference of squares: $(a-b)(a+b) = a^2 - b^2$.",
+      "$1^2 - \\cos^2 x = 1 - \\cos^2 x$.",
+      "Substitute identity: $1 - \\cos^2 x = \\sin^2 x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0007",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 3,
+    "stem": "Which of the following is equivalent to $\\sin(2x)$?",
+    "choices": [
+      {
+        "text": "$2 \\sin x \\cos x$",
+        "rationale": "Correct: Double angle identity."
+      },
+      {
+        "text": "$2 \\sin x$",
+        "rationale": "Factored out the 2 (incorrect)."
+      },
+      {
+        "text": "$\\sin^2 x - \\cos^2 x$",
+        "rationale": "This is $-\\cos(2x)$."
+      },
+      {
+        "text": "$1 - 2\\sin^2 x$",
+        "rationale": "This is $\\cos(2x)$."
+      },
+      {
+        "text": "$\\tan x$",
+        "rationale": "Unrelated."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recall double angle formula: $\\sin(2x) = 2 \\sin x \\cos x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0008",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 4,
+    "stem": "Use a cofunction identity to simplify $\\sin(90^\\circ - \\theta)$.",
+    "choices": [
+      {
+        "text": "$\\cos \\theta$",
+        "rationale": "Correct: Cofunction identity."
+      },
+      {
+        "text": "$\\sin \\theta$",
+        "rationale": "Assumed no change."
+      },
+      {
+        "text": "$\\csc \\theta$",
+        "rationale": "Reciprocal identity."
+      },
+      {
+        "text": "$-\\cos \\theta$",
+        "rationale": "Quadrant logic error (90-theta is Q1)."
+      },
+      {
+        "text": "$\\tan \\theta$",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Cofunction identities relate functions of complementary angles.",
+      "$\\sin(90^\\circ - \\theta) = \\cos \\theta$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0009",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 4,
+    "stem": "Simplify: $\\frac{\\sin 2x}{2 \\sin x}$",
+    "choices": [
+      {
+        "text": "$\\cos x$",
+        "rationale": "Correct: $2\\sin x \\cos x / 2\\sin x = \\cos x$."
+      },
+      {
+        "text": "$\\sin x$",
+        "rationale": "Incorrect cancellation."
+      },
+      {
+        "text": "1",
+        "rationale": "Assumed numerator equals denominator."
+      },
+      {
+        "text": "$\\tan x$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$2 \\cos x$",
+        "rationale": "Forgot to cancel the 2."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Expand numerator using double angle: $2 \\sin x \\cos x$.",
+      "Divide: $\\frac{2 \\sin x \\cos x}{2 \\sin x}$.",
+      "Cancel $2 \\sin x$: Result is $\\cos x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0010",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 4,
+    "stem": "Which of the following is NOT an identity for $\\cos(2x)$?",
+    "choices": [
+      {
+        "text": "$2 \\sin x \\cos x$",
+        "rationale": "Correct: This is the identity for $\\sin(2x)$, not $\\cos(2x)$."
+      },
+      {
+        "text": "$\\cos^2 x - \\sin^2 x$",
+        "rationale": "Valid identity."
+      },
+      {
+        "text": "$2 \\cos^2 x - 1$",
+        "rationale": "Valid identity."
+      },
+      {
+        "text": "$1 - 2 \\sin^2 x$",
+        "rationale": "Valid identity."
+      },
+      {
+        "text": "$( \\cos x - \\sin x )( \\cos x + \\sin x )$",
+        "rationale": "Valid (difference of squares)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Review double angle formulas for cosine:",
+      "1. $\\cos^2 x - \\sin^2 x$",
+      "2. $2\\cos^2 x - 1$",
+      "3. $1 - 2\\sin^2 x$",
+      "$2 \\sin x \\cos x$ is the formula for $\\sin(2x)$, so it is NOT a cosine identity."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0011",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 5,
+    "stem": "Simplify the expression: $\\cos^2 x (1 + \\tan^2 x)$",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: $1+\\tan^2=\\sec^2$. $\\cos^2 \\cdot \\sec^2 = 1$."
+      },
+      {
+        "text": "$\\cos^2 x$",
+        "rationale": "Incorrect identity."
+      },
+      {
+        "text": "$\\sin^2 x$",
+        "rationale": "Incorrect identity."
+      },
+      {
+        "text": "$\\tan^2 x$",
+        "rationale": "Incorrect simplification."
+      },
+      {
+        "text": "$\\cot^2 x$",
+        "rationale": "Incorrect simplification."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Use Pythagorean Identity: $1 + \\tan^2 x = \\sec^2 x$.",
+      "Expression becomes $\\cos^2 x \\cdot \\sec^2 x$.",
+      "Since $\\sec x = 1/\\cos x$, the product is 1."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0012",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 5,
+    "stem": "Simplify: $\\sin^4 x - \\cos^4 x$",
+    "choices": [
+      {
+        "text": "$-\\cos(2x)$",
+        "rationale": "Correct: $(\\sin^2-\\cos^2)(\\sin^2+\\cos^2) = (\\sin^2-\\cos^2)(1) = -(\\cos^2-\\sin^2) = -\\cos 2x$."
+      },
+      {
+        "text": "$\\cos(2x)$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "1",
+        "rationale": "Mistook for $\\sin^2+\\cos^2$."
+      },
+      {
+        "text": "$\\sin(2x)$",
+        "rationale": "Double angle sine."
+      },
+      {
+        "text": "$1 - 2\\cos^2 x$",
+        "rationale": "Equivalent to $-\\cos(2x)$, but the other form is standard."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Factor difference of squares: $(\\sin^2 x - \\cos^2 x)(\\sin^2 x + \\cos^2 x)$.",
+      "Use identity $\\sin^2 x + \\cos^2 x = 1$.",
+      "Simplify to $\\sin^2 x - \\cos^2 x$.",
+      "Factor out -1: $-(\\cos^2 x - \\sin^2 x)$.",
+      "Recognize double angle: $-\\cos(2x)$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0013",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 3,
+    "stem": "Which property describes the symmetry of the sine function: $\\sin(-x) = -\\sin(x)$?",
+    "choices": [
+      {
+        "text": "Odd function",
+        "rationale": "Correct: $f(-x) = -f(x)$."
+      },
+      {
+        "text": "Even function",
+        "rationale": "$f(-x) = f(x)$, like cosine."
+      },
+      {
+        "text": "Periodic",
+        "rationale": "True, but doesn't describe the negative sign relationship."
+      },
+      {
+        "text": "Cofunction",
+        "rationale": "Relates to complementary angles."
+      },
+      {
+        "text": "Inverse",
+        "rationale": "Relates to arcsin."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "A function is Odd if $f(-x) = -f(x)$.",
+      "Sine satisfies this property."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0014",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 4,
+    "stem": "If $\\sin x = \\frac{3}{5}$ and $x$ is in Quadrant I, what is $\\sin(2x)$?",
+    "choices": [
+      {
+        "text": "$\\frac{24}{25}$",
+        "rationale": "Correct: $\\cos x=4/5$. $2(3/5)(4/5) = 24/25$."
+      },
+      {
+        "text": "$\\frac{6}{5}$",
+        "rationale": "$2 \\times 3/5$."
+      },
+      {
+        "text": "$\\frac{7}{25}$",
+        "rationale": "Cosine double angle logic."
+      },
+      {
+        "text": "$\\frac{12}{25}$",
+        "rationale": "Forgot the factor of 2."
+      },
+      {
+        "text": "$\\frac{9}{25}$",
+        "rationale": "Squared sine."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find $\\cos x$: In Q1, $\\sqrt{1 - (3/5)^2} = 4/5$.",
+      "Double angle: $\\sin(2x) = 2 \\sin x \\cos x$.",
+      "$2 \\cdot \\frac{3}{5} \\cdot \\frac{4}{5} = \\frac{24}{25}$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0015",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 4,
+    "stem": "Simplify: $\\cot x \\sin x$",
+    "choices": [
+      {
+        "text": "$\\cos x$",
+        "rationale": "Correct: $(\\cos/\\sin) \\cdot \\sin = \\cos$."
+      },
+      {
+        "text": "$\\sin x$",
+        "rationale": "Incorrect cancellation."
+      },
+      {
+        "text": "$\\tan x$",
+        "rationale": "Reciprocal."
+      },
+      {
+        "text": "$\\sec x$",
+        "rationale": "Reciprocal of cosine."
+      },
+      {
+        "text": "1",
+        "rationale": "Product of reciprocals (incorrect here)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Substitute $\\cot x = \\frac{\\cos x}{\\sin x}$.",
+      "Multiply: $\\frac{\\cos x}{\\sin x} \\cdot \\sin x$.",
+      "Result: $\\cos x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0016",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 5,
+    "stem": "Simplify $\\frac{1}{1 - \\sin x} + \\frac{1}{1 + \\sin x}$.",
+    "choices": [
+      {
+        "text": "$2\\sec^2 x$",
+        "rationale": "Correct: LCD $(1-\\sin)(1+\\sin) = 1-\\sin^2 = \\cos^2$. Num $1+\\sin+1-\\sin = 2$. $2/\\cos^2 = 2\\sec^2$."
+      },
+      {
+        "text": "$2\\cos^2 x$",
+        "rationale": "Reciprocal error."
+      },
+      {
+        "text": "$2\\csc^2 x$",
+        "rationale": "Used sine reciprocal."
+      },
+      {
+        "text": "0",
+        "rationale": "Subtraction logic."
+      },
+      {
+        "text": "1",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find common denominator: $(1 - \\sin x)(1 + \\sin x) = 1 - \\sin^2 x = \\cos^2 x$.",
+      "Numerator: $(1 + \\sin x) + (1 - \\sin x) = 2$.",
+      "Fraction: $\\frac{2}{\\cos^2 x} = 2 \\sec^2 x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0017",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 3,
+    "stem": "Which expression is equivalent to $\\sec^2 x - 1$?",
+    "choices": [
+      {
+        "text": "$\\tan^2 x$",
+        "rationale": "Correct: $1 + \\tan^2 = \\sec^2$."
+      },
+      {
+        "text": "$\\cot^2 x$",
+        "rationale": "Identity is $\\csc^2 - 1$."
+      },
+      {
+        "text": "$\\cos^2 x$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$\\sin^2 x$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "1",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Recall Pythagorean Identity: $1 + \\tan^2 x = \\sec^2 x$.",
+      "Rearrange: $\\tan^2 x = \\sec^2 x - 1$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0018",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 5,
+    "stem": "Expand using the sum formula: $\\sin(x + \\pi)$.",
+    "choices": [
+      {
+        "text": "$-\\sin x$",
+        "rationale": "Correct: $\\sin x \\cos \\pi + \\cos x \\sin \\pi = -\\sin x$."
+      },
+      {
+        "text": "$\\sin x$",
+        "rationale": "Ignored sign change in Q3."
+      },
+      {
+        "text": "$\\cos x$",
+        "rationale": "Cofunction error."
+      },
+      {
+        "text": "$-\\cos x$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$\\sin x + 1$",
+        "rationale": "Distributed linearly."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Sum formula: $\\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b$.",
+      "$\\sin x \\cos \\pi + \\cos x \\sin \\pi$.",
+      "Substitute values: $\\sin x (-1) + \\cos x (0) = -\\sin x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0019",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 4,
+    "stem": "Simplify: $\\frac{\\sin x}{\\tan x}$",
+    "choices": [
+      {
+        "text": "$\\cos x$",
+        "rationale": "Correct: $\\sin / (\\sin/\\cos) = \\cos$."
+      },
+      {
+        "text": "$\\sin^2 x$",
+        "rationale": "Multiplied instead of divided."
+      },
+      {
+        "text": "$\\sec x$",
+        "rationale": "Inverted."
+      },
+      {
+        "text": "$\\csc x$",
+        "rationale": "Reciprocal."
+      },
+      {
+        "text": "1",
+        "rationale": "Assumption."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Rewrite $\\tan x$ as $\\frac{\\sin x}{\\cos x}$.",
+      "Divide: $\\sin x \\cdot \\frac{\\cos x}{\\sin x}$.",
+      "Cancel $\\sin x$: $\\cos x$."
+    ]
+  },
+  {
+    "id": "TRIG-ID-0020",
+    "topic": "Trigonometry",
+    "subtopic": "Trigonometric Identities",
+    "diff": 2,
+    "stem": "Which of the following is equivalent to $\\cos(-x)$?",
+    "choices": [
+      {
+        "text": "$\\cos x$",
+        "rationale": "Correct: Cosine is an even function."
+      },
+      {
+        "text": "$-\\cos x$",
+        "rationale": "Would be true for sine/tangent (odd functions)."
+      },
+      {
+        "text": "$\\sin x$",
+        "rationale": "Cofunction."
+      },
+      {
+        "text": "$-\\sin x$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "$\\sec x$",
+        "rationale": "Reciprocal."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Cosine is an even function.",
+      "Therefore, $\\cos(-x) = \\cos(x)$."
+    ]
+  }
+]

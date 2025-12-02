@@ -1,2 +1,700 @@
-[]
-
+[
+  {
+    "id": "TRIG-UNIT-0001",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 1,
+    "stem": "Convert $45^\\circ$ to radians.",
+    "choices": [
+      {
+        "text": "$\\frac{\\pi}{4}$",
+        "rationale": "Correct: $45 \\times \\frac{\\pi}{180} = \\frac{\\pi}{4}$."
+      },
+      {
+        "text": "$\\frac{\\pi}{2}$",
+        "rationale": "This is $90^\\circ$."
+      },
+      {
+        "text": "$\\frac{\\pi}{3}$",
+        "rationale": "This is $60^\\circ$."
+      },
+      {
+        "text": "$\\frac{\\pi}{6}$",
+        "rationale": "This is $30^\\circ$."
+      },
+      {
+        "text": "$45\\pi$",
+        "rationale": "Forgot to divide by 180."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply degrees by $\\frac{\\pi}{180}$.",
+      "$45 \\cdot \\frac{\\pi}{180} = \\frac{\\pi}{4}$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0002",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 1,
+    "stem": "Convert $\\frac{2\\pi}{3}$ radians to degrees.",
+    "choices": [
+      {
+        "text": "$120^\\circ$",
+        "rationale": "Correct: $\\frac{2\\pi}{3} \\times \\frac{180}{\\pi} = 2(60) = 120$."
+      },
+      {
+        "text": "$60^\\circ$",
+        "rationale": "This is $\\pi/3$."
+      },
+      {
+        "text": "$150^\\circ$",
+        "rationale": "This is $5\\pi/6$."
+      },
+      {
+        "text": "$240^\\circ$",
+        "rationale": "This is $4\\pi/3$."
+      },
+      {
+        "text": "$270^\\circ$",
+        "rationale": "This is $3\\pi/2$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply radians by $\\frac{180}{\\pi}$.",
+      "$\\frac{2\\pi}{3} \\cdot \\frac{180}{\\pi} = \\frac{360}{3} = 120^\\circ$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0003",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 2,
+    "stem": "Find the exact value of $\\sin(30^\\circ)$.",
+    "choices": [
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Correct: y-coordinate at $30^\\circ$."
+      },
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "rationale": "This is $\\cos(30^\\circ)$ or $\\sin(60^\\circ)$."
+      },
+      {
+        "text": "$\\frac{\\sqrt{2}}{2}$",
+        "rationale": "This is $\\sin(45^\\circ)$."
+      },
+      {
+        "text": "1",
+        "rationale": "This is $\\sin(90^\\circ)$."
+      },
+      {
+        "text": "0",
+        "rationale": "This is $\\sin(0^\\circ)$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "On the unit circle, the y-coordinate at $30^\\circ$ is $\\frac{1}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0004",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 2,
+    "stem": "Which point on the unit circle corresponds to the angle $\\frac{\\pi}{2}$?",
+    "choices": [
+      {
+        "text": "$(0, 1)$",
+        "rationale": "Correct: $90^\\circ$ is at the top of the circle."
+      },
+      {
+        "text": "$(1, 0)$",
+        "rationale": "This corresponds to $0$ radians."
+      },
+      {
+        "text": "$(-1, 0)$",
+        "rationale": "This corresponds to $\\pi$ radians."
+      },
+      {
+        "text": "$(0, -1)$",
+        "rationale": "This corresponds to $3\\pi/2$."
+      },
+      {
+        "text": "$\\left(\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2}\\right)$",
+        "rationale": "This corresponds to $\\pi/4$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The angle $\\frac{\\pi}{2}$ is $90^\\circ$.",
+      "On the unit circle, this lies on the positive y-axis.",
+      "Coordinates are $(0, 1)$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0005",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 3,
+    "stem": "Evaluate $\\cos(150^\\circ)$.",
+    "choices": [
+      {
+        "text": "$-\\frac{\\sqrt{3}}{2}$",
+        "rationale": "Correct: Q2 reference angle $30^\\circ$. Cosine is negative."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Sine of $150^\\circ$."
+      },
+      {
+        "text": "$-\\frac{1}{2}$",
+        "rationale": "Cosine of $120^\\circ$."
+      },
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "rationale": "Sign error (Q2 cosine is negative)."
+      },
+      {
+        "text": "$-\\frac{\\sqrt{2}}{2}$",
+        "rationale": "Reference angle error ($45^\\circ$)."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Locate $150^\\circ$ in Quadrant II.",
+      "Reference angle $= 180^\\circ - 150^\\circ = 30^\\circ$.",
+      "$\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}$. In Q2, cosine is negative.",
+      "Result: $-\\frac{\\sqrt{3}}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0006",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 3,
+    "stem": "Determine the reference angle for $\\theta = 300^\\circ$.",
+    "choices": [
+      {
+        "text": "$60^\\circ$",
+        "rationale": "Correct: $360^\\circ - 300^\\circ = 60^\\circ$."
+      },
+      {
+        "text": "$30^\\circ$",
+        "rationale": "Difference from $270^\\circ$ (incorrect method)."
+      },
+      {
+        "text": "$45^\\circ$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$80^\\circ$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$300^\\circ$",
+        "rationale": "The angle itself."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "The angle $300^\\circ$ is in Quadrant IV.",
+      "Reference angle is the acute angle with the x-axis.",
+      "$360^\\circ - 300^\\circ = 60^\\circ$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0007",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 3,
+    "stem": "Find an angle $\\theta$ coterminal with $-45^\\circ$ where $0^\\circ \\le \\theta < 360^\\circ$.",
+    "choices": [
+      {
+        "text": "$315^\\circ$",
+        "rationale": "Correct: $-45 + 360 = 315$."
+      },
+      {
+        "text": "$135^\\circ$",
+        "rationale": "Q2 equivalent."
+      },
+      {
+        "text": "$225^\\circ$",
+        "rationale": "Q3 equivalent."
+      },
+      {
+        "text": "$45^\\circ$",
+        "rationale": "Reference angle magnitude."
+      },
+      {
+        "text": "$325^\\circ$",
+        "rationale": "Addition error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Add $360^\\circ$ to the negative angle.",
+      "$-45^\\circ + 360^\\circ = 315^\\circ$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0008",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 4,
+    "stem": "Evaluate $\\tan(\\frac{5\\pi}{4})$.",
+    "choices": [
+      {
+        "text": "1",
+        "rationale": "Correct: Q3, reference $\\pi/4$. Tan is positive."
+      },
+      {
+        "text": "-1",
+        "rationale": "Sign error (Tan is positive in Q3)."
+      },
+      {
+        "text": "$\\frac{\\sqrt{2}}{2}$",
+        "rationale": "Sine/Cosine value."
+      },
+      {
+        "text": "$-\\frac{\\sqrt{2}}{2}$",
+        "rationale": "Sine/Cosine value."
+      },
+      {
+        "text": "0",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Angle $\\frac{5\\pi}{4}$ is in Quadrant III.",
+      "Reference angle is $\\frac{\\pi}{4}$.",
+      "$\\tan(\\frac{\\pi}{4}) = 1$. In Q3, tangent is positive.",
+      "Result: 1."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0009",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 4,
+    "stem": "If $\\sin \\theta < 0$ and $\\cos \\theta > 0$, in which quadrant does $\\theta$ lie?",
+    "choices": [
+      {
+        "text": "Quadrant IV",
+        "rationale": "Correct: x > 0, y < 0."
+      },
+      {
+        "text": "Quadrant I",
+        "rationale": "Both positive."
+      },
+      {
+        "text": "Quadrant II",
+        "rationale": "Sine positive, Cosine negative."
+      },
+      {
+        "text": "Quadrant III",
+        "rationale": "Both negative."
+      },
+      {
+        "text": "On an axis",
+        "rationale": "One would be zero."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$\\sin \\theta < 0$ implies y-coordinate is negative (Q3 or Q4).",
+      "$\\cos \\theta > 0$ implies x-coordinate is positive (Q1 or Q4).",
+      "The overlap is Quadrant IV."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0010",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 4,
+    "stem": "Evaluate $\\sec(\\pi)$.",
+    "choices": [
+      {
+        "text": "-1",
+        "rationale": "Correct: $\\sec(\\pi) = 1/\\cos(\\pi) = 1/-1 = -1$."
+      },
+      {
+        "text": "1",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "0",
+        "rationale": "Value of sine."
+      },
+      {
+        "text": "Undefined",
+        "rationale": "Thinking of $\\tan(\\pi/2)$."
+      },
+      {
+        "text": "$\\pi$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$\\sec \\theta = \\frac{1}{\\cos \\theta}$.",
+      "$\\cos(\\pi) = -1$ (at $(-1, 0)$).",
+      "$\\sec(\\pi) = \\frac{1}{-1} = -1$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0011",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 5,
+    "stem": "Find the exact value of $\\sin(\\frac{11\\pi}{6})$.",
+    "choices": [
+      {
+        "text": "$-\\frac{1}{2}$",
+        "rationale": "Correct: Q4, ref $\\pi/6$. Sine is negative."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Sign error."
+      },
+      {
+        "text": "$-\\frac{\\sqrt{3}}{2}$",
+        "rationale": "Cosine value (magnitude)."
+      },
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "rationale": "Cosine value."
+      },
+      {
+        "text": "$-\\frac{\\sqrt{2}}{2}$",
+        "rationale": "Reference angle $\\pi/4$ error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Angle $\\frac{11\\pi}{6}$ is in Quadrant IV.",
+      "Reference angle is $\\frac{\\pi}{6}$.",
+      "$\\sin(\\frac{\\pi}{6}) = \\frac{1}{2}$. In Q4, sine is negative.",
+      "Result: $-\\frac{1}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0012",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 3,
+    "stem": "Which of the following angles is NOT coterminal with $30^\\circ$?",
+    "choices": [
+      {
+        "text": "$330^\\circ$",
+        "rationale": "Correct: $330$ is coterminal with $-30$, not $30$."
+      },
+      {
+        "text": "$390^\\circ$",
+        "rationale": "$30 + 360 = 390$."
+      },
+      {
+        "text": "$-330^\\circ$",
+        "rationale": "$30 - 360 = -330$."
+      },
+      {
+        "text": "$750^\\circ$",
+        "rationale": "$30 + 2(360) = 750$."
+      },
+      {
+        "text": "$-690^\\circ$",
+        "rationale": "$30 - 2(360) = -690$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Coterminal angles differ by multiples of $360^\\circ$.",
+      "$330 - 30 = 300$, which is not a multiple of 360.",
+      "Thus, $330^\\circ$ is not coterminal."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0013",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 5,
+    "stem": "If point $P(-\\frac{3}{5}, y)$ lies on the unit circle in Quadrant III, what is the value of $y$?",
+    "choices": [
+      {
+        "text": "$-\\frac{4}{5}$",
+        "rationale": "Correct: $x^2+y^2=1$. $9/25 + y^2 = 25/25$. $y^2 = 16/25$. Q3 means y is negative."
+      },
+      {
+        "text": "$\\frac{4}{5}$",
+        "rationale": "Sign error (Q2)."
+      },
+      {
+        "text": "$-\\frac{2}{5}$",
+        "rationale": "Calculation error."
+      },
+      {
+        "text": "$-\\frac{3}{5}$",
+        "rationale": "Assumed x = y."
+      },
+      {
+        "text": "$\\frac{16}{25}$",
+        "rationale": "This is $y^2$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Equation of unit circle: $x^2 + y^2 = 1$.",
+      "$(-\\frac{3}{5})^2 + y^2 = 1 \\Rightarrow \\frac{9}{25} + y^2 = 1$.",
+      "$y^2 = \\frac{16}{25} \\Rightarrow y = \\pm \\frac{4}{5}$.",
+      "In Quadrant III, y is negative. $y = -\\frac{4}{5}$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0014",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 2,
+    "stem": "Convert $-270^\\circ$ to radians.",
+    "choices": [
+      {
+        "text": "$-\\frac{3\\pi}{2}$",
+        "rationale": "Correct: $-270 \\times \\pi/180$."
+      },
+      {
+        "text": "$\\frac{\\pi}{2}$",
+        "rationale": "Coterminal positive value, but asked for direct conversion."
+      },
+      {
+        "text": "$-\\frac{3\\pi}{4}$",
+        "rationale": "Division error."
+      },
+      {
+        "text": "$-\\pi$",
+        "rationale": "$-180$."
+      },
+      {
+        "text": "$\\frac{3\\pi}{2}$",
+        "rationale": "Sign error."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Multiply by $\\frac{\\pi}{180}$.",
+      "$-270 \\cdot \\frac{\\pi}{180} = -\\frac{3\\pi}{2}$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0015",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 4,
+    "stem": "Determine the value of $\\cot(90^\\circ)$.",
+    "choices": [
+      {
+        "text": "0",
+        "rationale": "Correct: $\\cos(90)/\\sin(90) = 0/1 = 0$."
+      },
+      {
+        "text": "Undefined",
+        "rationale": "Thinking of $\\tan(90)$."
+      },
+      {
+        "text": "1",
+        "rationale": "Thinking of $\\sin(90)$."
+      },
+      {
+        "text": "-1",
+        "rationale": "Thinking of $\\cos(180)$."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "$\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$.",
+      "At $90^\\circ$, $\\cos = 0$ and $\\sin = 1$.",
+      "$\\frac{0}{1} = 0$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0016",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 3,
+    "stem": "Which trigonometric function is negative in Quadrant II?",
+    "choices": [
+      {
+        "text": "Cosine",
+        "rationale": "Correct: x-values are negative in Q2."
+      },
+      {
+        "text": "Sine",
+        "rationale": "Positive in Q2 (y-values)."
+      },
+      {
+        "text": "Cosecant",
+        "rationale": "Reciprocal of sine (Positive)."
+      },
+      {
+        "text": "All are positive",
+        "rationale": "Only in Q1."
+      },
+      {
+        "text": "None are negative",
+        "rationale": "Incorrect."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "In Q2, x is negative and y is positive.",
+      "Cosine corresponds to x, so Cosine is negative."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0017",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 5,
+    "stem": "Evaluate $\\sin(\\frac{7\\pi}{2})$.",
+    "choices": [
+      {
+        "text": "-1",
+        "rationale": "Correct: $7\\pi/2 = 3.5\\pi$. Coterminal with $3\\pi/2$. $\\sin(3\\pi/2) = -1$."
+      },
+      {
+        "text": "1",
+        "rationale": "Thinking of $\\pi/2$."
+      },
+      {
+        "text": "0",
+        "rationale": "Thinking of integer $\\pi$."
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "rationale": "Incorrect."
+      },
+      {
+        "text": "Undefined",
+        "rationale": "Sine is always defined."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Find coterminal angle within $[0, 2\\pi]$.",
+      "$\\frac{7\\pi}{2} - 2\\pi = \\frac{7\\pi}{2} - \\frac{4\\pi}{2} = \\frac{3\\pi}{2}$.",
+      "$\\sin(\\frac{3\\pi}{2}) = -1$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0018",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 4,
+    "stem": "Find the coordinates of the point on the unit circle corresponding to $\\theta = 225^\\circ$.",
+    "choices": [
+      {
+        "text": "$\\left(-\\frac{\\sqrt{2}}{2}, -\\frac{\\sqrt{2}}{2}\\right)$",
+        "rationale": "Correct: Q3, both negative. Ref $45^\\circ$."
+      },
+      {
+        "text": "$\\left(\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2}\\right)$",
+        "rationale": "Q1 coordinates."
+      },
+      {
+        "text": "$\\left(-\\frac{1}{2}, -\\frac{\\sqrt{3}}{2}\\right)$",
+        "rationale": "Ref angle $60^\\circ$ error."
+      },
+      {
+        "text": "$\\left(-\\frac{\\sqrt{3}}{2}, -\\frac{1}{2}\\right)$",
+        "rationale": "Ref angle $30^\\circ$ error."
+      },
+      {
+        "text": "$\\left(\\frac{\\sqrt{2}}{2}, -\\frac{\\sqrt{2}}{2}\\right)$",
+        "rationale": "Q4 coordinates."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Angle $225^\\circ$ is in Quadrant III.",
+      "Reference angle: $225 - 180 = 45^\\circ$.",
+      "Coords for $45^\\circ$ are $(\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2})$.",
+      "In Q3, both are negative: $(-\\frac{\\sqrt{2}}{2}, -\\frac{\\sqrt{2}}{2})$."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0019",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 5,
+    "stem": "Which value is undefined?",
+    "choices": [
+      {
+        "text": "$\\tan(\\frac{\\pi}{2})$",
+        "rationale": "Correct: $\\sin(\\pi/2) / \\cos(\\pi/2) = 1/0$."
+      },
+      {
+        "text": "$\\cot(\\frac{\\pi}{2})$",
+        "rationale": "$\\cos(\\pi/2)/\\sin(\\pi/2) = 0/1 = 0$."
+      },
+      {
+        "text": "$\\sin(\\pi)$",
+        "rationale": "0."
+      },
+      {
+        "text": "$\\cos(0)$",
+        "rationale": "1."
+      },
+      {
+        "text": "$\\csc(\\frac{\\pi}{2})$",
+        "rationale": "$1/1 = 1$."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Tangent is undefined when cosine is 0.",
+      "$\\cos(\\frac{\\pi}{2}) = 0$.",
+      "Therefore, $\\tan(\\frac{\\pi}{2})$ is undefined."
+    ]
+  },
+  {
+    "id": "TRIG-UNIT-0020",
+    "topic": "Trigonometry",
+    "subtopic": "Unit Circle",
+    "diff": 3,
+    "stem": "What is the reference angle for $\\frac{2\\pi}{3}$?",
+    "choices": [
+      {
+        "text": "$\\frac{\\pi}{3}$",
+        "rationale": "Correct: $\\pi - 2\\pi/3 = \\pi/3$."
+      },
+      {
+        "text": "$\\frac{\\pi}{6}$",
+        "rationale": "Guess."
+      },
+      {
+        "text": "$\\frac{2\\pi}{3}$",
+        "rationale": "The angle itself."
+      },
+      {
+        "text": "$\\frac{\\pi}{2}$",
+        "rationale": "Axis angle."
+      },
+      {
+        "text": "$\\frac{\\pi}{4}$",
+        "rationale": "Guess."
+      }
+    ],
+    "answerIndex": 0,
+    "solutionSteps": [
+      "Angle is in Quadrant II.",
+      "Reference angle = $\\pi - \\text{Angle}$.",
+      "$\\pi - \\frac{2\\pi}{3} = \\frac{\\pi}{3}$."
+    ]
+  }
+]

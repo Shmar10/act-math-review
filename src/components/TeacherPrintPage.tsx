@@ -7,7 +7,8 @@ import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
 type ProblemSelection = {
-  bankKey: string;
+  topic: string;
+  subtopic: string;
   difficulty: number;
   question: ActQuestion | null;
 };
@@ -44,44 +45,63 @@ export default function TeacherPrintPage() {
     });
   }, []);
 
+  // Get unique topics and subtopics
+  const topics = [...new Set(allQuestions.map((q) => q.topic))].sort();
+
   // Initialize selections when numProblems changes
   useEffect(() => {
     const newSelections: ProblemSelection[] = Array.from({ length: numProblems }, () => ({
-      bankKey: "",
+      topic: "",
+      subtopic: "",
       difficulty: 0,
       question: null,
     }));
     setSelections(newSelections);
   }, [numProblems]);
 
-  // Get unique banks for dropdown
-  const bankOptions = BANKS.map((bank) => ({
-    key: bank.key,
-    label: `${bank.topic} - ${bank.subtopic}`,
-  }));
+  // Get subtopics filtered by selected topic for a specific selection
+  const getSubtopicsForSelection = (selection: ProblemSelection): string[] => {
+    if (!selection.topic) return [];
+    return [
+      ...new Set(
+        allQuestions
+          .filter((q) => q.topic === selection.topic)
+          .map((q) => q.subtopic)
+      )
+    ].sort();
+  };
 
   // Handle selection change
   const handleSelectionChange = (index: number, field: keyof ProblemSelection, value: string | number) => {
     const newSelections = [...selections];
-    newSelections[index] = {
-      ...newSelections[index],
-      [field]: value,
-      question: null, // Reset question when selection changes
-    };
+    const currentSelection = newSelections[index];
+    
+    // If topic changes, reset subtopic
+    if (field === "topic" && value !== currentSelection.topic) {
+      newSelections[index] = {
+        topic: value as string,
+        subtopic: "",
+        difficulty: currentSelection.difficulty,
+        question: null,
+      };
+    } else {
+      newSelections[index] = {
+        ...currentSelection,
+        [field]: value,
+        question: null, // Reset question when selection changes
+      };
+    }
     setSelections(newSelections);
   };
 
   // Get available questions for a selection
   const getAvailableQuestions = (selection: ProblemSelection): ActQuestion[] => {
-    if (!selection.bankKey) return [];
-    
-    const bank = BANKS.find((b) => b.key === selection.bankKey);
-    if (!bank) return [];
+    if (!selection.topic || !selection.subtopic) return [];
 
     return allQuestions.filter(
       (q) =>
-        q.subtopic === bank.subtopic &&
-        q.topic === bank.topic &&
+        q.topic === selection.topic &&
+        q.subtopic === selection.subtopic &&
         (selection.difficulty === 0 || q.diff === selection.difficulty)
     );
   };
@@ -263,22 +283,42 @@ export default function TeacherPrintPage() {
                 <h3 className="text-lg font-semibold mb-4">
                   Problem {index + 1}
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-2">
-                      Topic/Subtopic
+                      Topic
                     </label>
                     <select
-                      value={selection.bankKey}
+                      value={selection.topic}
                       onChange={(e) =>
-                        handleSelectionChange(index, "bankKey", e.target.value)
+                        handleSelectionChange(index, "topic", e.target.value)
                       }
                       className="w-full px-4 py-2 rounded-lg bg-slate-700 border border-slate-600 focus:border-sky-500 focus:outline-none text-white"
                     >
-                      <option value="">Select...</option>
-                      {bankOptions.map((bank) => (
-                        <option key={bank.key} value={bank.key}>
-                          {bank.label}
+                      <option value="">Select Topic...</option>
+                      {topics.map((topic) => (
+                        <option key={topic} value={topic}>
+                          {topic}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">
+                      Subtopic
+                    </label>
+                    <select
+                      value={selection.subtopic}
+                      onChange={(e) =>
+                        handleSelectionChange(index, "subtopic", e.target.value)
+                      }
+                      disabled={!selection.topic}
+                      className="w-full px-4 py-2 rounded-lg bg-slate-700 border border-slate-600 focus:border-sky-500 focus:outline-none text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <option value="">Select Subtopic...</option>
+                      {getSubtopicsForSelection(selection).map((subtopic) => (
+                        <option key={subtopic} value={subtopic}>
+                          {subtopic}
                         </option>
                       ))}
                     </select>
@@ -310,7 +350,8 @@ export default function TeacherPrintPage() {
                     <button
                       onClick={() => pickRandomQuestion(index)}
                       disabled={
-                        !selection.bankKey ||
+                        !selection.topic ||
+                        !selection.subtopic ||
                         available.length === 0
                       }
                       className="w-full px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 disabled:opacity-50 disabled:cursor-not-allowed transition"
