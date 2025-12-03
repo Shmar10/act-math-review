@@ -97,10 +97,25 @@ export function useAuth() {
       let errorMessage = 'An unexpected error occurred';
       
       if (err instanceof TypeError && err.message.includes('fetch')) {
-        errorMessage = 'Failed to connect to Supabase. Please check:\n' +
-          '1. Your Supabase URL is correct in .env file\n' +
-          '2. Your internet connection\n' +
-          '3. Supabase project is active';
+        // Check for specific network error patterns
+        const errorStr = err.toString().toLowerCase();
+        const isNetworkError = errorStr.includes('failed to fetch') || 
+                              errorStr.includes('networkerror') ||
+                              errorStr.includes('network request failed');
+        
+        if (isNetworkError) {
+          errorMessage = 'Network connection failed. This often happens on school/work networks that block external services.\n\n' +
+            'Solutions:\n' +
+            '• Try using a mobile hotspot or home network\n' +
+            '• Contact your IT department to whitelist Supabase\n' +
+            '• Use a VPN (if allowed by your network)\n' +
+            '• Check if your firewall/antivirus is blocking the connection';
+        } else {
+          errorMessage = 'Failed to connect to Supabase. Please check:\n' +
+            '1. Your Supabase URL is correct in .env file\n' +
+            '2. Your internet connection\n' +
+            '3. Supabase project is active';
+        }
       } else if (err instanceof Error) {
         errorMessage = err.message;
       }
@@ -141,8 +156,29 @@ export function useAuth() {
 
       return { error: null };
     } catch (err) {
+      let errorMessage = 'An unexpected error occurred';
+      
+      if (err instanceof TypeError && err.message.includes('fetch')) {
+        const errorStr = err.toString().toLowerCase();
+        const isNetworkError = errorStr.includes('failed to fetch') || 
+                              errorStr.includes('networkerror') ||
+                              errorStr.includes('network request failed');
+        
+        if (isNetworkError) {
+          errorMessage = 'Network connection failed. This often happens on school/work networks that block external services.\n\n' +
+            'Solutions:\n' +
+            '• Try using a mobile hotspot or home network\n' +
+            '• Contact your IT department to whitelist Supabase\n' +
+            '• Use a VPN (if allowed by your network)';
+        } else {
+          errorMessage = 'Failed to connect. Please check your internet connection and try again.';
+        }
+      } else if (err instanceof Error) {
+        errorMessage = err.message;
+      }
+      
       const authError: AuthError = {
-        message: err instanceof Error ? err.message : 'An unexpected error occurred',
+        message: errorMessage,
       };
       setAuthState((prev) => ({ ...prev, loading: false, error: authError }));
       return { error: authError };

@@ -228,7 +228,21 @@ export default function RegisterForm({ onSuccess, onSwitchToLogin }: RegisterFor
         {/* Server Error */}
         {error && (
           <div className="bg-rose-900/30 border border-rose-500 rounded-lg p-3">
-            <p className="text-sm text-rose-300">{error.message}</p>
+            <div className="text-sm text-rose-300 whitespace-pre-line">
+              {error.message}
+            </div>
+            {error.message.includes('school/work networks') && (
+              <div className="mt-3 pt-3 border-t border-rose-700">
+                <a
+                  href="/docs/SCHOOL_NETWORK_SOLUTIONS.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-sky-400 hover:text-sky-300 underline"
+                >
+                  View detailed solutions for school network issues →
+                </a>
+              </div>
+            )}
           </div>
         )}
 
