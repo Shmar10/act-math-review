@@ -43,8 +43,8 @@ export default function ProfilePage({ onClose }: ProfilePageProps) {
     }
   };
 
-  const handleUpdateProfile = async (updates: { first_name: string; last_name: string }) => {
-    if (!user) return;
+  const handleUpdateProfile = async (updates: { first_name: string; last_name: string }): Promise<boolean> => {
+    if (!user) return false;
 
     setError(null);
     const { error: updateError } = await updateUserProfile(user.id, updates);
@@ -60,7 +60,7 @@ export default function ProfilePage({ onClose }: ProfilePageProps) {
     return true;
   };
 
-  const handleChangePassword = async (currentPassword: string, newPassword: string) => {
+  const handleChangePassword = async (currentPassword: string, newPassword: string): Promise<boolean> => {
     setError(null);
     const { error: passwordError } = await changePassword(currentPassword, newPassword);
     

@@ -7,7 +7,7 @@ interface LoginFormProps {
   onSwitchToForgotPassword?: () => void;
 }
 
-export default function LoginForm({ onSuccess, onSwitchToRegister }: LoginFormProps) {
+export default function LoginForm({ onSuccess, onSwitchToRegister, onSwitchToForgotPassword }: LoginFormProps) {
   const { login, loading, error } = useAuth();
   const [formData, setFormData] = useState({
     email: '',
