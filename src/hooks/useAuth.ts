@@ -53,11 +53,27 @@ export function useAuth() {
       const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
       const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
       
+      // Debug logging (only in development)
+      if (import.meta.env.DEV) {
+        console.log('Supabase Config Check:', {
+          url: supabaseUrl ? `${supabaseUrl.substring(0, 30)}...` : 'MISSING',
+          key: supabaseKey ? `${supabaseKey.substring(0, 20)}...` : 'MISSING',
+        });
+      }
+      
       if (!supabaseUrl || !supabaseKey || 
           supabaseUrl === 'https://placeholder.supabase.co' ||
-          supabaseKey === 'placeholder-key') {
+          supabaseKey === 'placeholder-key' ||
+          supabaseUrl.trim() === '' ||
+          supabaseKey.trim() === '') {
         const authError: AuthError = {
-          message: 'Supabase is not configured. Please check your .env file and restart the dev server.',
+          message: 'Supabase is not configured.\n\n' +
+            'Your .env file exists, but the environment variables are not being loaded.\n\n' +
+            'Solution:\n' +
+            '1. Stop your dev server (Ctrl+C in terminal)\n' +
+            '2. Start it again: npm run dev\n' +
+            '3. Refresh your browser\n\n' +
+            'Vite only reads .env files when the server starts, so you must restart after creating or modifying the .env file.',
         };
         setAuthState((prev) => ({ ...prev, loading: false, error: authError }));
         return { error: authError };

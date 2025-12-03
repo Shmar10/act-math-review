@@ -18,10 +18,19 @@ export function initGA() {
     return;
   }
 
-  // Add gtag script
+  // Add gtag script with error handling for blocked networks
   const script1 = document.createElement('script');
   script1.async = true;
   script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  
+  // Handle script loading errors gracefully (common on school networks)
+  script1.onerror = () => {
+    if (GA_DEBUG) {
+      console.log('[GA] Script blocked by network - analytics disabled');
+    }
+    // Analytics won't work, but app continues normally
+  };
+  
   document.head.appendChild(script1);
 
   // Initialize dataLayer and gtag
