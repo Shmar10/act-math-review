@@ -2,7 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import WelcomePage from "./components/WelcomePage";
 import AdminReview from "./components/AdminReview";
+import AdminUsers from "./components/admin/AdminUsers";
 import AdminPasswordPrompt from "./components/AdminPasswordPrompt";
+import AdminUsersPasswordPrompt from "./components/admin/AdminUsersPasswordPrompt";
 import TeacherPrintPage from "./components/TeacherPrintPage";
 import TeacherPasswordPrompt from "./components/TeacherPasswordPrompt";
 import AuthPage from "./components/auth/AuthPage";
@@ -40,6 +42,7 @@ export default function App() {
   // Check for admin/teacher/dashboard/profile/reset-password mode via URL parameter
   const urlParams = new URLSearchParams(window.location.search);
   const isAdminMode = urlParams.get('admin') === 'true';
+  const isAdminUsersMode = urlParams.get('admin') === 'users';
   const isTeacherMode = urlParams.get('teacher') === 'true';
   const isDashboardMode = urlParams.get('dashboard') === 'true';
   const isProfileMode = urlParams.get('profile') === 'true';
@@ -51,6 +54,9 @@ export default function App() {
   // Check if user is authenticated (stored in localStorage)
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {
     return localStorage.getItem("amr.admin.auth") === "true";
+  });
+  const [isAdminUsersAuthenticated, setIsAdminUsersAuthenticated] = useState(() => {
+    return localStorage.getItem("amr.admin.users.auth") === "true";
   });
   const [isTeacherAuthenticated, setIsTeacherAuthenticated] = useState(() => {
     return localStorage.getItem("amr.teacher.auth") === "true";
@@ -278,6 +284,25 @@ export default function App() {
       );
     }
     return <AdminReview />;
+  }
+
+  // Show admin users if admin=users mode is enabled and authenticated (separate password)
+  if (isAdminUsersMode) {
+    if (!isAdminUsersAuthenticated) {
+      return (
+        <AdminUsersPasswordPrompt
+          onSuccess={() => {
+            setIsAdminUsersAuthenticated(true);
+          }}
+          onCancel={() => {
+            // Remove admin parameter and go back to main page
+            window.history.replaceState({}, "", window.location.pathname);
+            setIsAdminUsersAuthenticated(false);
+          }}
+        />
+      );
+    }
+    return <AdminUsers />;
   }
 
   // Show welcome page when not in practice

@@ -36,6 +36,8 @@ jobs:
           # Use GitHub Secrets for environment variables
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          # Service role key is optional - only needed for admin user management
+          VITE_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
         run: npm run build
 
       - name: Setup Pages
