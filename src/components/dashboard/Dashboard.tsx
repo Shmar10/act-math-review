@@ -7,6 +7,7 @@ import { BANKS } from '../../data/banks';
 import StatsOverview from './StatsOverview';
 import TopicBreakdown from './TopicBreakdown';
 import DifficultyBreakdown from './DifficultyBreakdown';
+import Footer from '../Footer';
 
 interface DashboardProps {
   onClose?: () => void;
@@ -110,6 +111,9 @@ export default function Dashboard({ onClose }: DashboardProps) {
 
         {/* Difficulty Breakdown */}
         <DifficultyBreakdown stats={stats} />
+        
+        {/* Footer */}
+        <Footer />
       </div>
     </div>
   );

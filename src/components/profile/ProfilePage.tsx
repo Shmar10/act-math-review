@@ -4,6 +4,7 @@ import { getUserProfile, updateUserProfile, changePassword, type UserProfile } f
 import ProfileView from './ProfileView';
 import ProfileEdit from './ProfileEdit';
 import ChangePassword from './ChangePassword';
+import Footer from '../Footer';
 
 interface ProfilePageProps {
   onClose?: () => void;
@@ -148,6 +149,9 @@ export default function ProfilePage({ onClose }: ProfilePageProps) {
             onCancel={() => setViewMode('view')}
           />
         )}
+        
+        {/* Footer */}
+        <Footer />
       </div>
     </div>
   );

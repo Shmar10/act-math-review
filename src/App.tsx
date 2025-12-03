@@ -13,6 +13,7 @@ import ResetPassword from "./components/auth/ResetPassword";
 import EnvVarCheck from "./components/EnvVarCheck";
 import Dashboard from "./components/dashboard/Dashboard";
 import ProfilePage from "./components/profile/ProfilePage";
+import Footer from "./components/Footer";
 import { useAuth } from "./hooks/useAuth";
 import type { ActQuestion } from "./types";
 import { useProgress } from "./hooks/useProgress";
@@ -374,6 +375,7 @@ export default function App() {
             availableCount={filteredCount}
             onStartPractice={startPractice}
           />
+          <Footer />
         </div>
       </div>
     );
@@ -415,6 +417,7 @@ export default function App() {
             onExit={() => setInPractice(false)}
           />
         )}
+        <Footer />
       </div>
     </div>
   );
