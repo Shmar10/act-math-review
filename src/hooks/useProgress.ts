@@ -42,9 +42,9 @@ export function useProgress() {
       const server = await getUserProgress(user.id);
       setServerProgress(server);
 
-      // Merge with local progress (server wins conflicts)
-      const merged = mergeProgress(localProgress, server);
-      setLocalProgress(merged);
+      // Don't overwrite localProgress - it may have unsynced local-only questions
+      // The merge for display happens in the progress return value (line 117)
+      // Only update serverProgress so the merge can work correctly
 
       // If we had local progress that wasn't on server, sync it
       const hasLocalOnly = Object.keys(localProgress).some(
