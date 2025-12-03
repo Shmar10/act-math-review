@@ -5,8 +5,15 @@ import AdminReview from "./components/AdminReview";
 import AdminPasswordPrompt from "./components/AdminPasswordPrompt";
 import TeacherPrintPage from "./components/TeacherPrintPage";
 import TeacherPasswordPrompt from "./components/TeacherPasswordPrompt";
+import AuthPage from "./components/auth/AuthPage";
+import EmailVerification from "./components/auth/EmailVerification";
+import ResetPassword from "./components/auth/ResetPassword";
+import EnvVarCheck from "./components/EnvVarCheck";
+import Dashboard from "./components/dashboard/Dashboard";
+import ProfilePage from "./components/profile/ProfilePage";
+import { useAuth } from "./hooks/useAuth";
 import type { ActQuestion } from "./types";
-import type { ProgressMap } from "./types.progress";
+import { useProgress } from "./hooks/useProgress";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { BANKS } from "./data/banks";
 import { 
@@ -27,10 +34,19 @@ const PRACTICE_MODES = {
 } as const;
 
 export default function App() {
-  // Check for admin/teacher mode via URL parameter
+  // User authentication
+  const { user, loading: authLoading, logout, isAuthenticated } = useAuth();
+  
+  // Check for admin/teacher/dashboard/profile/reset-password mode via URL parameter
   const urlParams = new URLSearchParams(window.location.search);
   const isAdminMode = urlParams.get('admin') === 'true';
   const isTeacherMode = urlParams.get('teacher') === 'true';
+  const isDashboardMode = urlParams.get('dashboard') === 'true';
+  const isProfileMode = urlParams.get('profile') === 'true';
+  const isResetPasswordMode = window.location.pathname.includes('/auth/reset-password') || 
+                              (window.location.hash.includes('access_token') && window.location.hash.includes('type=recovery'));
+  const isVerifyMode = urlParams.get('verify') === 'true' || 
+                      (window.location.hash.includes('access_token') && !isResetPasswordMode);
   
   // Check if user is authenticated (stored in localStorage)
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {
@@ -43,7 +59,7 @@ export default function App() {
   const [all, setAll] = useState<ActQuestion[]>([]);
   const [topic, setTopic] = useLocalStorage<string>("amr.topic", "All");
   const [diff, setDiff] = useLocalStorage<number>("amr.diff", 0);
-  const [progress, setProgress] = useLocalStorage<ProgressMap>("amr.progress", {});
+  const { progress, updateProgress: updateQuestionProgress } = useProgress();
   const [questionSelectionMode, setQuestionSelectionMode] = useLocalStorage<QuestionSelectionMode>("amr.questionMode", "sequential");
   const [practiceMode, setPracticeMode] = useLocalStorage<PracticeMode>("amr.practiceMode", "standard");
   const [sessionIdx, setSessionIdx] = useState(0);
@@ -126,16 +142,8 @@ export default function App() {
       trackQuestionAnswered(id, correct, question.topic);
     }
     
-    // Update persistent progress
-    setProgress(p => {
-      const prev = p[id] ?? { correct: 0, wrong: 0, lastAt: 0 };
-      const next = {
-        correct: prev.correct + (correct ? 1 : 0),
-        wrong: prev.wrong + (correct ? 0 : 1),
-        lastAt: Date.now(),
-      };
-      return { ...p, [id]: next };
-    });
+    // Update persistent progress (now syncs to server)
+    updateQuestionProgress(id, correct);
   }
 
   function startPractice() {
@@ -177,6 +185,62 @@ export default function App() {
     }
   }, [isAdminMode, isAdminAuthenticated]);
 
+  // Calculate topics - must be before any early returns (React hooks rule)
+  const topics = useMemo(() => [...new Set(all.map(q => q.topic))].sort(), [all]);
+  const filteredCount = filtered.length;
+
+  // Show loading state while checking authentication
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-slate-300">Loading...</div>
+      </div>
+    );
+  }
+
+  // Show password reset page
+  if (isResetPasswordMode) {
+    return (
+      <ResetPassword
+        onSuccess={() => {
+          window.location.href = window.location.pathname.replace('/auth/reset-password', '');
+        }}
+      />
+    );
+  }
+
+  // Show email verification page
+  if (isVerifyMode || (!user?.email_confirmed_at && user && isAuthenticated)) {
+    return <EmailVerification onVerified={() => window.location.reload()} />;
+  }
+
+  // Show profile page if profile mode is enabled
+  if (isProfileMode && isAuthenticated) {
+    return (
+      <ProfilePage
+        onClose={() => {
+          // This will be handled by the button's onClick which navigates
+        }}
+      />
+    );
+  }
+
+  // Show dashboard if dashboard mode is enabled
+  if (isDashboardMode && isAuthenticated) {
+    return (
+      <Dashboard
+        onClose={() => {
+          // This will be handled by the button's onClick which navigates
+        }}
+      />
+    );
+  }
+
+  // Show auth page if not authenticated (skip for admin/teacher modes)
+  if (!isAuthenticated && !isAdminMode && !isTeacherMode) {
+    return <AuthPage onAuthSuccess={() => window.location.reload()} />;
+  }
+
   // Show teacher print page if teacher mode is enabled and authenticated
   if (isTeacherMode) {
     if (!isTeacherAuthenticated) {
@@ -216,30 +280,60 @@ export default function App() {
     return <AdminReview />;
   }
 
-  const topics = useMemo(() => [...new Set(all.map(q => q.topic))].sort(), [all]);
-  const filteredCount = filtered.length;
-
   // Show welcome page when not in practice
   if (!inPractice) {
     return (
       <div className="min-h-screen px-6 py-8">
+        <EnvVarCheck />
         <div className="mx-auto max-w-4xl">
-          {/* Admin and Teacher links in header */}
-          <div className="flex justify-end gap-2 mb-4">
-            <a
-              href="?teacher=true"
-              className="text-sm px-3 py-1 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white"
-              title="Teacher: Generate printable worksheets"
-            >
-              📄 Teacher Print
-            </a>
-            <a
-              href="?admin=true"
-              className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
-              title="Admin: View all questions and answers"
-            >
-              🔍 Admin Review
-            </a>
+          {/* Header with Auth and Admin/Teacher links */}
+          <div className="flex justify-between items-center gap-2 mb-4">
+            {/* User info and actions */}
+            {isAuthenticated && user && (
+              <div className="flex items-center gap-3">
+                <a
+                  href="?profile=true"
+                  className="text-sm text-slate-300 hover:text-slate-100 underline"
+                  title="View your profile"
+                >
+                  {user.user_metadata?.first_name} {user.user_metadata?.last_name}
+                </a>
+                <a
+                  href="?dashboard=true"
+                  className="text-sm px-3 py-1 rounded-lg bg-sky-700 hover:bg-sky-600 text-white"
+                  title="View your progress dashboard"
+                >
+                  📊 Dashboard
+                </a>
+                <button
+                  onClick={async () => {
+                    await logout();
+                    window.location.reload();
+                  }}
+                  className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
+                >
+                  Logout
+                </button>
+              </div>
+            )}
+            
+            {/* Admin and Teacher links */}
+            <div className="flex gap-2 ml-auto">
+              <a
+                href="?teacher=true"
+                className="text-sm px-3 py-1 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white"
+                title="Teacher: Generate printable worksheets"
+              >
+                📄 Teacher Print
+              </a>
+              <a
+                href="?admin=true"
+                className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
+                title="Admin: View all questions and answers"
+              >
+                🔍 Admin Review
+              </a>
+            </div>
           </div>
 
           <WelcomePage
@@ -263,6 +357,7 @@ export default function App() {
   // Practice mode - show clean interface with navigation
   return (
     <div className="min-h-screen px-6 py-8">
+      <EnvVarCheck />
       <div className="mx-auto max-w-4xl">
         {/* Navigation Bar */}
         <PracticeNavBar
