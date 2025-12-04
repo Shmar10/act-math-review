@@ -334,7 +334,7 @@ export default function App() {
                 <button
                   onClick={async () => {
                     await logout();
-                    window.location.reload();
+                    window.location.href = '/act-math-review/';
                   }}
                   className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
                 >

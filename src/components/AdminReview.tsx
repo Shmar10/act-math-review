@@ -101,7 +101,7 @@ export default function AdminReview() {
             <button
               onClick={() => {
                 localStorage.removeItem("amr.admin.auth");
-                window.location.href = "/";
+                window.location.href = "/act-math-review/";
               }}
               className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500"
               title="Log out and return to main page"
