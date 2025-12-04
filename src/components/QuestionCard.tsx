@@ -34,6 +34,7 @@ export default function QuestionCard({
   const [selected, setSelected] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [showSteps, setShowSteps] = useState(false);
+  const [distractors, setDistractors] = useState<Set<number>>(new Set());
 
   // Re-shuffle on question change
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function QuestionCard({
     setSelected(null);
     setChecked(false);
     setShowSteps(false);
+    setDistractors(new Set());
   }, [question.id]);
 
   const isCorrect = useMemo(
@@ -69,27 +71,52 @@ export default function QuestionCard({
           const chosen = selected === i;
           const correct = checked && i === shuf.correctIndex;
           const wrong = checked && chosen && i !== shuf.correctIndex;
+          const isDistractor = distractors.has(i);
 
           return (
             <li key={shuf.map[i]}>
-              <button
-                onClick={() => setSelected(i)}
-                disabled={checked}
-                className={[
-                  "w-full text-left px-4 py-3 rounded-xl border transition",
-                  chosen && !checked && "border-sky-400 bg-sky-900/30",
-                  correct && "border-emerald-400 bg-emerald-900/30",
-                  wrong && "border-rose-400 bg-rose-900/30",
-                  !chosen &&
-                    !checked &&
-                    "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
-                ]
-                  .filter(Boolean)
-                  .join(" ")}
-              >
-                <span className="font-semibold mr-2">{letter}.</span>
-                <InlinePieces text={choice.text} />
-              </button>
+              <div className="relative flex items-center">
+                {isDistractor && (
+                  <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-red-500 z-10 pointer-events-none" style={{ transform: 'translateY(-50%)' }} />
+                )}
+                <button
+                  onClick={() => setSelected(i)}
+                  disabled={checked}
+                  className={[
+                    "flex-1 text-left px-4 py-3 rounded-xl border transition relative",
+                    isDistractor && "line-through decoration-red-500 decoration-2",
+                    chosen && !checked && "border-sky-400 bg-sky-900/30",
+                    correct && "border-emerald-400 bg-emerald-900/30",
+                    wrong && "border-rose-400 bg-rose-900/30",
+                    !chosen &&
+                      !checked &&
+                      "border-slate-600 hover:border-slate-500 hover:bg-slate-800/40",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                >
+                  <span className="font-semibold mr-2">{letter}.</span>
+                  <InlinePieces text={choice.text} />
+                </button>
+                <label className="ml-2 flex items-center cursor-pointer px-2 relative z-20" title="Mark as distractor">
+                  <input
+                    type="checkbox"
+                    checked={isDistractor}
+                    onChange={(e) => {
+                      e.stopPropagation();
+                      const newDistractors = new Set(distractors);
+                      if (e.target.checked) {
+                        newDistractors.add(i);
+                      } else {
+                        newDistractors.delete(i);
+                      }
+                      setDistractors(newDistractors);
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                    className="w-5 h-5 rounded border-2 border-slate-500 bg-slate-700 text-red-500 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-slate-800 cursor-pointer accent-red-500 relative z-20"
+                  />
+                </label>
+              </div>
 
               {checked && (selected === i || i === shuf.correctIndex) && (
                 <div className="mt-1 ml-4 text-sm text-slate-300 italic">
@@ -124,7 +151,15 @@ export default function QuestionCard({
         </button>
 
         <button
-          onClick={() => setShowSteps((s) => !s)}
+          onClick={() => {
+            const wasShowing = showSteps;
+            setShowSteps((s) => !s);
+            // If showing solution for the first time, mark as incorrect and enable next
+            if (!wasShowing && !checked) {
+              setChecked(true);
+              onResult?.(false, question.id);
+            }
+          }}
           className="ml-auto px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600"
         >
           {showSteps ? "Hide Solution" : "Show Solution"}
