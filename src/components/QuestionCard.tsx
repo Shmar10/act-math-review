@@ -154,8 +154,9 @@ export default function QuestionCard({
           onClick={() => {
             const wasShowing = showSteps;
             setShowSteps((s) => !s);
-            // If showing solution for the first time, mark as incorrect and enable next
-            if (!wasShowing && !checked) {
+            // If showing solution for the first time without selecting an answer, mark as incorrect and enable next
+            // If they've selected an answer, allow them to still check it
+            if (!wasShowing && !checked && selected === null) {
               setChecked(true);
               onResult?.(false, question.id);
             }
