@@ -89,13 +89,7 @@ export default function Dashboard({ onClose }: DashboardProps) {
           </div>
           {onClose && (
             <button
-              onClick={() => {
-                // Remove dashboard parameter and force navigation
-                const url = new URL(window.location.href);
-                url.searchParams.delete('dashboard');
-                // Use window.location to force a full navigation/reload
-                window.location.href = url.pathname + url.search;
-              }}
+              onClick={onClose}
               className="px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
             >
               Close
