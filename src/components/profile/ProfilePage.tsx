@@ -105,11 +105,7 @@ export default function ProfilePage({ onClose }: ProfilePageProps) {
           </div>
           {onClose && (
             <button
-              onClick={() => {
-                const url = new URL(window.location.href);
-                url.searchParams.delete('profile');
-                window.location.href = url.pathname + url.search;
-              }}
+              onClick={onClose}
               className="px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
             >
               Close
