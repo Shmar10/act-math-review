@@ -1,13 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import WelcomePage from "./components/WelcomePage";
-import AdminReview from "./components/AdminReview";
-import AdminUsers from "./components/admin/AdminUsers";
-import AdminPasswordPrompt from "./components/AdminPasswordPrompt";
+import AdminDashboard from "./components/admin/AdminDashboard";
 import AdminUsersPasswordPrompt from "./components/admin/AdminUsersPasswordPrompt";
 import TeacherPrintPage from "./components/TeacherPrintPage";
-import TeacherPasswordPrompt from "./components/TeacherPasswordPrompt";
 import AuthPage from "./components/auth/AuthPage";
+import AdminLoginPage from "./components/auth/AdminLoginPage";
+import TeacherLoginPage from "./components/auth/TeacherLoginPage";
 import EmailVerification from "./components/auth/EmailVerification";
 import ResetPassword from "./components/auth/ResetPassword";
 import EnvVarCheck from "./components/EnvVarCheck";
@@ -40,28 +39,23 @@ export default function App() {
   // User authentication
   const { user, loading: authLoading, logout, isAuthenticated } = useAuth();
   
-  // Check for admin/teacher/dashboard/profile/reset-password mode via URL parameter
-  const urlParams = new URLSearchParams(window.location.search);
-  const isAdminMode = urlParams.get('admin') === 'true';
-  const isAdminUsersMode = urlParams.get('admin') === 'users';
-  const isTeacherMode = urlParams.get('teacher') === 'true';
-  const isDashboardMode = urlParams.get('dashboard') === 'true';
-  const isProfileMode = urlParams.get('profile') === 'true';
-  const isResetPasswordMode = window.location.pathname.includes('/auth/reset-password') || 
-                              (window.location.hash.includes('access_token') && window.location.hash.includes('type=recovery'));
-  const isVerifyMode = urlParams.get('verify') === 'true' || 
-                      (window.location.hash.includes('access_token') && !isResetPasswordMode);
+  // Path-based routing
+  const pathname = window.location.pathname;
+  const basePath = '/act-math-review';
+  const cleanPath = pathname.replace(basePath, '') || '/';
   
-  // Check if user is authenticated (stored in localStorage)
-  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {
-    return localStorage.getItem("amr.admin.auth") === "true";
-  });
-  const [isAdminUsersAuthenticated, setIsAdminUsersAuthenticated] = useState(() => {
-    return localStorage.getItem("amr.admin.users.auth") === "true";
-  });
-  const [isTeacherAuthenticated, setIsTeacherAuthenticated] = useState(() => {
-    return localStorage.getItem("amr.teacher.auth") === "true";
-  });
+  // Route detection
+  const isAdminLoginPath = cleanPath === '/auth/admin';
+  const isTeacherLoginPath = cleanPath === '/auth/teacher';
+  const isStudentLoginPath = cleanPath === '/auth/login' || cleanPath === '/login';
+  const isAdminPath = cleanPath === '/admin';
+  const isTeacherPath = cleanPath === '/teacher';
+  const isDashboardPath = cleanPath === '/dashboard';
+  const isProfilePath = cleanPath === '/profile';
+  const isResetPasswordMode = pathname.includes('/auth/reset-password') || 
+                              (window.location.hash.includes('access_token') && window.location.hash.includes('type=recovery'));
+  const isVerifyMode = window.location.hash.includes('access_token') && !isResetPasswordMode;
+  
 
   const [all, setAll] = useState<ActQuestion[]>([]);
   const [topic, setTopic] = useLocalStorage<string>("amr.topic", "All");
@@ -185,12 +179,12 @@ export default function App() {
     }
   }, [done, inPractice, sessionResults, practiceMode]);
 
-  // Track admin access
+  // Track admin access when on admin path
   useEffect(() => {
-    if (isAdminMode && isAdminAuthenticated) {
+    if (isAdminPath && localStorage.getItem("amr.admin.auth") === "true") {
       trackAdminAccess();
     }
-  }, [isAdminMode, isAdminAuthenticated]);
+  }, [isAdminPath]);
 
   // Calculate topics - must be before any early returns (React hooks rule)
   const topics = useMemo(() => [...new Set(all.map(q => q.topic))].sort(), [all]);
@@ -221,89 +215,69 @@ export default function App() {
     return <EmailVerification onVerified={() => window.location.reload()} />;
   }
 
-  // Show profile page if profile mode is enabled
-  if (isProfileMode && isAuthenticated) {
-    return (
-      <ProfilePage
-        onClose={() => {
-          // This will be handled by the button's onClick which navigates
-        }}
-      />
-    );
+
+  // Show admin login page
+  if (isAdminLoginPath) {
+    return <AdminLoginPage />;
   }
 
-  // Show dashboard if dashboard mode is enabled
-  if (isDashboardMode && isAuthenticated) {
-    return (
-      <Dashboard
-        onClose={() => {
-          // This will be handled by the button's onClick which navigates
-        }}
-      />
-    );
+  // Show teacher login page
+  if (isTeacherLoginPath) {
+    return <TeacherLoginPage />;
   }
 
-  // Show auth page if not authenticated (skip for admin/teacher modes)
-  if (!isAuthenticated && !isAdminMode && !isTeacherMode) {
-    return <AuthPage onAuthSuccess={() => window.location.reload()} />;
+  // Show student login page
+  if (isStudentLoginPath) {
+    return <AuthPage onAuthSuccess={() => window.location.href = `${basePath}/`} />;
   }
 
-  // Show teacher print page if teacher mode is enabled and authenticated
-  if (isTeacherMode) {
+  // Show admin dashboard if authenticated
+  if (isAdminPath) {
+    const isAdminAuthenticated = localStorage.getItem("amr.admin.auth") === "true";
+    if (!isAdminAuthenticated) {
+      // Redirect to admin login
+      window.location.href = `${basePath}/auth/admin`;
+      return null;
+    }
+    return <AdminDashboard />;
+  }
+
+  // Show teacher print page if authenticated
+  if (isTeacherPath) {
+    const isTeacherAuthenticated = localStorage.getItem("amr.teacher.auth") === "true";
     if (!isTeacherAuthenticated) {
-      return (
-        <TeacherPasswordPrompt
-          onSuccess={() => {
-            setIsTeacherAuthenticated(true);
-          }}
-          onCancel={() => {
-            // Remove teacher parameter and go back to main page
-            window.history.replaceState({}, "", window.location.pathname);
-            setIsTeacherAuthenticated(false);
-          }}
-        />
-      );
+      // Redirect to teacher login
+      window.location.href = `${basePath}/auth/teacher`;
+      return null;
     }
     return <TeacherPrintPage />;
   }
 
-  // Show admin review if admin mode is enabled and authenticated
-  if (isAdminMode) {
-    if (!isAdminAuthenticated) {
-      return (
-        <AdminPasswordPrompt
-          onSuccess={() => {
-            setIsAdminAuthenticated(true);
-            trackAdminAccess();
-          }}
-          onCancel={() => {
-            // Remove admin parameter and go back to main page
-            window.history.replaceState({}, "", window.location.pathname);
-            setIsAdminAuthenticated(false);
-          }}
-        />
-      );
-    }
-    return <AdminReview />;
+  // Show dashboard if path matches
+  if (isDashboardPath && isAuthenticated) {
+    return (
+      <Dashboard
+        onClose={() => {
+          window.location.href = `${basePath}/`;
+        }}
+      />
+    );
   }
 
-  // Show admin users if admin=users mode is enabled and authenticated (separate password)
-  if (isAdminUsersMode) {
-    if (!isAdminUsersAuthenticated) {
-      return (
-        <AdminUsersPasswordPrompt
-          onSuccess={() => {
-            setIsAdminUsersAuthenticated(true);
-          }}
-          onCancel={() => {
-            // Remove admin parameter and go back to main page
-            window.history.replaceState({}, "", window.location.pathname);
-            setIsAdminUsersAuthenticated(false);
-          }}
-        />
-      );
-    }
-    return <AdminUsers />;
+  // Show profile if path matches
+  if (isProfilePath && isAuthenticated) {
+    return (
+      <ProfilePage
+        onClose={() => {
+          window.location.href = `${basePath}/`;
+        }}
+      />
+    );
+  }
+
+  // Show auth page if not authenticated (for homepage)
+  if (!isAuthenticated && cleanPath === '/') {
+    return <AuthPage onAuthSuccess={() => window.location.reload()} />;
   }
 
   // Show welcome page when not in practice
@@ -318,14 +292,14 @@ export default function App() {
             {isAuthenticated && user && (
               <div className="flex items-center gap-3">
                 <a
-                  href="?profile=true"
+                  href="/act-math-review/profile"
                   className="text-sm text-slate-300 hover:text-slate-100 underline"
                   title="View your profile"
                 >
                   {user.user_metadata?.first_name} {user.user_metadata?.last_name}
                 </a>
                 <a
-                  href="?dashboard=true"
+                  href="/act-math-review/dashboard"
                   className="text-sm px-3 py-1 rounded-lg bg-sky-700 hover:bg-sky-600 text-white"
                   title="View your progress dashboard"
                 >
@@ -343,23 +317,6 @@ export default function App() {
               </div>
             )}
             
-            {/* Admin and Teacher links */}
-            <div className="flex gap-2 ml-auto">
-              <a
-                href="?teacher=true"
-                className="text-sm px-3 py-1 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white"
-                title="Teacher: Generate printable worksheets"
-              >
-                📄 Teacher Print
-              </a>
-              <a
-                href="?admin=true"
-                className="text-sm px-3 py-1 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300"
-                title="Admin: View all questions and answers"
-              >
-                🔍 Admin Review
-              </a>
-            </div>
           </div>
 
           <WelcomePage
@@ -479,13 +436,6 @@ function PracticeNavBar({
 
         {/* Action Buttons */}
         <div className="flex items-center gap-2">
-          <a
-            href="?admin=true"
-            className="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-300 text-xs transition"
-            title="Admin: View all questions and answers"
-          >
-            🔍 Admin
-          </a>
           <button
             onClick={onExit}
             className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-300 text-sm transition"

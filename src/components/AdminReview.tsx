@@ -82,11 +82,11 @@ export default function AdminReview() {
   }
 
   return (
-    <div className="min-h-screen px-6 py-8 bg-slate-900 text-white">
+    <div className="px-6 py-8 bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="mb-6 flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold mb-2">Admin Question Review</h1>
+            <h2 className="text-2xl font-bold mb-2">Question Review</h2>
             <p className="text-slate-400">
               Total: {allQuestions.length} questions | Showing: {filtered.length}
             </p>
@@ -97,24 +97,6 @@ export default function AdminReview() {
               className="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500"
             >
               {showAllAnswers ? "▲ Hide All Answers" : "▼ Show All Answers"}
-            </button>
-            <button
-              onClick={() => {
-                localStorage.removeItem("amr.admin.auth");
-                window.location.href = "/act-math-review/";
-              }}
-              className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500"
-              title="Log out and return to main page"
-            >
-              🔒 Logout
-            </button>
-            <button
-              onClick={() => {
-                window.location.href = window.location.pathname;
-              }}
-              className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600"
-            >
-              ← Back to App
             </button>
           </div>
         </div>

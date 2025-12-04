@@ -128,28 +128,14 @@ export default function AdminUsers() {
   }
 
   return (
-    <div className="min-h-screen px-6 py-8 bg-slate-900 text-white">
+    <div className="px-6 py-8 bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-6 flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-bold mb-2">User Management</h1>
-            <p className="text-slate-400">
-              Manage user accounts and view statistics
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <button
-              onClick={() => {
-                localStorage.removeItem("amr.admin.users.auth");
-                window.location.href = "/act-math-review/";
-              }}
-              className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500"
-              title="Log out and return to main page"
-            >
-              🔒 Logout
-            </button>
-          </div>
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold mb-2">User Management</h2>
+          <p className="text-slate-400">
+            Manage user accounts and view statistics
+          </p>
         </div>
 
         {error && (
